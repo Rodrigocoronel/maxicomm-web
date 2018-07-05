@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+	<title>Maxicomm</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css"
+          href="../../assets/fonts/gotham-book/style.css"/>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./menu.css">
+    <style type="text/css">
+    	.centered {
+			  position: fixed;
+			  top: 50%;
+			  left: 50%;
+			  /* bring your own prefixes */
+			  transform: translate(-50%, -50%);
+			}
+		html,
+		body {
+			 height: 100%;
+		}
+		li{
+			font-family:'Gotham Book';
+			font-weight:normal;
+			font-size:14px
+		}
+
+		li:hover {
+		    color: red;
+		}
+    </style>
+</head>
+ 
+<body >
+	<div class="container-fluid" style="position: relative;"  >
+		<div id="asd" class="row contenedor-video">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+            	<source src="../../assets/videos/Comp 1_1_1.mp4" type="video/mp4" />
+            </video>
+            <div style="position: absolute; left: 50%; transform: translateX(-50%);">
+            	<img  class="logo-menu" src="../../assets/images/logo-white.gif" >
+            </div>
+		</div>
+	</div>
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Inicio</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Nosotros <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Soluciones <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Seguridad y Energía <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+	</div>
+</body>
+	<script>
+		function hover(element) {
+			console.log(element)
+			element.setAttribute('background-color', '#E211B');
+		}
+
+		function unhover(element) {
+			//element.setAttribute('color', '#000000');
+		}
+	</script>
+</html>

@@ -1,0 +1,25 @@
+@media (min-width: 1336px) { 
+	.contenedor-video{
+		height: 100px ;
+	}
+ }
+@media (max-width: 1336px) { 
+	.contenedor-video{
+		height: 76px ;
+	}
+ }
+
+ @media (min-width: 1336px ) {
+ 	.logo-menu{
+ 		height:100px;
+ 		width:428px;
+ 	}
+ }
+
+ @media (max-width: 1336px ) {
+ 	.logo-menu{
+ 		height:76px;
+ 		width:314px;
+ 	}
+ }
+

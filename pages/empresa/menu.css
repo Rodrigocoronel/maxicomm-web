@@ -2,25 +2,39 @@
 	.contenedor-video{
 		height: 100px ;
 	}
+
+	.logo-menu{
+ 		height:100px;
+ 		width:428px;
+ 	}
+
+ 	.fondiu{
+		height : calc(100% - 153px);
+	}
  }
+
 @media (max-width: 1336px) { 
 	.contenedor-video{
 		height: 76px ;
 	}
- }
 
- @media (min-width: 1336px ) {
- 	.logo-menu{
- 		height:100px;
- 		width:428px;
- 	}
- }
-
- @media (max-width: 1336px ) {
- 	.logo-menu{
+	.logo-menu{
  		height:76px;
  		width:314px;
  	}
+
+ 	.fondiu{
+		height : calc(100% - 100px);
+	}
  }
+
+
+.fill-container{
+	background-image: url(./images/empresa-Index-img-fondo.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
 
 

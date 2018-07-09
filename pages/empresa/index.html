@@ -7,12 +7,21 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../../assets/fonts/gotham-book/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../../assets/fonts/gotham-black/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../../assets/fonts/gotham-light/style.css"/>  
+    <link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-black/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-light/font.css"/>  
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./menu.css">
     <style type="text/css">
+
+	    @font-face {
+		    font-family: AvenirLTStd;
+		    src: url(./fonts/AvenirLTStd-Light.otf);
+		}
+		@font-face{
+			font-family: avenirltstd-heavy-webfont
+			src : url(./fonts/avenirltstd-heavy-webfont.woff);
+		}
     	.centered {
 			  position: fixed;
 			  top: 50%;
@@ -49,6 +58,7 @@
 		}
 
 
+
     </style>
 </head>
  
@@ -70,8 +80,8 @@
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
-		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent" >
-		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
+		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
+		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
 		      <li class="nav-item active menu">
 		        <a id="inicio" class="nav-link" href="#" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
@@ -97,50 +107,18 @@
 		  </div>
 		</nav>
 	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div >
-				<h3 style="font-family: Gotham Black;  font-size: 16px;">Desarrollo de proyectos tecnológicos</h3>
-			</div>
+	<div class="fondiu fill-container container" style="max-width: 100%; 
+		background-repeat: no-repeat;
+    	overflow: hidden;">
+    	<h4 align="center" style="font-size: 49PX; margin-top: 140px; font-family: avenirltstd-heavy-webfont; color: white;">SOLUCIONES A<br/> LA MEDIDA</h4>	
+    	<div class="row justify-content-center">
+		    <div class="col-4" style="text-align: justify; margin-top: 50px;">
+				<p style="font-size: 19px; font-family: AvenirLTStd; color: white;"> Somos una empresa creativa y en constante crecimiento, enfocada en la innovación de soluciones TI para empresas, gobierno, instituciones educativas y de salud.</p>
+		    </div>
 		</div>
-		<div class="row" >
-			<div style="margin-right: 100px">
-				<p style="font-family: Gotham Black; font-size: 14px">Comunicaciones ></p>
-				<ul class="navbar-nav" >
-					<li class="nav-item active sub-menu" >
-						Fibra óptica
-					</li>
-					<li class="nav-item active sub-menu" >
-						Cableado Estructurado
-					</li>
-					<li class="nav-item active sub-menu" >
-						Redes inalambricas
-					</li>
-					<li class="nav-item active sub-menu" >
-						Enlaces Punto a Punto
-					</li>
-				</ul>
-			</div>
-			<div style="margin-right: 100px">
-				<p style="font-family: Gotham Black; font-size: 14px">SISTEMAS ></p>
-				<ul class="navbar-nav" >
-					<li class="nav-item active sub-menu" >
-						Desarrollo de software a la medida
-					</li>
-					<li class="nav-item active sub-menu" >
-						Desarrollo de Apps
-					</li>
-			</div>
-			<div>
-				<ul class="navbar-nav" >
-					<li class="nav-item active sub-menu" >
-						HOSTING Y DISEÑO WEB
-					</li>
-					<li class="nav-item active sub-menu" >
-						SISTEMAS CONTABLES
-					</li>
-			</div>
-		</div>
+	</div>
+	<div style="width: 100%; overflow: hidden; height: 500px; object-fit: cover;" >
+		<img src="./images/empresa-Index-fondo-textura.jpg" alt="fondo">
 	</div>
 </body>
 	<script>
@@ -150,15 +128,5 @@
 		        function() { $(this).removeClass("Hover"); }
 		    );
 		});
-
-		$(document).ready(function() {
-		    $(".show").hover(
-		        function() { $('mostrar').show(); }
-		    );
-		});
-
-		function unhover(element) {
-			//element.setAttribute('color', '#000000');
-		}
 	</script>
 </html>

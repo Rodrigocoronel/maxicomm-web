@@ -11,6 +11,10 @@
  	.fondiu{
 		height : calc(100% - 153px);
 	}
+	.iconoSoluciones{
+		height: 100px; 
+		width: 100px;
+	}
  }
 
 @media (max-width: 1336px) { 
@@ -25,6 +29,11 @@
 
  	.fondiu{
 		height : calc(100% - 100px);
+	}
+
+	.iconoSoluciones{
+		height: 60px; 
+		width: 60px;
 	}
  }
 
@@ -89,4 +98,10 @@
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;
+}
+
+.baseSoluciones{
+	background-image: url(./images/black-base-02.png);  
+    height: 50px;
+    width: 100px;
 }

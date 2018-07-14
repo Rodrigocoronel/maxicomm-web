@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+	<title>Maxicomm</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/gotham-book/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-black/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-light/font.css"/> 
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./menu.css">
+    <style type="text/css">
+
+	    @font-face {
+		    font-family: AvenirLTStd;
+		    src: url(./fonts/AvenirLTStd-Light.otf);
+		}
+		@font-face{
+			font-family: avenirltstd-heavy-webfont
+			src : url(./fonts/avenirltstd-heavy-webfont.woff);
+		}
+    	.centered {
+			  position: fixed;
+			  top: 50%;
+			  left: 50%;
+			  /* bring your own prefixes */
+			  transform: translate(-50%, -50%);
+			}
+		html,
+		body {
+			 height: 100%;
+		}
+		li.menu{
+			font-family:'Gotham Book';
+			font-weight:normal;
+			font-size:17px;	
+			margin : 0px 15px 0px 15px;
+		}
+
+		li.sub-menu{
+			font-family:'GothamLight';
+			font-weight:normal;
+			font-size:12px;	
+		}
+
+		a{
+			padding: 8px 0px 8px 0px !important;
+		}
+
+
+		a.Hover { 
+			border-bottom: 2px solid; 
+			color: red !important;
+			border-color: red;
+		}
+
+
+
+    </style>
+</head>
+ 
+<body >
+	<div class="container-fluid" style="position: relative;"  >
+		<div id="asd" class="row contenedor-video">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+            	<source src="../../../assets/videos/Comp 1_1_1.mp4" type="video/mp4" />
+            </video>
+            <div style="position: absolute; left: 50%; transform: translateX(-50%);">
+            	<img  class="logo-menu" src="../../../assets/images/logo-white.gif" >
+            </div>
+		</div>
+	</div>
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light align-self-center"  >
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
+		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
+		      <li class="nav-item active menu">
+		        <a id="inicio" class="nav-link" href="../" >Inicio <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="../nosotros">Nosotros <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu show-soluciones">
+		        <a id="Soluciones" class="nav-link" href="#">Soluciones <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="../seguridad y energia">Seguridad y Energía <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="./contacto">Contacto <span class="sr-only">(current)</span></a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</div>
+	<!-- Imagen entrada -->
+	<!-- Soluciones -->
+	<div class="mapouter" style="width: 100%; height: 490px;"><div class="gmap_canvas" style="width: 100%; height: : 490px;"><iframe width="100%" height="490" id="gmap_canvas" src="https://maps.google.com/maps?q=maxicom%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/"></a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style><small><a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=28532&url=42158&tid1=google3" rel="nofollow">Build WordPress Themes faster</a></small></div>
+	<!-- Cotizacion -->
+
+	<!-- datos -->
+	<div class="imgCotizacion" style="height: 100%;">
+	<div class="row align-self-center" style="height: 155px;">
+		<div class="col-4 align-self-center " align="center">
+			<p style="color : white;">
+			DIRECCIÓN <br/>
+			22800 Plaza ejecutiva Maxicomm, <br>
+			Macheros 366, Zona Centro, 22800<br/>
+			Ensenada, B.C.
+		</p>
+		</div>
+		<div class="col-4 align-self-center" align="center">
+			<p style="color : white;">
+				TELÉFONO<br/>
+				646 178.80.08
+			</p>
+
+		</div>
+		<div class="col-4 align-self-center" align="center">
+			<p style="color : white;">
+				HORARIO<br/>
+				Lunes a Viernes: 8:00 a.m.- 7:00 p.m. <br/>
+				Sábado : 	9:00 a.m.- 2:00 p.m.
+			</p>
+		</div>
+	</div>
+	<!-- textura y siguenos -->
+
+	<div class="fill-containerTexture " style="height: 200px; width: 100%;">
+		<div class="container" >
+			<div class="row" align="center" >
+				<div class="col align-self-center" style="margin-top: 28px" >
+					<p style="font-size: 23px;">Siguenos</p>
+					 <hr style="height: 1.5px; margin-bottom: 4px;" width="150px" height: "3px" color="black">
+					 <hr style="height: 1.5px; margin-top: 4px; " width="150px" height: "3px" color="black">
+				</div>
+			</div>
+			<div class="row" align="center">
+				<div class="col align-self-center">
+					
+					<img src="./images/SM-ICONS_Mesadetrabajo1.svg" width="60px" height="60px">
+					<img src="./images/SM-ICONS_Mesadetrabajo1copia.svg" width="60px" height="60px">
+					<img src="./images/SM-ICONS_Mesadetrabajo1copia2.svg" width="60px" height="60px">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+        <div class="formularioCotizacion" style="width: 60%; top : 10%;">
+           <p style="font-size: 25px;"> Solicita una cotizacion personalizada </p>
+                <div class="container-fluid">
+                	<div class="row" style="margin-top: 30px;">
+	                	<div class="col-6">
+	                		<div class="row">
+	                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre">
+	                		</div>
+		                    <div class="row">
+	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="text" name="email" placeholder="E mail">
+	                		</div>
+		                    <div class="row">
+	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Telefono">
+	                		</div>
+		                    
+		                </div>
+		                <div class="col-6">
+	                    	<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe mensaje aqui" rows="5"></textarea>
+	               		</div>
+	               	</div>
+                
+                <button class="float-right" style="margin-top: 20px;" type="button">ENVIAR</button>
+            </div>
+        </div>
+	</div>
+	<!-- Footer -->
+	<div style="background-color: #252526; height: 110px; width: 100%">
+		<div class="container-fluid">
+			<div class="row">
+				<div style="display: flex;margin-top: 41px; margin-left: 100px;">
+					<div class="imgTwitter" style="padding-left: 100px;"></div>
+					<div class="imgFacebook" style="padding-left: 89px;"></div>
+					<div class="imgYoutube" style="margin-top: 5px;"></div>
+				</div>
+			</div>
+			<div class=" row  float-right"  style="margin-right: 60px;" >
+				<p style="color: white;">Copyright / Privacidad / Politicas</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+	<script>
+		$(document).ready(function() {
+		    $(".nav-link").hover(
+		        function() { $(this).addClass("Hover"); },
+		        function() { $(this).removeClass("Hover"); }
+		    );
+		});
+	</script>
+</html>

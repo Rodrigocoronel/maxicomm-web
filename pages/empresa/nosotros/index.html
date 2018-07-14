@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/gotham-book/style.css"/>
     <link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-black/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-light/font.css"/>  
+	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-light/font.css"/> 
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./menu.css">
@@ -36,7 +37,7 @@
 		li.menu{
 			font-family:'Gotham Book';
 			font-weight:normal;
-			font-size:14px;	
+			font-size:17px;	
 			margin : 0px 15px 0px 15px;
 		}
 
@@ -83,7 +84,7 @@
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
 		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
 		      <li class="nav-item active menu">
-		        <a id="inicio" class="nav-link" href="#" >Inicio <span class="sr-only">(current)</span></a>
+		        <a id="inicio" class="nav-link" href="../" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item active menu">
 		        <a class="nav-link" href="#">Nosotros <span class="sr-only">(current)</span></a>
@@ -98,56 +99,75 @@
 		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item active menu">
-		        <a class="nav-link" href="#">Seguridad y Energía <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="../seguridad y energia">Seguridad y Energía <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item active menu">
-		        <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="../contacto">Contacto <span class="sr-only">(current)</span></a>
 		      </li>
 		    </ul>
 		  </div>
 		</nav>
 	</div>
 	<!-- Imagen entrada -->
-	<div class="fondiu fill-container container" style="max-width: 100%; background-repeat: no-repeat; overflow: hidden;">
-    	<h4 align="center" style="font-size: 49PX; margin-top: 140px; font-family: avenirltstd-heavy-webfont; color: white;">
+	<div class="fondiu fill-container container" style="max-width: 100%; height: 557px; background-repeat: no-repeat; overflow: hidden;">
+    	<h4 align="center" style="font-size: 49PX; margin-top: 220px; font-family: 'Roboto'; color: white;">
             ¿QUIÉNES SOMOS?
         </h4>
 	</div>
 	<!-- Soluciones -->
 	<div class="fill-containerTexture container" style="max-width: 100%; overflow: hidden; background-repeat: no-repeat; height: 500px; padding-top: 20px;" >
         <div class="soluciones">    
-            <p><b>Maxicomm</b> &ensp; Empresa fundada en 1998 enfocados en ofrecer soporte y asesoria a empresas en materia
+            <p ><b>Maxicomm</b> &ensp; Empresa fundada en 1998 enfocados en ofrecer soporte y asesoria a empresas en materia
                 de equipos de computo, con servicios de ingeniería, venta, instalación y mantenimiento.</p>
             <p>Somos una empresa Creativa y en constante crecimiento, que acepta y enfrenta el compromiso de innovar 
                 soluciones eficientes en relación a las necesidades de nuestros clientes.</p>
             <p>Altamente capacitados en soluciones TI  a empresas, gobierno, educación, salud, entre otras.</p>
-            <hr width="150px" height: "3px" color="red">
+            <hr style="height: 3px;" width="150px" height: "3px" color="red">
             
         </div>
 	</div>
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
-        <div class="formularioCotizacion" style="width: 600px;">
-            Solicita una cotizacion personalizada
-            <div class="formularioCotizacion">
-                <div class="izquierda">
-                    <input type="text" name="nombre" placeholder="Nombre">
-                    <input type="text" name="email" placeholder="E mail">
-                    <input type="text" name="telefono" placeholder="Telefono">
-                </div>
-                <div class="derecha">
-                    <input type="text" name="mensaje" rows="5" placeholder="Escribe mensaje aqui">
-                </div>
-                <button type="button">ENVIAR</button>
+        <div class="formularioCotizacion" style="width: 60%;">
+           <p style="font-size: 25px;"> Solicita una cotizacion personalizada </p>
+                <div class="container-fluid">
+                	<div class="row" style="margin-top: 30px;">
+	                	<div class="col-6">
+	                		<div class="row">
+	                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre">
+	                		</div>
+		                    <div class="row">
+	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="text" name="email" placeholder="E mail">
+	                		</div>
+		                    <div class="row">
+	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Telefono">
+	                		</div>
+		                    
+		                </div>
+		                <div class="col-6">
+	                    	<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe mensaje aqui" rows="5"></textarea>
+	               		</div>
+	               	</div>
+                
+                <button class="float-right" style="margin-top: 20px;" type="button">ENVIAR</button>
             </div>
         </div>
 	</div>
 	<!-- Footer -->
-	<footer id="footer">
-        <div class="copyright">
-            Copyright / Privacidad / Políticas
-        </div>
-    </footer>
+	<div style="background-color: #252526; height: 110px; width: 100%">
+		<div class="container-fluid">
+			<div class="row">
+				<div style="display: flex;margin-top: 41px; margin-left: 100px;">
+					<div class="imgTwitter" style="padding-left: 100px;"></div>
+					<div class="imgFacebook" style="padding-left: 89px;"></div>
+					<div class="imgYoutube" style="margin-top: 5px;"></div>
+				</div>
+			</div>
+			<div class=" row  float-right"  style="margin-right: 60px;" >
+				<p style="color: white;">Copyright / Privacidad / Politicas</p>
+			</div>
+		</div>
+	</div>
 
 </body>
 	<script>

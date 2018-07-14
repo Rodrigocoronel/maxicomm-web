@@ -4,8 +4,8 @@
 	}
 
 	.logo-menu{
- 		height:100px;
- 		width:428px;
+ 		height:100%;
+ 		width:100%;
  	}
 
  	.fondiu{
@@ -37,6 +37,12 @@
 	}
  }
 
+
+.imgVerMasTestimonial{
+	background-image: url(./images/empresa-Index-4.png);
+	width: 100%;
+    height: 340px;
+}
 
 .fill-container{
 	background-image: url(./images/empresa-Index-img-fondo.jpg);
@@ -82,10 +88,23 @@
     background-position: center 0px;
 }
 
+.parallax {
+    /* The image used */
+    background-image: url(./images/empresa-Index-f2.jpg);
+
+    /* Set a specific height */
+    min-height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .imgTestimoniales{
 	background-image : url(./images/empresa-Index-3.jpg) !important;
-	height: 100%;
+	height: 67%;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -100,6 +119,13 @@
 
 .baseSoluciones{
 	background-image: url(./images/black-base-02.png);  
+}
+
+.fondoNosotros{
+	background-image: url(./images/empresa-Index-nosotros-slide.png);
+	background-size: cover;
+ 	background-position: center;
+  	background-repeat: no-repeat;
 }
 /*#verMas1{
 	opacity:0;
@@ -124,4 +150,24 @@
 	padding-top: 13px;
 	height: 90px;
 	width: 90px;
+}
+
+.imgTwitter{
+	background-image: url(./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+
+.imgFacebook{
+	background-image: url(./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+.imgYoutube{
+	background-image: url(./images/LOGOS-REDES-SOCIALES-ITEMS-03.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
 }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+	<title>Maxicomm</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/gotham-book/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-black/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-light/font.css"/>  
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./menu.css">
+    <style type="text/css">
+
+	    @font-face {
+		    font-family: AvenirLTStd;
+		    src: url(./fonts/AvenirLTStd-Light.otf);
+		}
+		@font-face{
+			font-family: avenirltstd-heavy-webfont
+			src : url(./fonts/avenirltstd-heavy-webfont.woff);
+		}
+    	.centered {
+			  position: fixed;
+			  top: 50%;
+			  left: 50%;
+			  /* bring your own prefixes */
+			  transform: translate(-50%, -50%);
+			}
+		html,
+		body {
+			 height: 100%;
+		}
+		li.menu{
+			font-family:'Gotham Book';
+			font-weight:normal;
+			font-size:14px;	
+			margin : 0px 15px 0px 15px;
+		}
+
+		li.sub-menu{
+			font-family:'GothamLight';
+			font-weight:normal;
+			font-size:12px;	
+		}
+
+		a{
+			padding: 8px 0px 8px 0px !important;
+		}
+
+
+		a.Hover { 
+			border-bottom: 2px solid; 
+			color: red !important;
+			border-color: red;
+		}
+
+
+
+    </style>
+</head>
+ 
+<body >
+	<div class="container-fluid" style="position: relative;"  >
+		<div id="asd" class="row contenedor-video">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+            	<source src="../../../assets/videos/Comp 1_1_1.mp4" type="video/mp4" />
+            </video>
+            <div style="position: absolute; left: 50%; transform: translateX(-50%);">
+            	<img  class="logo-menu" src="../../../assets/images/logo-white.gif" >
+            </div>
+		</div>
+	</div>
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light align-self-center"  >
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
+		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
+		      <li class="nav-item active menu">
+		        <a id="inicio" class="nav-link" href="#" >Inicio <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="#">Nosotros <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu show-soluciones">
+		        <a id="Soluciones" class="nav-link" href="#">Soluciones <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="#">Seguridad y Energía <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu">
+		        <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	</div>
+	<!-- Imagen entrada -->
+	<div class="fondiu fill-container container" style="max-width: 100%; background-repeat: no-repeat; overflow: hidden;">
+    	<h4 align="center" style="font-size: 49PX; margin-top: 140px; font-family: avenirltstd-heavy-webfont; color: white;">
+            ¿QUIÉNES SOMOS?
+        </h4>
+	</div>
+	<!-- Soluciones -->
+	<div class="fill-containerTexture container" style="max-width: 100%; overflow: hidden; background-repeat: no-repeat; height: 500px; padding-top: 20px;" >
+        <div class="soluciones">    
+            <p><b>Maxicomm</b> &ensp; Empresa fundada en 1998 enfocados en ofrecer soporte y asesoria a empresas en materia
+                de equipos de computo, con servicios de ingeniería, venta, instalación y mantenimiento.</p>
+            <p>Somos una empresa Creativa y en constante crecimiento, que acepta y enfrenta el compromiso de innovar 
+                soluciones eficientes en relación a las necesidades de nuestros clientes.</p>
+            <p>Altamente capacitados en soluciones TI  a empresas, gobierno, educación, salud, entre otras.</p>
+            <hr width="150px" height: "3px" color="red">
+            
+        </div>
+	</div>
+	<!-- Cotizacion -->
+	<div class="imgCotizacion" style="height: 540px;">
+        <div class="formularioCotizacion" style="width: 600px;">
+            Solicita una cotizacion personalizada
+            <div class="formularioCotizacion">
+                <div class="izquierda">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="text" name="email" placeholder="E mail">
+                    <input type="text" name="telefono" placeholder="Telefono">
+                </div>
+                <div class="derecha">
+                    <input type="text" name="mensaje" rows="5" placeholder="Escribe mensaje aqui">
+                </div>
+                <button type="button">ENVIAR</button>
+            </div>
+        </div>
+	</div>
+	<!-- Footer -->
+	<footer id="footer">
+        <div class="copyright">
+            Copyright / Privacidad / Políticas
+        </div>
+    </footer>
+
+</body>
+	<script>
+		$(document).ready(function() {
+		    $(".nav-link").hover(
+		        function() { $(this).addClass("Hover"); },
+		        function() { $(this).removeClass("Hover"); }
+		    );
+		});
+	</script>
+</html>

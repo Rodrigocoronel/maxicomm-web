@@ -155,7 +155,34 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.a:hover{
-	background-color: yellow !important; 
+submenu{
+    text-decoration: none;
+    color: darkgray !important;
+}
+a{
+    border-bottom: 1px solid #ccc;
+    display: block;
+    text-decoration: none;
+    color: darkgray;
+}
+a.a2{
+    border-bottom: 0px solid #ccc;
 }
 
+a:hover{
+    text-decoration: none;
+    color: white !important;
+	background-color: darkgray; 
+}
+
+.barra{
+    width: 15px; height: 42px;
+}
+
+.barra.negra{
+        background-color:black;
+}
+
+.barra.roja{
+        background-color:red;
+}

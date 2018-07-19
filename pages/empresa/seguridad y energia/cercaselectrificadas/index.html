@@ -1,5 +1,25 @@
 <!DOCTYPE html>
- 
+
+<?php 
+if(isset($_POST['submit'])){
+    $to = "email@example.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <html lang="es">
  
 <head>
@@ -57,7 +77,10 @@
 			color: red !important;
 			border-color: red;
 		}
-
+        
+        ul {
+            list-style-image: url("images/blue-palomita.png");
+        }
 
 
     </style>
@@ -116,34 +139,34 @@
         </h4>
 	</div>
 	<!-- Soluciones -->
-	<div class="container" style="height: 400px;">
-        <div class="row align-items-center" style=" padding-top: 30px;">
-            <div class="col-md-20 float-right" style =" 1px solid #c3c3c3;  ">
-                <div style="background-color:black; width: 15px; height: 35px;"></div>
-                <div style="background-color:black; width: 15px; height: 35px;"></div>
-                <div style="background-color:red; width: 15px; height: 35px;"></div>
-                <div style="background-color:black; width: 15px; height: 35px;"></div>
-                <div style="background-color:black; width: 15px; height: 35px;"></div>
-                <div style="background-color:black; width: 15px; height: 35px;"></div>
-                <div style="background-color:black; width: 15px; height: 35px;"></div>
-                <div style="background-color:black; width: 15px; height: 35px;"></div>
-                <div style="background-color:black; width: 15px; height: 35px;"></div>
+	<div class="container-fluid" style="padding-left: 200px; padding-right: 200px; height: 410px;">
+        <div class="row align-items-center" style=" padding-top: 15px;">
+            <div class="col-md-20 float-right" style=" 1px solid #c3c3c3;">
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra roja"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
             </div>
-            <div class="col-5" style="padding-top: 10px;">
-                <div> <h4><a href="http://www.google.com">Videovigilancia</a> </h4> </div>
-                <div> <h4><a href="http://www.google.com">CCTV Corporativo</a> </h4> </div>
-				<div style="color: red;"> <h4><a href="http://www.google.com">Cercas Electrificadas</a></h4> </div>
-				<div> <h4><a href="http://www.google.com">Páneles solares</a> </h4> </div>
-				<div> <h4><a href="http://www.google.com">GPS vehicular</a> </h4> </div>
-				<div> <h4><a href="http://www.google.com">Controles de acceso</a> </h4> </div>
-                <div> <h4><a href="http://www.google.com">Instalaciones eléctricas (seguridad)</a> </h4> </div>
-                <div> <h4><a href="http://www.google.com">Biométricos</a> </h4> </div>
-                <div> <h4><a href="http://www.google.com">Barrera Vehicular</a> </h4> </div>
+            <div class="col-4" style="font-size: 17px;">
+                <div> <a href="http://www.google.com">Videovigilancia</a> </div>
+                <div> <a href="http://www.google.com">CCTV Corporativo</a> </div>
+				<div> <a href="http://www.google.com">Cercas Electrificadas</a> </div>
+				<div> <a href="http://www.google.com">Páneles solares</a> </div>
+				<div> <a href="http://www.google.com">GPS vehicular</a> </div>
+				<div> <a href="http://www.google.com">Controles de acceso</a> </div>
+                <div> <a href="http://www.google.com">Instalaciones eléctricas (seguridad)</a> </div>
+                <div> <a href="http://www.google.com">Biométricos</a> </div>
+                <div> <a class="a2" href="http://www.google.com">Barrera Vehicular</a> </div>
 			</div>
             <div class="col-1">
-                <div style="background-color: gray; width: 1px; height: 315px;"></div>
+                <div style="background-color: gray; width: 1px; height: 380px;"></div>
             </div>
-			<div class="col-5" style=" margin-top: 24px; font-family: 'Roboto'; font-size: 20PX">
+			<div class="col-6" style=" margin-top: 24px; font-family: 'Roboto'; font-size: 20PX">
 				<p style="text-align: justify;">Los cercos électricos y las alarmas internas forman parte de un sistema de seguridad.
                 Un sistema que forma una barrera de proteccion perimetral, inteligente y sensible ante los intrusos.</p>
                 <p style="text-align: justify; color: #00cccc;"> <i><b> Disfrute de la seguridad durante las 24 horas del día y en todo momento</b></i></p>
@@ -151,31 +174,32 @@
 		</div>
 	</div>
 
-	<div class="imgCercos" style="height: 450px; width: 100%; ">
-        <div class="Container" style="color: white; font-size: 27PX; font-family: 'Roboto'; text-align: center">
+	<div class="imgCercos" style="height: 420px; width: 100%; ">
+        <div class="Container" style="color: white; font-size: 27PX; font-family: 'Roboto'; text-align: center; height: 100%;">
             <div class="row justify-content-md-center">
-                Características:
-            </div>
-            <div class="row justify-content-md-center">
-                <div class="col-1">
-                    
-                </div>
-                <div class="col-3" style="font-size: 18PX; text-align: left;">
-                    <div>Energizador inteligente de 13,000 VA cuenta con funcion de alarma.</div>
-                    <div>Cubre una distancia de 1,500 metros de barda en 5 hilos.</div>
-                    <div>Cuenta con una bateria, la cual respalda al equipo hasta 4 dias continuos de trabajo sin necesida de suministro electrico.</div>
-                </div>
-                <div class="col-1">
-                    
-                </div>
-                <div class="col-3" style="font-size: 18PX;  text-align: left;">
-                    <div>El equipo puede alimentar hasta tres sirenas de 30 vatios.</div>
-                    <div>Todas las lineas del cerco se encuentran supervisadas, y al contacto con cuqluiera de estas se recibe una importante descarga, 
-                        no es necesario tocar dos al mismo tiempo.
-                    </div>
+                <div class="col=12" style="margin-top: 60px;">
+                    Características:
                 </div>
             </div>
-        </div>    
+            <div class="row justify-content-md-center" style="text-align: left; margin-top: 60px; padding-left: 200px; padding-right: 200px; font-size: 18PX;">
+                <div class="col-1"> </div>
+                <div class="col-5">
+                    <ul>
+                        <li style="margin-bottom: 15px;"> Energizador inteligente de 13,000 VA cuenta con funcion de alarma.</li>
+                        <li style="margin-bottom: 15px;"> Cubre una distancia de 1,500 metros de barda en 5 hilos.</li>
+                        <li>Cuenta con una bateria, la cual respalda al equipo hasta 4 dias continuos de trabajo sin necesida de suministro electrico.</li>
+                    </ul>
+                </div>
+                <div class="col-1"> </div>
+                <div class="col-5">
+                    <ul>
+                        <li style="margin-bottom: 15px;">El equipo puede alimentar hasta tres sirenas de 30 vatios.</li>
+                        <li>Todas las lineas del cerco se encuentran supervisadas, y al contacto con cuqluiera de estas se recibe una importante descarga, 
+                        no es necesario tocar dos al mismo tiempo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 	</div>
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">

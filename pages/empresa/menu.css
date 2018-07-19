@@ -171,3 +171,36 @@
 	height: 30px;
 	width: 30px;
 }
+
+p.empresa{
+	font-size: 18px;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+.carousel-item-empresa{
+	padding: 10% 0; padding-left: 250px;
+}
+
+.divTextoEmpresa{
+	width: 500px; height: 500px;
+}
+
+#imgVerMas{
+	visibility: hidden;
+}
+#imgVerMas1{
+	visibility: hidden;
+}	
+#imgVerMas2{
+	visibility: hidden;
+}
+#imgVerMas4{
+	visibility: hidden;
+}		
+#imgVerMas5{
+	visibility: hidden;
+}
+#imgVerMas6{
+	visibility: hidden;
+}

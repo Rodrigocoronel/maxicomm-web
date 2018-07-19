@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../../assets/fonts/gotham-book/style.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-black/style.css"/>
 	<link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-light/font.css"/>  
+	<link rel="stylesheet" type="text/css" href="../../assets/animate.css"/>
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./menu.js"></script>
@@ -74,25 +75,6 @@
 		.visible{
 			visibility: visible;
 		}
-
-		#imgVerMas{
-			visibility: hidden;
-		}
-		#imgVerMas1{
-			visibility: hidden;
-		}	
-		#imgVerMas2{
-			visibility: hidden;
-		}
-		#imgVerMas4{
-			visibility: hidden;
-		}		
-		#imgVerMas5{
-			visibility: hidden;
-		}
-		#imgVerMas6{
-			visibility: hidden;
-		}
     </style>
 </head>
  
@@ -102,7 +84,7 @@
 			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
             	<source src="../../assets/videos/Comp 1_1_1.mp4" type="video/mp4" />
             </video>
-            <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
+            <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
             	<img   src="./images/LOGO-WHITE-MAXICOMM-01.svg" >
             </div>
 		</div>
@@ -145,10 +127,10 @@
 	<div class="fondiu fill-container container" style="max-width: 100%; 
 		background-repeat: no-repeat;
     	overflow: hidden;">
-    	<h4 align="center" style="font-size: 49PX; margin-top: 140px; font-family: 'Roboto', sans-serif; !important; color: white;">SOLUCIONES A<br/> LA MEDIDA</h4>	
+    	<h4 align="center" class="animated bounceInLeft" style="font-size: 49PX; margin-top: 140px; font-family: 'Roboto', sans-serif; !important; color: white;">SOLUCIONES A<br/> LA MEDIDA</h4>	
     	<div class="row justify-content-center">
 		    <div class="col-4" style="text-align: justify; margin-top: 50px;">
-				<p style="font-size: 19px; font-family: 'Roboto'; color: white;"> Somos una empresa creativa y en constante crecimiento, enfocada en la innovación de soluciones TI para empresas, gobierno, instituciones educativas y de salud.</p>
+				<p class="empresa" style="font-size: 19px; font-family: 'Roboto'; color: white;"> Somos una empresa creativa y en constante crecimiento, enfocada en la innovación de soluciones TI para empresas, gobierno, instituciones educativas y de salud.</p>
 		    </div>
 		</div>
 	</div>
@@ -161,7 +143,7 @@
 		<div class="row" style="padding-top: 50px;">
 		    <div class="col-4" style="text-align: center; height: 150px;">
 		    	<div class="row justify-content-center"">
-		    		<img id="icnSolution1" class="iconoSoluciones" src="./images/solutions-empresa-icons_MesaDeTrabajo1.svg">	    		
+		    		<img id="icnSolution1" class="iconoSoluciones animated " src="./images/solutions-empresa-icons_MesaDeTrabajo1.svg">	    		
 		    	</div>
 		    	<div id="textoVerMas" class="col-4" style="position: relative; display: inline-block; text-align: center;">
 		    			<h3 id="textoSeguridad" style="position: absolute; top: 20px;left: 10px;">SEGURIDAD</h3>
@@ -170,7 +152,7 @@
 		    </div>
 		    <div class="col-4" style="text-align: center; height: 150px;">
 		    	<div class="row justify-content-center"">
-		    		<img id="icnSolution2" class="iconoSoluciones" src="./images/solutions-empresa-icons-02.svg">	    		
+		    		<img id="icnSolution2" class="iconoSoluciones animated" src="./images/solutions-empresa-icons-02.svg">	    		
 		    	</div>
 		    	<div id="textoVerMas1" class="col-4" style="position: relative; display: inline-block; text-align: center;">
 		    			<h3 id="textoEquipamiento" style="position: absolute; top: 20px;left: -12px;">EQUIPAMIENTO</h3>
@@ -179,7 +161,7 @@
 		    </div>
 		    <div class="col-4" style="text-align: center; height: 150px;">
 		    	<div class="row justify-content-center"">
-		    		<img id="icnSolution3" class="iconoSoluciones" src="./images/solutions-empresa-icons-05.svg">	    		
+		    		<img id="icnSolution3" class="iconoSoluciones animated" src="./images/solutions-empresa-icons-05.svg">	    		
 		    	</div>
 		    	<div id="textoVerMas2" class="col-4" style="position: relative; display: inline-block; text-align: center;">
 		    			<h3 id="textoSistemas" style="position: absolute; top: 20px;left: 19px;">SISTEMAS</h3>
@@ -191,7 +173,7 @@
 		<div class="row" style="padding-top: 50px;">
 		    <div class="col-4" style="text-align: center; height: 150px;">
 		    	<div class="row justify-content-center"">
-		    		<img id="icnSolution4" class="iconoSoluciones" src="./images/solutions-empresa-icons-03.svg">	    		
+		    		<img id="icnSolution4" class="iconoSoluciones animated" src="./images/solutions-empresa-icons-03.svg">	    		
 		    	</div>
 		    	<div id="textoVerMas3" class="col-4" style="position: relative; display: inline-block; text-align: center;">
 		    			<h3 id="textoConsultoria" style="position: absolute; top: 20px;left: -9px;">CONSULTORIA</h3>
@@ -200,7 +182,7 @@
 		    </div>
 		    <div class="col-4" style="text-align: center; height: 150px;">
 		    	<div class="row justify-content-center"">
-		    		<img id="icnSolution5" class="iconoSoluciones" src="./images/solutions-empresa-icons-04.svg">	    		
+		    		<img id="icnSolution5" class="iconoSoluciones animated" src="./images/solutions-empresa-icons-04.svg">	    		
 		    	</div>
 		    	<div id="textoVerMas5" class="col-4" style="position: relative; display: inline-block; text-align: center;">
 		    			<h3 id="textoRedes" style="position: absolute; top: 20px;left: 40px;">REDES</h3>
@@ -209,7 +191,7 @@
 		    </div>
 		    <div class="col-4" style="text-align: center; height: 150px;">
 		    	<div class="row justify-content-center"">
-		    		<img id="icnSolution6" class="iconoSoluciones" src="./images/solutions-empresa-icons-07.svg">	    		
+		    		<img id="icnSolution6" class="iconoSoluciones animated" src="./images/solutions-empresa-icons-07.svg">	    		
 		    	</div>
 		    	<div id="textoVerMas6" class="col-4" style="position: relative; display: inline-block; text-align: center;">
 		    			<h3 id="textoMantenimiento" style="position: absolute; top: 20px;left: -19px;">MANTENIMIENTO</h3>
@@ -227,24 +209,24 @@
 		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 		  </ol>
 		  <div class="carousel-inner">
-		    <div class="carousel-item active" style="padding: 10% 0; padding-left: 250px;">
+		    <div class="carousel-item active carousel-item-empresa">
 		     	<!-- <img class="d-block w-100" src="./images/empresa-Index-nosotros-slide.png" alt="Second slide" style="height: 100%; "> -->
-		     	<div style="width: 500px; height: 500px">
+		     	<div class="divTextoEmpresa">
 		     		<h3 style="color : red">MISIÓN</h3>
-		     		<p style="font-size: 17px;">Desarrollar soluciones reales que permitan mejorar el rendimiento de la informática, conectividad y seguridad dentro de las empresas.</p>
+		     		<p class="empresa" >Desarrollar soluciones reales que permitan mejorar el rendimiento de la informática, conectividad y seguridad dentro de las empresas.</p>
 		     	</div>
 		     	
 		    </div>
-		    <div class="carousel-item" style="padding: 10% 0; padding-left: 250px;">
-		      <div style="width: 500px; height: 500px">
+		    <div class="carousel-item carousel-item-empresa">
+		      <div class="divTextoEmpresa">
 		     		<h3 style="color : red">VISIÓN</h3>
-		     		<p style="font-size: 17px;">Ser una empresa con innovación creativa, reconocida por su eficiencia y profesionalismo, que nos permita ser altamente recomendada.</p>
+		     		<p class="empresa" >Ser una empresa con innovación creativa, reconocida por su eficiencia y profesionalismo, que nos permita ser altamente recomendada.</p>
 		     	</div>
 		    </div>
-		    <div class="carousel-item" style="padding: 10% 0; padding-left: 250px;">
-		      <div style="width: 500px; height: 500px">
+		    <div class="carousel-item carousel-item-empresa" >
+		      <div class="divTextoEmpresa">
 		     		<h3 style="color : red">FILOSOFíA</h3>
-		     		<p style="font-size: 17px;">Estar comprometida a lograr la excelencia bajo lineamientos de honestidad y profesionalismo.</p>
+		     		<p class="empresa" >Estar comprometida a lograr la excelencia bajo lineamientos de honestidad y profesionalismo.</p>
 		     	</div>
 		    </div>
 		  </div>
@@ -294,7 +276,7 @@
 	</div>
 	<!-- Inovacion a tu alcance -->
 		<div class="parallax" style="padding: 5% 0; height: 400px;" >	
-			<p style="padding: 2% 0; color: white; font-size: 50px; padding-left: 300px; " >INNOVACIÓN <br/> A TU ALCANCE</p>
+			<p  style="padding: 2% 0; color: white; font-size: 50px; padding-left: 300px; " >INNOVACIÓN <br/> A TU ALCANCE</p>
 
 		</div>
 	<!-- Testimoniales  -->
@@ -321,16 +303,17 @@
 	</div>
 	<!-- Cotizacion -->
 	<div style="background-color: #252526; height: 110px; width: 100%">
-		<div class="container-fluid">
-			<div class="row">
-				<div style="display: flex;margin-top: 41px; margin-left: 100px;">
-					<div class="imgTwitter" style="padding-left: 100px;"></div>
-					<div class="imgFacebook" style="padding-left: 89px;"></div>
-					<div class="imgYoutube" style="margin-top: 5px;"></div>
+		<div class="container" style="height: 100%;">
+			<div class="row align-items-center" style="height: 100%;" >
+				<div class="col-4" >
+					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="30px" height="30px">
+					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="30px" height="30px">
 				</div>
-			</div>
-			<div class=" row  float-right"  style="margin-right: 60px;" >
-				<p style="color: white;">Copyright / Privacidad / Politicas</p>
+				<div  class="col-8 text-right" >
+					<a href="#" style="color: white;" > Copyright / </a>
+					<a href="#" style="color: white;" >Privacidad / </a> 
+					<a href="#" style="color: white;" >Politicas </a> 
+				</div>
 			</div>
 		</div>
 	</div>

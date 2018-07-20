@@ -30,7 +30,7 @@
 
 
 .fill-container{
-	background-image: url(./images/06-cercos-electricos-img1.jpg);
+	background-image: url(./images/06-sistema-de-videovigilancia-img.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;
@@ -151,7 +151,13 @@
 }
 
 .imgCercos{
-	background-image: url(./images/06-cercos-electricos-img2.jpg);
+	background-image: url(./images/06-sistema-de-videovigilancia-img2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imgDescripcion{
+	background-image: url(./images/empresa-Index-fondo-textura.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

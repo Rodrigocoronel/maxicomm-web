@@ -155,6 +155,13 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.imgDescripcion{
+	background-image: url(./images/instalaciones-elec-img3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 submenu{
     text-decoration: none;
     color: darkgray !important;

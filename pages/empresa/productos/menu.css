@@ -30,7 +30,14 @@
 
 
 .fill-container{
-	background-image: url(./images/CONTPAQi-img1.jpg);
+	background-image: url(contpaqi/images/CONTPAQi-img1.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.fill-container-MsWindows{
+	background-image: url(msWindows/images/MS-WINDOWS-IMG1.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;
@@ -93,7 +100,7 @@
 }
 
 .imgCotizacion{
-	background-image: url(../../images/empresa-Index-formulario.jpg);
+	background-image: url(../images/empresa-Index-formulario.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;
@@ -151,10 +158,17 @@
 }
 
 .imgTexturaContpaq{
-	background-image: url(./images/CONTPAQi-img2.jpg);
+	background-image: url(contpaqi/images/CONTPAQi-img2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.imgTexturaMsWindows{
+	background-image: url(msWindows/images/MS-WINDOWS-IMG2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 submenu{
     text-decoration: none;
     color: darkgray !important;
@@ -188,5 +202,5 @@ a.asubmenu:hover{
 }
 
 .btnVerMas{
-	background-image: url(./images/CONTPAQi-btn-1.jpg);
+	background-image: url(contpaqi/images/CONTPAQi-btn-1.jpg);
 }

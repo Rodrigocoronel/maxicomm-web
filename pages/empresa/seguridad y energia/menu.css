@@ -28,7 +28,6 @@
 	}
  }
 
-
 .fill-container{
     background-repeat: no-repeat;  
     background-size: cover;
@@ -76,7 +75,7 @@
 	background-size: cover;
 }
 .imgCctv{
-	background-image: url(./images/02-temp.png);
+	background-image: url(./images/02-temp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -86,17 +85,17 @@
 	background-size: cover;
 }
 .imgPaneles{
-	background-image: url(./images/02-temp.png);
+	background-image: url(./images/02-temp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .imgGps{
-	background-image: url(./images/02-temp.png);
+	background-image: url(./images/02-temp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .imgControles{
-	background-image: url(./images/02-temp.png);
+	background-image: url(./images/02-temp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -111,7 +110,7 @@
 	background-size: cover;
 }
 .imgBarrera{
-	background-image: url(./images/02-temp.png);
+	background-image: url(./images/02-temp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -136,6 +135,11 @@
     width: 100%;
     background-size:cover;
     -webkit-background-origin:border !important;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .carousel-control-next-icon{
@@ -238,7 +242,7 @@ a.sub{
     border-bottom: 1px solid #ccc;
     display: block;
     text-decoration: none;
-    color: darkgray;
+    color: #212529;
 }
 
 a.a2{
@@ -247,8 +251,8 @@ a.a2{
 
 a.sub:hover{
     text-decoration: none;
-    color: white !important;
-	background-color: darkgray; 
+    color: black !important;
+	background-color: lightgray!important; 
 }
 
 .barra{

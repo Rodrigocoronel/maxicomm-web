@@ -204,3 +204,23 @@ a.asubmenu:hover{
 .btnVerMas{
 	background-image: url(contpaqi/images/CONTPAQi-btn-1.jpg);
 }
+
+/*ul {
+    list-style-image: url('msWindows/images/ITEMS-ICONS-MSWINDWS-01.svg'); 
+}*/
+
+ul.style0 {
+	list-style: none;
+}
+
+.bullet li:before { 
+content:''; 
+display:inline-block; 
+height:10px; 
+width:10px; 
+background-size:contain; 
+background-repeat:no-repeat; 
+padding-left: 2em; 
+
+
+}

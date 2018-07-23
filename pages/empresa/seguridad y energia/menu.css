@@ -41,6 +41,9 @@
     background-position: center 0px;
 }
 
+.fill-container.seguridad{
+	background-image: url(./images/01-temp.png);
+}
 .fill-container.videovigilancia{
 	background-image: url(./images/01-videovigilancia.jpg);
 }
@@ -68,7 +71,11 @@
 .fill-container.barrera{
 	background-image: url(./images/01-temp.png);
 }
-
+.imgSeguridad{
+	background-image: url(./images/02-temp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .imgVideovigilancia{
 	background-image: url(./images/02-videovigilancia.jpg);
 	background-repeat: no-repeat;
@@ -251,8 +258,8 @@ a.a2{
 
 a.sub:hover{
     text-decoration: none;
-    color: black !important;
-	background-color: lightgray!important; 
+    color: black;
+	background-color: lightgray; 
 }
 
 .barra{
@@ -260,12 +267,20 @@ a.sub:hover{
 }
 
 .barra.negra{
-        background-color:black;
+    background-color:black;
 }
 
 .barra.roja{
-        background-color:red;
+    background-color:red;
+}
+.barra.esp{
+    background-color:transparent;
 }
 ul {
     list-style-image: url("./images/blue-palomita.png"); 
 }
+
+#o1:hover + #o8{
+    color: red !important;
+}
+

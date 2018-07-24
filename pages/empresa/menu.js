@@ -181,5 +181,22 @@ function isElementVisible(elem){
 // invoco una función anónima en el evento scroll sobre window
 $(window).on("scroll" ,function() {
    let elem = $('.iconoSoluciones'); // obtengo el elemento por id
-   isElementVisible(elem) ? elem.addClass('fadeIn') : elem.removeClass('fadeIn'); // si es visible agrego la class, de lo contrario la remuevo
+   isElementVisible(elem) ? elem.addClass('fadeIn') : ""// si es visible agrego la class, de lo contrario la remuevo
 });
+
+$(function() {
+  $( '#menuMision' ).click(function(){
+    $('#carousel').carousel(0);
+
+  });
+
+   $( '#menuVision' ).click(function(){
+     $('#carousel').carousel(1);
+
+  });
+   $( '#menuFilosofia' ).click(function(){
+     $('#carousel').carousel(2);
+
+  });
+});
+

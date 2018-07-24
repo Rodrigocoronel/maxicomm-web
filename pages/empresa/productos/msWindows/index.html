@@ -11,8 +11,13 @@
 	<link rel="stylesheet" type="text/css" href="../../../../assets/fonts/ghotam-light/font.css"/> 
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../assets/js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
     <link rel="stylesheet" type="text/css" href="../menu.css">
+    <script type="text/javascript" src="../productos.js"></script>
     <style type="text/css">
 
 	    @font-face {
@@ -47,7 +52,7 @@
 			font-size:12px;	
 		}
 
-		a{
+		a.asubmenu{
 			padding: 8px 0px 8px 0px !important;
 		}
 
@@ -57,7 +62,23 @@
 			color: red !important;
 			border-color: red;
 		}
+
+
+		.tabs.active{
+			background-color: transparent !important;
+			border-color: transparent !important;
+			border-bottom: 2px solid #ed0d0d !important;
+		}
         
+        a.tabs{
+        	color: #1e2822;
+        }
+
+        ul.tabs{
+        	padding-top: 3%;
+    		line-height: 1.8;
+        }
+
 
 
     </style>
@@ -86,23 +107,47 @@
 		      <li class="nav-item active menu">
 		        <a id="inicio" class="nav-link" href="../../" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu">
-		        <a class="nav-link" href="#">Nosotros <span class="sr-only">(current)</span></a>
+		      <li class="nav-item dropdown menu mx-2">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Nosotros
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="../../nosotros">Quienes Somos</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../#carousel" id="menuMision">Misión</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../#carousel" id="menuVision" >Visión</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../#carousel" id="menuFilosofia">Filosifia</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Galeria</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../#testimoniales">Testimoniales</a>
+		        </div>
 		      </li>
-		      <li class="nav-item active menu show-soluciones">
-		        <a id="Soluciones" class="nav-link" href="#">Soluciones <span class="sr-only">(current)</span></a>
+		      <li class="nav-item dropdown menu mx-2">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Soluciones
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="../../soluciones/desarrolloDeProyectos">Desarrollo de Proyectos</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../soluciones/comunicaciones" id="menuMision">Comunicaciones</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../soluciones/serviciosWeb" id="menuVision" >Servicio Web</a>
+		        </div>
 		      </li>
-		      <li class="nav-item active menu">
-		        <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
+		      <li class="nav-item active menu mx-2">
+		        <a class="nav-link" href="../">Productos <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu">
+		      <li class="nav-item active menu mx-2">
 		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu">
-		        <a class="nav-link" href="#">Seguridad y Energía <span class="sr-only">(current)</span></a>
+		      <li class="nav-item active menu mx-2">
+		        <a class="nav-link" href="../../seguridad y energia">Seguridad y Energía <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu">
-		        <a class="nav-link" href="../contacto">Contacto <span class="sr-only">(current)</span></a>
+		      <li class="nav-item active menu mx-2">
+		        <a class="nav-link" href="../../contacto">Contacto <span class="sr-only">(current)</span></a>
 		      </li>
 		    </ul>
 		  </div>
@@ -199,22 +244,62 @@
         </div>
 	</div>
 
-	<div style="height: 500px;">
-		<ul class="nav nav-tabs">
-		  <li class="nav-item">
-		    <a class="nav-link active" href="#">Active</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">Link</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">Link</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link disabled" href="#">Disabled</a>
-		  </li>
-		</ul>
+	<div class="container-fluid imgTexturaMswindowDesc" style="height: 500px;">
+		<div class="row justify-content-center" style="height: 100%;">
+			<div class="col-6 " style="margin-top: 5%;">
+				<ul class="nav nav-tabs" style="padding-top: 10px; font-family: 'Roboto'; font-size: 19px;">
+				  <li ><a class="nav-item nav-link active show tabs" data-toggle="tab" href="#home">Beneficios</a></li>
+				  <li><a class="nav-item nav-link tabs" data-toggle="tab" href="#menu1">Modalidades</a></li>
+				  <li><a class="nav-item nav-link tabs" data-toggle="tab" href="#menu2">Módulos</a></li>
+				  <li><a class="nav-item nav-link tabs" data-toggle="tab" href="#menu2">Ventajas</a></li>
+				</ul>
+
+				<div class="tab-content">
+				  <div id="home" class="tab-pane fade in active show">
+				    <ul class="tabs" style="font-family: 'roboto';">
+				    	<li>
+				    		Manejo de información administrativa de manera digital.
+				    	</li>
+				    	<li>
+				    		Mantener la información organizada y de fácil acceso para cuando sea requerida.
+				    	</li>
+				    	<li>
+				    		Automatizar procesos, ayudando a obtener información confiable para la correcta toma de decisiones.
+				    	</li>
+				    	<li>
+				    		Permite administar mejor los recursos y reducción del gasto operativo.
+				    	</li>
+				    	<li>
+				    		Contabilidad y administración sana.
+				    	</li>
+				    	<li>
+				    		Organiza los datos mediante cátalogo de artículos, clientes y proveedores.
+				    	</li>
+				    	<li>
+				    		Manejo de cuentas de manera general y especifica.
+				    	</li>
+				    	<li>
+				    		Diseño de reportes a la medida.
+				    	</li>
+				    	<li>
+				    		Soporte Técnico oportuno.
+				    	</li>
+				    </ul>
+				  </div>
+				  <div id="menu1" class="tab-pane fade">
+				    <h3>Menu 1</h3>
+				    <p>Some content in menu 1.</p>
+				  </div>
+				  <div id="menu2" class="tab-pane fade">
+				    <h3>Menu 2</h3>
+				    <p>Some content in menu 2.</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		
 	</div>
+	
 
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
@@ -244,12 +329,12 @@
         </div>
 	</div>
 	<!-- Footer -->
-	<div style="background-color: #252526; height: 110px; width: 100%">
+	<div style="background-color: #252526; height: 85px; width: 100%">
 		<div class="container" style="height: 100%;">
 			<div class="row align-items-center" style="height: 100%;" >
 				<div class="col-4" >
-					<img src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="30px" height="30px">
-					<img src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="30px" height="30px">
+					<img src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+					<img src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
 				</div>
 				<div  class="col-8 text-right" >
 					<a href="#" style="color: white;" > Copyright / </a>

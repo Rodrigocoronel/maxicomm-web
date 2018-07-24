@@ -5,14 +5,19 @@
 <head>
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="../../../../bootstrap/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../../../../assets/fonts/gotham-book/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../../assets/fonts/ghotam-black/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../../../../assets/fonts/ghotam-light/font.css"/> 
+	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/gotham-book/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-black/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-light/font.css"/> 
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="../../../../bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../menu.css">
+    <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../../assets/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../assets/js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./menu.css">
+    <script type="text/javascript" src="./productos.js"></script>
     <style type="text/css">
 
 	    @font-face {
@@ -57,16 +62,39 @@
 			color: red !important;
 			border-color: red;
 		}
+
+
+		.tabs.active{
+			background-color: transparent !important;
+			border-color: transparent !important;
+			border-bottom: 2px solid #ed0d0d !important;
+		}
         
-        ul {
-            list-style-image: url("images/blue-palomita.png");
+        a.tabs{
+        	color: #1e2822;
         }
+
+        ul.tabs{
+        	padding-top: 3%;
+    		line-height: 1.8;
+        }
+
 
 
     </style>
 </head>
  
 <body >
+	<div class="container-fluid" style="position: relative;"  >
+		<div id="asd" class="row contenedor-video">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+            	<source src="../../../assets/videos/Comp 1_1_1.mp4" type="video/mp4" />
+            </video>
+            <div style="position: absolute; left: 50%; transform: translateX(-50%);">
+            	<img  class="logo-menu" src="../images/LOGO-WHITE-MAXICOMM-01.svg" >
+            </div>
+		</div>
+	</div>
 	<div>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light align-self-center"  >
 
@@ -77,7 +105,7 @@
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
 		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
 		      <li class="nav-item active menu">
-		        <a id="inicio" class="nav-link" href="../../" >Inicio <span class="sr-only">(current)</span></a>
+		        <a id="inicio" class="nav-link" href="../" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,11 +114,11 @@
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="../../nosotros">Quienes Somos</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../#carousel" id="menuMision">Misión</a>
+		          <a class="dropdown-item" href="../../empresa/#carousel" id="menuMision">Misión</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../#carousel" id="menuVision" >Visión</a>
+		          <a class="dropdown-item" href="../../empresa/#carousel" id="menuVision" >Visión</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../#carousel" id="menuFilosofia">Filosifia</a>
+		          <a class="dropdown-item" href="../../empresa/#carousel" id="menuFilosofia">Filosifia</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="#">Galeria</a>
 		          <div class="dropdown-divider"></div>
@@ -126,7 +154,13 @@
 		</nav>
 	</div>
 	<!-- Imagen entrada -->
-	<div class="fondiu fill-container container" style="max-width: 100%; height: 500px; background-repeat: no-repeat; overflow: hidden;">
+	<div class="fondiu fill-container-productos container" style="max-width: 100%; height: 500px; background-repeat: no-repeat; overflow: hidden;">
+		<div class="row justify-content-center" style="height: 100%;">
+			<div class="col-2 align-self-center text-center" style="border-left: 7px solid #f13333; height: 66px;">
+					<p style="font-size: 45px; font-family: 'Roboto'; color: white;" align="center">PRODUCTOS</p>
+			</div>
+			
+		</div>
 	</div>
 	<!-- Soluciones -->
 	<div class="container" style="height: 410px;">
@@ -135,80 +169,69 @@
 		</div>
         <div class="row align-items-center" style=" padding-top: 15px;">
             <div class="col-md-20 float-right" style=" 1px solid #c3c3c3;">
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
                 <div class="barra roja"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
             </div>
             <div class="col-4" style="font-size: 17px;">
-                <div> <a class="asubmenu" href="http://www.google.com">Computadoras</a> </div>
-                <div> <a class="asubmenu" href="http://www.google.com">Impresoras</a> </div>
-                <div> <a class="asubmenu" href="http://www.google.com">Servidores</a> </div>
-				<div> <a class="asubmenu" href="http://www.google.com">Equipo Activo y Pasivo de Redes</a> </div>
-				<div> <a class="asubmenu" href="http://www.google.com">Tabletas</a> </div>
-				<div> <a class="asubmenu" href="http://www.google.com">Accesorios</a> </div>
-                <div> <a class="asubmenu" href="http://www.google.com">Consumibles</a> </div>
-                <div> <a class="asubmenu" href="../msWindows">Ms Windows</a> </div>
-                <div> <a class="asubmenu" href="http://www.google.com"><b>CONTPAQi</b></a> </div>
+                <div> <a class="asubmenu" href="#"><b>Productos</b></a> </div>
+                <div> <a class="asubmenu" href="./msWindows">Ms Windows</a> </div>
+                <div> <a class="asubmenu" href="./contpaqi">CONTPAQi</a> </div>
 			</div>
             <div class="col-1">
                 <div style="background-color: gray; width: 1px; height: 380px;"></div>
             </div>
 			<div class="col-6" style=" margin-top: 24px; font-family: 'Roboto'; font-size: 20PX">
-				<p style="text-align: justify;">Contamos con venta y asesoría en todos los sistemas de la linea Contpaq, en la actualidad son los sistemas más utilizados dentro de las empresas.</p>
+				<p style="text-align: justify;">Le ayudamos a adquirir los mejores equipos para las necesidades especificas de hardware de su empresa. Manejamos las mejores marcas y modelos para computadoras de ecritorio, laptops, tablets, impresoras y teléfonos móviles.</p>
 			</div>
 		</div>
 	</div>
 
-	<div class="imgTexturaContpaq" style="height: 600px; width: 100%; ">
-        <div class="container-fluid" style="height: 100%;" >
-            <div class="row justify-content-md-center" style="height: 100%;" >
-                <div class="col-5">
-                    <img src="./images/CONTPAQi-img4.png" height="100%" width="100%">
-                </div>
-                <div class="col-7" >
-                    <div class="row justify-content-center" style="height: 250px;">
-                    	<div class="col align-self-center text-right">
-                    		<img src="./images/contpaqi-icons-01.svg" width="100" height="100">
-                    		<p style="font-size: 19px; font-family: 'Roboto';">Contabilidad</p>
-                    	</div>
-                    	<div class="col align-self-center text-center">
-                    		<img src="./images/contpaqi-icons-03.svg" width="100" height="100">
-                    		<p style="font-size: 19px; font-family: 'Roboto';">Bancos</p>
-                    	</div>
-                    	<div class="col align-self-center text-left" >
-                    		<img src="./images/contpaqi-icons-04.svg" width="100" height="100">
-                    		<p style="font-size: 19px; font-family: 'Roboto';">Nominas</p>
-                    	</div>
-                    </div>
-                    <div class="row justify-content-center">
-                    	<div class="col align-self-center text-right" >
-                    		<img src="./images/contpaqi-icons-02.svg" width="100" height="100">
-                    		<p style="font-size: 19px; font-family: 'Roboto';">Comercial</p>
-                    	</div>
-                    	<div class="col align-self-center text-center" >
-                    		<img src="./images/contpaqi-icons-06.svg" width="100" height="100">
-                    		<p style="font-size: 19px; font-family: 'Roboto'; text-align: center;">Factura <br/> Electroniaca</p>
-                    	</div>
-                    	<div class="col align-self-center text-left" >
-                    		<img src="./images/contpaqi-icons-05.svg" width="100" height="100">
-                    		<p style="font-size: 19px; font-family: 'Roboto';">Punto de <br/> Venta</p>
-                    	</div>
-                    </div>
-                    <div class="row align-items-center">
-		            	<div class="col align-self-center text-center">
-		            		<img id="verPrecios"  onmouseover="hover(this);" onmouseout="unhover(this);" src="./images/CONTPAQi-btn-1.jpg">
-		            	</div>
-		            </div>
-                </div>
+	<div class="imgTexturaContpaq" style="height: 400px; width: 100%; ">
+        <div class="container" style="height: 100%;" >
+            <div class="row my-4 " style="height: 50%; ">
+            	<div class="col " style="vertical-align: middle;" align="center" >
+            		<div class="bordeIconos" >
+	            		<img  src="./images/ICONOS-productos_computadoras.png">
+	            		<p>Computadoras</p>
+	            	</div>
+            	</div>
+            	<div class="col" align="center">
+            		<div class="bordeIconos" >
+	            		<img  src="./images/ICONOS-productos_impresoras.png">
+	            		<p>Impresoras</p>
+	            	</div>
+            	</div>
+            	<div class="col" align="center">
+            		<div class="bordeIconos" >
+	            		<img src="./images/ICONOS-productos_servidores.png">
+	            		<p>Servidores</p>
+            		</div>
+            	</div>
+            </div>
+           <div class="row my-4" style="height: 50%;">
+            	<div class="col"  align="center" >
+            		<div class="bordeIconos" >
+	            		<img src="./images/ICONOS-productos_control de acceso.png">
+	            		<p>Tabletas</p>
+	            	</div>
+            	</div>
+            	<div class="col" align="center">
+            		<div class="bordeIconos" >
+	            		<img src="./images/ICONOS-productos_accesorios.png">
+	            		<p>Accesorios</p>
+	            	</div>
+            	</div>
+            	<div class="col " align="center">
+            		<div class="bordeIconos" >
+	            		<img src="./images/ICONOS-productos_Equipo activo y pasivo de redes.png">
+	            		<p>Equipo Activo y Pasivo de Redes</p>
+	            	</div>
+            	</div>
             </div>
         </div>
 	</div>
+
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
         <div class="formularioCotizacion" style="width: 60%;">
@@ -241,8 +264,8 @@
 		<div class="container" style="height: 100%;">
 			<div class="row align-items-center" style="height: 100%;" >
 				<div class="col-4" >
-					<img src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
-					<img src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					<img src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+					<img src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
 				</div>
 				<div  class="col-8 text-right" >
 					<a href="#" style="color: white;" > Copyright / </a>

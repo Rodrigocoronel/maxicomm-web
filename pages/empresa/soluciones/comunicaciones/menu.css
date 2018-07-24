@@ -1,0 +1,251 @@
+@media (min-width: 1336px) { 
+	.contenedor-video{
+		height: 120px ;
+	}
+
+	.logo-menu{
+ 		height:100px;
+ 		width:428px;
+ 	}
+
+ 	.fondiu{
+		height : calc(100% - 153px);
+	}
+ }
+
+@media (max-width: 1336px) { 
+	.contenedor-video{
+		height: 76px ;
+	}
+
+	.logo-menu{
+ 		height:76px;
+ 		width:314px;
+ 	}
+
+ 	.fondiu{
+		height : calc(100% - 100px);
+	}
+ }
+
+.fill-container{
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.fill-containerTexture{
+	background-image: url(./images/empresa-Index-fondo-textura.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.fill-container.comunicaciones{
+	background-image: url(./images/portada-comunicaciones.jpg);
+}
+.fill-container.fibra{
+	background-image: url(../comunicaciones/images/01-fibra.jpg);
+}
+.fill-container.estructurado{
+	background-image: url(../comunicaciones/images/01-cableado.jpg);
+}
+.fill-container.inalambrica{
+	background-image: url(./images/01-temp.png);
+}
+.fill-container.digital{
+	background-image: url(../comunicaciones/images/01-digital.jpg);
+}
+.fill-container.analoga{
+	background-image: url(./images/01-temp.png);
+}
+
+.imgComunicaciones{
+	background-image: url(./images/02-temp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgFibra{
+	background-image: url(../comunicaciones/images/02-fibra.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgEstructurado{
+	background-image: url(../comunicaciones/images/02-cableado.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgInalambrica{
+	background-image: url(./images/02-temp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgDigital{
+	background-image: url(../comunicaciones/images/02-digital.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgAnaloga{
+	background-image: url(./images/02-temp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgSinTextura{
+    
+}
+.imgTextura1{
+	background-image: url(./images/textura1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgTextura2{
+	background-image: url(./images/textura2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.carrousel-inner{
+	background-image: url(./images/empresa-Index-nosotros-slide.png);
+	background-position: center center;
+    background-repeat: no-repeat;
+    height:100%;
+    width: 100%;
+    background-size:cover;
+    -webkit-background-origin:border !important;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.carousel-control-next-icon{
+	background-image : url(./images/arrowa-empresa-icons_MesaDeTrabajo1copia.svg) !important;
+	height: 50px;
+	width: 50px;
+}
+
+.carousel-control-prev-icon{
+	background-image : url(./images/arrowa-empresa-icons_MesaDeTrabajo1.svg) !important;
+	height: 50px;
+	width: 50px;
+}
+
+.innovacionAtuAlcance{
+	background-image: url(./images/empresa-Index-f2.jpg);
+	height: 630px;
+	width: 100%;
+	background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.imgTestimoniales{
+	background-image : url(./images/empresa-Index-3.jpg) !important;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.soluciones{
+    margin: auto;
+    position: relative;
+    top: 20%;
+    text-align: justify;
+    width: 600px;
+}
+
+.imgCotizacion{
+	background-image: url(./images/empresa-Index-formulario.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+.formularioCotizacion{
+    margin: auto;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    color: #fff;
+    width: 600px;
+}
+
+.formularioCotizacion .izquierda{
+    align-content: left;
+}
+
+.formularioCotizacion .derecha{
+    align-content: right;
+    top: 40%;
+}
+
+#footer{
+    padding: 4rem 0 2rem 0 ;
+	background: #000;
+	text-align: center;
+}
+
+#footer .copyright {
+	color: #bbb;
+	font-size: 0.9rem;
+	margin: 0 0 2rem 0;
+	padding: 0;
+    text-align: right;
+}
+
+.imgTwitter{
+	background-image: url(../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+
+.imgFacebook{
+	background-image: url(../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+
+.imgYoutube{
+	background-image: url(../images/LOGOS-REDES-SOCIALES-ITEMS-03.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+a.sub{
+    border-bottom: 1px solid #ccc;
+    display: block;
+    text-decoration: none;
+    color: #212529;
+}
+
+a.a2{
+    border-bottom: 0px solid #ccc !important;
+}
+
+a.sub:hover{
+    text-decoration: none;
+    color: black;
+	background-color: lightgray; 
+}
+
+.barra{
+    width: 15px; height: 42px;
+}
+
+.barra.negra{
+    background-color:black;
+}
+
+.barra.roja{
+    background-color:red;
+}
+.barra.esp{
+    background-color:transparent;
+}
+ul {
+    list-style-image: url("../comunicaciones/images/blue-palomita.png"); 
+}
+

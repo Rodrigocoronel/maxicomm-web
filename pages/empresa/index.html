@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./menu.css">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon" />
     <style type="text/css">
 
 	    @font-face {
@@ -47,7 +49,7 @@
 			font-family:'Gotham Book';
 			font-weight:normal;
 			font-size:17px;	
-			margin : 0px 15px 0px 15px;
+
 		}
 
 		li.sub-menu{
@@ -56,7 +58,7 @@
 			font-size:12px;	
 		}
 
-		a{
+		a.nav-link{
 			padding: 8px 0px 8px 0px !important;
 		}
 
@@ -74,6 +76,10 @@
 
 		.visible{
 			visibility: visible;
+		}
+
+		.navbar-light .navbar-nav .nav-link {
+		    color: rgba(0,0,0,.9);
 		}
     </style>
 </head>
@@ -101,22 +107,46 @@
 		      <li class="nav-item active menu">
 		        <a id="inicio" class="nav-link" href="#" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu">
-		        <a class="nav-link" href="./nosotros">Nosotros <span class="sr-only">(current)</span></a>
+		      <li class="nav-item dropdown menu mx-2">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Nosotros
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="./nosotros">Quienes Somos</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#carousel" id="menuMision">Misión</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#carousel" id="menuVision" >Visión</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#carousel" id="menuFilosofia">Filosifia</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Galeria</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#testimoniales">Testimoniales</a>
+		        </div>
 		      </li>
-		      <li class="nav-item active menu show-soluciones">
-		        <a id="Soluciones" class="nav-link" href="#">Soluciones <span class="sr-only">(current)</span></a>
+		      <li class="nav-item dropdown menu mx-2">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Soluciones
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="./nosotros">Desarrollo de Proyectos</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#carousel" id="menuMision">Comunicaciones</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#carousel" id="menuVision" >Servicio Web</a>
+		        </div>
 		      </li>
-		      <li class="nav-item active menu">
-		        <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
+		      <li class="nav-item active menu mx-2">
+		        <a class="nav-link" href="./productos">Productos <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu">
+		      <li class="nav-item active menu mx-2">
 		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu">
+		      <li class="nav-item active menu mx-2">
 		        <a class="nav-link" href="./seguridad y energia">Seguridad y Energía <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu">
+		      <li class="nav-item active menu mx-2">
 		        <a class="nav-link" href="./contacto">Contacto <span class="sr-only">(current)</span></a>
 		      </li>
 		    </ul>
@@ -202,14 +232,14 @@
 	</div>
 	<!-- Carrusel  -->
 		<!-- <img src="./images/empresa-Index-nosotros-slide.png" class="img-fluid"> -->
-		<div id="carouselExampleIndicators" class="carousel slide fondoNosotros" data-ride="carousel" style="height:888px; padding: 5% 0;">
+		<div id="carousel" class="carousel slide fondoNosotros" data-ride="carousel" style="height:888px; padding: 5% 0;">
 		  <ol class="carousel-indicators">
-		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel" data-slide-to="1"></li>
+		    <li data-target="#carousel" data-slide-to="2"></li>
 		  </ol>
 		  <div class="carousel-inner">
-		    <div class="carousel-item active carousel-item-empresa">
+		    <div id="mision" class="carousel-item active carousel-item-empresa">
 		     	<!-- <img class="d-block w-100" src="./images/empresa-Index-nosotros-slide.png" alt="Second slide" style="height: 100%; "> -->
 		     	<div class="divTextoEmpresa">
 		     		<h3 style="color : red">MISIÓN</h3>
@@ -217,24 +247,24 @@
 		     	</div>
 		     	
 		    </div>
-		    <div class="carousel-item carousel-item-empresa">
+		    <div id="vision" class="carousel-item carousel-item-empresa">
 		      <div class="divTextoEmpresa">
 		     		<h3 style="color : red">VISIÓN</h3>
 		     		<p class="empresa" >Ser una empresa con innovación creativa, reconocida por su eficiencia y profesionalismo, que nos permita ser altamente recomendada.</p>
 		     	</div>
 		    </div>
-		    <div class="carousel-item carousel-item-empresa" >
+		    <div id="filosofia" class="carousel-item carousel-item-empresa" >
 		      <div class="divTextoEmpresa">
-		     		<h3 style="color : red">FILOSOFíA</h3>
+		     		<h3 style="color : red">FILOSOFÍA</h3>
 		     		<p class="empresa" >Estar comprometida a lograr la excelencia bajo lineamientos de honestidad y profesionalismo.</p>
 		     	</div>
 		    </div>
 		  </div>
-		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
 		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
 		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
 		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
@@ -280,7 +310,7 @@
 
 		</div>
 	<!-- Testimoniales  -->
-	<div class="container-fluid" style="height: 440px; ">
+	<div id="testimoniales" class="container-fluid" style="height: 440px; ">
 		<div class="row justify-content-center" style="height: 100px;">
 			<div class="imgTestimoniales" align="center"></div>
 			<p style="font-size: 41px; font-family: 'Roboto'; font-weight: 700; position: absolute; padding-top: 23px;">Testimoniales</p>
@@ -302,12 +332,12 @@
 		</div>
 	</div>
 	<!-- Cotizacion -->
-	<div style="background-color: #252526; height: 110px; width: 100%">
+	<div style="background-color: #252526; height: 85px; width: 100%">
 		<div class="container" style="height: 100%;">
 			<div class="row align-items-center" style="height: 100%;" >
 				<div class="col-4" >
-					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="30px" height="30px">
-					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="30px" height="30px">
+					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
 				</div>
 				<div  class="col-8 text-right" >
 					<a href="#" style="color: white;" > Copyright / </a>

@@ -45,22 +45,17 @@
 	background-image: url(./images/PORTADILLA-PLANTILLA-servicio-web.jpg);
 }
 .fill-container.fibra{
-	background-image: url(../comunicaciones/images/01-fibra.jpg);
+	background-image: url(../comunicaciones/images/01-temp.png);
 }
-.fill-container.estructurado{
-	background-image: url(../comunicaciones/images/01-cableado.jpg);
+.fill-container.desarrollo{
+	background-image: url(../serviciosWeb/desarrollo/images/01-desarrollo.jpg);
 }
 .fill-container.inalambrica{
 	background-image: url(./images/01-temp.png);
 }
-.fill-container.digital{
-	background-image: url(../comunicaciones/images/01-digital.jpg);
-}
-.fill-container.analoga{
-	background-image: url(./images/01-temp.png);
-}
 
-.imgComunicaciones{
+
+.imgServiciosWeb
 	background-image: url(./images/02-temp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -70,22 +65,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.imgEstructurado{
-	background-image: url(../comunicaciones/images/02-cableado.jpg);
+.imgDesarrollo{
+	background-image: url(../serviciosWeb/desarrollo/images/02-desarrollo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .imgInalambrica{
-	background-image: url(./images/02-temp.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.imgDigital{
-	background-image: url(../comunicaciones/images/02-digital.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.imgAnaloga{
 	background-image: url(./images/02-temp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -246,6 +231,6 @@ a.sub:hover{
     background-color:transparent;
 }
 ul {
-    list-style-image: url("../comunicaciones/images/blue-palomita.png"); 
+    list-style-image: url("../serviciosWeb/images/blue-palomita.png"); 
 }
 

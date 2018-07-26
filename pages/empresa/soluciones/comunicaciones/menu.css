@@ -230,6 +230,13 @@ a.sub:hover{
     color: black;
 	background-color: lightgray; 
 }
+.cuadros{
+    text-decoration: none !important;
+    color: #212529;
+}
+.cuadros:hover{
+    color: #212529;
+}
 
 .barra{
     width: 15px; height: 42px;
@@ -248,4 +255,5 @@ a.sub:hover{
 ul {
     list-style-image: url("../comunicaciones/images/blue-palomita.png"); 
 }
+
 

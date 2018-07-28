@@ -188,27 +188,27 @@
 	</div>
 	
         <div class="formularioCotizacion" style="width: 60%; top : 10%;">
-           <p style="font-size: 25px;"> Solicita una cotizacion personalizada </p>
+           <p style="font-size: 25px;"> Solicita una cotización personalizada </p>
                 <div class="container-fluid">
-                	<div class="row" style="margin-top: 30px;">
-	                	<div class="col-6">
-	                		<div class="row">
-	                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre">
-	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="text" name="email" placeholder="E mail">
-	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Telefono">
-	                		</div>
-		                    
-		                </div>
-		                <div class="col-6">
-	                    	<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe mensaje aqui" rows="5"></textarea>
+                	<form action="../mandar.php">
+                		<div class="row" style="margin-top: 30px;">
+		                	<div class="col-6">
+		                		<div class="row">
+		                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre">
+		                		</div>
+			                    <div class="row">
+		                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="text" name="email" placeholder="E mail">
+		                		</div>
+			                    <div class="row">
+		                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono">
+		                		</div>
+			                </div>
+			                <div class="col-6">
+		                    	<textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" placeholder="Escribe mensaje aquí" rows="5"></textarea>
+		               		</div>
 	               		</div>
-	               	</div>
-                
-                <button class="float-right" style="margin-top: 20px;" type="button">ENVIAR</button>
+                		<input class="float-right" style="margin-top: 20px;" type="submit" value="Enviar"></input>
+                	</form>
             </div>
         </div>
 	</div>

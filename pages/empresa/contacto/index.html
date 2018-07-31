@@ -6,78 +6,33 @@
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/gotham-book/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-black/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-light/font.css"/> 
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
+ 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
     <script src="../../../bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./menu.css">
+
+    <link rel="stylesheet" type="text/css" href="./main.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+	<script type="text/javascript" src="../js/menu.js"></script>
+
+    <script src="../js/cotizacion.js"></script>
 
     <!-- sweet alerts -->
     <script src="../sweetalerts/sweetalert2.min.js"></script>
 	<link rel="stylesheet" href="../sweetalerts/sweetalert2.min.css">
 
-    <style type="text/css">
-
-	    @font-face {
-		    font-family: AvenirLTStd;
-		    src: url(./fonts/AvenirLTStd-Light.otf);
-		}
-		@font-face{
-			font-family: avenirltstd-heavy-webfont
-			src : url(./fonts/avenirltstd-heavy-webfont.woff);
-		}
-    	.centered {
-			  position: fixed;
-			  top: 50%;
-			  left: 50%;
-			  /* bring your own prefixes */
-			  transform: translate(-50%, -50%);
-			}
-		html,
-		body {
-			 height: 100%;
-		}
-		li.menu{
-			font-family:'Gotham Book';
-			font-weight:normal;
-			font-size:17px;	
-			margin : 0px 15px 0px 15px;
-		}
-
-		li.sub-menu{
-			font-family:'GothamLight';
-			font-weight:normal;
-			font-size:12px;	
-		}
-
-		a.submenu{
-			padding: 8px 0px 8px 0px !important;
-		}
-		}
-
-
-		a.Hover { 
-			border-bottom: 2px solid; 
-			color: red !important;
-			border-color: red;
-		}
-
-
-
-    </style>
 </head>
  
 <body >
-	<div class="container-fluid" style="position: relative;"  >
+	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
 			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
-            	<source src="../../../assets/videos/Comp 1_1_1.mp4" type="video/mp4" />
+            	<source src="../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
-            <div style="position: absolute; left: 50%; transform: translateX(-50%);">
-            	<img  class="logo-menu" src="../../../assets/images/logo-white.gif" >
+            <div class="animated fadeIn headerMaxicomm" >
+            	<img   src="../images/LOGO-WHITE-MAXICOMM-01.svg" >
             </div>
 		</div>
 	</div>
@@ -89,16 +44,16 @@
 		  </button>
 
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
-		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
+		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
 		      <li class="nav-item active menu">
 		        <a id="inicio" class="nav-link" href="../" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle posicionActual" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Nosotros
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Quienes Somos</a>
+		          <a class="dropdown-item" href="../nosotros">Quienes Somos</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="../../empresa/#carousel" id="menuMision">Misión</a>
 		          <div class="dropdown-divider"></div>
@@ -145,59 +100,63 @@
 	<!-- Cotizacion -->
 
 	<!-- datos -->
-	<div class="imgCotizacion" style="height: 100%;">
-	<div class="row align-self-center" style="height: 155px;">
-		<div class="col-4 align-self-center " align="center">
-			<p style="color : white;">
-			DIRECCIÓN <br/>
-			22800 Plaza ejecutiva Maxicomm, <br>
-			Macheros 366, Zona Centro, 22800<br/>
-			Ensenada, B.C.
-		</p>
-		</div>
-		<div class="col-4 align-self-center" align="center">
-			<p style="color : white;">
-				TELÉFONO<br/>
-				646 178.80.08
+	<div class="imgCotizacionContacto" style="height: 100%;">
+		<div class="row align-self-center" style="height: 155px;">
+			<div class="col-4 align-self-center " align="center">
+				<p style="color : white;">
+				DIRECCIÓN <br/>
+				22800 Plaza ejecutiva Maxicomm, <br>
+				Macheros 366, Zona Centro, 22800<br/>
+				Ensenada, B.C.
 			</p>
-
-		</div>
-		<div class="col-4 align-self-center" align="center">
-			<p style="color : white;">
-				HORARIO<br/>
-				Lunes a Viernes: 8:00 a.m.- 7:00 p.m. <br/>
-				Sábado : 	9:00 a.m.- 2:00 p.m.
-			</p>
-		</div>
-	</div>
-	<!-- textura y siguenos -->
-
-	<div class="fill-containerTexture " style="height: 200px; width: 100%;">
-		<div class="container" >
-			<div class="row" align="center" >
-				<div class="col align-self-center" style="margin-top: 28px" >
-					<p style="font-size: 23px;">Siguenos</p>
-					 <hr style="height: 1.5px; margin-bottom: 4px;" width="150px" height: "3px" color="black">
-					 <hr style="height: 1.5px; margin-top: 4px; " width="150px" height: "3px" color="black">
-				</div>
 			</div>
-			<div class="row" align="center">
-				<div class="col align-self-center">
-					
-					<img src="./images/SM-ICONS_Mesadetrabajo1.svg" width="60px" height="60px">
-					<img src="./images/SM-ICONS_Mesadetrabajo1copia.svg" width="60px" height="60px">
-					<img src="./images/SM-ICONS_Mesadetrabajo1copia2.svg" width="60px" height="60px">
-				</div>
+			<div class="col-4 align-self-center" align="center">
+				<p style="color : white;">
+					TELÉFONO<br/>
+					646 178.80.08
+				</p>
+
+			</div>
+			<div class="col-4 align-self-center" align="center">
+				<p style="color : white;">
+					HORARIO<br/>
+					Lunes a Viernes: 8:00 a.m.- 7:00 p.m. <br/>
+					Sábado : 	9:00 a.m.- 2:00 p.m.
+				</p>
 			</div>
 		</div>
-	</div>
-	
-        <div class="formularioCotizacion" style="width: 60%; top : 10%;">
-           <p style="font-size: 25px;"> Solicita una cotización personalizada </p>
-                <div class="container-fluid" align="center">
-                	
-                		<div class="row" style="margin-top: 30px;">
-		                	<div class="col-6">
+		<!-- textura y siguenos -->
+
+		<div class="fill-containerTexture " style="height: 200px; width: 100%;">
+			<div class="container" >
+				<div class="row" align="center" >
+					<div class="col align-self-center" style="margin-top: 28px" >
+						<p style="font-size: 23px;">Siguenos</p>
+						 <hr style="height: 1.5px; margin-bottom: 4px;" width="150px" height: "3px" color="black">
+						 <hr style="height: 1.5px; margin-top: 4px; " width="150px" height: "3px" color="black">
+					</div>
+				</div>
+				<div class="row" align="center">
+					<div class="col align-self-center">
+						
+						<img src="./images/SM-ICONS_Mesadetrabajo1.svg" width="60px" height="60px">
+						<img src="./images/SM-ICONS_Mesadetrabajo1copia.svg" width="60px" height="60px">
+						<img src="./images/SM-ICONS_Mesadetrabajo1copia2.svg" width="60px" height="60px">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="height: 540px;">
+            <div class="container" align="center" style="height: 100%;">
+
+        		<div class="row align-items-center" style="height: 100%;" >
+
+        			<div class="col-12">
+        				<div class="row" align="center">
+        					<p align="center" style="font-size: 29px;"> Solicita una cotización personalizada </p>
+        				</div>
+        				<div class="row">
+		        			<div class="col-md-6 col-xs-12 ">
 		                		<div class="row">
 		                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
 		                		</div>
@@ -208,24 +167,37 @@
 		                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
 		                		</div>
 			                </div>
-			                <div class="col-6">
+			                <div class="col-md-6 col-xs-12  pl-0" >
 		                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
 		               		</div>
-	               		</div>
-	               		
-                		<button id="button" class="float-right" style="margin-top: 20px;" type="submit" value="Enviar">Enviar</button>
-                		<div id="logsCoti" style="color : red; background: #58666fe8; margin-top: 22px; width: 300px;"></div>
-                	
-            </div>
-        </div>
+		        		</div>
+		                
+		                <div class="row">
+		                	<div class="col">
+			           			<div align="right">
+			           				<button id="button" type="submit" value="Enviar">Enviar</button>
+			           			</div>
+			           			<div align="center" id="logsCoti" style="color : red; background: #58666fe8; margin-top: 22px; width: 300px;"></div> 
+			           		</div>
+		                </div>
+        			</div>
+        		</div>
+        		
+
+           	</div>	
+	    </div>
 	</div>
 	<!-- Footer -->
 	<div style="background-color: #252526; height: 85px; width: 100%">
 		<div class="container" style="height: 100%;">
 			<div class="row align-items-center" style="height: 100%;" >
 				<div class="col-4" >
-					<img src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
-					<img src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					<a id="icnRedesS" href="http://facebook.com" target="_blank">
+						<img id="iconFacebook" src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+					</a>
+					<a id="icnRedesS" href="http://twitter.com" target="_blank">
+						<img id="iconTwitter"src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					</a>
 				</div>
 				<div  class="col-8 text-right" >
 					<a href="#" style="color: white;" > Copyright / </a>
@@ -237,44 +209,4 @@
 	</div>
 
 </body>
-	<script>
-		$(document).ready(function() {
-		    $(".nav-link").hover(
-		        function() { $(this).addClass("Hover"); },
-		        function() { $(this).removeClass("Hover"); }
-		    );
-		});
-		$("#button").click(function(){
-
-			let error = false; 
-
-			if( !$('#inputEmail').val() || !$('#inputName').val() || !$('#inputTelefono').val() || !$('#inputMensaje').val() ){
-
-				$('#logsCoti').html('<strong >Por Favor ingrese todos los datos</strong>');
-				error = true;
-			}
-
-
-			let data = {telefono : $('#inputTelefono').val() , email : $('#inputEmail').val() , mensaje : $('#inputMensaje').val(), nombre : $('#inputName').val()};
-			console.log(data)
-			if( ! error){
-				 $.post("http://localhost:8000/api/registroCotizacion", data , function(data){
-		        	$('#logsCoti').html('<strong>Cotización enviada correctamente</strong>');
-		        	limpiarInputs();
-		         	setTimeout("QuitarTexto()", 4*1000);
-		    	});
-			}
-		   
-		});
-		function QuitarTexto(){
-			$('#logsCoti').html('');
-		}
-
-		function limpiarInputs(){
-			$('#inputMensaje').val('');
-			$('#inputName').val('');
-			$('#inputTelefono').val('');
-			$('#inputEmail').val('');
-		}
-	</script>
 </html>

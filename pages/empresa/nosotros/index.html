@@ -152,28 +152,35 @@
 	</div>
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
-        <div class="formularioCotizacion" style="width: 60%;">
-           <p style="font-size: 25px;"> Solicita una cotizacion personalizada </p>
-                <div class="container-fluid">
-                	<div class="row" style="margin-top: 30px;">
-	                	<div class="col-6">
-	                		<div class="row">
-	                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre">
-	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="text" name="email" placeholder="E mail">
-	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Telefono">
-	                		</div>
-		                    
-		                </div>
-		                <div class="col-6">
-	                    	<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe mensaje aqui" rows="5"></textarea>
-	               		</div>
-	               	</div>
-                
-                <button class="float-right" style="margin-top: 20px;" type="button">ENVIAR</button>
+        <div class="formularioCotizacion" style="width: 60%; top : 30%;">
+            <div class="container-fluid" align="center" style="height: 100%;">
+                	
+        		<div class="row align-items-center" style="height: 80%;" >
+        			<div class="col-12">
+        				<p style="font-size: 29px;"> Solicita una cotización personalizada </p>
+        			</div>
+                	<div class="col-md-6 col-xs-12 ">
+                		<div class="row">
+                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+                		</div>
+	                    <div class="row">
+                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+                		</div>
+	                    <div class="row">
+                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+                		</div>
+	                </div>
+	                <div class="col-md-6 col-xs-12  pl-0" >
+                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+               		</div>
+           		</div>
+
+           		<div class="col" >
+           			<div align="right">
+           				<button id="button" type="submit" value="Enviar">Enviar</button>
+           			</div>
+           			<div align="center" id="logsCoti" style="color : red; background: #58666fe8; margin-top: 22px; width: 300px;"></div> 
+           		</div>	
             </div>
         </div>
 	</div>

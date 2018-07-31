@@ -1,0 +1,77 @@
+li.menu{
+		font-family:'Roboto';
+		font-weight:normal;
+		font-size:18px;	
+}
+
+li.sub-menu{
+	font-family:'Roboto';
+	font-weight:normal;
+	font-size:12px;	
+}
+
+a.nav-link{
+	padding: 8px 0px 8px 0px !important;
+}
+
+
+a.Hover { 
+	box-shadow: 0px 3px red;
+	color: red !important;
+	border-color: red;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.9);
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.dropdown-menu{
+	top: 97% !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+	    background-color: #d7d7d7;
+}
+
+.headerMaxicomm{
+	position: absolute; 
+	left: 50%; 
+	transform: translateX(-50%); 
+	width: 28%; 
+	height: 100%; 
+	top : 22px;
+}
+
+.posicionActual{
+	box-shadow: 0px 3px red;
+	border-color: red;
+}
+
+#iconFacebook {
+	transition: all .2s ease-in-out;
+}
+
+#iconFacebook:hover{
+	transform: scale(1.4);
+}
+#iconTwitter {
+	transition: all .2s ease-in-out;
+}
+
+#iconTwitter:hover{
+	transform: scale(1.4);
+}
+
+a#icnRedesS{
+	text-decoration: none;
+}
+
+.imgCotizacion{
+	background-image: url(../images/empresa-Index-formulario.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}

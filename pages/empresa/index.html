@@ -6,81 +6,23 @@
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../../assets/fonts/gotham-book/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-black/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-light/font.css"/>  
+ 
 	<link rel="stylesheet" type="text/css" href="../../assets/animate.css"/>
+
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./menu.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./menu.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/menu.css">
+
 	<link rel='shortcut icon' type='image/x-icon' href='../../favicom.ico' />
-    <style type="text/css">
-
-	    @font-face {
-		    font-family: AvenirLTStd;
-		    src: url(./fonts/AvenirLTStd-Light.otf);
-		}
-		@font-face{
-			font-family: avenirltstd-heavy-webfont
-			src : url(./fonts/avenirltstd-heavy-webfont.woff);
-		}
-		@font-face{
-			font-family: MyriadWebPro
-			src : url(./fonts/MyriadWebPro.ttf);
-		}
-    	.centered {
-			  position: fixed;
-			  top: 50%;
-			  left: 50%;
-			  /* bring your own prefixes */
-			  transform: translate(-50%, -50%);
-			}
-		html,
-		body {
-			 height: 100%;
-		}
-		li.menu{
-			font-family:'Gotham Book';
-			font-weight:normal;
-			font-size:17px;	
-
-		}
-
-		li.sub-menu{
-			font-family:'GothamLight';
-			font-weight:normal;
-			font-size:12px;	
-		}
-
-		a.nav-link{
-			padding: 8px 0px 8px 0px !important;
-		}
-
-
-		a.Hover { 
-			border-bottom: 2px solid; 
-			color: red !important;
-			border-color: red;
-		}
-
-		/*.iconoSoluciones{ 
-			transform: scale(1);
-			transition-duration: .6s;
-		}*/
-
-		.visible{
-			visibility: visible;
-		}
-
-		.navbar-light .navbar-nav .nav-link {
-		    color: rgba(0,0,0,.9);
-		}
-    </style>
 </head>
  
 <body>
@@ -94,25 +36,24 @@
 			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
             	<source src="../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
-            <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
+            <div class="animated fadeIn headerMaxicomm" >
             	<img   src="./images/LOGO-WHITE-MAXICOMM-01.svg" >
             </div>
 		</div>
 	</div>
 	<div>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light align-self-center"  >
-
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
-		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
+		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
 		      <li class="nav-item active menu">
-		        <a id="inicio" class="nav-link" href="#" >Inicio <span class="sr-only">(current)</span></a>
+		        <a id="inicio" class="nav-link posicionActual" href="#" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item dropdown menu mx-2">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		      <li class="nav-item dropdown menu mx-2 ">
+		        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
 		          Nosotros
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -168,8 +109,6 @@
 		    </div>
 		</div>
 	</div>
-
-
 
 	<!-- Soluciones -->
 	<div class="fill-containerTexture container" style="max-width: 100%;position: relative; height: 500px; padding-top: 0px;" >
@@ -344,8 +283,12 @@
 		<div class="container" style="height: 100%;">
 			<div class="row align-items-center" style="height: 100%;" >
 				<div class="col-4" >
-					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
-					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					<a id="icnRedesS" href="http://facebook.com" target="_blank">
+						<img id="iconFacebook" src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+					</a>
+					<a id="icnRedesS" href="http://twitter.com" target="_blank">
+						<img id="iconTwitter"src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					</a>
 				</div>
 				<div  class="col-8 text-right" >
 					<a href="#" style="color: white;" > Copyright / </a>

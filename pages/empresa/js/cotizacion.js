@@ -4,7 +4,7 @@ $(function() {
 	let error = false; 
 
 	if( !$('#inputEmail').val() || !$('#inputName').val() || !$('#inputTelefono').val() || !$('#inputMensaje').val() ){
-
+		$('#logsCoti').css({display : 'inline'});
 		$('#logsCoti').html('<strong >Por Favor ingrese todos los datos</strong>');
 		error = true;
 	}
@@ -14,6 +14,7 @@ $(function() {
 	console.log(data)
 	if( ! error){
 		 $.post("http://api.seedbc.net/api/registroCotizacion", data , function(data){
+		 	$('#logsCoti').css({display : 'inline'});
 	    	$('#logsCoti').html('<strong>Cotización enviada correctamente</strong>');
 	    	limpiarInputs();
 	     	setTimeout("QuitarTexto()", 4*1000);
@@ -25,6 +26,7 @@ $(function() {
 
 function QuitarTexto(){
 	$('#logsCoti').html('');
+	$('#logsCoti').css({display : 'none'});
 }
 
 function limpiarInputs(){

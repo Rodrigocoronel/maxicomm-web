@@ -50,7 +50,7 @@
 
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
 		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
-		      <li class="nav-item active menu">
+		      <li class="nav-item active menu mx-2">
 		        <a id="inicio" class="nav-link posicionActual" href="#" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
@@ -83,8 +83,19 @@
 		          <a class="dropdown-item" href="./soluciones/serviciosWeb" id="menuVision" >Servicio Web</a>
 		        </div>
 		      </li>
-		      <li class="nav-item active menu mx-2">
-		        <a class="nav-link" href="./productos">Productos <span class="sr-only">(current)</span></a>
+		      <li class="nav-item dropdown menu mx-2">
+		        <a class="nav-link dropdown-toggle" href="./productos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Productos
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="./productos">Equipamiento</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="./productos/mswindows" >Ms Windows</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="./productos/contpaqi" >Contpaqi</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="./productos/cartuchosytoners">Cartuchos y toners</a>
+		        </div>
 		      </li>
 		      <li class="nav-item active menu mx-2">
 		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
@@ -105,7 +116,7 @@
     	overflow: hidden;">
     	<h4 align="center" class="animated fadeIn" style="font-size: 49PX; margin-top: 140px; font-family: 'Roboto', sans-serif; !important; color: white;">SOLUCIONES A<br/> LA MEDIDA</h4>	
     	<div class="row justify-content-center">
-		    <div class="col-4" style="text-align: justify; margin-top: 50px;">
+		    <div class="col-md-4 col-xs-12" style="text-align: justify; margin-top: 50px;">
 				<p class="empresa animated fadeIn" style="font-size: 19px; font-family: 'Roboto'; color: white;"> Somos una empresa creativa y en constante crecimiento, enfocada en la innovación de soluciones TI para empresas, gobierno, instituciones educativas y de salud.</p>
 		    </div>
 		</div>
@@ -126,7 +137,9 @@
 		    	</div>
 		    	<div id="textoVerMas" class="col-4" style="position: relative; display: inline-block; text-align: center;">
 		    			<h3 id="textoSeguridad" style="position: absolute; top: 20px;left: 10px;">SEGURIDAD</h3>
-		    			<img id="imgVerMas" style="width: 70px; height: 80px;" src="./images/solutions-empresa-icons-06.svg">
+		    			<a href="./seguridad y energia">
+		    				<img id="imgVerMas" style="width: 70px; height: 80px;" src="./images/solutions-empresa-icons-06.svg">
+		    			</a>
 		    	</div>
 		    </div>
 		    <div class="col-4" style="text-align: center; height: 150px;">
@@ -191,20 +204,20 @@
 		    <div id="mision" class="carousel-item active carousel-item-empresa">
 		     	<!-- <img class="d-block w-100" src="./images/empresa-Index-nosotros-slide.png" alt="Second slide" style="height: 100%; "> -->
 		     	<div class="divTextoEmpresa">
-		     		<h3 style="color : red">MISIÓN</h3>
+		     		<h3 style="color : red; font-size: 32px;">MISIÓN</h3>
 		     		<p class="empresa" >Desarrollar soluciones reales que permitan mejorar el rendimiento de la informática, conectividad y seguridad dentro de las empresas.</p>
 		     	</div>
 		     	
 		    </div>
 		    <div id="vision" class="carousel-item carousel-item-empresa">
 		      <div class="divTextoEmpresa">
-		     		<h3 style="color : red">VISIÓN</h3>
+		     		<h3 style="color : red; font-size: 32px;">VISIÓN</h3>
 		     		<p class="empresa" >Ser una empresa con innovación creativa, reconocida por su eficiencia y profesionalismo, que nos permita ser altamente recomendada.</p>
 		     	</div>
 		    </div>
 		    <div id="filosofia" class="carousel-item carousel-item-empresa" >
 		      <div class="divTextoEmpresa">
-		     		<h3 style="color : red">FILOSOFÍA</h3>
+		     		<h3 style="color : red; font-size: 32px;">FILOSOFÍA</h3>
 		     		<p class="empresa" >Estar comprometida a lograr la excelencia bajo lineamientos de honestidad y profesionalismo.</p>
 		     	</div>
 		    </div>
@@ -275,9 +288,9 @@
 				</div>
 				<h4 style="text-align: justify; margin-top: 27px; line-height: 22px; font-size: 17px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
 			</div>
-			<div class="col-4" >
+			<div class="col-4 pr-0"  >
 				<img class="float-right" src="./images/empresa-Index-4.png" height="340" width="350">
-				<a class="text-right" href=""><p>Ver Más</p></a>
+				<a class="text-right" href=""><p style="position: absolute; top: 76%; right: 9%; color: white;">Ver Más</p></a>
 			</div>
 		</div>
 	</div>
@@ -286,8 +299,12 @@
 		<div class="container" style="height: 100%;">
 			<div class="row align-items-center" style="height: 100%;" >
 				<div class="col-4" >
-					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
-					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					<a id="icnRedesS" href="http://facebook.com" target="_blank">
+						<img id="iconFacebook" src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+					</a>
+					<a id="icnRedesS" href="http://twitter.com" target="_blank">
+						<img id="iconTwitter"src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					</a>
 				</div>
 				<div  class="col-8 text-right" >
 					<a href="#" style="color: white;" > Copyright / </a>

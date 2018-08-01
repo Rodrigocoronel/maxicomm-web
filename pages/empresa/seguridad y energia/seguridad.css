@@ -42,7 +42,7 @@
 }
 
 .fill-container.seguridad{
-	background-image: url(./images/01-temp.png);
+	background-image: url(./images/seguridad-y-energia.jpg);
 }
 .fill-container.videovigilancia{
 	background-image: url(./images/01-videovigilancia.jpg);
@@ -250,6 +250,7 @@ a.sub{
     display: block;
     text-decoration: none;
     color: #212529;
+    padding: 8px 0px 8px 0px !important;
 }
 
 a.a2{
@@ -278,23 +279,4 @@ a.sub:hover{
 }
 ul {
     list-style-image: url("./images/blue-palomita.png"); 
-}
-li.menu{
-	font-family:'Gotham Book';
-	font-weight:normal;
-	font-size:17px;	
-	margin : 0px 15px 0px 15px;
-}
-li.sub-menu{
-	font-family:'GothamLight';
-	font-weight:normal;
-	font-size:12px;	
-}
-a{
-	padding: 8px 0px 8px 0px !important;
-}
-a.Hover { 
-	border-bottom: 2px solid; 
-	color: red !important;
-	border-color: red;
 }

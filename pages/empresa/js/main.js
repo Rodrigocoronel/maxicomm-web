@@ -1,10 +1,4 @@
 $(document).ready(function() {
-    $(".nav-link").hover(
-        function() { $(this).addClass("Hover"); },
-        function() { $(this).removeClass("Hover"); }
-    );
-});
-$(document).ready(function() {
     $(".iconoSoluciones").hover(
         function() { $(this).addClass("Hover"); },
         function() { $(this).removeClass("Hover"); }

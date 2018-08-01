@@ -6,81 +6,23 @@
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../../assets/fonts/gotham-book/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-black/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-light/font.css"/>  
+ 
 	<link rel="stylesheet" type="text/css" href="../../assets/animate.css"/>
+
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./menu.js"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./menu.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
 	<link rel='shortcut icon' type='image/x-icon' href='../../favicom.ico' />
-    <style type="text/css">
-
-	    @font-face {
-		    font-family: AvenirLTStd;
-		    src: url(./fonts/AvenirLTStd-Light.otf);
-		}
-		@font-face{
-			font-family: avenirltstd-heavy-webfont
-			src : url(./fonts/avenirltstd-heavy-webfont.woff);
-		}
-		@font-face{
-			font-family: MyriadWebPro
-			src : url(./fonts/MyriadWebPro.ttf);
-		}
-    	.centered {
-			  position: fixed;
-			  top: 50%;
-			  left: 50%;
-			  /* bring your own prefixes */
-			  transform: translate(-50%, -50%);
-			}
-		html,
-		body {
-			 height: 100%;
-		}
-		li.menu{
-			font-family:'Gotham Book';
-			font-weight:normal;
-			font-size:17px;	
-
-		}
-
-		li.sub-menu{
-			font-family:'GothamLight';
-			font-weight:normal;
-			font-size:12px;	
-		}
-
-		a.nav-link{
-			padding: 8px 0px 8px 0px !important;
-		}
-
-
-		a.Hover { 
-			border-bottom: 2px solid; 
-			color: red !important;
-			border-color: red;
-		}
-
-		/*.iconoSoluciones{ 
-			transform: scale(1);
-			transition-duration: .6s;
-		}*/
-
-		.visible{
-			visibility: visible;
-		}
-
-		.navbar-light .navbar-nav .nav-link {
-		    color: rgba(0,0,0,.9);
-		}
-    </style>
 </head>
  
 <body>
@@ -107,9 +49,9 @@
 		  </button>
 
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
-		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
+		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
 		      <li class="nav-item active menu">
-		        <a id="inicio" class="nav-link" href="#" >Inicio <span class="sr-only">(current)</span></a>
+		        <a id="inicio" class="nav-link posicionActual" href="#" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

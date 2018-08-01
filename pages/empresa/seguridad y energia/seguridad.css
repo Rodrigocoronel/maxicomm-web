@@ -279,8 +279,22 @@ a.sub:hover{
 ul {
     list-style-image: url("./images/blue-palomita.png"); 
 }
-
-#o1:hover + #o8{
-    color: red !important;
+li.menu{
+	font-family:'Gotham Book';
+	font-weight:normal;
+	font-size:17px;	
+	margin : 0px 15px 0px 15px;
 }
-
+li.sub-menu{
+	font-family:'GothamLight';
+	font-weight:normal;
+	font-size:12px;	
+}
+a{
+	padding: 8px 0px 8px 0px !important;
+}
+a.Hover { 
+	border-bottom: 2px solid; 
+	color: red !important;
+	border-color: red;
+}

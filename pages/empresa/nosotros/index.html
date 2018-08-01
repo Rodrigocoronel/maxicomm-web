@@ -6,61 +6,17 @@
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/gotham-book/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-black/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../../../assets/fonts/ghotam-light/font.css"/> 
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+ 
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../../../bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./menu.css">
-    <style type="text/css">
+    
+    <link rel="stylesheet" type="text/css" href="./nosotros.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <script src="../js/cotizacion.js"></script>
 
-	    @font-face {
-		    font-family: AvenirLTStd;
-		    src: url(./fonts/AvenirLTStd-Light.otf);
-		}
-		@font-face{
-			font-family: avenirltstd-heavy-webfont
-			src : url(./fonts/avenirltstd-heavy-webfont.woff);
-		}
-    	.centered {
-			  position: fixed;
-			  top: 50%;
-			  left: 50%;
-			  /* bring your own prefixes */
-			  transform: translate(-50%, -50%);
-			}
-		html,
-		body {
-			 height: 100%;
-		}
-		li.menu{
-			font-family:'Gotham Book';
-			font-weight:normal;
-			font-size:17px;	
-			margin : 0px 15px 0px 15px;
-		}
-
-		li.sub-menu{
-			font-family:'GothamLight';
-			font-weight:normal;
-			font-size:12px;	
-		}
-
-		a.submenu{
-			padding: 8px 0px 8px 0px !important;
-		}
-
-
-		a.Hover { 
-			border-bottom: 2px solid; 
-			color: red !important;
-			border-color: red;
-		}
-
-
-
-    </style>
+    <link rel='shortcut icon' type='image/x-icon' href='../../../favicom.ico' />
 </head>
  
 <body >
@@ -82,26 +38,26 @@
 		  </button>
 
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
-		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
+		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
 		      <li class="nav-item active menu">
 		        <a id="inicio" class="nav-link" href="../" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle posicionActual" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Nosotros
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Quienes Somos</a>
+		          <a class="dropdown-item" href="../nosotros">Quienes Somos</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#carousel" id="menuMision">Misión</a>
+		          <a class="dropdown-item" href="../../empresa/#carousel" id="menuMision">Misión</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#carousel" id="menuVision" >Visión</a>
+		          <a class="dropdown-item" href="../../empresa/#carousel" id="menuVision" >Visión</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#carousel" id="menuFilosofia">Filosifia</a>
+		          <a class="dropdown-item" href="../../empresa/#carousel" id="menuFilosofia">Filosifia</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="#">Galeria</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#testimoniales">Testimoniales</a>
+		          <a class="dropdown-item" href="../../empresa/#testimoniales">Testimoniales</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
@@ -117,7 +73,7 @@
 		        </div>
 		      </li>
 		      <li class="nav-item active menu mx-2">
-		        <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="../productos">Productos <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item active menu mx-2">
 		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
@@ -152,50 +108,65 @@
 	</div>
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
-        <div class="formularioCotizacion" style="width: 60%; top : 30%;">
-            <div class="container-fluid" align="center" style="height: 100%;">
-                	
-        		<div class="row align-items-center" style="height: 80%;" >
-        			<div class="col-12">
-        				<p style="font-size: 29px;"> Solicita una cotización personalizada </p>
-        			</div>
-                	<div class="col-md-6 col-xs-12 ">
-                		<div class="row">
-                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
-                		</div>
-	                    <div class="row">
-                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
-                		</div>
-	                    <div class="row">
-                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
-                		</div>
-	                </div>
-	                <div class="col-md-6 col-xs-12  pl-0" >
-                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
-               		</div>
-           		</div>
+        <div class="container" align="center" style="height: 100%;">
 
-           		<div class="col" >
-           			<div align="right">
-           				<button id="button" type="submit" value="Enviar">Enviar</button>
-           			</div>
-           			<div align="center" id="logsCoti" style="color : red; background: #58666fe8; margin-top: 22px; width: 300px;"></div> 
-           		</div>	
-            </div>
+        		<div class="row align-items-center" style="height: 100%;" >
+
+        			<div class="col-12">
+        					<div class="row" align="center">
+        						<div class="col-12">
+        							<p align="center" style="font-size: 29px; color: white;"> Solicita una cotización personalizada </p>
+        						</div>
+        					</div>
+        				<div class="row">
+		        			<div class="col-md-6 col-xs-12 ">
+		                		<div class="row">
+		                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+		                		</div>
+			                    <div class="row">
+		                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+		                		</div>
+			                    <div class="row">
+		                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+		                		</div>
+			                </div>
+			                <div class="col-md-6 col-xs-12  pl-0 mt-md-1 mt-sm-3 " >
+		                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+		               		</div>
+		        		</div>
+		                
+		                <div class="row" style="height: 80px;">
+		                	<div class="col">
+			           			<div align="right" class="mt-3">
+			           				<button class="btn btn-dark" id="button" type="submit" value="Enviar">Enviar</button>
+			           			</div>
+			           			<div align="center" id="logsCoti" style="color : white; background: #58666fe8; margin-top: 22px; width: 300px; height: 28px; display: none;"></div> 
+			           		</div>
+		                </div>
+        			</div>
+        		</div>
+        		
+
+           	</div>	
         </div>
 	</div>
 	<!-- Footer -->
-	<div style="background-color: #252526; height: 110px; width: 100%">
-		<div class="container-fluid">
-			<div class="row">
-				<div style="display: flex;margin-top: 41px; margin-left: 100px;">
-					<div class="imgTwitter" style="padding-left: 100px;"></div>
-					<div class="imgFacebook" style="padding-left: 89px;"></div>
-					<div class="imgYoutube" style="margin-top: 5px;"></div>
+	<div style="background-color: #252526; height: 85px; width: 100%">
+		<div class="container" style="height: 100%;">
+			<div class="row align-items-center" style="height: 100%;" >
+				<div class="col-4" >
+					<a id="icnRedesS" href="http://facebook.com" target="_blank">
+						<img id="iconFacebook" src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+					</a>
+					<a id="icnRedesS" href="http://twitter.com" target="_blank">
+						<img id="iconTwitter"src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					</a>
 				</div>
-			</div>
-			<div class=" row  float-right"  style="margin-right: 60px;" >
-				<p style="color: white;">Copyright / Privacidad / Politicas</p>
+				<div  class="col-8 text-right" >
+					<a href="#" style="color: white;" > Copyright / </a>
+					<a href="#" style="color: white;" >Privacidad / </a> 
+					<a href="#" style="color: white;" >Politicas </a> 
+				</div>
 			</div>
 		</div>
 	</div>

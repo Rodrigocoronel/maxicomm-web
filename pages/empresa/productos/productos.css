@@ -187,11 +187,16 @@ submenu{
     text-decoration: none;
     color: darkgray !important;
 }
+
+
+
 a.asubmenu{
     border-bottom: 1px solid #ccc;
     display: block;
     text-decoration: none;
     color: darkgray;
+
+	padding: 8px 0px 8px 0px !important;
 }
 a.a2{
     border-bottom: 0px solid #ccc;
@@ -201,6 +206,28 @@ a.asubmenu:hover{
     text-decoration: none;
     color: white !important;
 	background-color: darkgray; 
+}
+
+a.Hover { 
+	border-bottom: 2px solid; 
+	color: red !important;
+	border-color: red;
+}
+
+
+.tabs.active{
+	background-color: transparent !important;
+	border-color: transparent !important;
+	border-bottom: 2px solid #ed0d0d !important;
+}
+
+a.tabs{
+	color: #1e2822;
+}
+
+ul.tabs{
+	padding-top: 3%;
+	line-height: 1.8;
 }
 
 .barra{

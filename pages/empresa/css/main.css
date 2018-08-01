@@ -145,7 +145,7 @@
 
 
 p.empresa{
-	font-size: 18px;
+	font-size: 22px;
 	text-align: justify;
 	padding-top: 10px;
 }
@@ -177,3 +177,10 @@ p.empresa{
 	visibility: hidden;
 }
 
+.imgCorreo{
+	background-image: url(../images/call-correo.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	
+}

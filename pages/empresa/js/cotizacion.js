@@ -6,6 +6,7 @@ $(function() {
 	if( !$('#inputEmail').val() || !$('#inputName').val() || !$('#inputTelefono').val() || !$('#inputMensaje').val() ){
 		$('#logsCoti').css({display : 'inline'});
 		$('#logsCoti').html('<strong >Por Favor ingrese todos los datos</strong>');
+		setTimeout("QuitarTexto()", 4*1000);
 		error = true;
 	}
 

@@ -79,3 +79,10 @@ a#icnRedesS{
 p{
 	font-family: 'Roboto'
 }
+
+#button{
+	border: 1px solid;
+	border-color: white;
+}
+
+    

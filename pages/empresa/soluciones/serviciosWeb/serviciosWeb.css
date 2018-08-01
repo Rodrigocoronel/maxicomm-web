@@ -204,6 +204,7 @@ a.sub{
     display: block;
     text-decoration: none;
     color: #212529;
+    padding: 8px 0px 8px 0px !important;
 }
 
 a.a2{

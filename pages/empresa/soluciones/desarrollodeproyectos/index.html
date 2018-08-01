@@ -5,23 +5,27 @@
 <head>
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="../../../../../bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../../../../bootstrap/css/bootstrap.min.css"/>
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="../../../../../bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../comunicaciones.css">
+    <script src="../../../../bootstrap/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../../../css/menu.css">
-    <script type="text/javascript" src="../../../js/menu.js"></script>
-    <script type="text/javascript" src="../../../js/cotizacion.js"></script>
+    <link rel="stylesheet" type="text/css" href="./dproyectos.css">
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+    <script type="text/javascript" src="../../js/menu.js"></script>
+    <script type="text/javascript" src="../../js/cotizacion.js"></script>
 
-    <link rel='shortcut icon' type='image/x-icon' href='../../../../../favicom.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='../../../../favicom.ico' />
 
     <style type="text/css">
 
+		a.asubmenu{
+			padding: 8px 0px 8px 0px !important;
+		}
+        
         ul {
-            list-style-image: url("../images/blue-palomita.png");
+            list-style-image: url("./images/blue-palomita.png");
         }
 
 
@@ -32,10 +36,10 @@
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
 			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
-            	<source src="../../../../../assets/videos/header-empresa.mp4" type="video/mp4" />
+            	<source src="../../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
-            	<img   src="../../../images/LOGO-WHITE-MAXICOMM-01.svg" >
+            	<img   src="../../images/LOGO-WHITE-MAXICOMM-01.svg" >
             </div>
 		</div>
 	</div>
@@ -49,24 +53,24 @@
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
 		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
 		      <li class="nav-item active menu mx-2">
-		        <a id="inicio" class="nav-link " href="../../../" >Inicio <span class="sr-only">(current)</span></a>
+		        <a id="inicio" class="nav-link " href="../../" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Nosotros
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="../../../nosotros">Quienes Somos</a>
+		          <a class="dropdown-item" href="../../nosotros">Quienes Somos</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../../#carousel" id="menuMision">Misión</a>
+		          <a class="dropdown-item" href="../../#carousel" id="menuMision">Misión</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../../#carousel" id="menuVision" >Visión</a>
+		          <a class="dropdown-item" href="../../#carousel" id="menuVision" >Visión</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../../#carousel" id="menuFilosofia">Filosifia</a>
+		          <a class="dropdown-item" href="../../#carousel" id="menuFilosofia">Filosifia</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="#">Galeria</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../../#testimoniales">Testimoniales</a>
+		          <a class="dropdown-item" href="../../#testimoniales">Testimoniales</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
@@ -74,11 +78,11 @@
 		          Soluciones
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="../../">Desarrollo de Proyectos</a>
+		          <a class="dropdown-item" href="../desarrollodeproyectos">Desarrollo de Proyectos</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../" id="menuMision">Comunicaciones</a>
+		          <a class="dropdown-item" href="#" id="menuMision">Comunicaciones</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../serviciosWeb" id="menuVision" >Servicio Web</a>
+		          <a class="dropdown-item" href="../serviciosWeb" id="menuVision" >Servicio Web</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
@@ -86,68 +90,85 @@
 		          Productos
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="../../../productos">Equipamiento</a>
+		          <a class="dropdown-item" href="../../productos">Equipamiento</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../../productos/mswindows" >Ms Windows</a>
+		          <a class="dropdown-item" href="../../productos/mswindows" >Ms Windows</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../../productos/contpaqi" >Contpaqi</a>
+		          <a class="dropdown-item" href="../../productos/contpaqi" >Contpaqi</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../../productos/cartuchosytoners">Cartuchos y toners</a>
+		          <a class="dropdown-item" href="../../productos/cartuchosytoners">Cartuchos y toners</a>
 		        </div>
 		      </li>
 		      <li class="nav-item active menu mx-2">
 		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item active menu mx-2">
-		        <a class="nav-link" href="../../../seguridad y energia">Seguridad y Energía <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="../../seguridad y energia">Seguridad y Energía <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item active menu mx-2">
-		        <a class="nav-link" href="../../../contacto">Contacto <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="../../contacto">Contacto <span class="sr-only">(current)</span></a>
 		      </li>
 		    </ul>
 		  </div>
 		</nav>
 	</div>
 	<!-- Imagen entrada -->
-	<div class="fondiu fill-container analoga container" style="max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
-    	<h4 align="left" style="font-size: 44PX; padding-left: 170px; margin-top: 10%; font-family: 'Roboto'; color: white;">
-            TELEFONIA<br/>
-            ANALÓGICA
+	<div class="fondiu fill-container desarrollop container" style=" max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
+    	<h4 align="left" style="font-size: 40PX; text-align: center; margin-top: 130px; font-family: 'Roboto'; color: white;">
+            <div class="container" style="width: 100%;">
+                <div class="row justify-content-around">
+                    <div class="col-8" style="text-align: left;">
+                        <p  style="border-left: 10px solid red";><b> &nbsp;DESARROLLO DE <br/>  &nbsp;PROYECTOS TECNOLÓGICOS</b><br/></p>
+                    </div>
+                </div>
+            </div>
         </h4>
 	</div>
-<div class="container" style="height: 280px;">
-        <div class="row align-items-center" style=" padding-top: 15px;">
-            <div class="col-md-20 float-right" style=" 1px solid #c3c3c3;">
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra roja"></div>
+	<div style="height: 250px; width: 100%; ">
+        <div class="container" style="height: 100%; color: #1B2E35; font-size: 17PX; font-family: 'Roboto'; text-align: justify; ">
+            <div class="row justify-content-center" style="height: 100%;">
+               <div class="col-8 align-self-center" > 
+               		20 años de experiencia en la industria nos han permitido acumular el conocimiento, experiencia y capacidad necesaria para administrar y desarrollar cualquier proyecto tecnológico, principalmente enfocado a las tecnologías de la información y comunicaciones.
+               </div>
             </div>
-            <div class="col-4" style="font-size: 17px;">
-                <div> <a class="sub" href="../fibraoptica/index.html">Fibra óptica</a> </div>
-                <div> <a class="sub" href="../cableadoestructurado/index.html">Cable estructurado</a> </div>
-				<div> <a class="sub" href="../redesinalambricas/index.html">Redes inalámbricas</a> </div>
-                <div> <a class="sub" href="../telefoniadigital/index.html">Telefonía digital</a> </div>
-            <div> <a class="sub a2" href="../telefoniaanalogica/index.html"><b>Telefonía análoga</b></a> </div>
-			</div>
-            <div class="col-1">
-                <div style="background-color: gray; width: 1px; height: 250px;"></div>
-            </div>
-			<div class="col-6" style="font-family: 'Roboto'; font-size: 20PX">
-				<p style="text-align: justify; align-self-center"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-			</div>
-		</div>
+        </div>
 	</div>
-    <div class="imgAnaloga parallax" style="height: 450px; width: 100%";>
-    
-    
-    
+
+	<div class="imgFibra parallax" style="height: 650px; width: 100%";>
+        <div class="container" style="height: 100%; padding:5%; padding-top: 10%">
+            <div class="row justify-content-around">
+                <div class="col-6 align-self-center" style="text-align: center; color: white; font-size: 17px;">
+                    <img src="./images/fibra-optica.png">
+                    <div style="height: 100px; width: 100%; text-align: center;">
+                    	<p>Fibra optica y <br/> redes estructuradas</p>
+                	</div>
+                </div>
+                 <div class="col-6 align-self-center" style="text-align: center; color: white; font-size: 17px;">
+                    <img src="./images/seguridad.png">
+                    <div style="height: 100px; width: 100%; text-align: center;">
+                    	<p>Seguridad y <br/> controles de acceso</p>
+                	</div>
+                </div>
+            </div>
+             <div class="row justify-content-around">
+                <div class="col-6 align-self-center" style="text-align: center; color: white; font-size: 17px;">
+                    <img src="./images/desarrollo.png">
+                    <div style="height: 100px; width: 100%; text-align: center;">
+                    	<p>Desarrollo de software de aplicación,  <br/> incluyendo instrumentación</p>
+                	</div>
+                </div>
+                 <div class="col-6 align-self-center" style="text-align: center; color: white; font-size: 17px;">
+                    <img src="./images/suministro.png">
+                    <div style="height: 100px; width: 100%; text-align: center;">
+                    	<p>Subministro e implementación <br/> de equipamiento</p>
+                	</div>
+                </div>
+            </div>
+        </div>
     </div>
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
-         <div class="container" align="center" style="height: 100%;">
+        <div class="container" align="center" style="height: 100%;">
     		<div class="row align-items-center" style="height: 100%;" >
     			<div class="col-12">
     					<div class="row" align="center">
@@ -190,10 +211,10 @@
 			<div class="row align-items-center" style="height: 100%;" >
 				<div class="col-4" >
 					<a id="icnRedesS" href="http://facebook.com" target="_blank">
-						<img id="iconFacebook" src="../../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+						<img id="iconFacebook" src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
 					</a>
 					<a id="icnRedesS" href="http://twitter.com" target="_blank">
-						<img id="iconTwitter"src="../../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+						<img id="iconTwitter"src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
 					</a>
 				</div>
 				<div  class="col-8 text-right" >
@@ -206,12 +227,4 @@
 	</div>
 
 </body>
-	<script>
-		$(document).ready(function() {
-		    $(".nav-link").hover(
-		        function() { $(this).addClass("Hover"); },
-		        function() { $(this).removeClass("Hover"); }
-		    );
-		});
-	</script>
 </html>

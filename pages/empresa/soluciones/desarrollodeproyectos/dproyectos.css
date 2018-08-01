@@ -41,8 +41,8 @@
     background-position: center 0px;
 }
 
-.fill-container.comunicaciones{
-	background-image: url(./images/portada-comunicaciones.jpg);
+.fill-container.desarrollop{
+	background-image: url(./images/PORTADILLA-PLANTILLA-desarrollo-de-proyectos-img-1.jpg);
 }
 .fill-container.fibra{
 	background-image: url(../comunicaciones/images/01-fibra.jpg);
@@ -66,7 +66,7 @@
 	background-size: cover;
 }
 .imgFibra{
-	background-image: url(../comunicaciones/images/02-fibra.jpg);
+	background-image: url(./images/desarrollo-de-proyectos-img2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

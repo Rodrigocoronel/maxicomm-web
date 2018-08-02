@@ -5,7 +5,6 @@
 <head>
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
-
 	<link rel="stylesheet" href="../../../../bootstrap/css/bootstrap.min.css"/>
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
@@ -21,6 +20,10 @@
 
     <style type="text/css">
 
+		a.asubmenu{
+			padding: 8px 0px 8px 0px !important;
+		}
+        
         ul {
             list-style-image: url("./images/blue-palomita.png");
         }
@@ -53,7 +56,7 @@
 		        <a id="inicio" class="nav-link " href="../../" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Nosotros
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -75,15 +78,19 @@
 		          Soluciones
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="../desarrollodeproyectos">Desarrollo de Proyectos</a>
+		          <a class="dropdown-item" href="../desarrolloDeProyectos">Desarrollo de Proyectos Tecnológicos</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="../comunicaciones" id="menuMision">Comunicaciones</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="#" id="menuVision" >Servicios Web</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../desarrolloDeSoftware" id="menuVision" >Desarrollo de software</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../desarrolloDeApps" id="menuVision" >Desarrollo de APPS</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" href="./productos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Productos
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -93,11 +100,13 @@
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="../../productos/contpaqi" >Contpaqi</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../productos/cartuchosytoners">Cartuchos y toners</a>
+		          <a class="dropdown-item" href="../../productos/cartuchosytoners">Cartuchos y tóners</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../productos/licenciamientos">Licenciamientos</a>
 		        </div>
 		      </li>
 		      <li class="nav-item active menu mx-2">
-		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="../../soporte">Soporte <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item active menu mx-2">
 		        <a class="nav-link" href="../../seguridad y energia">Seguridad y Energía <span class="sr-only">(current)</span></a>
@@ -110,26 +119,66 @@
 		</nav>
 	</div>
 	<!-- Imagen entrada -->
-	<div class="fondiu fill-container serviciosWeb container" style="max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
-    	<h4 align="left" style="font-size: 54PX; text-align: center; margin-top: 150px; font-family: 'Roboto'; color: white;">
-            <b>SERVICIOS WEB</b><br/>
+	<div class="fondiu fill-container serviciosWeb container" style=" max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
+    	<h4 align="left" style="font-size: 49PX; text-align: center; margin-top: 150px; font-family: 'Roboto'; color: white;">
+            <div class="container" style="width: 100%;">
+                <div class="row justify-content-around">
+                    <div class="col-5" style="text-align: center;">
+                        <p><b style="border-left: 10px solid red;"> &nbsp;SERVICIOS WEB</b></p>
+                    </div>
+                </div>
+            </div>
         </h4>
 	</div>
-	<div class="imgSinTextura" style="height: 450px; width: 100%; ">
-        <div class="Container" style="height: 100%; color: #1B2E35; font-size: 17PX; font-family: 'Roboto'; text-align: center; ">
-            <div class="row  justify-content-around " style="height: 100%;">
-                <div class="col-1 align-self-center " style=" 1px solid #c3c3c3";>
-                    <div> <a href="./apps/index.html"> <img src="images/ICONOS-servicio-web_DesarrollodeApps.png" height="100" width="100"></a> Desarrollo de APPS </div>
-                </div>
-                <div class="col-1 align-self-center">
-                    <div> <a href="./desarrollo/index.html"> <img src="images/ICONOSservicioweb_DesarrollodeSoftwarealaMedida.png" height="100" width="100"></a> Desarrollo de Software a la Medida </div>
-                </div>
-                <div class="col-1 align-self-center">
-                    <div> <a href="./serviciosweb/index.html"> <img src="images/serviciosWeb.png" height="100" width="100"></a> Servicios Web </div>
-                </div>
+	<div style="height: 250px; width: 100%; ">
+        <div class="container" style="height: 100%; color: #1B2E35; font-size: 17PX; font-family: 'Roboto'; text-align: justify; ">
+            <div class="row justify-content-center" style="height: 100%;">
+               <div class="col-8 align-self-center" > 
+               		Contamos con una serie de soluciones para mejorar las capacidades web de su empresa; desde el diseño de sitios responsivos hasta la gestión de dominios, hosting y administración de correos electrónicos corporativos. 
+               		<br/><br/>
+					Asegure el posicionamiento en línea de su empresa adquiriendo todas las herramientas necesarias para la era digital.
+
+               </div>
             </div>
         </div>
 	</div>
+
+		<div class="imgFibra parallax" style="height: 650px; width: 100%";>
+        <div class="container" style="height: 100%; padding:2%; padding-top: 6%">
+            <div class="row justify-content-around">
+                <div class="col-4 align-self-center" style="text-align: center; color: white; font-size: 17px;">
+                    <img src="./images/hosting.png">
+                    <div style="height: 100px; width: 100%; text-align: center;">
+                    	<p class="pt-5">HOSTING & DOMINIOS</p>
+                    	<p style="text-align: justify;">
+                    		Resolvemos todas las necesidades de Hosting y alojamiento para su sitio web de manera rápida y confiable. Lo vinculamos con las mejores plataformas en el mercado para asegurar precios competitivos y soporte técnico 24/7.
+                    	</p>
+                	</div>
+                </div>
+                 <div class="col-4 align-self-center" style="text-align: center; color: white; font-size: 17px;">
+                    <img src="./images/diseno.png">
+                    <div style="height: 100px; width: 100%; text-align: center;">
+                    	<p class="pt-5">DISEÑO WEB</p>
+                    	<p style="text-align: justify;">
+                    		Actualmente es una prioridad para cualquier empresa contar con un sitio web profesional que le permita posicionar su marca en línea de manera efectiva y facilite la adquisición de nuevos clientes. 
+                    		<br/><br/>
+							Nuestros proyectos se distinguen por basarse siempre en estrategias eficientes de marketing digital así como las últimas tendencias en diseño web, asegurando así los mejores resultados a corto y largo plazo.
+
+                    	</p>
+                	</div>
+                </div>
+                <div class="col-4 align-self-center" style="text-align: center; color: white; font-size: 17px;">
+                    <img src="./images/CORREOS.png">
+                    <div style="height: 100px; width: 100%; text-align: center;">
+                    	<p class="pt-5">ADMINISTRADOR DE CORREOS</p>
+                    	<p style="text-align: justify;">
+                    		Mejore la coordinación y productividad de su equipo de trabajo. Le ayudamos a encontrar la mejor opción en gestión servicio de correo electrónico corporativo.  
+                    	</p>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
         <div class="container" align="center" style="height: 100%;">
@@ -191,12 +240,4 @@
 	</div>
 
 </body>
-	<script>
-		$(document).ready(function() {
-		    $(".nav-link").hover(
-		        function() { $(this).addClass("Hover"); },
-		        function() { $(this).removeClass("Hover"); }
-		    );
-		});
-	</script>
 </html>

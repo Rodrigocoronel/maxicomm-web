@@ -36,8 +36,22 @@
     background-position: center 0px;
 }
 
+.fill-container-cartuchos{
+	background-image: url(./cartuchosytoners/images/Cartuchos-y-Toners-img1.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.fill-container-licenciamientos{
+	background-image: url(./licenciamientos/images/licenciamientos-img1.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
 .fill-container-MsWindows{
-	background-image: url(msWindows/images/MS-WINDOWS-IMG1.jpg);
+	background-image: url(msWindows/images/MS-WINDOWS-IMG1.3.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;
@@ -171,6 +185,23 @@
 	background-size: cover;
 }
 
+.imgTexturaLicenciamiento{
+	background-image: url(./licenciamientos/images/licenciamientos-img2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imgTexturaCartuchos{
+	background-image: url(./cartuchosytoners/images/Cartuchos-y-Toners-img2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .imgTexturaMsWindows{
 	background-image: url(msWindows/images/MS-WINDOWS-IMG2.jpg);
 	background-repeat: no-repeat;
@@ -194,24 +225,18 @@ a.asubmenu{
     border-bottom: 1px solid #ccc;
     display: block;
     text-decoration: none;
-    color: darkgray;
+    color: #212529;
 
 	padding: 8px 0px 8px 0px !important;
 }
 a.a2{
-    border-bottom: 0px solid #ccc;
+    border-bottom: 0px solid #ccc !important;
 }
 
 a.asubmenu:hover{
     text-decoration: none;
-    color: white !important;
+    color: black !important;
 	background-color: darkgray; 
-}
-
-a.Hover { 
-	border-bottom: 2px solid; 
-	color: red !important;
-	border-color: red;
 }
 
 
@@ -267,9 +292,17 @@ padding-left: 2em;
 }
 
 .bordeIconos{
-	border: 1px solid gray;
+	border: 1px solid #81818252;
 	height: 70%;
 	width: 70%;
 }
+
+a.nav-link.tabs{
+	padding: 8px 8px 8px 8px !important;
+}
+
+
+
+
 
 

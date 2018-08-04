@@ -6,81 +6,23 @@
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="../../assets/fonts/gotham-book/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-black/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../../assets/fonts/ghotam-light/font.css"/>  
+ 
 	<link rel="stylesheet" type="text/css" href="../../assets/animate.css"/>
+
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../../bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./menu.js"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./menu.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
 	<link rel='shortcut icon' type='image/x-icon' href='../../favicom.ico' />
-    <style type="text/css">
-
-	    @font-face {
-		    font-family: AvenirLTStd;
-		    src: url(./fonts/AvenirLTStd-Light.otf);
-		}
-		@font-face{
-			font-family: avenirltstd-heavy-webfont
-			src : url(./fonts/avenirltstd-heavy-webfont.woff);
-		}
-		@font-face{
-			font-family: MyriadWebPro
-			src : url(./fonts/MyriadWebPro.ttf);
-		}
-    	.centered {
-			  position: fixed;
-			  top: 50%;
-			  left: 50%;
-			  /* bring your own prefixes */
-			  transform: translate(-50%, -50%);
-			}
-		html,
-		body {
-			 height: 100%;
-		}
-		li.menu{
-			font-family:'Gotham Book';
-			font-weight:normal;
-			font-size:17px;	
-
-		}
-
-		li.sub-menu{
-			font-family:'GothamLight';
-			font-weight:normal;
-			font-size:12px;	
-		}
-
-		a.nav-link{
-			padding: 8px 0px 8px 0px !important;
-		}
-
-
-		a.Hover { 
-			border-bottom: 2px solid; 
-			color: red !important;
-			border-color: red;
-		}
-
-		/*.iconoSoluciones{ 
-			transform: scale(1);
-			transition-duration: .6s;
-		}*/
-
-		.visible{
-			visibility: visible;
-		}
-
-		.navbar-light .navbar-nav .nav-link {
-		    color: rgba(0,0,0,.9);
-		}
-    </style>
 </head>
  
 <body>
@@ -92,10 +34,10 @@
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
 			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
-            	<source src="../../assets/videos/header-empresa.mp4" type="video/mp4" />
+            	<source src="./video/Comp 1_4.mp4" type="video/mp4" />
             </video>
             <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
-            	<img   src="./images/LOGO-WHITE-MAXICOMM-01.svg" >
+            	<img   src="./images/logohogar.svg" >
             </div>
 		</div>
 	</div>
@@ -107,9 +49,9 @@
 		  </button>
 
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
-		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto; height: 40px">
-		      <li class="nav-item active menu">
-		        <a id="inicio" class="nav-link" href="#" >Inicio <span class="sr-only">(current)</span></a>
+		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
+		      <li class="nav-item active menu mx-2">
+		        <a id="inicio" class="nav-link posicionActual" href="#" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -124,31 +66,58 @@
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="#carousel" id="menuFilosofia">Filosifia</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Galeria</a>
+		          <a class="dropdown-item" href="./galeria">Galeria</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="#testimoniales">Testimoniales</a>
 		        </div>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Soluciones
+		          Seguridad y Energía
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="./nosotros">Desarrollo de Proyectos</a>
+		          <a class="dropdown-item" href="./seguridad/ccvt">CCVT (Video Vigilancia)</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="./soluciones/comunicaciones" id="menuMision">Comunicaciones</a>
+		          <a class="dropdown-item" href="./seguridad/cercasElectricas" id="menuMision">Cercas Electricas</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="./soluciones/serviciosWeb" id="menuVision" >Servicio Web</a>
+		          <a class="dropdown-item" href="./seguridad/biometricos" id="menuVision" >Biometricos</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="./seguridad/panelesSolares" id="menuVision" >Paneles Solares</a>
 		        </div>
 		      </li>
-		      <li class="nav-item active menu mx-2">
-		        <a class="nav-link" href="./productos">Productos <span class="sr-only">(current)</span></a>
+		      <li class="nav-item dropdown menu mx-2">
+		        <a class="nav-link dropdown-toggle" href="./productos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Productos
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="./productos">Equipamiento</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="./productos/consumibles" >Consumibles - Cartuchos y Tóners</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="./productos/membresiaEstudiantil" >Membresia Estudiantil</a>
+		        </div>
 		      </li>
-		      <li class="nav-item active menu mx-2">
-		        <a class="nav-link" href="#">Soporte <span class="sr-only">(current)</span></a>
+		       <li class="nav-item dropdown menu mx-2">
+		        <a class="nav-link dropdown-toggle" href="./productos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Soporte
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="./soporte/reparacionCompu">Reparación de computadoras e instalación de programas</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="./soporte/reparacionPort" >Reparación de portátiles, tablets y celulares</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="./soporte/reparacionImp" >Reparación de impresoras</a>
+		        </div>
 		      </li>
-		      <li class="nav-item active menu mx-2">
-		        <a class="nav-link" href="./seguridad y energia">Seguridad y Energía <span class="sr-only">(current)</span></a>
+		       <li class="nav-item dropdown menu mx-2">
+		        <a class="nav-link dropdown-toggle" href="./productos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Consultoría
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="./consultoria/soporteTecnico">Soporte Técnico </a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="./consultoria/polizas" >Pólizas</a>
+		        </div>
 		      </li>
 		      <li class="nav-item active menu mx-2">
 		        <a class="nav-link" href="./contacto">Contacto <span class="sr-only">(current)</span></a>
@@ -161,11 +130,10 @@
 	<div class="fondiu fill-container container" style="max-width: 100%; 
 		background-repeat: no-repeat;
     	overflow: hidden;">
-    	<h4 align="center" class="animated fadeIn" style="font-size: 40PX; margin-top: 241px; font-family: 'Roboto', sans-serif; !important; color: black;">TECNOLOGÍA<br/>A TU ALCANCE</h4>	
+    	<h4 align="center" class="animated fadeIn" style="font-size: 49PX; margin-top: 235px; font-family: 'Roboto', sans-serif; !important; color: black;">TECNOLOGÍA A<br/> TU ALCANCE</h4>	
     	<div class="row justify-content-center">
-		    <div class="col-4" style="text-align: justify; margin-top: 0px;">
-				<p class="empresa animated fadeIn" style="font-size: 19px; font-family: 'Roboto'; color: black;"> Somos una empresa creativa y en constante crecimiento, enfocada en ofrecer soporte
-                y asesoría dando soluciones eficientes en relación a las ncesidades de nuestros clientes. Altamente capacitados en soluciones TI a empresas, gobierno, educacion, salud, entre otras.</p>
+		    <div class="col-md-4 col-xs-12" style="text-align: justify; margin-top: 0px;">
+				<p class="empresa animated fadeIn" style="font-size: 19px; font-family: 'Roboto'; color:black;"> Somos una empresa creativa y en constante crecimiento, enfocada en ofrecer soporte y asesoría dando soluciones eficientes en relación a las necesidades de nuestros clientes. Altamente capacitados en soluciones TI a empresas, gobierno, educación, salud, entre otras.</p>
 		    </div>
 		</div>
 	</div>
@@ -173,50 +141,54 @@
 
 
 	<!-- Soluciones -->
-	<div class="fill-containerTexture container" style="max-width: 100%;position: relative; height: 450px; padding-top: 0px;" >
+	<div class="fill-containerTexture container" style="max-width: 100%;position: relative; height: 500px; padding-top: 0px;" >
 		<div class="row justify-content-center">
 			<img style="z-index: 1; position: absolute; height: 40px; width: 250px;" src="./images/black-base-01.png"> 
 			<h3 style="z-index: 2; color: white;">Soluciones</h3>
 		</div>
-		<div class="row" style="padding-top: 100px;">
-		    <div class="col-3" style="text-align: center; height: 150px;">
+		<div class="row align-items-center" style="height: calc(100% - 40px);">
+		    <div class="col-3" style="text-align: center; ">
 		    	<div class="row justify-content-center">
-		    		<img id="icnSolution1" class="iconoSoluciones animated " src="./images/icons-hogar-01.png">	    		
+		    		<img id="icnSolution1" class="iconoSoluciones animated " src="./images/icons-hogar-01.svg">	    		
 		    	</div>
 		    	<div id="textoVerMas" class="col-4" style="position: relative; display: inline-block; text-align: center;">
-		    			<h3 id="textoSeguridad" style="position: absolute; top: 20px;left: -21px;">ESTUDIANTES</h3>
-		    			<img id="imgVerMas" style="width: 70px; height: 80px;" src="./images/solutions-empresa-icons-06.svg">
+		    			<h3 id="textoSeguridad" style="position: absolute; top: 20px;left: -20px;">ESTUDIANTES</h3>
+		    			<a href="./seguridad y energia">
+		    				<img id="imgVerMas" style="width: 70px; height: 80px;" src="./images/solutions-empresa-icons-06.svg">
+		    			</a>
 		    	</div>
 		    </div>
-		    <div class="col-3" style="text-align: center; height: 150px;">
+		    <div class="col-3" style="text-align: center; ">
 		    	<div class="row justify-content-center">
-		    		<img id="icnSolution2" class="iconoSoluciones animated" src="./images/icons-hogar-02.png">	    		
+		    		<img id="icnSolution2" class="iconoSoluciones animated" src="./images/icons-hogar-02.svg">	    		
 		    	</div>
 		    	<div id="textoVerMas1" class="col-4" style="position: relative; display: inline-block; text-align: center;">
 		    			<h3 id="textoEquipamiento" style="position: absolute; top: 20px;left: -12px;">SEGURIDAD</h3>
 		    			<img id="imgVerMas1" style="width: 70px; height: 80px;" src="./images/solutions-empresa-icons-06.svg">
 		    	</div>
 		    </div>
-		    <div class="col-3" style="text-align: center; height: 150px;">
+		    <div class="col-3" style="text-align: center; ">
 		    	<div class="row justify-content-center">
-		    		<img id="icnSolution3" class="iconoSoluciones animated" src="./images/icons-hogar-03.png">	    		
+		    		<img id="icnSolution3" class="iconoSoluciones animated" src="./images/icons-hogar-03.svg">	    		
 		    	</div>
 		    	<div id="textoVerMas2" class="col-4" style="position: relative; display: inline-block; text-align: center;">
-		    			<h3 id="textoSistemas" style="position: absolute; top: 20px;left: -15px;">PRODUCTOS</h3>
+		    			<h3 id="textoSistemas" style="position: absolute; top: 20px;left: -20px;">PRODUCTOS</h3>
 		    			<img id="imgVerMas2" style="width: 70px; height: 80px;" src="./images/solutions-empresa-icons-06.svg">
 		    	</div>
-		    </div>
-            <div class="col-3" style="text-align: center; height: 150px;">
+		    </div>	
+			<div class="col-3" style="text-align: center; ">
 		    	<div class="row justify-content-center">
-		    		<img id="icnSolution3" class="iconoSoluciones animated" src="./images/icons-hogar-04.png">	    		
+		    		<img id="icnSolution4" class="iconoSoluciones animated " src="./images/icons-hogar-04.svg">	    		
 		    	</div>
-		    	<div id="textoVerMas2" class="col-4" style="position: relative; display: inline-block; text-align: center;">
-		    			<h3 id="textoSistemas" style="position: absolute; top: 20px;left: 19px;">SOPORTE</h3>
-		    			<img id="imgVerMas2" style="width: 70px; height: 80px;" src="./images/solutions-empresa-icons-06.svg">
+		    	<div id="textoVerMas3" class="col-4" style="position: relative; display: inline-block; text-align: center;">
+		    			<h3 id="textoConsultoria" style="position: absolute; top: 20px;left: 10px;">SOPORTE</h3>
+		    			<a href="./seguridad y energia">
+		    				<img id="imgVerMas4" style="width: 70px; height: 80px;" src="./images/solutions-empresa-icons-06.svg">
+		    			</a>
 		    	</div>
 		    </div>
 		</div>
-
+		<!-- segnda fila solutions -->
 	</div>
 	<!-- Carrusel  -->
 		<!-- <img src="./images/empresa-Index-nosotros-slide.png" class="img-fluid"> -->
@@ -294,7 +266,7 @@
 	</div>
 	<!-- Inovacion a tu alcance -->
 		<div class="parallax" style="padding: 5% 0; height: 450px;" >	
-			<p  style="padding-top: 6%;line-height: 1.1; font-family: 'Roboto'; color: black; font-size: 50px; padding-left: 162px;" >INNOVACIÓN <br/> A TU ALCANCE</p>
+			<p  style="padding-top: 4%; color: black; font-size: 50px; padding-left: 125px; " >INNOVACIÓN <br/> A TU ALCANCE</p>
 
 		</div>
 	<!-- Testimoniales  -->
@@ -316,7 +288,7 @@
 			</div>
 			<div class="col-4 pr-0"  >
 				<img class="float-right" src="./images/empresa-Index-4.png" height="340" width="350">
-				<a class="text-right" href=""><p style="position: absolute; top: 76%; right: 9%; color: white;">Ver Más</p></a>
+				<!-- <a class="text-right" href=""><p style="position: absolute; top: 76%; right: 9%; color: white;">Ver Más</p></a> -->
 			</div>
 		</div>
 	</div>
@@ -325,8 +297,12 @@
 		<div class="container" style="height: 100%;">
 			<div class="row align-items-center" style="height: 100%;" >
 				<div class="col-4" >
-					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
-					<img src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					<a id="icnRedesS" href="http://facebook.com" target="_blank">
+						<img id="iconFacebook" src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+					</a>
+					<a id="icnRedesS" href="http://twitter.com" target="_blank">
+						<img id="iconTwitter"src="./images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+					</a>
 				</div>
 				<div  class="col-8 text-right" >
 					<a href="#" style="color: white;" > Copyright / </a>

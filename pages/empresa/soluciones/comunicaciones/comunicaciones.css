@@ -56,8 +56,8 @@
 .fill-container.digital{
 	background-image: url(../comunicaciones/images/01-digital.jpg);
 }
-.fill-container.analoga{
-	background-image: url(./images/portada-TELEFONiA-ANALOGA.jpg);
+.fill-container.enlaces{
+	background-image: url(./images/portada-punto-a-punto.jpg);
 }
 
 .imgComunicaciones{
@@ -85,8 +85,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.imgAnaloga{
-	background-image: url(./images/portada-TELEFONiA-ANALOGA2.jpg);
+.imgEnlaces{
+	background-image: url(./images/Enlaces-punto-a-punto-img2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

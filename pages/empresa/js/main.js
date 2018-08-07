@@ -3,7 +3,20 @@ $(document).ready(function() {
         function() { $(this).addClass("Hover"); },
         function() { $(this).removeClass("Hover"); }
     );
+    
+    setTimeout("aparecerTexto()", 720);
+    setTimeout("aparecerTexto2()", 720);
+
 });
+
+function aparecerTexto(){
+  $("#textoInicio").addClass('fadeIn');
+}
+
+function aparecerTexto2(){
+  $("#textoInicio2").addClass('fadeIn');
+}
+
 $(function() {
   	$('#textoVerMas').hover(function (){
 		$('#imgVerMas').css({'visibility':'visible','opacity' : '1' , 'transform': 'scale(1.8)', 'transition-duration'  : '.6s', 'cursor' : 'pointer'});

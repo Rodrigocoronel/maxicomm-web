@@ -1,12 +1,4 @@
 @media (min-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
-	}
-
-	.logo-menu{
- 		height:100%;
- 		width:100%;
- 	}
 
  	.fondiu{
 		height : calc(100% - 153px);
@@ -18,14 +10,7 @@
  }
 
 @media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 76px ;
-	}
 
-	.logo-menu{
- 		height:76px;
- 		width:314px;
- 	}
 
  	.fondiu{
 		height : calc(100% - 100px);
@@ -184,3 +169,4 @@ p.empresa{
 	width: 30px;
 	
 }
+

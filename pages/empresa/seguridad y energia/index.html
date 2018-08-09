@@ -21,12 +21,12 @@
 </head>
  
 <body>
-    <div class="container-fluid" style="position: relative; overflow: hidden;"  >
+	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
             	<source src="../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
-            <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
+            <div class="animated fadeIn headerMaxicomm" id="logoMaxi">
             	<img   src="../images/LOGO-WHITE-MAXICOMM-01.svg" >
             </div>
 		</div>
@@ -90,7 +90,7 @@
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="../productos/contpaqi" >Contpaqi</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../productos/cartuchosytoners">Cartuchos y tóners</a>
+		          <a class="dropdown-item" href="../productos/cartuchosytoners">Remanufactura de Consumibles</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="../productos/licenciamientos">Licenciamientos</a>
 		        </div>
@@ -122,35 +122,48 @@
 	</div>
 	
 	<div class="imgSinTextura" style="height: 500px; width: 100%; ">
-        <div class="Container" style="height: 100%; color: #1B2E35; font-size: 17PX; font-family: 'Roboto'; text-align: center; ">
+        <div class="container-fluid" style="height: 100%; color: #1B2E35; font-size: 17PX; font-family: 'Roboto'; text-align: center; ">
 
             <div class="row  justify-content-around " style="height: 50%;">    
-                <div class="col-1 align-self-center " style=" 1px solid #c3c3c3";>
-                    <div> <a href="./cctvcorporativo/index.html"> <img src="images/icono-cctv.png" height="100" width="100"></a> CCTV Corporativo</div>
+                <div class="col-1 align-self-center">
+					<a class="portadilla" href="./cctvcorporativo/index.html">
+                    	<div class="cuadros">  <img src="images/icono-cctv.svg" height="100" width="100"><br/> CCTV Corporativo</div>
+                    </a>
                 </div>
                 <div class="col-1 align-self-center">
-                    <div> <a href="./cercaselectrificadas/index.html"> <img src="images/icono-cerca.png" height="100" width="100"></a> Cercas Electrificadas </div>
+                    <a class="portadilla" href="./cercaselectrificadas/index.html">
+                    	<div class="cuadros"> <img src="images/icono-cerca.svg" height="100" width="100"><br/> Cercas Electrificadas </div>
+                    </a>
                 </div>
                 <div class="col-1 align-self-center">
-                    <div> <a href="./panelessolares/index.html"> <img src="images/icono-paneles.png" height="100" width="100"></a> Páneles Solares </div>
+                    <a class="portadilla" href="./panelessolares/index.html">
+                    	<div class="cuadros"> <img src="images/icono-paneles.svg" height="100" width="100"> Páneles Solares </div>
+                    </a>
                 </div>
                 <div class="col-1 align-self-center">
-                    <div> <a href="./gpsvehicular/index.html"> <img src="images/icono-gps.png" height="100" width="100"></a> GPS Vehicular </div>
+                	<a class="portadilla" href="./gpsvehicular/index.html">
+                    	<div class="cuadros">  <img src="images/icono-gps.svg" height="100" width="100"><br/> GPS Vehicular </div>
+                    </a>
                 </div>
             </div>
 
-            <div class="row  justify-content-around " style="height: 50%;">    
-                <div class="col-1 align-self-center " style=" 1px solid #c3c3c3";>
-                    <div> <a href="./controlesdeacceso/index.html"> <img src="images/icono-acceso.png" height="100" width="100"></a> Controles de Acceso </div>
+            <div class="row justify-content-around" style="height: 50%;">    
+                <div class="col-sm-12 col-lg-1 align-self-center ml-lg-5" align="center">
+                	<a class="portadilla" href="./instalacioneselectricas/index.html"> 
+                    	<div class="cuadros"> 
+                    		<img src="images/icono-instalacioneselectricas.svg" height="100" width="100">Instalaciones Eléctricas 
+                    	</div>
+                   	</a> 
                 </div>
-                <div class="col-1 align-self-center">
-                    <div> <a href="./instalacioneselectricas/index.html"> <img src="images/icono-instalacioneselectricas.png" height="100" width="100"></a> Instalaciones Eléctricas </div>
+                <div class="col-sm-12 col-lg-1 align-self-center" align="center">
+                	<a class="portadilla" href="./biometrico/index.html">
+                    	<div class="cuadros">  <img src="images/icono-biometrico.svg" height="100" width="100"><br/> Reloj Checador Biométrico </div>
+                    </a>
                 </div>
-                <div class="col-1 align-self-center">
-                    <div> <a href="./biometrico/index.html"> <img src="images/icono-biometrico.png" height="100" width="100"></a> Reloj Checador Biométrico </div>
-                </div>
-                <div class="col-1 align-self-center">
-                    <div> <a href="./barreravehicular/index.html"> <img src="images/icono-barrera.png" height="100" width="100"></a> Barrera Vehicular </div>
+                <div class="col-sm-12 col-lg-1 align-self-center mr-lg-5"  align="center">
+                	<a class="portadilla" href="./barreravehicular/index.html">
+                    	<div class="cuadros">  <img src="images/icono-barrera.svg" height="100" width="100"> Barrera Vehicular </div>
+                    </a>
                 </div>
             </div>
             

@@ -1,32 +1,33 @@
 <!DOCTYPE html>
- 
+
 <html lang="es">
  
 <head>
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/> 
+    <link rel=stylesheet type="text/css" href="../css/menu.css"/>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
- 
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../../../bootstrap/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="./nosotros.css">
-    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <script src="../js/menu.js"></script>
     <script src="../js/cotizacion.js"></script>
 
-    <link rel='shortcut icon' type='image/x-icon' href='../../../favicom.ico' />
+    <link rel="stylesheet" type="text/css" href="../soporte.css">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/animate.css">
+    <link rel='shortcut icon' type='image/x-icon' href='../../../../favicom.ico' /> 
 </head>
  
-<body >
-	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
+<body>
+    <div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
 			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
-            	<source src="../video/Comp 1_4.mp4" type="video/mp4" />
+            	<source src="../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
-            	<img   src="../images/logohogar.svg" >
+            	<img   src="../images/LOGO-WHITE-MAXICOMM-01.svg" >
             </div>
 		</div>
 	</div>
@@ -43,17 +44,17 @@
 		        <a id="inicio" class="nav-link" href="../index.html" >Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item dropdown menu mx-2">
-		        <a class="nav-link dropdown-toggle posicionActual" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle" href="../../nosotros/index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Nosotros
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Quienes Somos</a>
+		          <a class="dropdown-item" href="../nosotros/index.html">Quienes Somos</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="../#carousel" id="menuMision">Misión</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="../#carousel" id="menuVision" >Visión</a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../index.html/#carousel" id="menuFilosofia">Filosofía</a>
+		          <a class="dropdown-item" href="../#carousel" id="menuFilosofia">Filosofía</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="../nosotros/galeria/index.html">Galeria</a>
 		        </div>
@@ -84,39 +85,40 @@
 		          <a class="dropdown-item" href="../productos/membresiaEstudiantil/index.html" >Membresia Estudiantil</a>
 		        </div>
 		      </li>
-		       <li class="nav-item dropdown menu mx-2">
-		        <a class="nav-link dropdown-toggle" href="./productos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Soporte
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="../soporte/index.html">Centro de soporte técnico</a>
-		        </div>
+		      <li class="nav-item active menu mx-2">
+		        <a class="nav-link posicionActual" href="#">Soporte <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item active menu mx-2">
-		        <a class="nav-link " href="../contacto/index.html">Contacto <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="../contacto/index.html">Contacto <span class="sr-only">(current)</span></a>
 		      </li>
 		    </ul>
 		  </div>
 		</nav>
 	</div>
 	<!-- Imagen entrada -->
-	<div class="fondiu fill-container container" style="max-width: 100%; height: 557px; background-repeat: no-repeat; overflow: hidden;">
-    	<h4 align="center" style="font-size: 49PX; margin-top: 220px; font-family: 'Roboto'; color: white;">
-            ¿QUIÉNES SOMOS?
+	<div class="fondiu fill-container soporte container" style="max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
+    	<h4 align="left" style="font-size: 44PX; padding-left: 170px; margin-top: 130px; font-family: 'Roboto'; color: white;">
+            SOPORTE
         </h4>
 	</div>
+    
 	<!-- Soluciones -->
-	<div class="fill-containerTexture container" style="max-width: 100%; overflow: hidden; background-repeat: no-repeat; height: 500px; padding-top: 20px;" >
-        <div class="soluciones">    
-            <p ><b>Maxicomm</b> &ensp; Empresa fundada en 1998 enfocados en ofrecer soporte y asesoria a empresas en materia
-                de equipos de computo, con servicios de ingeniería, venta, instalación y mantenimiento.</p>
-            <p>Somos una empresa Creativa y en constante crecimiento, que acepta y enfrenta el compromiso de innovar 
-                soluciones eficientes en relación a las necesidades de nuestros clientes.</p>
-            <p>Altamente capacitados en soluciones TI  a empresas, gobierno, educación, salud, entre otras.</p>
-            <hr style="height: 3px;" width="150px" height: "3px" color="red">
+	<div class="container" style="height: 430px;">
+        <div class="row align-items-center" style=" padding-top: 30px;">
+			<div class="col-5 align-content-center" style="font-family: 'Roboto'; font-size: 20PX; height: 100%;">
+				<p style="text-align: justify;"> 
+                    X X X X X
+                </p>
+            </div>
+		</div>
+	</div>
+
+	<div class="imgSoporte parallax" style="height: 420px; width: 100%; ">
+        <div class="Container" style="color: white; font-size: 27PX; font-family: 'Roboto'; text-align: center; height: 100%;">
             
         </div>
 	</div>
+    
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
         <div class="container" align="center" style="height: 100%;">
@@ -154,8 +156,8 @@
 	                </div>
     			</div>
     		</div>        		
-       	</div>	
-    </div>
+       	</div>
+	</div>
 	<!-- Footer -->
 	<div style="background-color: #252526; height: 85px; width: 100%">
 		<div class="container" style="height: 100%;">

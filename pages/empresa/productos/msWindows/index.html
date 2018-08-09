@@ -21,18 +21,19 @@
     <link rel="stylesheet" type="text/css" href="../../../../assets/js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
     <link rel="stylesheet" type="text/css" href="../../../../assets/js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
 
+    <link rel="stylesheet" type="text/css" href="../../../../assets/animate.css">
     <link rel="stylesheet" type="text/css" href="../productos.css">
     <script type="text/javascript" src="../productos.js"></script>
 </head>
  
 <body >
-	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
+	<div class="container-fluid" style="position: relative;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
-            	<source src="../../../../assets/videos/header-empresa.mp4" type="video/mp4" />
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
+            	<source src="../../../../assets/videos/Comp 1_1_1.mp4" type="video/mp4" />
             </video>
-            <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
-            	<img   src="../../images/LOGO-WHITE-MAXICOMM-01.svg" >
+            <div id="logoMaxi" class="animated fadeIn headerMaxicomm">
+            	<img src="../../images/LOGO-WHITE-MAXICOMM-01.svg" >
             </div>
 		</div>
 	</div>
@@ -114,7 +115,7 @@
 	<!-- Imagen entrada -->
 	<div class="fondiu fill-container-MsWindows container" style="max-width: 100%; height: 500px; background-repeat: no-repeat; overflow: hidden;">
     	<h4 align="left" style="font-size: 49PX; padding-left: 63px; margin-top: 12%; font-family: 'Roboto'; color: white;">
-            Ms <br/> Windows
+            MS <br/> Windows
         </h4>
 	</div>
 	<!-- Soluciones -->
@@ -149,7 +150,7 @@
             	<div class="col" style="color: white;">
             		<ul class="style0 bullet" >
             			<li style="background-image: url(./images/MSWINDOWS_Mesadetrabajo1.png); background-repeat: no-repeat;">
-            				<b>PRÁCTICO</b> Eficinete y de fácil uso.
+            				<b>PRÁCTICO</b> Eficiente y de fácil uso.
             			</li>
             		</ul>
             		<ul class="style0 bullet" >
@@ -164,19 +165,19 @@
 					</ul>
             		<ul class="style0 bullet" >
             			<li style="background-image: url(./images/MSWINDOWS_Mesadetrabajo1copia3.png); background-repeat: no-repeat;">
-            				<b>ESTABLE</b> Desarrollado en un lenguaje eficiente y con la depuracón a punto.
+            				<b>ESTABLE</b> Desarrollado en un lenguaje eficiente y con la depuración a punto.
             			</li>
         			</ul>
         			<ul class="style0 bullet" >
             			<li style="background-image: url(./images/MSWINDOWS_Mesadetrabajo1copia4.png); background-repeat: no-repeat; padding-right: 8em;">
-            				<b>VANGUARDISTA</b> Actualizado para trabajar con los nuevos regímenes fiscales, como los son facturación electronica.
+            				<b>VANGUARDISTA</b> Actualizado para trabajar con los nuevos regímenes fiscales, como los son facturación electrónica.
             			</li>
             		</ul>
             	</div>
             	<div class="col" style="color: white;">
             		<ul class="style0 bullet" >
             			<li style="background-image: url(./images/MSWINDOWS_Mesadetrabajo1copia7.png); background-repeat: no-repeat; padding-right: 8em;">
-            				<b>AMIGABLE</b> Desarrollado en un ambiente gráfico sencillo, lo que permite interactuar de manera amigable.
+            				<b>AMIGABLE</b>  Desarrollado en un ambiente gráfico sencillo, lo que permite interactuar de manera amigable.
             			</li>
             		</ul>
         			<ul class="style0 bullet" >
@@ -186,7 +187,7 @@
             		</ul>
         			<ul class="style0 bullet" >
             			<li style="background-image: url(./images/MSWINDOWS_Mesadetrabajo1copia5.png); background-repeat: no-repeat; padding-right: 8em;">
-            				<b>ECÓLOGICO</b> Ya que cuenta con facturación electronica, lo que permite utilizar menos impresiones  y consumo de papel .
+            				<b>ECÓLOGICO</b> Ya que cuenta con facturación electrónica, lo que permite utilizar menos impresiones y consumo de papel.
             			</li>
             		</ul>
             	</div>
@@ -194,9 +195,9 @@
         </div>
 	</div>
 
-	<div class="container-fluid imgTexturaMswindowDesc" style="height: 500px;  opacity: 0.8;">
+	<div class="container-fluid imgTexturaMswindowDesc" style="height: 600px;  opacity: 0.8;">
 		<div class="row justify-content-center" style="height: 100%;">
-			<div class="col-6 " style="margin-top: 5%;">
+			<div class="col-sm-12 col-md-6" style="margin-top: 5%;">
 				<ul class="nav nav-tabs" style="padding-top: 10px; font-family: 'Roboto'; font-size: 19px;">
 				  <li ><a class="nav-item nav-link active show tabs" data-toggle="tab" href="#home">Beneficios</a></li>
 				  <li><a class="nav-item nav-link tabs" data-toggle="tab" href="#menu1">Modalidades</a></li>
@@ -237,16 +238,71 @@
 				    </ul>
 				  </div>
 				  <div id="menu1" class="tab-pane fade">
-				    <h3>Menu 1</h3>
-				    <p>Some content in menu 1.</p>
+				    <h5>Ms Windows se puede utilizar como:</h5>
+				    <ul class="tabs" style="font-family: 'roboto';">
+				    	<li>
+				    		Punto de Venta.- Se recomienda para negocios con venta de mostrador, reemplazando a una caja registradora. Puede utilizar código de barras, básculas, cajón con apertura automática, impresora térmica de ticket.
+				    	</li>
+				    	<li>
+				    		Administrativa.- Modulo que aplica para aquellos negocios que requieren llevar un control administrativo eficiente de facturación de sus movimientos de venta con registro, control e historial de movimientos por cuenta.
+				    	</li>
+				    	<li>
+				    		Facturación Electrónica.- Permite cumplir con todo lo requerido en el nuevo régimen fiscal, donde la factura debe ser impresa en hoja simple, conteniendo la cadena original y el sello digital, como también cuenta con la herramienta de poder convertir y enviar los CFD y/o el CFDI.
+				    	</li>
+				    	<li>
+				    		Solución administrativa.- Sistema integral que permite manejar las 3 modalidades anteriores, en un solo sistema.
+				    	</li>
+				    </ul>
 				  </div>
 				  <div id="menu2" class="tab-pane fade">
-				    <h3>Menu 2</h3>
-				    <p>Some content in menu 2.</p>
+				    <ul class="tabs" style="font-family: 'roboto';">
+				    	<li>
+				    		Catálogo de Artículos, Clientes, Proveedores, Vendedores, Intermediarios
+				    	</li>
+				    	<li>
+				    		Facturación tradicional o electrónica
+				    	</li>
+				    	<li>
+				    		Manejo de cuentas (cargos y abonos)
+				    	</li>
+				    	<li>
+				    		Registro de Compras
+				    	</li>
+				    	<li>
+				    		Control de inventarios
+				    	</li>
+				    	<li>
+				    		Cotizaciones
+				    	</li>
+				    	<li>
+				    		Reportes detallados
+				    	</li>
+				    	<li>
+				    		Historial de movimientos
+				    	</li>
+				    	<li>
+				    		Emisión de Tickets
+				    	</li>
+				    	<li>
+				    		Multicajas y Multicajeros
+				    	</li>
+				    </ul>
 				  </div>
 				  <div id="menu3" class="tab-pane fade">
-				    <h3>Menu 3</h3>
-				    <p>Some content in menu 2.</p>
+				    	<ul class="tabs" style="font-family: 'roboto';">
+				    		<li>
+				    			Flexible.- Se puede adecuar a las necesidades especificas del cliente, adecuando formatos, procedimientos, reportes, etc.
+				    		</li>
+				    		<li>
+				    			Soporte técnico en sitio o en línea.- Existe la ventaja de que como es un sistema de nuestro catálogo, podemos brindar una atención oportuna y una solución a la medida.
+				    		</li>
+				    		<li>
+				    			Adaptable.- No requiere de demasiada infraestructura para su implementación y buen funcionamiento.
+				    		</li>
+				    		<li>
+				    			Actualizable.- Como es un sistema propio, existe la ventaja que se le pueden desarrollar módulos y reportes que el cliente considere necesarios.
+				    		</li>
+				    	</ul>
 				  </div>
 				</div>
 			</div>

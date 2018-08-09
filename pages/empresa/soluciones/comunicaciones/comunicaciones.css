@@ -11,6 +11,9 @@
  	.fondiu{
 		height : calc(100% - 153px);
 	}
+	.portadillaComunicaciones{
+		height: 500px;
+	}
  }
 
 @media (max-width: 1336px) { 
@@ -25,6 +28,10 @@
 
  	.fondiu{
 		height : calc(100% - 100px);
+	}
+
+	.portadillaComunicaciones{
+		height: 1000px;
 	}
  }
 
@@ -232,11 +239,18 @@ a.sub:hover{
 	background-color: lightgray; 
 }
 .cuadros{
-    text-decoration: none !important;
     color: #212529;
+    width: 4px;
+    border: 1px solid #81818252;
+    height: 160px;
+    width: 160px;
 }
 .cuadros:hover{
     color: #212529;
+}
+
+.portadilla{
+	text-decoration: none !important;
 }
 
 .barra{

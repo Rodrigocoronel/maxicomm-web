@@ -17,18 +17,19 @@
     <script src="../js/cotizacion.js"></script>
     <script type="text/javascript" src="./productos.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="../../../assets/animate.css">
     <link rel='shortcut icon' type='image/x-icon' href='../../../favicom.ico' />
 
 </head>
  
 <body >
-<div class="container-fluid" style="position: relative;"  >
+	<div class="container-fluid" style="position: relative;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
             	<source src="../../../assets/videos/Comp 1_1_1.mp4" type="video/mp4" />
             </video>
-            <div style="position: absolute; left: 50%; transform: translateX(-50%);">
-            	<img  class="logo-menu" src="../images/LOGO-WHITE-MAXICOMM-01.svg" >
+            <div id="logoMaxi" class="animated fadeIn headerMaxicomm">
+            	<img  src="../images/LOGO-WHITE-MAXICOMM-01.svg" >
             </div>
 		</div>
 	</div>
@@ -108,13 +109,16 @@
 		</nav>
 	</div>
 	<!-- Imagen entrada -->
-	<div class="fondiu fill-container-productos container" style="max-width: 100%; height: 500px; background-repeat: no-repeat; overflow: hidden;">
-		<div class="row justify-content-center" style="height: 100%;">
-			<div class="col-2 align-self-center text-center" style="border-left: 7px solid #f13333; height: 66px;">
-					<p style="font-size: 45px; font-family: 'Roboto'; color: white;" align="center">PRODUCTOS</p>
-			</div>
-			
-		</div>
+	<div class="fondiu fill-container-productos container" style="max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
+    	<h4 align="left" style="font-size: 49PX; text-align: center; margin-top: 150px; font-family: 'Roboto'; color: white;">
+            <div class="container" style="width: 100%;">
+                <div class="row justify-content-around">
+                    <div class="col-md-6 col-sm-8 col-lg-4" style="text-align: center;">
+                        <p  style="border-left: 10px solid red";><b> &nbsp;PRODUCTOS</b><br/></p>
+                    </div>
+                </div>
+            </div>
+        </h4>
 	</div>
 	<!-- Soluciones -->
 	<div class="container" style="height: 410px;">
@@ -147,9 +151,9 @@
             <div class="row align-items-center" style="height: 100%; ">
             	<div class="col-4" style="vertical-align: middle;" align="center" >
             		<div class="bordeIconos" >
-            			<button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
+            			<a href="./#Cotizacion">
 						  <img class="mt-3" class="mt-3" src="./images/ICONOS-productos_computadoras.png">
-						</button>
+						</a>
 	            		
 	            		<p>Computadoras</p>
 	            	</div>
@@ -189,7 +193,7 @@
 	</div>
 
 	<!-- Cotizacion -->
-	<div class="imgCotizacion" style="height: 540px;">
+	<div class="imgCotizacion" id="Cotizacion" style="height: 540px;">
         <div class="container" align="center" style="height: 100%;">
     		<div class="row align-items-center" style="height: 100%;" >
     			<div class="col-12">
@@ -226,25 +230,6 @@
     			</div>
     		</div>        		
        	</div>	
-	</div>
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        ...
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
-	      </div>
-	    </div>
-	  </div>
 	</div>
 	<!-- Footer -->
 	<div style="background-color: #252526; height: 85px; width: 100%">

@@ -15,7 +15,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/menu.css">
     <script type="text/javascript" src="../../js/menu.js"></script>
     <script type="text/javascript" src="../../js/cotizacion.js"></script>
-
+    
+    <link rel="stylesheet" type="text/css" href="../../../../assets/animate.css">
     <link rel='shortcut icon' type='image/x-icon' href='../../../../favicom.ico' />
 
     <style type="text/css">
@@ -35,10 +36,10 @@
 <body >
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
             	<source src="../../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
-            <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
+            <div class="animated fadeIn headerMaxicomm" id="logoMaxi">
             	<img   src="../../images/LOGO-WHITE-MAXICOMM-01.svg" >
             </div>
 		</div>
@@ -123,37 +124,48 @@
     	<h4 align="left" style="font-size: 49PX; text-align: center; margin-top: 150px; font-family: 'Roboto'; color: white;">
             <div class="container" style="width: 100%;">
                 <div class="row justify-content-around">
-                    <div class="col-4" style="text-align: center;">
+                    <div class="col-md-8 col-sm-12 col-lg-5" style="text-align: center;">
                         <p  style="border-left: 10px solid red";><b> &nbsp;COMUNICACIONES</b><br/></p>
                     </div>
                 </div>
             </div>
         </h4>
 	</div>
-	<div class="imgSinTextura" style="height: 500px; width: 100%; ">
-        <div class="Container" style="height: 100%; color: #1B2E35; font-size: 17PX; font-family: 'Roboto'; text-align: center; ">
-            <div style="height: 8%;"> </div>
-            <div class="row justify-content-around" style="height: 39%;">
-                <a class="col-2 align-self-center cuadros" style=" width: 4px; border: 1px solid #81818252;" href="./fibraoptica/index.html">
-                    <div> <img src="images/icono-fibra-normal.svg" height="100" width="100"> <br> Fibra <br> óptica</div>
-                </a>
-                <a class="col-2 align-self-center cuadros" style=" width: 4px; border: 1px solid #81818252;" href="./cableadoestructurado/index.html">
-                    <div> <img src="images/icono-estructurado-normal.svg" height="100" width="100"> <br> Cableado <br> estructurado </div>
-                </a>
-                <a class="col-2 align-self-center cuadros" style=" width: 4px; border: 1px solid #81818252;" href="./redesinalambricas/index.html">
-                    <div> <img src="images/icono-wireless-normal.svg" height="100" width="100"> <br> Redes <br> inalámbricas </div>
-                </a>
-            </div>
-            <div style="height: 8%;"> </div>
-            <div class="row justify-content-around" style="height: 39%;">
-                <a class="col-2 align-self-center cuadros" style=" width: 4px; border: 1px solid #81818252;" href="./telefoniadigital/index.html">
-                    <div> <img src="images/icono-digital-normal.svg" height="100" width="100"> <br> Telefonía <br> digital </div>
-                </a>
-                <a class="col-2 align-self-center cuadros" style=" width: 4px; border: 1px solid #81818252;" href="./enlaces/index.html">
-                    <div> <img src="images/icono-analoga-normal.svg" height="100" width="100"> <br> Enlaces <br> punto a punto </div>
-                </a>
-            </div>
-            <div style="height: 8%;"> </div>
+	<div class="imgSinTextura portadillaComunicaciones " style="width: 100%; ">
+        <div class="container align-items-center" style="height: 100%; color: #1B2E35; font-size: 17PX; font-family: 'Roboto'; text-align: center; ">
+        	<div class="row h-100 ">
+        		<div class="col-12 align-self-center ">
+		            <div class="row my-lg-4">
+		                <div class="col-lg-2 col-sm-12 offset-lg-1 align-self-center mt-sm-3" align="center">
+			                <a class="portadilla" href="./fibraoptica/index.html" >
+			                    <div class="cuadros"> <img src="images/icono-fibra-normal.svg" height="100" width="100"> <br> Fibra <br> óptica</div>
+			                </a>
+			            </div>
+		                <div class="col-lg-2 col-sm-12   align-self-center mt-sm-3 offset-lg-2" align="center">  
+		                	<a class="portadilla" href="./cableadoestructurado/index.html" >
+		                    	<div class="cuadros"> <img src="images/icono-estructurado-normal.svg" height="100" width="100"> <br> Cableado <br> estructurado </div>
+		                	</a>
+		                </div>
+		                <div class="col-lg-2 col-sm-12   align-self-center mt-sm-3 offset-lg-2" align="center">  
+		                	<a class="portadilla" href="./redesinalambricas/index.html" >
+		                    	<div class="cuadros"> <img src="images/icono-wireless-normal.svg" height="100" width="100"> <br> Redes <br> inalámbricas </div>
+		               		</a>
+		               	</div>
+		            </div>
+		            <div class="row my-lg-4" style="height: 39%;">
+		                <div  class="col-lg-2 col-sm-12 align-self-center mt-sm-3 offset-lg-3"  align="center">
+		                    <a class="portadilla" href="./telefoniadigital/index.html">
+		                    	<div class="cuadros"><img src="images/icono-digital-normal.svg" height="100" width="100"> <br> Telefonía <br> digital </div>
+		                	</a>
+		                </div>
+		                <div  class="col-lg-2 col-sm-12 col-12 align-self-center mt-sm-3 offset-lg-2 " align="center">
+		                	<a class="portadilla" href="./enlaces/index.html">
+		                    	<div class="cuadros"> <img src="images/icono-analoga-normal.svg" height="100" width="100"> <br> Enlaces <br> punto a punto </div>
+		               		</a>
+		               	</div>
+		            </div>
+		        </div>
+	        </div>
         </div>
 	</div>
 	<!-- Cotizacion -->

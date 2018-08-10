@@ -64,6 +64,12 @@
     background-position: center 0px;
 }
 
+.fill-container-membresia{
+	background-image: url(../productos/images/membresia-1.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
 
 .fill-containerTexture{
 	background-image: url(./images/empresa-Index-fondo-textura.jpg);
@@ -107,6 +113,14 @@
 
 .imgTestimoniales{
 	background-image : url(./images/empresa-Index-3.jpg) !important;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.imgMembresia{
+	background-image: url(../../hogar/productos/images/membresia-2.jpg);
 	height: 100%;
 	width: 100%;
 	background-repeat: no-repeat;

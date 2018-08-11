@@ -65,7 +65,7 @@
 }
 
 
-.fill-containerTexture{
+.containerTexture{
 	background-image: url(./images/empresa-Index-fondo-textura.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
@@ -299,6 +299,10 @@ padding-left: 2em;
 
 a.nav-link.tabs{
 	padding: 8px 8px 8px 8px !important;
+}
+
+.textoLicenciamientos{
+	font-size: 49PX; padding-left: 63px;  font-family: 'Roboto'; color: white;
 }
 
 

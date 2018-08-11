@@ -42,7 +42,7 @@
 }
 
 .fill-container.soporte{
-	background-image: url(./images/soporte-img1.jpg);
+	background-image: url(./soporte/images/soporte-hogar.jpg);
 }
 .fill-container.reparacionPC{
 	background-image: url(./images/1-01-reparacion-computadoras.jpg);
@@ -65,9 +65,7 @@
 .fill-container.asesoria{
 	background-image: url(./images/7-01-asesoria.jpg);
 }
-.fill-container.soporte{
-	background-image: url(./images/8-01-soporte.jpg);
-}
+
 .fill-container.polizas{
 	background-image: url(./images/9-01-polizas.jpg);
 }

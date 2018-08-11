@@ -24,10 +24,10 @@
 	background-image: url(./images/01-cercos.jpg);
 }
 .fill-container.paneles{
-	background-image: url(./images/01-temp.png);
+	background-image: url(./images/portada-paneles.solares.jpg);
 }
 .fill-container.gps{
-	background-image: url(./images/01-temp.png);
+	background-image: url(./images/gps-tracker.jpg);
 }
 .fill-container.controles{
 	background-image: url(./images/01-temp.png);
@@ -39,7 +39,7 @@
 	background-image: url(./images/01-biometrico.jpg);
 }
 .fill-container.barrera{
-	background-image: url(./images/01-temp.png);
+	background-image: url(./images/barrera-vehicular.jpg);
 }
 .imgSeguridad{
 	background-image: url(./images/02-temp.jpg);
@@ -62,12 +62,12 @@
 	background-size: cover;
 }
 .imgPaneles{
-	background-image: url(./images/02-temp.jpg);
+	background-image: url(./images/paneles-solares-img2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 .imgGps{
-	background-image: url(./images/02-temp.jpg);
+	background-image: url(./images/gps-tracker2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -77,7 +77,7 @@
 	background-size: cover;
 }
 .imgInstalaciones{
-	background-image: url(./images/02-instalaciones.jpg);
+	background-image: url(./images/instalaciones-electricas-fondo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -87,7 +87,7 @@
 	background-size: cover;
 }
 .imgBarrera{
-	background-image: url(./images/02-temp.jpg);
+	background-image: url(./images/barrera-vehicular2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -260,4 +260,10 @@ ul {
 }
 .portadilla{
 	text-decoration: none !important;
+}
+
+.imgPortadilla{
+	background-image: url(./images/empresa-Index-fondo-textura.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }

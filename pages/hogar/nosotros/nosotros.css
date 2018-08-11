@@ -98,12 +98,7 @@
     width: 600px;
 }
 
-.imgCotizacion{
-	background-image: url(./images/empresa-Index-formulario.jpg);
-    background-repeat: no-repeat;  
-    background-size: cover;
-    background-position: center 0px;
-}
+
 .formularioCotizacion{
     margin: auto;
     position: relative;

@@ -54,7 +54,7 @@
 	background-image: url(./images/01-cercos.jpg);
 }
 .fill-container.paneles{
-	background-image: url(./images/01-temp.png);
+	background-image: url(./images/paneles-solares-hogar.jpg);
 }
 .fill-container.gps{
 	background-image: url(./images/01-temp.png);
@@ -186,12 +186,7 @@
     width: 600px;
 }
 
-.imgCotizacion{
-	background-image: url(./images/empresa-Index-formulario.jpg);
-    background-repeat: no-repeat;  
-    background-size: cover;
-    background-position: center 0px;
-}
+
 .formularioCotizacion{
     margin: auto;
     position: relative;

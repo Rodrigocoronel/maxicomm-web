@@ -83,7 +83,7 @@
 	background-size: cover;
 }
 .imgInalambrica{
-	background-image: url(./images/02-temp.jpg);
+	background-image: url(./images/redes-inalambricas2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -100,6 +100,13 @@
 .imgSinTextura{
     
 }
+
+.imgPortadilla{
+	background-image: url(./images/empresa-Index-fondo-textura.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .imgTextura1{
 	background-image: url(./images/textura1.jpg);
 	background-repeat: no-repeat;

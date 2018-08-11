@@ -74,6 +74,7 @@ a#icnRedesS{
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;
+    color: black !important;
 }
 
 p{
@@ -83,6 +84,11 @@ p{
 #button{
 	border: 1px solid;
 	border-color: white;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
 }
 
     

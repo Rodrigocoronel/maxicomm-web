@@ -90,7 +90,7 @@
 }
 
 .imgTextura1{
-	background-image: url(./images/textura1.jpg);
+	background-image: url(./images/empresa-Index-fondo-textura.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -246,4 +246,8 @@ a.sub:hover{
 }
 ul {
     list-style-image: url("./images/blue-palomita.png"); 
+}
+
+.textoPortada{
+	font-size: 45PX; text-align: center;  font-family: 'Roboto'; color: white;
 }

@@ -193,8 +193,8 @@
 	width: 30px;
 }
 
-.imgTexturaContpaq{
-	background-image: url(contpaqi/images/CONTPAQi-img2.jpg);
+.imgTexturaProductos{
+	background-image: url(../images/empresa-Index-fondo-textura.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

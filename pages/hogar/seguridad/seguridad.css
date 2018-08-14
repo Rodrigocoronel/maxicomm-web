@@ -65,8 +65,11 @@
 .fill-container.instalaciones{
 	background-image: url(./images/01-instalaciones.jpg);
 }
-.fill-container.biometrico{
-	background-image: url(./images/01-biometrico.jpg);
+.fill-container.portero{
+	background-image: url(./images/01-temp.png);
+}
+.fill-container.chapa{
+	background-image: url(./images/01-temp.png);
 }
 .fill-container.barrera{
 	background-image: url(./images/01-temp.png);
@@ -111,8 +114,13 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.imgBiometrico{
-	background-image: url(./images/02-biometrico.jpg);
+.imgPortero{
+	background-image: url(./images/02-temp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgChapa{
+	background-image: url(./images/02-temp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

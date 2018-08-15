@@ -11,6 +11,9 @@
  	.fondiu{
 		height : calc(100% - 153px);
 	}
+	.imgFibra{
+		height: 650px;
+	}
  }
 
 @media (max-width: 1336px) { 
@@ -25,6 +28,10 @@
 
  	.fondiu{
 		height : calc(100% - 100px);
+	}
+
+	.imgFibra{
+		height: 1200px;
 	}
  }
 

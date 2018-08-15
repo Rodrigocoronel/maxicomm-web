@@ -14,6 +14,9 @@
 	.portadillaComunicaciones{
 		height: 500px;
 	}
+	.tiposFibra{
+		height: 550px;
+	}
  }
 
 @media (max-width: 1336px) { 
@@ -32,6 +35,9 @@
 
 	.portadillaComunicaciones{
 		height: 600px;
+	}
+	.tiposFibra{
+		height: 900px;
 	}
  }
 

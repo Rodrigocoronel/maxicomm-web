@@ -17,19 +17,35 @@ function isElementVisible(elem){
 
 // invoco una función anónima en el evento scroll sobre window
 $(window).on("scroll" ,function() {
-   let elem = $('#textoQuienes'); // obtengo el elemento por id
-   	if ($('#textoQuienes').length > 0) {
-  		isElementVisible(elem) ? elem.addClass('fadeInLeft') : ""
+  let elem = $('#textoQuienes'); // obtengo el elemento por id
+  if ($('#textoQuienes').length > 0) {
+  	isElementVisible(elem) ? elem.addClass('fadeInLeft') : ""
 	}
-/*
-   	let elemIcono = $('#icono'); // obtengo el elemento por id
-   	if ($('#icono').length > 0) {	
-   		isElementVisible(elemIcono) ? elemIcono.addClass('fadeIn') : ""
-   	}*/
 
-   	var elms = document.querySelectorAll("[id='iconos']");
+  // parallax software
 
-	for(var i = 0; i < elms.length; i++) 
-	  console.log(elms[i])
+  let desarrolloSoftware = $('.animated2s.devSoftware');
+  if(desarrolloSoftware.length > 0)
+    isElementVisible(desarrolloSoftware) ? desarrolloSoftware.addClass('fadeInLeft') : ""
+
+  //parallax webservices
+  let webServices = $('.animated2s.webServices');
+  if(webServices.length > 0)
+    isElementVisible(webServices) ? webServices.addClass('fadeInLeft') : ""
+
+    //parallax webservices
+  let fibraOptica = $('.animated2s.fibraOptica');
+  if(fibraOptica.length > 0)
+    isElementVisible(fibraOptica) ? fibraOptica.addClass('fadeInLeft') : ""
+
+  // iconos animados
+ 	var elms = document.querySelectorAll(".animated.icono");
+
+  if(elms.length > 0){
+    for(var i = 0; i < elms.length; i++) {
+        isElementVisible(elms[i]) ? elms[i].classList.add('fadeIn') : ""
+    }
+  }
+  	
 })
 

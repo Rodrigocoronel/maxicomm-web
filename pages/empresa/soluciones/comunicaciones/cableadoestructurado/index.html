@@ -6,7 +6,7 @@
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="../../../../../bootstrap/css/bootstrap.min.css"/>
-
+    
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> 
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../../../../../bootstrap/js/bootstrap.min.js"></script>
@@ -151,11 +151,136 @@
 			</div>
 		</div>
 	</div>
-    <div class="imgEstructurado parallax" style="height: 400px; ">
+    
+    <!-- Informacion adicional -->
+    <div class="imgEstructurado parallax" style="height: 850px; ">
         <div class="container" style="height: 100%;">
-
+            <div style="height: 5%;"></div>
+            
+            <div id="p1" style="height: 45%;">
+            
+                <div class="row" style="height:20%">
+                    <div class="col-3" >
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#punto1" data-parent="#p1" aria-expanded="false" aria-controls="punto1" style="width: 100%;">
+                            Cableado Horizontal
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#punto2" data-parent="#p1" aria-expanded="false" aria-controls="punto2" style="width: 100%;">
+                            Cableado vertical o Backbone
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#punto3" data-parent="#p1" aria-expanded="false" aria-controls="punto3" style="width: 100%;">
+                            Cuarto de entrada de servicios
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#punto4" data-parent="#p1" aria-expanded="false" aria-controls="punto4" style="width: 100%;">
+                            Sistema de puesta a tierra
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="row" style="height:30%">
+                    <div class="collapse show" id="punto1">
+                        <div class="card card-body">
+                            La norma del EIA/TIA 568A define el cableado horizontal de la siguiente forma: el sistema de cableado horizontal es la porción
+                            del sistema de cableado de telecomunicaciones que se extiende del área de trabajo al cuarto de telecomunicaciones o viceversa.
+                        </div>
+                    </div>
+                    <div class="collapse" id="punto2">
+                        <div class="card card-body">
+                            El sistema de cableado vertical proporciona interconexiones entre cuartos de entrada y servicios del edificio, cuartos de equipos
+                            y cuartos de telecomunicaciones. El cableado del backbone incluye la conexión vertical (Las canalizaciones Backbone pueden ser
+                            verticales u horizontales) entre pisos en edificios de varios pisos. El cableado del backbone incluye medios de transmisión
+                            (cables), puntos principales e intermedios de conexión cruzada y terminaciones mecánicas. El cableado vertical realiza la
+                            interconexión entre los diferentes gabinetes de telecomunicaciones y entre estos y la sala de equipamiento.
+                        </div>
+                    </div>  
+                    <div class="collapse" id="punto3">
+                        <div class="card card-body">
+                            En cables, accesorios de conexión, dispositivos de protección, y demás equipos es necesario para conectar el edificio a servicios
+                            externos. Puede contener el punto de demarcación. Ofrecen protección eléctrica establecida por códigos eléctricos aplicables.
+                            Deben ser diseñadas de acuerdo a la norma EIA/TIA-569-A. Los requerimientos de instalación son:
+                            <ul>
+                                <li>Precauciones en el manejo del cable UTP</li>
+                                <li>Evitar tensiones en el cable</li>
+                                <li>Los cables no deben en rutarse en grupos muy apretados</li>
+                                <li>Utilizar rutas de cable y accesorios apropiados 100 ohmios UTP y STP</li>
+                                <li>**No giros con un ángulo menor de 90.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="punto4">
+                        <div class="card card-body">
+                            El sistema de puesta a tierra y puenteo establecido en estándar ANSI/TIA/EIA-607 es un componente importante de cualquier sistema
+                            de cableado estructurado moderno. El gabinete deberá disponer de una toma de tierra, conectada a la tierra general de la
+                            instalación eléctrica, para efectuar las conexiones de todo equipamiento. El conducto de tierra no siempre se halla indicado
+                            en planos y puede ser único para ramales o circuitos que pasen por las mismas cajas de pase, conductos ó bandejas.
+                            Los cables de tierra de seguridad serán puestos a tierra en el subsuelo.
+                        </div>       
+                    </div>
+                </div>
+            </div>
+            
+            <div style="color:white;">
+                <h4>PREGUNTAS FRECUENTES:</h4>
+            </div>
+            <div id="accordion" style="height: 50%;">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Que es un backbone?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            El back bone es el enlace principal de una red, es el cableado que comunica todos los Cuartos de telecomunicaciones con
+                            el cuarto de equipos. Si se te llega a caer o romper el back bone, ten por seguro que toda tu red fallara.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Tipos de topología?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Existen varios tipos de topología, y esto dependerá de cómo este el diseño Puedes tener tu cable back bone en topología
+                            de Bus, de estrella o anillo. Pero recuerda que todo depende de tu diseño.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Qué medios físicos se pueden usar como Back Bone?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            El back bone se puede realizar con cualquier medio, Cobre, Fibra e Inalámbrico, sin embargo, los más comunes son los de
+                            Cobre y de Fibra, ya que el Inalámbrico puede presentar fallas dependiendo del clima. Posteriormente, tendrás que saber
+                            que aplicaciones o servicios tendrás en el back bone, y la distancia a cubrir. Eso ya te permitirá seleccionar alguna
+                            de las dos últimas opciones. Ventaja de la fibra, es que no es susceptible a los campos magnéticos, lo que permite que
+                            la puedas llevar por elevadores, centros de maquinas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 5%;"></div>
         </div>
     </div>
+    
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
         <div class="container" align="center" style="height: 100%;">

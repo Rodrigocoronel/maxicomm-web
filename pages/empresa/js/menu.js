@@ -14,6 +14,9 @@ function isElementVisible(elem){
    return (topElemD < viewBottom);
 }
 
+function cameraDelay(){
+  $(".animated2s.camaraVideo").addClass('fadeInLeft')
+}
 
 // invoco una función anónima en el evento scroll sobre window
 $(window).on("scroll" ,function() {
@@ -37,6 +40,19 @@ $(window).on("scroll" ,function() {
   let fibraOptica = $('.animated2s.fibraOptica');
   if(fibraOptica.length > 0)
     isElementVisible(fibraOptica) ? fibraOptica.addClass('fadeInLeft') : ""
+  
+  let parallaxMswindows = $('.animated2s.parallaxMswindows');
+  if(parallaxMswindows.length > 0)
+    isElementVisible(parallaxMswindows) ? parallaxMswindows.addClass('fadeInLeft') : ""
+
+  let parallaxContpaq = $('.animated2s.parallaxContpaq');
+  if(parallaxContpaq.length > 0)
+    isElementVisible(parallaxContpaq) ? parallaxContpaq.addClass('fadeInLeft') : ""
+
+  let camaraVideo = $('.animated2s.camaraVideo');
+  if(camaraVideo.length > 0)
+    isElementVisible(camaraVideo) ?  setTimeout("cameraDelay()", 320)  : ""
+
 
   // iconos animados
  	var elms = document.querySelectorAll(".animated.icono");

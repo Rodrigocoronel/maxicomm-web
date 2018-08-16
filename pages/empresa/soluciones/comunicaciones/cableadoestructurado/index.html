@@ -25,7 +25,6 @@
             list-style-image: url("../images/blue-palomita.png");
         }
 
-
     </style>
 </head>
  
@@ -117,7 +116,7 @@
 	</div>
 	<!-- Imagen entrada -->
 	<div class="fondiu fill-container estructurado container" style="max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
-    	<h4 align="left" style="font-size: 44PX; padding-left: 105px; margin-top: 7%; font-family: 'Roboto'; color: white;">
+    	<h4 class="animated2s fadeInLeft" align="left" style="font-size: 44PX; padding-left: 105px; margin-top: 7%; font-family: 'Roboto'; color: white;">
             CABLEADO<br/>
             ESTRUCTURADO<br/>
             VOZ Y DATOS
@@ -161,35 +160,36 @@
             
                 <div class="row" style="height:20%">
                     <div class="col-3" >
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#punto1" data-parent="#p1" aria-expanded="false" aria-controls="punto1" style="width: 100%;">
+                        <button id="cablehorizontal" class="btn btn-primary collapseTopics" type="button" data-toggle="collapse" data-target="#punto1" data-parent="#p1" aria-expanded="false" aria-controls="punto1" style="width: 100%;">
                             Cableado Horizontal
                         </button>
                     </div>
                     <div class="col-3">
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#punto2" data-parent="#p1" aria-expanded="false" aria-controls="punto2" style="width: 100%;">
+                        <button class="btn btn-primary collapseTopics" type="button" data-toggle="collapse" data-target="#punto2" data-parent="#p1" aria-expanded="false" aria-controls="punto2" style="width: 100%;">
                             Cableado vertical o Backbone
                         </button>
                     </div>
                     <div class="col-3">
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#punto3" data-parent="#p1" aria-expanded="false" aria-controls="punto3" style="width: 100%;">
+                        <button class="btn btn-primary collapseTopics" type="button" data-toggle="collapse" data-target="#punto3" data-parent="#p1" aria-expanded="false" aria-controls="punto3" style="width: 100%;">
                             Cuarto de entrada de servicios
                         </button>
                     </div>
                     <div class="col-3">
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#punto4" data-parent="#p1" aria-expanded="false" aria-controls="punto4" style="width: 100%;">
+                        <button class="btn btn-primary collapseTopics" type="button" data-toggle="collapse" data-target="#punto4" data-parent="#p1" aria-expanded="false" aria-controls="punto4" style="width: 100%;">
                             Sistema de puesta a tierra
                         </button>
                     </div>
                 </div>
             
                 <div class="row" style="height:30%">
-                    <div class="collapse show" id="punto1">
+                    <div class="collapse topics show" id="punto1">
                         <div class="card card-body">
+                            <b>Cableado Horizontal</b><br/>
                             La norma del EIA/TIA 568A define el cableado horizontal de la siguiente forma: el sistema de cableado horizontal es la porción
                             del sistema de cableado de telecomunicaciones que se extiende del área de trabajo al cuarto de telecomunicaciones o viceversa.
                         </div>
                     </div>
-                    <div class="collapse" id="punto2">
+                    <div class="collapse topics" id="punto2">
                         <div class="card card-body">
                             El sistema de cableado vertical proporciona interconexiones entre cuartos de entrada y servicios del edificio, cuartos de equipos
                             y cuartos de telecomunicaciones. El cableado del backbone incluye la conexión vertical (Las canalizaciones Backbone pueden ser
@@ -198,7 +198,7 @@
                             interconexión entre los diferentes gabinetes de telecomunicaciones y entre estos y la sala de equipamiento.
                         </div>
                     </div>  
-                    <div class="collapse" id="punto3">
+                    <div class="collapse topics" id="punto3">
                         <div class="card card-body">
                             En cables, accesorios de conexión, dispositivos de protección, y demás equipos es necesario para conectar el edificio a servicios
                             externos. Puede contener el punto de demarcación. Ofrecen protección eléctrica establecida por códigos eléctricos aplicables.
@@ -212,7 +212,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="collapse" id="punto4">
+                    <div class="collapse topics" id="punto4">
                         <div class="card card-body">
                             El sistema de puesta a tierra y puenteo establecido en estándar ANSI/TIA/EIA-607 es un componente importante de cualquier sistema
                             de cableado estructurado moderno. El gabinete deberá disponer de una toma de tierra, conectada a la tierra general de la
@@ -224,6 +224,7 @@
                 </div>
             </div>
             
+                
             <div style="color:white;">
                 <h4>PREGUNTAS FRECUENTES:</h4>
             </div>
@@ -231,12 +232,12 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Que es un backbone?
                             </button>
                         </h5>
                     </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                             El back bone es el enlace principal de una red, es el cableado que comunica todos los Cuartos de telecomunicaciones con
                             el cuarto de equipos. Si se te llega a caer o romper el back bone, ten por seguro que toda tu red fallara.
@@ -246,7 +247,7 @@
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Tipos de topología?
                             </button>
                         </h5>
@@ -261,7 +262,7 @@
                 <div class="card">
                     <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Qué medios físicos se pueden usar como Back Bone?
                             </button>
                         </h5>
@@ -280,7 +281,6 @@
             <div style="height: 5%;"></div>
         </div>
     </div>
-    
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="height: 540px;">
         <div class="container" align="center" style="height: 100%;">
@@ -348,6 +348,9 @@
 		        function() { $(this).addClass("Hover"); },
 		        function() { $(this).removeClass("Hover"); }
 		    );
+           jQuery('button.collapseTopics').click( function(e) {
+                jQuery('.collapse.topics').collapse('hide');
+            });
 		});
 	</script>
 </html>

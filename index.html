@@ -12,7 +12,7 @@
     <style type="text/css">
     	.centered {
 			  position: fixed;
-			  top: 50%;
+			  top: 60%;
 			  left: 50%;
 			  /* bring your own prefixes */
 			  transform: translate(-50%, -50%);
@@ -65,7 +65,7 @@
 </head>
  
 <body style="background-repeat: no-repeat; background-size: cover;" >
-	<div id="carouselExampleSlidesOnly " class="carousel slide" data-ride="carousel">
+	<!-- <div id="carouselExampleSlidesOnly " class="carousel slide" data-ride="carousel">
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
 	      <div class="img img1"></div>
@@ -74,22 +74,20 @@
 	      <div class="img img4"></div>
 	    </div>
 	  </div>
-	</div>
+	</div> -->
+	<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay  width="100%" height="100%">
+    	<source src="./assets/videos/video5.mp4" type="video/mp4" />
+    </video>
 	<div class="container centered" style="vertical-align: middle !important;" >
-		<div class="row" align="center">
-			<div class="col-12 " >
-				<img src="assets/images/white-logo-r-01.png" width="548px" >
-			</div>
-		</div>
 		<div class="row mt-4">
 	    	<div class="col-6 col-sm-6"  align="right">
 	      	<a href="./pages/empresa/index.html">
-	      		<img id="empresa_bn_white" src="assets/images/empresa_bn_white.png" height="100px" width="224px"  onmouseover="hover(this);" onmouseout="unhover(this);">
+	      		<img style="opacity: 0;" id="empresa_bn_white" src="assets/images/empresa_bn_white.png" height="100px" width="224px"  onmouseover="hover(this);" onmouseout="unhover(this);">
 	      	</a>
 	    </div>
 		    <div class="col-6 col-sm-6" >
 		      <a href="./pages/hogar">
-		      	<img id="hogar_bn_white" src="assets/images/hogar_bn_white.png" height="100px" width="224px"  onmouseover="hover(this);" onmouseout="unhover(this);">
+		      	<img style="opacity: 0;" id="hogar_bn_white" src="assets/images/hogar_bn_white.png" height="100px" width="224px"  onmouseover="hover(this);" onmouseout="unhover(this);">
 		      </a>
 		    </div>
 	  	</div>
@@ -116,7 +114,18 @@
 		$(document).ready(function() {
 			$('.carousel').carousel({
 			  interval: 3000
-			})
+			});
+
+			setTimeout("aparecer()", 5500);
+			
 		});
+
+		function aparecer(){
+			$('#empresa_bn_white').css({'opacity' : '1','transition-duration'  : '.6s'});
+			$('#hogar_bn_white').css({'opacity' : '1','transition-duration'  : '.6s'});
+
+		}
+		
+
 	</script>
 </html>

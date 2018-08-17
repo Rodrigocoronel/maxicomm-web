@@ -4,6 +4,25 @@ $(document).ready(function() {
         function() { $(this).removeClass("Hover"); } 
     );
     $("#logoMaxi").addClass('fadeIn');
+
+    $(function() {
+    $('a>img').hover(function (){
+      $(this).css({'visibility':'visible','opacity' : '1' , 'transform': 'scale(1.2)', 'transition-duration'  : '.6s', 'cursor' : 'pointer'});
+      }, function() {
+      // on mouseout, reset the background colour
+      $(this).css({'transform': 'scale(1)', 'transition-duration'  : '.6s'})
+    });
+  });
+
+    $(function() {
+    $('div.cuadros>img').hover(function (){
+      $(this).css({'visibility':'visible','opacity' : '1' , 'transform': 'scale(1.2)', 'transition-duration'  : '.6s', 'cursor' : 'pointer'});
+      }, function() {
+      // on mouseout, reset the background colour
+      $(this).css({'transform': 'scale(1)', 'transition-duration'  : '.6s'})
+    });
+  });
+
 });
 
 
@@ -13,6 +32,7 @@ function isElementVisible(elem){
    let topElemD = $(elem).offset().top; // distancia desde el elemento hasta el tope superior del viewport
    return (topElemD < viewBottom);
 }
+
 
 function cameraDelay(){
   $(".animated2s.camaraVideo").addClass('fadeInLeft')
@@ -53,6 +73,9 @@ $(window).on("scroll" ,function() {
   if(camaraVideo.length > 0)
     isElementVisible(camaraVideo) ?  setTimeout("cameraDelay()", 320)  : ""
 
+  let sigenosContacto = $('.animated2s.sigenosContacto');
+  if(sigenosContacto.length > 0)
+    isElementVisible(sigenosContacto) ?  sigenosContacto.addClass('fadeIn')  : ""
 
   // iconos animados
  	var elms = document.querySelectorAll(".animated.icono");

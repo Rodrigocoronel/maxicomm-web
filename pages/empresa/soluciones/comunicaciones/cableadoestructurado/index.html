@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../../../css/menu.css">
     <script type="text/javascript" src="../../../js/menu.js"></script>
     <script type="text/javascript" src="../../../js/cotizacion.js"></script>
+    <script type="text/javascript" src="./cableado.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../../../../../assets/animate.css">
     <link rel='shortcut icon' type='image/x-icon' href='../../../../../favicom.ico' />
@@ -152,44 +153,48 @@
 	</div>
     
     <!-- Informacion adicional -->
-    <div class="imgEstructurado parallax" style="height: 900px; ">
+    <div class="imgEstructurado parallax" style=" ">
         <div class="container" style="height: 100%;">
             <div style="height: 5%;"></div>
             
-            <div id="p1" style="height: 50%;">
+            <div id="p1" style="">
             
-                <div class="row" style="height:15%">
-                    <div class="col-3" >
-                        <button id="cablehorizontal" class="btn btn-primary collapseTopics" type="button" data-toggle="collapse" data-target="#punto1" data-parent="#p1" aria-expanded="false" aria-controls="punto1" style="width: 100%;">
+                <div class="row infoCableado" >
+                    <div class="col-lg-3 col-sm-6" >
+                        <button id="cablehorizontal" class="btn btn-link collapseTopics" type="button" data-toggle="collapse" data-target="#punto1" data-parent="#p1" aria-expanded="false" aria-controls="punto1" style="width: 100%;">
+                            <img src="../images/cableado_horizontal.svg" width="100" height="100"><br/>
                             Cableado Horizontal
                         </button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary collapseTopics" type="button" data-toggle="collapse" data-target="#punto2" data-parent="#p1" aria-expanded="false" aria-controls="punto2" style="width: 100%;">
+                    <div class="col-lg-3 col-sm-6">
+                        <button class="btn btn-link collapseTopics" type="button" data-toggle="collapse" data-target="#punto2" data-parent="#p1" aria-expanded="false" aria-controls="punto2" style="width: 100%;">
+                             <img src="../images/vertical.svg" width="100" height="100"><br/>
                             Cableado vertical o Backbone
                         </button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary collapseTopics" type="button" data-toggle="collapse" data-target="#punto3" data-parent="#p1" aria-expanded="false" aria-controls="punto3" style="width: 100%;">
+                    <div class="col-lg-3 col-sm-6">
+                        <button class="btn btn-link collapseTopics" type="button" data-toggle="collapse" data-target="#punto3" data-parent="#p1" aria-expanded="false" aria-controls="punto3" style="width: 100%;">
+                            <img src="../images/cuarto_entrada_2.svg" width="100" height="100"><br/>
                             Cuarto de entrada de servicios
                         </button>
                     </div>
-                    <div class="col-3">
-                        <button class="btn btn-primary collapseTopics" type="button" data-toggle="collapse" data-target="#punto4" data-parent="#p1" aria-expanded="false" aria-controls="punto4" style="width: 100%;">
+                    <div class="col-lg-3 col-sm-6">
+                        <button class="btn btn-link collapseTopics" type="button" data-toggle="collapse" data-target="#punto4" data-parent="#p1" aria-expanded="false" aria-controls="punto4" style="width: 100%;">
+                            <img src="../images/ground.svg" width="100" height="100"><br/>
                             Sistema de puesta a tierra
                         </button>
                     </div>
                 </div>
             
-                <div class="row" style="height:35%">
-                    <div class="collapse topics show" id="punto1">
+                <div class="row mt-sm-5" >
+                    <div class="collapse topics show " id="punto1">
                         <div class="card card-body">
                             <b>Cableado Horizontal</b><br/>
                             La norma del EIA/TIA 568A define el cableado horizontal de la siguiente forma: el sistema de cableado horizontal es la porción
                             del sistema de cableado de telecomunicaciones que se extiende del área de trabajo al cuarto de telecomunicaciones o viceversa.
                         </div>
                     </div>
-                    <div class="collapse topics" id="punto2">
+                    <div class="collapse topics " id="punto2">
                         <div class="card card-body">
                             <b>Cableado vertical o Backbone</b><br/>
                             El sistema de cableado vertical proporciona interconexiones entre cuartos de entrada y servicios del edificio, cuartos de equipos
@@ -199,7 +204,7 @@
                             interconexión entre los diferentes gabinetes de telecomunicaciones y entre estos y la sala de equipamiento.
                         </div>
                     </div>  
-                    <div class="collapse topics" id="punto3">
+                    <div class="collapse topics " id="punto3">
                         <div class="card card-body">
                             <b>Cuarto de entrada de servicios</b><br/>
                             En cables, accesorios de conexión, dispositivos de protección, y demás equipos es necesario para conectar el edificio a servicios
@@ -214,7 +219,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="collapse topics" id="punto4">
+                    <div class="collapse topics " id="punto4">
                         <div class="card card-body">
                             <b>Sistema de puesta a tierra</b><br/>
                             El sistema de puesta a tierra y puenteo establecido en estándar ANSI/TIA/EIA-607 es un componente importante de cualquier sistema
@@ -228,15 +233,18 @@
             </div>
             
                 
-            <div style="color:white;">
-                <h4>PREGUNTAS FRECUENTES:</h4>
+            <div class="mt-5" style="color:white;">
+                <h4>PREGUNTAS FRECUENTES <img src="./images/preguntas_frecuentes.svg" width="40" height="40"></h4>
             </div>
-            <div id="accordion" style="height: 50%;">
+            <div id="accordion" class="mt-3" style="height: 50%;">
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link btn-acordion btn-acordion accionMas" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Que es un backbone?
+                            </button>
+                            <button class="btn btn-link btn-acordion btn-acordion float-right p-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">  
+                                <img id="mas" class="mas" src="./images/plus-symbol.svg" width="16" height="16">
                             </button>
                         </h5>
                     </div>
@@ -250,8 +258,11 @@
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
-                            <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="btn btn-link btn-acordion collapsed accionMas1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Tipos de topología?
+                            </button>
+                            <button class="btn btn-link btn-acordion collapsed float-right p-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                               <img id="mas1" class="mas1" src="./images/plus-symbol.svg" width="16" height="16">
                             </button>
                         </h5>
                     </div>
@@ -265,8 +276,11 @@
                 <div class="card">
                     <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
-                            <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="btn btn-link btn-acordion collapsed accionMas2" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Qué medios físicos se pueden usar como Back Bone?
+                            </button>
+                             <button class="btn btn-link btn-acordion collapsed float-right p-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                               <img id="mas2" class="mas2" src="./images/plus-symbol.svg" width="16" height="16">
                             </button>
                         </h5>
                     </div>
@@ -345,14 +359,6 @@
 
 </body>
 	<script>
-		$(document).ready(function() {
-		    $(".nav-link").hover(
-		        function() { $(this).addClass("Hover"); },
-		        function() { $(this).removeClass("Hover"); }
-		    );
-           jQuery('button.collapseTopics').click( function(e) {
-                jQuery('.collapse.topics').collapse('hide');
-            });
-		});
+		
 	</script>
 </html>

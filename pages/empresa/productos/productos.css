@@ -185,6 +185,12 @@
 	background-size: cover;
 }
 
+.imgProductos{
+	background-image: url(./images/equipamiento-img-fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .imgTexturaLicenciamiento{
 	background-image: url(./licenciamientos/images/licenciamientos-img2.jpg);
 	background-repeat: no-repeat;

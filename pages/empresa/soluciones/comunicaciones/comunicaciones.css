@@ -17,6 +17,20 @@
 	.tiposFibra{
 		height: 550px;
 	}
+
+	.infoCableado{
+		height:26%;
+	}
+	.infoCableado2{
+		height:30%;
+	}
+	.imgEstructurado{
+		height: 1000px;
+	}
+
+	#p1{
+		height: 50%;
+	}
  }
 
 @media (max-width: 1336px) { 
@@ -38,6 +52,18 @@
 	}
 	.tiposFibra{
 		height: 900px;
+	}
+	.infoCableado{
+		height:37%;
+	}
+	.infoCableado2{
+		height:35%;
+	}
+	.imgEstructurado{
+		height: 1200px;
+	}
+	#p1{
+		height: 60%;
 	}
  }
 
@@ -284,4 +310,25 @@ ul {
     list-style-image: url("../comunicaciones/images/blue-palomita.png"); 
 }
 
+.btn-link.collapseTopics{
+	color: #ffffff !important;
+}
+
+.btn-link.collapseTopics:hover{
+	color: #ebd7d7 !important;
+}
+
+.topics>.card-body{
+	background-color: #ffffff14 !important;
+	color: white;
+}
+
+#accordion>.card{
+	background-color: #ffffff14 !important;
+	color: white;
+}
+
+.btn-link.btn-acordion{
+	color: #ffffff !important;
+}
 

@@ -66,10 +66,10 @@
 	background-image: url(./images/01-instalaciones.jpg);
 }
 .fill-container.portero{
-	background-image: url(./images/01-temp.png);
+	background-image: url(./images/portero-electr.jpg);
 }
 .fill-container.chapa{
-	background-image: url(./images/01-temp.png);
+	background-image: url(./images/chapa-electronica-hogar.jpg);
 }
 .fill-container.barrera{
 	background-image: url(./images/01-temp.png);
@@ -95,7 +95,7 @@
 	background-size: cover;
 }
 .imgPaneles{
-	background-image: url(./images/02-temp.jpg);
+	background-image: url(./images/paneles-solares-img2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

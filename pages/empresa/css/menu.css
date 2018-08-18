@@ -124,3 +124,18 @@ input{
 a.portadilla:hover{
 	color:#000000;
 }
+
+.btn-ida-hogar{
+	border: 2px solid black;
+    border-radius: 17px;
+    width: 95px;
+
+}
+
+.btn-ida-hogar:hover{
+	border: 2px solid black;
+    border-radius: 17px;
+    width: 95px;
+    background-color: #ddcece59;
+}
+

@@ -65,7 +65,7 @@
 }
 
 .fill-container-membresia{
-	background-image: url(../productos/images/membresia-1.png);
+	background-image: url(../productos/images/membresia-1.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;
@@ -120,7 +120,7 @@
 }
 
 .imgMembresia{
-	background-image: url(./images/membresia-estudiantil-05.png);
+	background-image: url(./images/membresia-estudiantil-05.jpg);
 	height: 100%;
 	width: 100%;
 	background-repeat: no-repeat;

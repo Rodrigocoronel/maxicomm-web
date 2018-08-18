@@ -12,7 +12,7 @@
 		height : calc(100% - 153px);
 	}
 	.portadillaComunicaciones{
-		height: 500px;
+		height: 300px;
 	}
 	.tiposFibra{
 		height: 550px;
@@ -48,7 +48,7 @@
 	}
 
 	.portadillaComunicaciones{
-		height: 600px;
+		height: 800px;
 	}
 	.tiposFibra{
 		height: 900px;
@@ -281,8 +281,8 @@ a.sub:hover{
     color: #212529;
     width: 4px;
     border: 1px solid #81818252;
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
 }
 .cuadros:hover{
     color: #212529;

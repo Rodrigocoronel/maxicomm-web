@@ -75,7 +75,7 @@
 	    </div>
 	  </div>
 	</div> -->
-	<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay  width="100%" height="100%">
+	<video id="video" class="videoHDMaxi" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay  width="100%" height="100%" muted="muted">
     	<source src="./assets/videos/maxicomm6.mp4" type="video/mp4" />
     </video>
 	<div class="container centered" style="vertical-align: middle !important;" >
@@ -111,20 +111,31 @@
 			}
 		}
 
+		function aparecer(){
+				$('#empresa_bn_white').css({'opacity' : '1','transition-duration'  : '.6s'});
+				$('#hogar_bn_white').css({'opacity' : '1','transition-duration'  : '.6s'});
+
+			}
+
+		$(window).on('load', function(){ 
+			video = $('.videoHDMaxi');
+			console.log(video)
+			video.get(0).play();
+
+		});
+
 		$(document).ready(function() {
+			
+
 			$('.carousel').carousel({
 			  interval: 3000
 			});
 
-			setTimeout("aparecer()", 3000);
+			setTimeout("aparecer()", 3700);
 			
 		});
 
-		function aparecer(){
-			$('#empresa_bn_white').css({'opacity' : '1','transition-duration'  : '.6s'});
-			$('#hogar_bn_white').css({'opacity' : '1','transition-duration'  : '.6s'});
-
-		}
+		
 		
 
 	</script>

@@ -17,8 +17,8 @@
 	}
 
 	.iconoSoluciones{
-		height: 60px; 
-		width: 60px;
+		height: 90px; 
+		width: 90px;
 	}
  }
 
@@ -174,3 +174,10 @@ p.empresa{
 	text-decoration: none !important;
 }
 
+.cuadros{
+    color: #212529;
+    width: 4px;
+    border: 1px solid #81818252;
+    height: 180px;
+    width: 200px;
+}

@@ -119,6 +119,11 @@ $(window).on("scroll" ,function() {
   if(sigenosContacto.length > 0)
     isElementVisible(sigenosContacto) ?  sigenosContacto.addClass('fadeIn')  : ""
 
+  let textoCotizacion = $('.animated2s.textoCotizacion');
+  if(textoCotizacion.length > 0)
+    isElementVisible(textoCotizacion) ?  textoCotizacion.addClass('pulse')  : ""
+
+
   // iconos animados
  	var elms = document.querySelectorAll(".animated.icono");
 

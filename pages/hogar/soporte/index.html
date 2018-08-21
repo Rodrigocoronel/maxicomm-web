@@ -23,10 +23,10 @@
 <body>
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
             	<source src="../video/Comp 1_4.mp4" type="video/mp4" />
             </video>
-            <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
+            <div class="animated fadeIn headerMaxicomm" id="logoMaxi">
             	<img   src="../images/logohogar.svg" >
             </div>
 		</div>
@@ -102,9 +102,14 @@
 	</div>
 	<!-- Imagen entrada -->
 	<div class="fondiu fill-container soporte container" style="max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
-    	<h4 align="left" style="font-size: 44PX; padding-left: 580px; margin-top: 160px; font-family: 'Roboto'; color: #595d65;">
-            CENTRO DE SOPORTE TÉCNICO
-        </h4>
+    	<div class="row justify-content-end" style="height: 100%;">
+			<div class="col-6 align-self-center text-center" style=" height: 66px;">
+				<p class="animated fadeIn" style="font-size: 45px; font-family: 'Roboto'; color: #595d65;" align="center">
+                    CENTRO DE SOPORTE TÉCNICO
+                </p>
+			</div>
+			
+		</div>
 	</div>
     
 	<!-- Soluciones -->
@@ -117,18 +122,18 @@
     </div>
 
 	<div class="imgSoporte parallax" style="height: 550px; width: 100%; ">
-        <div class="Container" style="color: white; font-size: 17PX; font-family: 'Roboto'; text-align: center; height: 100%;">
+        <div class="container" style="color: white; font-size: 17PX; font-family: 'Roboto'; text-align: center; height: 100%;">
             
             <div class="row" style="height: 10%;"> </div>
             
             <div class="row justify-content-around" style="height: 35%;">    
-                <div class="col-3 align-self-center" style=" 1px solid #c3c3c3";>
-                    <div> <img src="images/icono-reparacion-computadoras.png" height="100" width="100"> <br><br>  REPARACIÓN DE COMPUTADORAS</div>
+                <div class="col-3 align-self-center animated scrollFadeIn" style=" 1px solid #c3c3c3";>
+                    <div> <img class="" src="images/icono-reparacion-computadoras.png" height="100" width="100"> <br><br>  REPARACIÓN DE COMPUTADORAS</div>
                 </div>
-                <div class="col-3 align-self-center">
-                    <div> <img src="images/icono-reparacion-portatiles.png" height="100" width="100"> <br><br>  REPARACIÓN DE DISPOSITIVOS MÓVILES</div>
+                <div class="col-3 align-self-center animated scrollFadeIn">
+                    <div> <img class="" src="images/icono-reparacion-portatiles.png" height="100" width="100"> <br><br>  REPARACIÓN DE DISPOSITIVOS MÓVILES</div>
                 </div>
-                <div class="col-3 align-self-center">
+                <div class="col-3 align-self-center animated scrollFadeIn">
                     <div> <img src="images/icono-reparacion-impresoras.png" height="100" width="100"> <br><br>  REPARACIÓN DE IMPRESORAS </div>
                 </div>
             </div>
@@ -136,13 +141,13 @@
             <div class="row" style="height: 10%;"> </div>
             
             <div class="row  justify-content-around " style="height: 35%;">    
-                <div class="col-3 align-self-center " style=" 1px solid #c3c3c3";>
+                <div class="col-3 align-self-center animated scrollFadeIn" style=" 1px solid #c3c3c3";>
                     <div> <img src="images/icono-sistemas.png" height="100" width="100"> <br><br>  REVISIÓN DE INTERNET </div>
                 </div>
-                <div class="col-3 align-self-center">
+                <div class="col-3 align-self-center animated scrollFadeIn">
                     <div> <img src="images/icono-consultoria.png" height="100" width="100"> <br><br> REVISIÓN DE VIDEO VIGILANCIA </div>
                 </div>
-                <div class="col-3 align-self-center">
+                <div class="col-3 align-self-center animated scrollFadeIn">
                     <div> <img src="images/icono-asesoria.png" height="100" width="100"> <br><br> INSTALACIÓN DE PROGRAMAS </div>
                 </div>
             </div>

@@ -1,7 +1,5 @@
 @media (min-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
-	}
+
 
 	.logo-menu{
  		height:100px;
@@ -14,9 +12,6 @@
  }
 
 @media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 76px ;
-	}
 
 	.logo-menu{
  		height:76px;
@@ -121,7 +116,7 @@
 }
 
 .imgTextura1{
-	background-image: url(./images/empresa-Index-fondo-textura.jpg);
+	background-image: url(../empresa/images/empresa-Index-fondo-textura.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

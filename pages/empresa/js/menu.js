@@ -123,6 +123,18 @@ $(window).on("scroll" ,function() {
   if(textoCotizacion.length > 0)
     isElementVisible(textoCotizacion) ?  textoCotizacion.addClass('pulse')  : ""
 
+  let scrollFadeIn = $('.animated.scrollFadeIn');
+  if(scrollFadeIn.length > 0)
+    isElementVisible(scrollFadeIn) ?  scrollFadeIn.addClass('fadeIn')  : ""
+
+  let scrollLeft = $('.animated2s.scrollLeft');
+  if(scrollLeft.length > 0)
+    isElementVisible(scrollLeft) ?  scrollLeft.addClass('fadeInLeft')  : ""
+
+  let scrollRight = $('.animated2s.scrollRight');
+  if(scrollRight.length > 0)
+    isElementVisible(scrollRight) ?  scrollRight.addClass('fadeInRight')  : ""
+
 
   // iconos animados
  	var elms = document.querySelectorAll(".animated.icono");

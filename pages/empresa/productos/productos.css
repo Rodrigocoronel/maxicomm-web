@@ -11,6 +11,10 @@
  	.fondiu{
 		height : calc(100% - 153px);
 	}
+
+	.containerTexture{
+		height: 450px;
+	}
  }
 
 @media (max-width: 1336px) { 
@@ -26,6 +30,10 @@
  	.fondiu{
 		height : calc(100% - 100px);
 	}
+	.containerTexture{
+		height: 650px;
+	}
+	
  }
 
 

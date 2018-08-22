@@ -9,12 +9,14 @@ $(document).ready(function() {
       $('a>img.iconoSoluciones').hover(function (){
         let papa = this.parentNode.childNodes;
         let hijos = papa[5].childNodes;
-        
-        hijos[1].style.visibility = 'hidden'; hijos[1].style.opacity = '0'; hijos[1].style.transform = 'scale(.5)';hijos[1].style.transitionDuration = '1s';
 
-        hijos[3].style.visibility = 'visible';hijos[3].style.opacity = '1'; hijos[3].style.transform = 'scale(1.8)';  hijos[3].style.transitionDuration = '1s'; hijos[3].style.cursor = 'pointer';
         
-        $(this).css({'visibility':'visible','opacity' : '1' , 'transform': 'scale(1.2)', 'transition-duration'  : '.6s', 'cursor' : 'pointer'});
+        hijos[1].style.visibility = 'hidden'; hijos[1].style.opacity = '0'; hijos[1].style.transform = 'scale(.5) ';hijos[1].style.transitionDuration = '1s';
+        /*hijos[1].style.transform="translate(-50%, -50%)";*/
+
+        hijos[3].style.visibility = 'visible';hijos[3].style.opacity = '1'; hijos[3].style.transform = 'scale(1.8) ';  hijos[3].style.transitionDuration = '1s'; ;
+        
+        $(this).css({'visibility':'visible','opacity' : '1' , 'transform': 'scale(1.2) ', 'transition-duration'  : '.6s', 'cursor' : 'pointer'});
 
       }, function() {
         let papa = this.parentNode.childNodes;
@@ -24,8 +26,10 @@ $(document).ready(function() {
 
         hijos[3].style.visibility = 'hidden'; hijos[3].style.opacity = '0'; hijos[3].style.transform = 'scale(.4)';  hijos[3].style.transitionDuration = '1s';
 
+
         hijos[1].style.visibility = 'visible'; hijos[1].style.opacity = '1'; hijos[1].style.transform = 'scale(1)'; hijos[1].style.transitionDuration = '1s';
-    });
+       
+  });
 
       $('div.textoVerMas').hover(function(){
 

@@ -1,11 +1,24 @@
 @media (min-width: 1336px) { 
 
+	.fill-containerTexture{
+		height: 500px;
+	}
+	
+
  	.fondiu{
 		height : calc(100% - 153px);
 	}
 	.iconoSoluciones{
 		height: 90px; 
 		width: 90px;
+	}
+	.height-iconosoluciones{
+		height: 150px;
+	}
+
+	.cuadros{
+		height: 180px;
+    	width: 200px;
 	}
  }
 
@@ -15,11 +28,26 @@
  	.fondiu{
 		height : calc(100% - 100px);
 	}
-
+	.fill-containerTexture{
+			height: 1200px;
+		}
 	.iconoSoluciones{
-		height: 90px; 
-		width: 90px;
+		height: 200px; 
+		width: 200px;
+	}	
+	.height-iconosoluciones{
+		height: 300px;
 	}
+
+	.cuadros{
+		height: 280px;
+    	width: 300px;
+	}
+	
+ }
+
+ @media (max-width: 500px){
+ 	
  }
 
 		html,
@@ -176,8 +204,6 @@ p.empresa{
 
 .cuadros{
     color: #212529;
-    width: 4px;
     border: 1px solid #81818252;
-    height: 180px;
-    width: 200px;
+    
 }

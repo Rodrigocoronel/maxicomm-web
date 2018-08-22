@@ -15,6 +15,31 @@
 	.containerTexture{
 		height: 450px;
 	}
+    .subMenuContpaq{
+         height: 380px;
+    }
+    .subMenuProductos{
+         height: 380px;
+    }
+    .subMenuMsWindows{
+        height: 410px;
+    }
+    .subMenuCartuchos{
+        height: 410px;
+    }
+    .subMenuLicenciamientos{
+        height: 410px;
+    }
+    .lineaVertical{
+  
+    }
+    .imgTexturaMsWindows{
+        height: 460px; 
+    }
+    .noMostrar{
+        display:block;
+    }
+    
  }
 
 @media (max-width: 1336px) { 
@@ -33,6 +58,27 @@
 	.containerTexture{
 		height: 650px;
 	}
+    .subMenuContpaq{
+         height: 650px;
+    }
+    .subMenuProductos{
+         height: 650px;
+    }
+    .subMenuMsWindows{
+         height: 650px;
+    }
+    .imgTexturaMsWindows{
+        height: 600px; 
+    }
+    .subMenuCartuchos{
+        height: 600px;
+    }
+    .subMenuLicenciamientos{
+        height: 650px;
+    }
+    .noMostrar{
+        display:none;
+    }
 	
  }
 

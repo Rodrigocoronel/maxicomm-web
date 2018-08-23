@@ -1,4 +1,4 @@
-@media (min-width: 1336px) { 
+/*@media (min-width: 540px) { 
 
 	.fill-containerTexture{
 		height: 500px;
@@ -20,12 +20,18 @@
 		height: 180px;
     	width: 200px;
 	}
- }
+	p.empresa{
+		font-size: 22px;
+	}
 
-@media (max-width: 1336px) { 
+	.textoSolucion{
+		font-size: 19px;
+	}
+ }*/
+/*
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-
- 	.fondiu{
+	.fondiu{
 		height : calc(100% - 100px);
 	}
 	.fill-containerTexture{
@@ -43,12 +49,22 @@
 		height: 280px;
     	width: 300px;
 	}
-	
- }
+	p.empresa{
+		font-size: 26px;
+	}
 
- @media (max-width: 500px){
- 	
- }
+	.textoSolucion{
+		font-size: 22px;
+	}
+}*/
+
+
+
+
+
+
+
+
 
 		html,
 		body {
@@ -158,7 +174,7 @@
 
 
 p.empresa{
-	font-size: 22px;
+	
 	text-align: justify;
 	padding-top: 10px;
 }

@@ -12,7 +12,6 @@ $(document).ready(function() {
 
         
         hijos[1].style.visibility = 'hidden'; hijos[1].style.opacity = '0'; hijos[1].style.transform = 'scale(.5) ';hijos[1].style.transitionDuration = '1s';
-        /*hijos[1].style.transform="translate(-50%, -50%)";*/
 
         hijos[3].style.visibility = 'visible';hijos[3].style.opacity = '1'; hijos[3].style.transform = 'scale(1.8) ';  hijos[3].style.transitionDuration = '1s'; ;
         

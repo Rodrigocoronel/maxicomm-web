@@ -1,31 +1,35 @@
-@media (min-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
+
+ @media (max-width: 575.98px) {
+ 	.imgDesarrollo{
+		height: 1000px;
 	}
 
-	.logo-menu{
- 		height:100px;
- 		width:428px;
- 	}
-
- 	.fondiu{
-		height : calc(100% - 153px);
-	}
- }
-
-@media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 76px ;
+	.textoDesarolloS{
+		height: 480px;
 	}
 
-	.logo-menu{
- 		height:76px;
- 		width:314px;
- 	}
-
- 	.fondiu{
-		height : calc(100% - 100px);
+	.tituloDesarrolloS{
+		font-size: 30px;
 	}
+	
+
+}
+
+
+
+@media (min-width: 576px) { 
+	.imgDesarrollo{
+		height: 650px;
+	}
+
+	.textoDesarolloS{
+		height: 350px;
+	}
+
+	.tituloDesarrolloS{
+		font-size: 45px;
+	}
+
  }
 
 .fill-container{

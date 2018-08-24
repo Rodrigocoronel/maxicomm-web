@@ -1,32 +1,42 @@
-@media (min-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
+
+ @media (max-width: 575.98px) {
+ 	.imgDesarrollo{
+		height: 1000px;
 	}
 
-	.logo-menu{
- 		height:100px;
- 		width:428px;
- 	}
+	.tituloDesarrolloApps{
+		font-size: 30px;
+	}
+	
+	.textoDesarrolloApps{
+		height: 400px;	
+	}
+	
+	.imgFibra{
+		height: 1300px;
+	}
 
- 	.fondiu{
-		height : calc(100% - 153px);
+}
+
+
+
+@media (min-width: 576px) { 
+	.imgDesarrollo{
+		height: 650px;
+	}
+
+	.tituloDesarrolloApps{
+		font-size: 45px;
+	}
+
+	.textoDesarrolloApps{
+		height: 300px;	
+	}
+	.imgFibra{
+		height: 750px;
 	}
  }
 
-@media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 76px ;
-	}
-
-	.logo-menu{
- 		height:76px;
- 		width:314px;
- 	}
-
- 	.fondiu{
-		height : calc(100% - 100px);
-	}
- }
 
 .fill-container{
     background-repeat: no-repeat;  

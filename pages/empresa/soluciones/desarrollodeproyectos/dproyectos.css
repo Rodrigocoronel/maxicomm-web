@@ -1,32 +1,62 @@
-@media (min-width: 1336px) { 
+
+ @media (max-width: 575.98px) {
+ 	#logoMaxi{
+ 		width: 200px;
+ 	}
+ 	.contenedor-video{
+		height: 75px ;
+	}
+ 	
+ 	.imgCotizacion{
+ 		height: 600px;
+ 	}		
+
+ 	.imgFibra{
+ 		height: 1000px;
+ 	}
+ 	.textoProyectos{
+ 		height: 350px;
+ 	}
+
+ 	.tituloDesarrollop{
+ 		font-size: 30PX;
+ 	}
+}
+
+
+
+@media (min-width: 576px) { 
 	.contenedor-video{
 		height: 120px ;
 	}
-
-	.logo-menu{
- 		height:100px;
- 		width:428px;
+ 		
+ 	#logoMaxi{
+ 		width: 400px;
+ 	}
+ 	.imgCotizacion{
+ 		height: 540px;
+ 	}
+ 	
+ 	.imgFibra{
+ 		height: 350px;
+ 	}
+ 	.textoProyectos{
+ 		height: 250px;
+ 	}
+ 	.tituloDesarrollop{
+ 		font-size: 45PX;
  	}
 
- 	.fondiu{
-		height : calc(100% - 153px);
-	}
  }
 
-@media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 76px ;
+ @media(min-width: 768px){
+	.imgFibra{
+ 		height: 500px;
 	}
-
-	.logo-menu{
- 		height:76px;
- 		width:314px;
+	.tituloDesarrollop{
+ 		font-size: 45PX;
  	}
-
- 	.fondiu{
-		height : calc(100% - 100px);
-	}
- }
+}
 
 .fill-container{
     background-repeat: no-repeat;  
@@ -234,6 +264,8 @@ a.sub:hover{
 .cuadros{
     text-decoration: none !important;
     color: #212529;
+    height: 180px;
+    width: 200px;
 }
 .cuadros:hover{
     color: #212529;

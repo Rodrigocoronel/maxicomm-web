@@ -5,8 +5,12 @@ $(document).ready(function() {
     );
     $("#logoMaxi").addClass('fadeIn');
 
+
+   
+
   $(function() {
       $('a>img.iconoSoluciones').hover(function (){
+
         let papa = this.parentNode.childNodes;
         let hijos = papa[5].childNodes;
 
@@ -85,10 +89,6 @@ function cameraDelay(){
 
 // invoco una función anónima en el evento scroll sobre window
 $(window).on("scroll" ,function() {
-  let elem = $('#textoQuienes'); // obtengo el elemento por id
-  if ($('#textoQuienes').length > 0) {
-  	isElementVisible(elem) ? elem.addClass('fadeInLeft') : ""
-	}
 
   // parallax software
 

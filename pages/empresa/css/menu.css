@@ -1,23 +1,33 @@
-@media (min-width: 1336px) { 
+
+ @media (max-width: 575.98px) {
+ 	#logoMaxi{
+ 		width: 200px;
+ 	}
+ 	.contenedor-video{
+		height: 75px ;
+	}
+ 	
+ 	.imgCotizacion{
+ 		height: 600px;
+ 	}		
+}
+
+@media (min-width: 576px) { 
 	.contenedor-video{
 		height: 120px ;
 	}
  		
  	#logoMaxi{
- 		width: 28%;
- 	}
-
- }
-
-@media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
-	}
-
- 	#logoMaxi{
  		width: 400px;
  	}
+ 	.imgCotizacion{
+ 		height: 540px;
+ 	}
+ 	
+
  }
+
+
 
 li.menu{
 		font-family:'Roboto';

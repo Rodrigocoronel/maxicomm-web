@@ -1,4 +1,4 @@
-/*@media (min-width: 540px) { 
+@media (min-width: 768px) { 
 
 	.fill-containerTexture{
 		height: 500px;
@@ -27,49 +27,63 @@
 	.textoSolucion{
 		font-size: 19px;
 	}
- }*/
-/*
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-	.fondiu{
-		height : calc(100% - 100px);
-	}
-	.fill-containerTexture{
-			height: 1200px;
-		}
-	.iconoSoluciones{
-		height: 200px; 
-		width: 200px;
-	}	
-	.height-iconosoluciones{
-		height: 300px;
+	.carousel-item-empresa{
+		padding: 10% 0; padding-left: 250px;
 	}
 
-	.cuadros{
-		height: 280px;
-    	width: 300px;
-	}
-	p.empresa{
-		font-size: 26px;
+	.divTextoEmpresa{
+		width: 500px; height: 500px;
 	}
 
-	.textoSolucion{
-		font-size: 22px;
+	#testimoniales{
+		height: 560px; 
 	}
-}*/
+	.parallax{
+		font-size: 50px; 
+	}
+ }
+
+ @media (max-width: 575.98px) {
+
+ 	.iconoSoluciones{
+ 		height: 90px; 
+		width: 90px;
+ 	}
+ 	.cuadros{
+		height: 180px;
+    	width: 200px;
+	}
+
+	.textoSolucion.equipamiento{
+		left : 42px !important;
+	}
+
+	.carousel-item-empresa{
+		padding: 25% 0;
+		padding-left: 0px;
+	}
+
+	.divTextoEmpresa{
+		width: 300px; height: 200px;
+	}
+
+	#testimoniales{
+		height: 700px; 
+	}
+
+	.parallax{
+		font-size: 30px; 
+	}
+	
+}
 
 
 
-
-
-
-
-
-
-		html,
-		body {
-			 height: 100%;
-		}
+html,
+body {
+	 height: 100%;
+}
 		
 
 .imgVerMasTestimonial{
@@ -179,13 +193,7 @@ p.empresa{
 	padding-top: 10px;
 }
 
-.carousel-item-empresa{
-	padding: 10% 0; padding-left: 250px;
-}
 
-.divTextoEmpresa{
-	width: 500px; height: 500px;
-}
 
 #imgVerMas{
 	visibility: hidden;
@@ -222,4 +230,7 @@ p.empresa{
     color: #212529;
     border: 1px solid #81818252;
     
+		height: 180px;
+    	width: 200px;
+	
 }

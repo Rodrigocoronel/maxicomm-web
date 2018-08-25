@@ -12,13 +12,13 @@
 	}
 
 	.infoCableado{
-		height:37%;
+		height : 600px;
 	}
 	.infoCableado2{
-		height:35%;
+		height:610px;
 	}
 	.imgEstructurado{
-		height: 1200px;
+		height: 1300px;
 	}
 	#p1{
 		height: 60%;
@@ -28,8 +28,16 @@
  		font-size: 30PX;
  	}
 
+ 	.tituloComun.cableadoEs{
+ 		font-size: 20PX;
+ 	}
+
  	.submenuComu{
  		height: 500px;
+ 	}
+
+ 	.imgEnlaces{
+ 		height: 2000px;
  	}
  }
 
@@ -45,13 +53,13 @@
 	}
 
 	.infoCableado{
-		height:26%;
+		height:300px;
 	}
 	.infoCableado2{
-		height:30%;
+		height:400px;
 	}
 	.imgEstructurado{
-		height: 1000px;
+		height: 1300px;
 	}
 
 	#p1{
@@ -62,8 +70,16 @@
  		font-size: 45PX;
  	}
 
+ 	.tituloComun.cableadoEs{
+ 		font-size: 25PX;
+ 	}
+
  	.submenuComu{
  		height: 280px;
+ 	}
+
+ 	.imgEnlaces{
+ 		height: 800px;
  	}
  }
 
@@ -80,15 +96,30 @@
  	.tiposFibra{
 		height: 1000px;
 	}
+
  }
 
  @media(min-width: 1024px){
+ 	.infoCableado{
+		height:120px;
+	}
  	.tiposFibra{
 		height: 600px;
 	}
+
+	.portadillaComunicaciones{
+		height: 500px;
+	}
+
+	.imgEstructurado{
+		height: 1200px;
+	}
+
  }
  
-
+.card{
+	text-align: justify;
+}
 
 
 .fill-container{

@@ -136,11 +136,13 @@
 	</div>
 	<!-- Imagen entrada -->
 	<div class="fondiu fill-container estructurado container" style="max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
-    	<h4 class="animated2s fadeInLeft" align="left" style="font-size: 44PX; padding-left: 105px; margin-top: 7%; font-family: 'Roboto'; color: white;">
-            CABLEADO<br/>
-            ESTRUCTURADO<br/>
-            VOZ Y DATOS
-        </h4>
+        <div class="container-fluid h-100 ">
+            <div class="row h-100 align-items-center">
+                <div class="col-4 text-center text-md-left" style=" font-family: 'Roboto'; color: white;">
+                    <p class="tituloComun cableadoEs mb-0">CABLEADO ESTRUCTURADO VOZ Y DATOS</p>
+                </div>
+            </div>  
+        </div>
 	</div>
 	<div class="container submenuCom" style="">
         <div class="row align-items-center" style=" padding-top: 15px;">
@@ -173,31 +175,30 @@
     
     <!-- Informacion adicional -->
     <div class="imgEstructurado parallax" style=" ">
-        <div class="container" style="height: 100%;">
-            <div style="height: 5%;"></div>
-            
-            <div id="p1" style="">
+        <div class="container h-100" >
+
+            <div class="pt-5" id="p1" style="margin-bottom: 130px;">
             
                 <div class="row infoCableado" >
-                    <div class="col-lg-3 col-sm-6" >
+                    <div class="col-lg-3 col-sm-6 col-12" >
                         <button id="cablehorizontal" class="btn btn-link collapseTopics" type="button" data-toggle="collapse" data-target="#punto1" data-parent="#p1" aria-expanded="false" aria-controls="punto1" style="width: 100%;">
                             <img src="../images/cableado_horizontal.svg" width="100" height="100"><br/>
                             Cableado Horizontal
                         </button>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <button class="btn btn-link collapseTopics" type="button" data-toggle="collapse" data-target="#punto2" data-parent="#p1" aria-expanded="false" aria-controls="punto2" style="width: 100%;">
                              <img src="../images/vertical.svg" width="100" height="100"><br/>
                             Cableado vertical o Backbone
                         </button>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <button class="btn btn-link collapseTopics" type="button" data-toggle="collapse" data-target="#punto3" data-parent="#p1" aria-expanded="false" aria-controls="punto3" style="width: 100%;">
                             <img src="../images/cuarto_entrada_2.svg" width="100" height="100"><br/>
                             Cuarto de entrada de servicios
                         </button>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <button class="btn btn-link collapseTopics" type="button" data-toggle="collapse" data-target="#punto4" data-parent="#p1" aria-expanded="false" aria-controls="punto4" style="width: 100%;">
                             <img src="../images/ground.svg" width="100" height="100"><br/>
                             Sistema de puesta a tierra
@@ -205,7 +206,7 @@
                     </div>
                 </div>
             
-                <div class="row mt-sm-5" >
+                <div class="row mt-sm-5 infoCableado2" >
                     <div class="collapse topics show " id="punto1">
                         <div class="card card-body">
                             <b>Cableado Horizontal</b><br/>
@@ -252,129 +253,139 @@
             </div>
             
                 
-            <div class="mt-5" style="color:white;">
-                <h4>PREGUNTAS FRECUENTES <img src="./images/preguntas_frecuentes.svg" width="40" height="40"></h4>
+            <div class=" d-none d-sm-inline" style="color:white;">
+                <h4 class="mt-5">PREGUNTAS FRECUENTES <img src="./images/preguntas_frecuentes.svg" width="40" height="40"></h4>
             </div>
-            <div id="accordion" class="mt-3" style="height: 50%;">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link btn-acordion btn-acordion accionMas" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Que es un backbone?
-                            </button>
-                            <button class="btn btn-link btn-acordion btn-acordion float-right p-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">  
-                                <img id="mas" class="mas" src="./images/plus-symbol.svg" width="16" height="16">
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                            El back bone es el enlace principal de una red, es el cableado que comunica todos los Cuartos de telecomunicaciones con
-                            el cuarto de equipos. Si se te llega a caer o romper el back bone, ten por seguro que toda tu red fallara.
+            <div class="row d-none d-sm-inline">
+                <div class="col-12">
+                    <div id="accordion" class="mt-3" style="height: 390px;">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-acordion btn-acordion accionMas" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Que es un backbone?
+                                    </button>
+                                    <button class="btn btn-link btn-acordion btn-acordion float-right p-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">  
+                                        <img id="mas" class="mas" src="./images/plus-symbol.svg" width="16" height="16">
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    El back bone es el enlace principal de una red, es el cableado que comunica todos los Cuartos de telecomunicaciones con
+                                    el cuarto de equipos. Si se te llega a caer o romper el back bone, ten por seguro que toda tu red fallara.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link btn-acordion collapsed accionMas1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Tipos de topología?
-                            </button>
-                            <button class="btn btn-link btn-acordion collapsed float-right p-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                               <img id="mas1" class="mas1" src="./images/plus-symbol.svg" width="16" height="16">
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            Existen varios tipos de topología, y esto dependerá de cómo este el diseño Puedes tener tu cable back bone en topología
-                            de Bus, de estrella o anillo. Pero recuerda que todo depende de tu diseño.
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-acordion collapsed accionMas1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Tipos de topología?
+                                    </button>
+                                    <button class="btn btn-link btn-acordion collapsed float-right p-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                       <img id="mas1" class="mas1" src="./images/plus-symbol.svg" width="16" height="16">
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Existen varios tipos de topología, y esto dependerá de cómo este el diseño Puedes tener tu cable back bone en topología
+                                    de Bus, de estrella o anillo. Pero recuerda que todo depende de tu diseño.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link btn-acordion collapsed accionMas2" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Qué medios físicos se pueden usar como Back Bone?
-                            </button>
-                             <button class="btn btn-link btn-acordion collapsed float-right p-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                               <img id="mas2" class="mas2" src="./images/plus-symbol.svg" width="16" height="16">
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                            El back bone se puede realizar con cualquier medio, Cobre, Fibra e Inalámbrico, sin embargo, los más comunes son los de
-                            Cobre y de Fibra, ya que el Inalámbrico puede presentar fallas dependiendo del clima. Posteriormente, tendrás que saber
-                            que aplicaciones o servicios tendrás en el back bone, y la distancia a cubrir. Eso ya te permitirá seleccionar alguna
-                            de las dos últimas opciones. Ventaja de la fibra, es que no es susceptible a los campos magnéticos, lo que permite que
-                            la puedas llevar por elevadores, centros de maquinas.
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <p class="mb-0">
+                                    <button class="btn btn-link btn-acordion collapsed accionMas2" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Qué medios físicos se pueden usar como Back Bone?</button>
+                                     <button class="btn btn-link btn-acordion collapsed float-right p-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                       <img id="mas2" class="mas2" src="./images/plus-symbol.svg" width="16" height="16">
+                                    </button>
+                                </p>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    El back bone se puede realizar con cualquier medio, Cobre, Fibra e Inalámbrico, sin embargo, los más comunes son los de
+                                    Cobre y de Fibra, ya que el Inalámbrico puede presentar fallas dependiendo del clima. Posteriormente, tendrás que saber
+                                    que aplicaciones o servicios tendrás en el back bone, y la distancia a cubrir. Eso ya te permitirá seleccionar alguna
+                                    de las dos últimas opciones. Ventaja de la fibra, es que no es susceptible a los campos magnéticos, lo que permite que
+                                    la puedas llevar por elevadores, centros de maquinas.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-	<!-- Cotizacion -->
-	<div class="imgCotizacion" style="height: 540px;">
+    <!-- Cotizacion -->
+    <div class="imgCotizacion" style="">
         <div class="container" align="center" style="height: 100%;">
-    		<div class="row align-items-center" style="height: 100%;" >
-    			<div class="col-12">
-    					<div class="row mb-5" align="center">
-    						<div class="col-12">
-    							<p align="center" style="font-size: 35px; color: white;"> Solicita una cotización personalizada </p>
-    						</div>
-    					</div>
-    				<div class="row">
-	        			<div class="col-md-6 col-xs-12 ">
-	                		<div class="row">
-	                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
-	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
-	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
-	                		</div>
-		                </div>
-		                <div class="col-md-6 col-xs-12  pl-0 mt-md-0 mt-sm-3 " >
-	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
-	               		</div>
-	        		</div>
-	                
-	                <div class="row" style="height: 80px;">
-	                	<div class="col">
-		           			<div align="right" class="mt-3">
-		           				<button class="btn btn-dark" id="button" type="submit" value="Enviar">Enviar</button>
-		           			</div>
-		           			<div align="center" id="logsCoti" style="color : white; background: #58666fe8; margin-top: 22px; width: 300px; height: 28px; display: none;"></div> 
-		           		</div>
-	                </div>
-    			</div>
-    		</div>        		
-       	</div>
-	</div>
-	<!-- Footer -->
-	<div style="background-color: #252526; height: 85px; width: 100%">
-		<div class="container" style="height: 100%;">
-			<div class="row align-items-center" style="height: 100%;" >
-				<div class="col-4" >
-					<a id="icnRedesS" href="http://facebook.com" target="_blank">
-						<img id="iconFacebook" src="../../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
-					</a>
-					<a id="icnRedesS" href="http://twitter.com" target="_blank">
-						<img id="iconTwitter"src="../../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
-					</a>
-				</div>
-				<div  class="col-8 text-right" >
-					<a href="#" style="color: white;" > Copyright / </a>
-					<a href="#" style="color: white;" >Privacidad / </a> 
-					<a href="#" style="color: white;" >Politicas </a> 
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="row align-items-center" style="height: 100%;" >
+                <div class="col-12">
+                        <div class="row mb-2 mb-md-5" align="center">
+                            <div class="col-12">
+                                <p align="center" class="textoCotizacion animated2s" style="font-size: 35px; color: white;"> Solicita una cotización personalizada </p>
+                            </div>
+                        </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 ">
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
+                            <textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="row" style="height: 80px;">
+                        <div class="col">
+                            <div align="right" class="mt-3 pr-4 pr-md-0">
+                                <button class="btn btn-dark" id="button" type="submit" value="Enviar">Enviar</button>
+                            </div>
+                            <div align="center" id="logsCoti" style="color : white; background: #58666fe8; margin-top: 22px; width: 300px; height: 28px; display: none;"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>  
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div style="background-color: #252526; height: 85px; width: 100%">
+            <div class="container" style="height: 100%;">
+                <div class="row align-items-center" style="height: 100%;" >
+                    <div class="col-12 col-md-4 text-md-left" align="center">
+                        <a id="icnRedesS" href="http://facebook.com" target="_blank">
+                            <img id="iconFacebook" src="../../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+                        </a>
+                        <a id="icnRedesS" href="http://twitter.com" target="_blank">
+                            <img id="iconTwitter"src="../../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">    
+                        </a>
+                    </div>
+                    <div  class="col-12 col-md-8 text-md-right" align="center" >
+                        <a href="#" style="color: white;" > Copyright / </a>
+                        <a href="#" style="color: white;" >Privacidad / </a> 
+                        <a href="#" style="color: white;" >Politicas </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 	<script>

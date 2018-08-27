@@ -45,8 +45,12 @@
         height: 400px; 
     }
     .subMenuLicenciamientos{
-        height: 650px;
+        height: 1100px;
     }
+    .imgTexturaLicenciamiento{
+       height: 900px; 
+    }
+    
     .noMostrar{
         display:none;
     }
@@ -98,7 +102,10 @@
         height: 300px; 
     }
     .subMenuLicenciamientos{
-        height: 410px;
+        height: 650px;
+    }
+    .imgTexturaLicenciamiento{
+       height: 400px; 
     }
     .lineaVertical{
   
@@ -138,6 +145,9 @@
         height: 100px;
     }
 
+    .subMenuLicenciamientos{
+        height: 500px;
+    }
  }
 
 ul{

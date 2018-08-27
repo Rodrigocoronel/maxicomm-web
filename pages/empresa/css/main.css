@@ -4,6 +4,9 @@
 		height: 500px;
 	}
 	
+	.fill-container{
+		height: 600px;
+	}
 
  	.fondiu{
 		height : calc(100% - 153px);
@@ -46,6 +49,10 @@
 
  @media (max-width: 575.98px) {
 
+ 	.fill-container{
+		height: 600px;
+	}
+
  	.iconoSoluciones{
  		height: 90px; 
 		width: 90px;
@@ -76,6 +83,12 @@
 		font-size: 30px; 
 	}
 	
+}
+
+@media (min-width: 1024px){
+	.fill-container{
+		height : calc(100% - 153px);
+	}
 }
 
 

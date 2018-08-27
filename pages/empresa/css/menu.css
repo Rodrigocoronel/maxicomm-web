@@ -27,7 +27,11 @@
 
  }
 
-
+@media (min-width: 1200px){
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+}
 
 li.menu{
 		font-family:'Roboto';
@@ -55,9 +59,7 @@ a.Hover {
     color: rgba(0,0,0,.9);
 }
 
-.dropdown:hover .dropdown-menu {
-display: block;
-}
+
 
 .dropdown-menu{
 	top: 97% !important;

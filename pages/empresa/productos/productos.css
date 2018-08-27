@@ -1,20 +1,73 @@
-@media (min-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
-	}
+@media (max-width: 575.98px) { 
 
-	.logo-menu{
- 		height:100px;
- 		width:428px;
- 	}
+    .fondiu{
+        height : calc(100% - 100px);
+    }
+    .tituloProductos{
+        font-size: 30px;
+    }
+    .containerTexture{
+        height: 1200px;
+    }
+    .imgProductos{
+        height: 800px;
+    }
+    .subMenuContpaq{
+         height: 650px;
+    }
+    .subMenuProductos{
+         height: 650px;
+    }
+    .subMenuMsWindows{
+         height: 650px;
+    }
+    .imgTexturaMsWindows{
+        height: 1000px; 
+    }
+    .tabsMsWindows{
+        height: 1000px;
+    }
+
+    .imgTexturaContpaq{
+        height: 1200px;
+    }
+    .parallaxContpaq{
+        height: 250px; width: 250px;
+    }
+    .subMenuCartuchos{
+        height: 750px;
+    }
+    .tituloRemanufacturado{
+        height: 100px;
+    }
+    
+    .imgTexturaCartuchos{
+        height: 400px; 
+    }
+    .subMenuLicenciamientos{
+        height: 650px;
+    }
+    .noMostrar{
+        display:none;
+    }
+    
+ }
+
+@media (min-width: 576px) { 
 
  	.fondiu{
 		height : calc(100% - 153px);
 	}
+    .tituloProductos{
+        font-size: 49px;
+    }
 
 	.containerTexture{
 		height: 450px;
 	}
+    .imgProductos{
+        height: 450px;
+    }
     .subMenuContpaq{
          height: 380px;
     }
@@ -24,8 +77,25 @@
     .subMenuMsWindows{
         height: 410px;
     }
+    .tabsMsWindows{
+        height: 800px;
+    }
+
+    .imgTexturaContpaq{
+        height: 600px;
+    }
+    .parallaxContpaq{
+        height: 400px; width: 400px;
+    }
+
     .subMenuCartuchos{
         height: 410px;
+    }
+    .tituloRemanufacturado{
+        height: 150px;
+    }
+    .imgTexturaCartuchos{
+        height: 300px; 
     }
     .subMenuLicenciamientos{
         height: 410px;
@@ -34,7 +104,7 @@
   
     }
     .imgTexturaMsWindows{
-        height: 460px; 
+        height: 600px; 
     }
     .noMostrar{
         display:block;
@@ -42,46 +112,37 @@
     
  }
 
-@media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 76px ;
-	}
-
-	.logo-menu{
- 		height:76px;
- 		width:314px;
- 	}
-
- 	.fondiu{
-		height : calc(100% - 100px);
-	}
-	.containerTexture{
-		height: 650px;
-	}
-    .subMenuContpaq{
-         height: 650px;
-    }
-    .subMenuProductos{
-         height: 650px;
-    }
-    .subMenuMsWindows{
-         height: 650px;
-    }
-    .imgTexturaMsWindows{
-        height: 600px; 
-    }
-    .subMenuCartuchos{
+@media (min-width: 768px) { 
+    .containerTexture{
         height: 600px;
     }
-    .subMenuLicenciamientos{
-        height: 650px;
+    .tabsMsWindows{
+        height: 800px;
     }
-    .noMostrar{
-        display:none;
+}
+
+@media(min-width: 1024px){
+    .containerTexture{
+        height: 450px;
     }
-	
+    .imgProductos{
+        height: 300px;
+    }
+    .imgTexturaMsWindows{
+        height: 450px; 
+    }
+    .tabsMsWindows{
+        height: 600px;
+    }
+    .tituloRemanufacturado{
+        height: 100px;
+    }
+
  }
 
+ul{
+    text-align: justify;
+}
 
 .fill-container{
 	background-image: url(contpaqi/images/CONTPAQi-img1.jpg);

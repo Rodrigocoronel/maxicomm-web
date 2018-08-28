@@ -1,24 +1,29 @@
-@media (min-width: 1336px) { 
+@media (max-width: 575.98px) { 
+	#logoMaxi{
+ 		width: 200px;
+ 	}
+ 	.contenedor-video{
+		height: 75px ;
+	}
+
+ }
+
+@media (min-width: 576px) { 
 	.contenedor-video{
 		height: 120px ;
 	}
  		
  	#logoMaxi{
- 		width: 28%;
- 	}
-
- }
-
-@media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
-	}
-
- 	#logoMaxi{
  		width: 400px;
  	}
+
  }
 
+@media (min-width: 1200px){
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+}
 
 
 li.menu{
@@ -47,9 +52,6 @@ a.Hover {
     color: rgba(0,0,0,.9);
 }
 
-.dropdown:hover .dropdown-menu {
-display: block;
-}
 
 .dropdown-menu{
 	top: 97% !important;

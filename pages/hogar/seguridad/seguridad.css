@@ -9,7 +9,7 @@
 		height: 600px;
 	}
 	.imgPortero{
-		height: 550px;
+		height: 700px;
 	}
 	.imgChapa{
 		height: 600px;
@@ -18,7 +18,7 @@
 		height: 900px;
 	}
 	.imgCercas{
-		height: 650px;
+		height: 750px;
 	}
 	.imgTexturaProductos{
 		height: 1050px;
@@ -32,7 +32,13 @@
 	.imgTextura1{
 		height: 440px;
 	}
+	.imgPortero{
+		height: 450px;
+	}
 	.imgVideovigilancia{
+		height: 450px;
+	}
+	.imgChapa{
 		height: 450px;
 	}
 	.imgPaneles{

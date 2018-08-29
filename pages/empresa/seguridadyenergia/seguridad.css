@@ -1,3 +1,77 @@
+@media (max-width: 575.98px) { 
+    .tituloSeguridad{
+        font-size: 30px;
+    }
+    .tamanoCamara{
+        height: 300px;
+        width: 350px;
+    }
+    .subMenuCctv{
+        height: 680px;
+    }
+    .tamanoVideovigilancia{
+        height: 820px;
+    }
+    .tamanoTextoCamara{
+        height: 650px;
+    }
+}
+
+@media (min-width: 576px) {
+    .tituloSeguridad{
+        font-size: 49px;
+    }
+    .tamanoCamara{
+        height: 300px;
+        width: 300px;
+    }
+    .subMenuCctv{
+        height: 350px;
+    }
+    .tamanoVideovigilancia{
+        height: 480px;
+    }
+    .tamanoTextoCamara{
+        height: 380px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .tamanoCamara{
+        height: 100%;
+        width: 100%;
+    }
+    .tituloSeguridad{
+        font-size: 49px;
+    }
+    .tamanoCamara{
+        height: 300px;
+        width: 300px;
+    }
+    .subMenuCctv{
+        height: 350px;
+    }
+    .tamanoVideovigilancia{
+        height: 480px;
+    }
+    .tamanoTextoCamara{
+        height: 380px;
+    }
+}
+        
+@media(min-width: 1024px){
+    .tamanoCamara{
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+        
+        
+        
+            
+
 .fill-container{
     background-repeat: no-repeat;  
     background-size: cover;

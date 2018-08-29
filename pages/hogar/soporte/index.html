@@ -5,6 +5,7 @@
 <head>
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/> 
     <link rel=stylesheet type="text/css" href="../css/menu.css"/>
     
@@ -15,7 +16,7 @@
     <script src="../js/menu.js"></script>
     <script src="../js/cotizacion.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../soporte.css">
+    <link rel="stylesheet" type="text/css" href="./soporte.css">
     <link rel="stylesheet" type="text/css" href="../../../assets/animate.css">
     <link rel='shortcut icon' type='image/x-icon' href='../../../favicom.ico' /> 
 </head>
@@ -114,46 +115,38 @@
     
 	<!-- Soluciones -->
     <div class="imgTextura1" style="height: 200px; width: 100%;">
-        <div class="row justify-content-around" style="height: 100%;">
-            <div class="col-8 align-self-center" style="text-align: left; font-size: 19px;">
-                <b>Nuestro servicio de soporte está basado en la comunicación amigable y la explicación detallada de las soluciones que ofrecemos.</b>
-            </div>
-        </div>
+    	<div class="container h-100">
+    		<div class="row align-items-center offset-lg-3" style="height: 100%;">
+	            <div class="col-12 col-sm-8 align-self-center" style="text-align: left; font-size: 19px; text-align: justify;">
+	                Nuestro servicio de soporte está basado en la comunicación amigable y la explicación detallada de las soluciones que ofrecemos.
+	            </div>
+	        </div>
+    	</div>
+        
     </div>
 
-	<div class="imgSoporte parallax" style="height: 550px; width: 100%; ">
-        <div class="container" style="color: white; font-size: 17PX; font-family: 'Roboto'; text-align: center; height: 100%;">
-            
-            <div class="row" style="height: 10%;"> </div>
-            
-            <div class="row justify-content-around" style="height: 35%;">    
-                <div class="col-3 align-self-center animated scrollFadeIn" style=" 1px solid #c3c3c3";>
-                    <div> <img class="" src="images/icono-reparacion-computadoras.png" height="100" width="100"> <br><br>  REPARACIÓN DE COMPUTADORAS</div>
+	<div class="imgSoporte parallax" style=" width: 100%; ">
+        <div class="container" style="color: white; font-size: 17PX; font-family: 'Roboto'; text-align: center; height: 100%;">            
+            <div class="row h-100 align-items-center" style="">    
+                <div class="col-sm-4 col-12 align-self-center animated scrollFadeIn" style=" 1px solid #c3c3c3";>
+                    <div> <img class="" src="images/icono-reparacion-computadoras.png" > <br><br>  REPARACIÓN DE COMPUTADORAS</div>
                 </div>
-                <div class="col-3 align-self-center animated scrollFadeIn">
-                    <div> <img class="" src="images/icono-reparacion-portatiles.png" height="100" width="100"> <br><br>  REPARACIÓN DE DISPOSITIVOS MÓVILES</div>
+                <div class="col-sm-4 col-12 align-self-center animated scrollFadeIn">
+                    <div> <img class="" src="images/icono-reparacion-portatiles.png" > <br><br>  REPARACIÓN DE DISPOSITIVOS MÓVILES</div>
                 </div>
-                <div class="col-3 align-self-center animated scrollFadeIn">
-                    <div> <img src="images/icono-reparacion-impresoras.png" height="100" width="100"> <br><br>  REPARACIÓN DE IMPRESORAS </div>
+                <div class="col-sm-4 col-12 align-self-center animated scrollFadeIn">
+                    <div> <img src="images/icono-reparacion-impresoras.png" > <br><br>  REPARACIÓN DE IMPRESORAS </div>
                 </div>
-            </div>
-
-            <div class="row" style="height: 10%;"> </div>
-            
-            <div class="row  justify-content-around " style="height: 35%;">    
-                <div class="col-3 align-self-center animated scrollFadeIn" style=" 1px solid #c3c3c3";>
-                    <div> <img src="images/icono-sistemas.png" height="100" width="100"> <br><br>  REVISIÓN DE INTERNET </div>
+                <div class="col-sm-4 col-12 align-self-center animated scrollFadeIn" style=" 1px solid #c3c3c3";>
+                    <div> <img src="images/icono-sistemas.png" > <br><br>  REVISIÓN DE INTERNET </div>
                 </div>
-                <div class="col-3 align-self-center animated scrollFadeIn">
-                    <div> <img src="images/icono-consultoria.png" height="100" width="100"> <br><br> REVISIÓN DE VIDEO VIGILANCIA </div>
+                <div class="col-sm-4 col-12 align-self-center animated scrollFadeIn">
+                    <div> <img src="images/icono-consultoria.png" > <br><br> REVISIÓN DE VIDEO VIGILANCIA </div>
                 </div>
-                <div class="col-3 align-self-center animated scrollFadeIn">
-                    <div> <img src="images/icono-asesoria.png" height="100" width="100"> <br><br> INSTALACIÓN DE PROGRAMAS </div>
+                <div class="col-sm-4 col-12 align-self-center animated scrollFadeIn">
+                    <div> <img src="images/icono-asesoria.png" > <br><br> INSTALACIÓN DE PROGRAMAS </div>
                 </div>
-            </div>
-            
-            <div class="row" style="height: 10%;"> </div>
-            
+            </div>   
         </div>
 	</div>
     
@@ -162,31 +155,37 @@
         <div class="container" align="center" style="height: 100%;">
     		<div class="row align-items-center" style="height: 100%;" >
     			<div class="col-12">
-    					<div class="row mb-5" align="center">
+    					<div class="row mb-2 mb-md-5" align="center">
     						<div class="col-12">
-    							<p align="center" style="font-size: 35px; color: #595d65;"> Solicita una cotización personalizada </p>
+    							<p align="center" class="textoCotizacion animated2s" style="font-size: 35px; color: #595d65;;"> Solicita una cotización personalizada </p>
     						</div>
     					</div>
-    				<div class="row">
-	        			<div class="col-md-6 col-xs-12 ">
-	                		<div class="row">
-	                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+    				<div class="row justify-content-center">
+	        			<div class="col-12 col-md-6 ">
+	                		<div class="row justify-content-center">
+	                			<div class="col-10">
+	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+	                			</div>
 	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+		                    <div class="row justify-content-center">
+		                    	<div class="col-10">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+	                			</div>
 	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+		                    <div class="row justify-content-center">
+		                    	<div class="col-10">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+	                			</div>
 	                		</div>
 		                </div>
-		                <div class="col-md-6 col-xs-12  pl-0 mt-md-0 mt-sm-3 " >
+		                <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
 	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
 	               		</div>
 	        		</div>
 	                
 	                <div class="row" style="height: 80px;">
 	                	<div class="col">
-		           			<div align="right" class="mt-3">
+		           			<div align="right" class="mt-3 pr-4 pr-md-0">
 		           				<button class="btn btn-dark" id="button" type="submit" value="Enviar">Enviar</button>
 		           			</div>
 		           			<div align="center" id="logsCoti" style="color : white; background: #58666fe8; margin-top: 22px; width: 300px; height: 28px; display: none;"></div> 
@@ -196,26 +195,28 @@
     		</div>        		
        	</div>
 	</div>
-	<!-- Footer -->
-	<div style="background-color: #252526; height: 85px; width: 100%">
-		<div class="container" style="height: 100%;">
-			<div class="row align-items-center" style="height: 100%;" >
-				<div class="col-4" >
-					<a id="icnRedesS" href="http://facebook.com" target="_blank">
-						<img id="iconFacebook" src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
-					</a>
-					<a id="icnRedesS" href="http://twitter.com" target="_blank">
-						<img id="iconTwitter"src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
-					</a>
-				</div>
-				<div  class="col-8 text-right" >
-					<a href="#" style="color: white;" > Copyright / </a>
-					<a href="#" style="color: white;" >Privacidad / </a> 
-					<a href="#" style="color: white;" >Politicas </a> 
+	<!-- footer -->
+	<footer>
+		<div style="background-color: #252526; height: 85px; width: 100%">
+			<div class="container" style="height: 100%;">
+				<div class="row align-items-center" style="height: 100%;" >
+					<div class="col-12 col-md-4 text-md-left" align="center">
+						<a id="icnRedesS" href="http://facebook.com" target="_blank">
+							<img id="iconFacebook" src="../../empresa/images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+						</a>
+						<a id="icnRedesS" href="http://twitter.com" target="_blank">
+							<img id="iconTwitter"src="../../empresa/images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+						</a>
+					</div>
+					<div  class="col-12 col-md-8 text-md-right" align="center" >
+						<a href="#" style="color: white;" > Copyright / </a>
+						<a href="#" style="color: white;" >Privacidad / </a> 
+						<a href="#" style="color: white;" >Politicas </a> 
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
 
 </body>
 	<script>

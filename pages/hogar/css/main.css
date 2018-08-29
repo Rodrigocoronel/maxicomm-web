@@ -24,6 +24,8 @@
 	.fill-containerTexture{
 		 height: 1000px;
 	}
+
+	
 	#testimoniales{
 		height: 700px; 
 	}
@@ -60,12 +62,17 @@
 	}
 
 	.parallax{
-		font-size: 50px; 
+		font-size: 35px; 
 	}
 
 	.fill-containerTexture{
 		 height: 650px;
 	}
+
+	.textInovacion{
+		height: 100%;
+	}
+
 	#testimoniales{
 		height: 560px; 
 	}
@@ -84,6 +91,10 @@
 	.fondiu{
 		height : calc(100% - 100px);
 	}
+	.parallax{
+		font-size: 50px; 
+	}
+
  }
 
 		html,

@@ -1,33 +1,15 @@
-@media (min-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
+@media (max-width: 575.98px){
+	.datosContacto{
+		height: 400px;
 	}
+	
+}
 
-	.logo-menu{
- 		height:100px;
- 		width:428px;
- 	}
-
- 	.fondiu{
-		height : calc(100% - 153px);
+@media (min-width: 576px){
+	.datosContacto{
+		height: 250px;
 	}
- }
-
-@media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 76px ;
-	}
-
-	.logo-menu{
- 		height:76px;
- 		width:314px;
- 	}
-
- 	.fondiu{
-		height : calc(100% - 100px);
-	}
- }
-
+}
 
 .fill-container{
 	background-image: url(./images/quienes-somos-img.jpg);

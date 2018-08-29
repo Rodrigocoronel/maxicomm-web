@@ -5,6 +5,7 @@
 <head>
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../../../assets/animate.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -108,47 +109,60 @@
         </h4>
 	</div>
 	<!-- Soluciones -->
-	<div class="fill-containerTexture container" style="max-width: 100%; overflow: hidden; background-repeat: no-repeat; height: 500px; padding-top: 20px;" >
-        <div class="soluciones animated2s scrollLeft">    
-            <p ><b>Maxicomm</b> &ensp; Empresa fundada en 1998 enfocados en ofrecer soporte y asesoria a empresas en materia
-                de equipos de computo, con servicios de ingeniería, venta, instalación y mantenimiento.</p>
-            <p>Somos una empresa Creativa y en constante crecimiento, que acepta y enfrenta el compromiso de innovar 
-                soluciones eficientes en relación a las necesidades de nuestros clientes.</p>
-            <p>Altamente capacitados en soluciones TI  a empresas, gobierno, educación, salud, entre otras.</p>
-            <hr style="height: 3px;" width="150px" height: "3px" color="red">
-            
-        </div>
+	<div class="fill-containerTexture " style=" background-repeat: no-repeat; height: 500px;" >
+		<div class="container h-100">
+			<div class="row h-100" >
+				<div id="textoQuienes" class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 scrollLeft animated2s align-self-center">    
+		            <p style="text-align: justify;">
+		            	<b>Maxicomm</b> &ensp; Empresa fundada en 1998 enfocados en ofrecer soporte y asesoria a empresas en materia
+		                de equipos de computo, con servicios de ingeniería, venta, instalación y mantenimiento.
+		                <br/><br/>
+		                Somos una empresa Creativa y en constante crecimiento, que acepta y enfrenta el compromiso de innovar 
+		                soluciones eficientes en relación a las necesidades de nuestros clientes.
+		                <br/><br/>
+		                Altamente capacitados en soluciones TI  a empresas, gobierno, educación, salud, entre otras.
+		            </p>
+		            <hr style="height: 3px;" width="150px" height: "3px" color="red">
+		        </div>
+			</div>
+		</div>
 	</div>
 	<!-- Cotizacion -->
 	<div class="imgCotizacion parallax" style="height: 540px;">
         <div class="container" align="center" style="height: 100%;">
     		<div class="row align-items-center" style="height: 100%;" >
     			<div class="col-12">
-    					<div class="row mb-5" align="center">
+    					<div class="row mb-2 mb-md-5" align="center">
     						<div class="col-12">
-    							<p align="center" style="font-size: 35px; color: #595d65;"> Solicita una cotización personalizada </p>
+    							<p align="center" class="textoCotizacion animated2s" style="font-size: 35px; color: #595d65;;"> Solicita una cotización personalizada </p>
     						</div>
     					</div>
-    				<div class="row">
-	        			<div class="col-md-6 col-xs-12 ">
-	                		<div class="row">
-	                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+    				<div class="row justify-content-center">
+	        			<div class="col-12 col-md-6 ">
+	                		<div class="row justify-content-center">
+	                			<div class="col-10">
+	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+	                			</div>
 	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+		                    <div class="row justify-content-center">
+		                    	<div class="col-10">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+	                			</div>
 	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+		                    <div class="row justify-content-center">
+		                    	<div class="col-10">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+	                			</div>
 	                		</div>
 		                </div>
-		                <div class="col-md-6 col-xs-12  pl-0 mt-md-0 mt-sm-3 " >
+		                <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
 	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
 	               		</div>
 	        		</div>
 	                
 	                <div class="row" style="height: 80px;">
 	                	<div class="col">
-		           			<div align="right" class="mt-3">
+		           			<div align="right" class="mt-3 pr-4 pr-md-0">
 		           				<button class="btn btn-dark" id="button" type="submit" value="Enviar">Enviar</button>
 		           			</div>
 		           			<div align="center" id="logsCoti" style="color : white; background: #58666fe8; margin-top: 22px; width: 300px; height: 28px; display: none;"></div> 
@@ -156,28 +170,30 @@
 	                </div>
     			</div>
     		</div>        		
-       	</div>	
+       	</div>		
     </div>
 	<!-- Footer -->
-	<div style="background-color: #252526; height: 85px; width: 100%">
-		<div class="container" style="height: 100%;">
-			<div class="row align-items-center" style="height: 100%;" >
-				<div class="col-4" >
-					<a id="icnRedesS" href="http://facebook.com" target="_blank">
-						<img id="iconFacebook" src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
-					</a>
-					<a id="icnRedesS" href="http://twitter.com" target="_blank">
-						<img id="iconTwitter"src="../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
-					</a>
-				</div>
-				<div  class="col-8 text-right" >
-					<a href="#" style="color: white;" > Copyright / </a>
-					<a href="#" style="color: white;" >Privacidad / </a> 
-					<a href="#" style="color: white;" >Politicas </a> 
+	<footer>
+		<div style="background-color: #252526; height: 85px; width: 100%">
+			<div class="container" style="height: 100%;">
+				<div class="row align-items-center" style="height: 100%;" >
+					<div class="col-12 col-md-4 text-md-left" align="center">
+						<a id="icnRedesS" href="http://facebook.com" target="_blank">
+							<img id="iconFacebook" src="../../empresa/images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+						</a>
+						<a id="icnRedesS" href="http://twitter.com" target="_blank">
+							<img id="iconTwitter"src="../../empresa/images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+						</a>
+					</div>
+					<div  class="col-12 col-md-8 text-md-right" align="center" >
+						<a href="#" style="color: white;" > Copyright / </a>
+						<a href="#" style="color: white;" >Privacidad / </a> 
+						<a href="#" style="color: white;" >Politicas </a> 
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
 
 </body>
 	<script>

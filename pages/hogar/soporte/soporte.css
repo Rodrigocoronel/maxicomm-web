@@ -1,0 +1,78 @@
+@media (max-width: 575.98px){
+	.imgSoporte{
+		height: 1200px;
+	}
+}
+
+@media(min-width: 576px){
+	.imgSoporte{
+		height: 550px;
+	}
+}
+
+.fill-container{
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.fill-containerTexture{
+	background-image: url(./images/empresa-Index-fondo-textura.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.fill-container.soporte{
+	background-image: url(./images/soporte-hogar.jpg);
+}
+.imgSoporte{
+	background-image: url(./images/8-02-soporte.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+a.sub{
+    border-bottom: 1px solid #ccc;
+    display: block;
+    text-decoration: none;
+    color: #212529;
+    padding: 8px 0px 8px 0px !important;
+}
+
+a.a2{
+    border-bottom: 0px solid #ccc !important;
+}
+
+a.sub:hover{
+    text-decoration: none;
+    color: black;
+	background-color: lightgray; 
+}
+
+.barra{
+    width: 15px; height: 42px;
+}
+
+.barra.negra{
+    background-color:black;
+}
+
+.barra.roja{
+    background-color:red;
+}
+.barra.esp{
+    background-color:transparent;
+}
+ul {
+    list-style-image: url("./images/blue-palomita.png"); 
+}

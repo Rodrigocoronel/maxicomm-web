@@ -1,32 +1,64 @@
-@media (min-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
+@media (max-width: 575.98px){
+	.subMenuSeguridad{
+		height: 700px;
 	}
-
-	.logo-menu{
- 		height:100px;
- 		width:428px;
- 	}
-
- 	.fondiu{
-		height : calc(100% - 153px);
+	.imgVideovigilancia{
+		height: 900px;
 	}
- }
-
-@media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 76px ;
+	.imgTextura1{
+		height: 600px;
 	}
-
-	.logo-menu{
- 		height:76px;
- 		width:314px;
- 	}
-
- 	.fondiu{
-		height : calc(100% - 100px);
+	.imgPortero{
+		height: 550px;
 	}
- }
+	.imgChapa{
+		height: 600px;
+	}
+	.imgPaneles{
+		height: 900px;
+	}
+	.imgCercas{
+		height: 650px;
+	}
+	.imgTexturaProductos{
+		height: 1050px;
+	}
+}
+
+@media (min-width: 576px) { 
+	.subMenuSeguridad{
+		height: 380px;
+	}
+	.imgTextura1{
+		height: 440px;
+	}
+	.imgVideovigilancia{
+		height: 450px;
+	}
+	.imgPaneles{
+		height: 550px;
+	}
+	.imgCercas{
+		height: 450px;
+	}
+	.imgTexturaProductos{
+		height: 450px;
+	}
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media(min-width: 1024px){
+
+}
+
+.imgresponsive{
+	max-width: 100%;
+    height: auto;
+    padding: .25rem;
+}
 
 .fill-container{
     background-repeat: no-repeat;  

@@ -2,10 +2,7 @@
     .tituloSeguridad{
         font-size: 30px;
     }
-    .tamanoCamara{
-        height: 300px;
-        width: 350px;
-    }
+   
     .subMenuCctv{
         height: 680px;
     }
@@ -15,61 +12,156 @@
     .tamanoTextoCamara{
         height: 650px;
     }
+
+    .imgCercas{
+        height: 800px;
+    }
+    .subMenuCercas{
+        height: 780px;
+    }   
+    .subMenuPaneles{
+        height: 550px;
+    }
+    .imgPaneles{
+        height: 1000px;
+    }
+    .subMenuGps{
+        height: 600px;
+    }
+    .imgGps{
+        height: 600px;
+    }
+    .subMenuInstalaciones{
+        height: 600px;
+    }
+    .imgInstalaciones{
+        height: 680px;
+    }
+    .subMenuBiometrico{
+        height: 930px;
+    }
+    .imgBiometrico{
+        height: 450px;
+    }
+    .imgTextura1{
+        height: 1200px;
+    }
+    .subMenuBarrera{
+        height: 600px;
+    }
+
+    .imgBarrera{
+        height: 700px;
+    }
 }
 
 @media (min-width: 576px) {
     .tituloSeguridad{
         font-size: 49px;
     }
-    .tamanoCamara{
-        height: 300px;
-        width: 300px;
-    }
+   
     .subMenuCctv{
         height: 350px;
     }
     .tamanoVideovigilancia{
-        height: 480px;
+        height: 600px;
     }
     .tamanoTextoCamara{
+        height: 500px;
+    }
+    .imgCercas{
+        height: 450px;
+    }
+    .subMenuCercas{
+        height: 380px;
+    }  
+    .subMenuPaneles{
         height: 380px;
     }
+    .imgPaneles{
+        height: 700px;
+    }
+    .subMenuGps{
+        height: 380px;
+    }
+
+    .imgGps{
+        height: 420px;
+    }
+    .subMenuInstalaciones{
+        height: 380px;
+    }
+    .imgInstalaciones{
+        height: 550px;
+    }
+
+    .subMenuBiometrico{
+        height: 520px;
+    }
+    .imgBiometrico{
+        height: 380px;
+    }
+    .imgTextura1{
+        height: 740px;
+    }
+
+    .subMenuBarrera{
+        height: 380px;
+    }
+    .imgBarrera{
+        height: 500px;
+    }
+
 }
 
 @media (min-width: 768px) { 
-    .tamanoCamara{
-        height: 100%;
-        width: 100%;
-    }
+   
     .tituloSeguridad{
         font-size: 49px;
     }
-    .tamanoCamara{
-        height: 300px;
-        width: 300px;
-    }
+   
     .subMenuCctv{
         height: 350px;
+    }
+
+    
+}
+        
+@media(min-width: 1024px){
+   
+    .tamanoTextoCamara{
+        height: 380px;
     }
     .tamanoVideovigilancia{
         height: 480px;
     }
-    .tamanoTextoCamara{
-        height: 380px;
+    .imgPaneles{
+        height: 600px;
+    }
+    .imgInstalaciones{
+        height: 450px;
+    }
+    .imgTextura1{
+        height: 550px;
+    }
+    .subMenuBiometrico{
+        height: 400px;
+    }
+    .imgBiometrico{
+        height: 430px;
+    }
+    .imgBarrera{
+        height: 420px;
     }
 }
-        
-@media(min-width: 1024px){
-    .tamanoCamara{
-        height: 100%;
-        width: 100%;
-    }
-
-}
 
         
         
-        
+.imgresponsive{
+    max-width: 100%;
+    height: auto;
+    padding: .25rem;
+}        
             
 
 .fill-container{

@@ -26,6 +26,11 @@
 
 }
 
+.imgresponsive{
+	max-width: 100%;
+    height: auto;
+    padding: .25rem;
+}
 .fill-container{
 	background-image: url(contpaqi/images/CONTPAQi-img1.jpg);
     background-repeat: no-repeat;  
@@ -62,7 +67,7 @@
 }
 
 .fill-container-membresia{
-	background-image: url(../productos/images/membresia-1.jpg);
+	background-image: url(./images/membresia-2.png);
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;

@@ -6,6 +6,8 @@ $(document).ready(function() {
     $("#logoMaxi").addClass('fadeIn');
 
 
+
+
    
 
   $(function() {

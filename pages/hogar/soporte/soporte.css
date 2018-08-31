@@ -2,12 +2,37 @@
 	.imgSoporte{
 		height: 1200px;
 	}
+
+    .tituloSoporte{
+        font-size: 25px;    
+        margin-top: 20px;
+    }
+
+    .fill-container.soporte{
+        background-image: url(./images/soporte-500.jpg);
+        height: 200px;
+    }
 }
 
 @media(min-width: 576px){
-	.imgSoporte{
-		height: 550px;
-	}
+
+        
+    .fill-container.soporte{
+        background-image: url(./images/soporte-hogar.jpg);
+        height: 380px;
+    }
+
+    .imgSoporte{
+        height: 550px;
+    }
+    .tituloSoporte{
+        font-size: 45px;
+        align-self: center!important;
+    }
+}
+
+.tituloSoporte{
+    font-family: 'Roboto'; color: #595d65;
 }
 
 .fill-container{
@@ -16,6 +41,12 @@
     background-position: center 0px;
 }
 
+.imgSoporte{
+        background-image: url(./images/8-02-soporte.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 .fill-containerTexture{
 	background-image: url(./images/empresa-Index-fondo-textura.jpg);
     background-repeat: no-repeat;  
@@ -23,9 +54,7 @@
     background-position: center 0px;
 }
 
-.fill-container.soporte{
-	background-image: url(./images/soporte-hogar.jpg);
-}
+
 .imgSoporte{
 	background-image: url(./images/8-02-soporte.jpg);
 	background-repeat: no-repeat;

@@ -13,6 +13,19 @@
 	.dosRenglones{
 		 height: 62px !important;
 	}
+
+	.fill-container-membresia{
+		height: 650px;
+	}
+	.beneficios{
+		height: 550px;
+	}
+	.identidad{
+		height: 800px;
+	}
+	.imgDescuento{
+		width: 300px;
+	}
 }
 
 @media (min-width: 576px) { 
@@ -29,6 +42,15 @@
 	}
 	.dosRenglones{
 		 height: 62px !important;
+	}
+	.fill-container-membresia{
+		height: 500px;
+	}
+	.beneficios{
+		height: 350px;
+	}
+	.identidad{
+		height: 320px;
 	}
 }
 

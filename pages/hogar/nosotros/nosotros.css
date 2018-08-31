@@ -1,39 +1,43 @@
-@media (min-width: 1336px) { 
-	.contenedor-video{
-		height: 120px ;
+@media (max-width: 575.98px) { 
+	.fill-container{
+		background-position: -175px 0px;
+		height: 350px;
 	}
-
-	.logo-menu{
- 		height:100px;
- 		width:428px;
- 	}
-
- 	.fondiu{
-		height : calc(100% - 153px);
+	.tituloQuienes{
+		 margin-top: 180px;
+		 font-size: 30PX;
+	}
+ }
+@media (min-width: 576px) { 
+	.fill-container{
+		background-position: -270px 0px;
+		height: 557px;
+	}
+	.tituloQuienes{
+		 margin-top: 220px;
+		 font-size: 49PX;
+	}
+ }
+ @media (min-width: 1024px) { 
+	.fill-container{
+		background-position: center 0px;
+		height: 557px;
+	}
+	.tituloQuienes{
+		 margin-top: 220px;
+		 font-size: 49PX;
 	}
  }
 
-@media (max-width: 1336px) { 
-	.contenedor-video{
-		height: 76px ;
-	}
 
-	.logo-menu{
- 		height:76px;
- 		width:314px;
- 	}
 
- 	.fondiu{
-		height : calc(100% - 100px);
-	}
- }
 
 
 .fill-container{
 	background-image: url(./images/quienes-somos-img.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
-    background-position: center 0px;
+    
 }
 
 .fill-containerTexture{

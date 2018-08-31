@@ -23,6 +23,34 @@
 	.imgTexturaProductos{
 		height: 1050px;
 	}
+	.fill-container.videovigilancia{
+		background-image: url(./images/video-768.jpg);
+	}
+	.videovigilancia{
+		height: 300px;
+	}
+	.tituloVideo{
+		font-size: 30PX;
+	}
+	.fill-container.portero{
+		background-image: url(./images/portero-electr.jpg);
+	}
+	.tituloChapa{
+
+	}
+	.fill-container.paneles{
+		background-image: url(./images/panel-500.jpg);
+	}
+	.tituloPanel{
+		color: #ffffff;
+	}
+	.fill-container.cercas{
+		background-image: url(./images/cerca-768.jpg);
+	}
+	.tituloCercas{
+		padding-left: 0px;
+		font-size: 30PX;
+	}
 }
 
 @media (min-width: 576px) { 
@@ -50,6 +78,36 @@
 	.imgTexturaProductos{
 		height: 450px;
 	}
+	.fill-container.videovigilancia{
+		background-image: url(./images/video-768.jpg);
+	}
+	.videovigilancia{
+		height: 380px;
+	}
+	.tituloVideo{
+		font-size: 44PX;
+	}
+	.fill-container.portero{
+		background-image: url(./images/portero-electr.jpg);
+	}
+
+	.tituloChapa{
+		padding-left: 22px;
+	}
+	.fill-container.paneles{
+		background-image: url(./images/paneles-solares-hogar.jpg);
+	}
+	.tituloPanel{
+		color: #595d65;
+	}
+	
+	.fill-container.cercas{
+		background-image: url(./images/cerca-768.jpg);
+	}
+	.tituloCercas{
+		
+		font-size: 44PX;
+	}
 }
 
 @media (min-width: 768px) { 
@@ -57,7 +115,15 @@
 }
 
 @media(min-width: 1024px){
-
+	.fill-container.videovigilancia{
+		background-image: url(./images/01-videovigilancia.jpg);
+	}
+	.tituloChapa{
+		padding-left: 170px;
+	}
+	.fill-container.cercas{
+		background-image: url(./images/01-cercos.jpg);
+	}
 }
 
 .imgresponsive{
@@ -82,18 +148,12 @@
 .fill-container.seguridad{
 	background-image: url(./images/seguridad-y-energia.jpg);
 }
-.fill-container.videovigilancia{
-	background-image: url(./images/01-videovigilancia.jpg);
-}
+
 .fill-container.cctv{
 	background-image: url(./images/01-temp.png);
 }
-.fill-container.cercas{
-	background-image: url(./images/01-cercos.jpg);
-}
-.fill-container.paneles{
-	background-image: url(./images/paneles-solares-hogar.jpg);
-}
+
+
 .fill-container.gps{
 	background-image: url(./images/01-temp.png);
 }
@@ -103,9 +163,7 @@
 .fill-container.instalaciones{
 	background-image: url(./images/01-instalaciones.jpg);
 }
-.fill-container.portero{
-	background-image: url(./images/portero-electr.jpg);
-}
+
 .fill-container.chapa{
 	background-image: url(./images/chapa-electronica-hogar.jpg);
 }

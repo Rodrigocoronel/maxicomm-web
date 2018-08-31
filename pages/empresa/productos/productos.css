@@ -55,6 +55,12 @@
         display:none;
     }
     
+    .fill-container-cartuchos{
+        background-image: url(./cartuchosytoners/images/reman_500.jpg);
+        background-repeat: no-repeat;  
+        background-size: cover;
+        background-position: center 0px;
+    }
  }
 
 @media (min-width: 576px) { 
@@ -116,6 +122,12 @@
     .noMostrar{
         display:block;
     }
+    .fill-container-cartuchos{
+        background-image: url(./cartuchosytoners/images/reman_768.jpg);
+        background-repeat: no-repeat;  
+        background-size: cover;
+        background-position: center 0px;
+    }
     
  }
 
@@ -126,6 +138,7 @@
     .tabsMsWindows{
         height: 800px;
     }
+    
 }
 
 @media(min-width: 1024px){
@@ -148,6 +161,12 @@
     .subMenuLicenciamientos{
         height: 500px;
     }
+    .fill-container-cartuchos{
+        background-image: url(./cartuchosytoners/images/Cartuchos-y-Toners-img1.jpg);
+        background-repeat: no-repeat;  
+        background-size: cover;
+        background-position: center 0px;
+    }
  }
 
 ul{
@@ -161,12 +180,12 @@ ul{
     background-position: center 0px;
 }
 
-.fill-container-cartuchos{
+/*.fill-container-cartuchos{
 	background-image: url(./cartuchosytoners/images/Cartuchos-y-Toners-img1.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;
-}
+}*/
 
 .fill-container-licenciamientos{
 	background-image: url(./licenciamientos/images/licenciamientos-img1.jpg);

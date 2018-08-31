@@ -11,11 +11,11 @@
 	.tituloDesarrolloS{
 		font-size: 30px;
 	}
-	
-
+    .fill-container.desarrollo{
+	   background-image: url(./images/portada.jpg);
+        height: 300px;
+    }
 }
-
-
 
 @media (min-width: 576px) { 
 	.imgDesarrollo{
@@ -29,8 +29,20 @@
 	.tituloDesarrolloS{
 		font-size: 45px;
 	}
+    .fill-container.desarrollo{
+	   background-image: url(./images/portada.jpg);
+        height: 300px;
+    }
 
  }
+
+@media (min-width: 1024px) { 
+    .fill-container.desarrollo{
+        background-image: url(./images/portada.jpg);
+        height: 380px;
+    }
+}
+
 
 .fill-container{
     background-repeat: no-repeat;  
@@ -47,21 +59,6 @@
 
 .fill-container.desarrollo{
 	background-image: url(./images/portada.jpg);
-}
-.fill-container.fibra{
-	background-image: url(../comunicaciones/images/01-fibra.jpg);
-}
-.fill-container.estructurado{
-	background-image: url(../comunicaciones/images/01-cableado.jpg);
-}
-.fill-container.inalambrica{
-	background-image: url(./images/portada-redes-inalambricas.jpg);
-}
-.fill-container.digital{
-	background-image: url(../comunicaciones/images/01-digital.jpg);
-}
-.fill-container.analoga{
-	background-image: url(./images/portada-TELEFONiA-ANALOGA.jpg);
 }
 
 .imgDesarrollo{

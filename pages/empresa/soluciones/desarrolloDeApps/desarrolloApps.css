@@ -15,6 +15,10 @@
 	.imgFibra{
 		height: 1300px;
 	}
+    .fill-container.serviciosWeb{
+	   background-image: url(./images/portada.jpg);
+        height: 300px;
+     }
 
 }
 
@@ -35,8 +39,18 @@
 	.imgFibra{
 		height: 750px;
 	}
+    .fill-container.serviciosWeb{
+	   background-image: url(./images/portada.jpg);
+        height: 300px;
+     }
  }
 
+@media (min-width: 1024px) { 
+    .fill-container.serviciosWeb{
+	   background-image: url(./images/portada.jpg);
+        height: 380px;
+     }
+ }
 
 .fill-container{
     background-repeat: no-repeat;  
@@ -51,11 +65,7 @@
 }
 
 
-.imgServiciosWeb{
-	background-image: url(./images/02-temp.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+
 .imgFibra{
 	background-image: url(./images/parallax.jpg);
 	background-repeat: no-repeat;

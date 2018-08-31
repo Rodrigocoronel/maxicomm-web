@@ -1,5 +1,30 @@
+@media (max-width: 575.98px) {
+    .quien{
+        height: 300px;
+    }
+    .textoQuien{
+        margin-top: 110px; 
+    }
+}
 
+@media (min-width: 576px) {
+    .quien{
+        height: 300px;
+    }
+    .textoQuien{
+        margin-top: 110px; 
+    }
+}
 
+@media (min-width: 1024px) {
+    .quien{
+        height: 557px; 
+    }
+    .textoQuien{
+        margin-top: 220px; 
+    }
+}
+        
 .fill-container{
 	background-image: url(./images/quienes-somos-img.jpg);
     background-repeat: no-repeat;  

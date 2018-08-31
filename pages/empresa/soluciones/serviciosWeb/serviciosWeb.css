@@ -14,7 +14,10 @@
 	.textoServiciosW{
 		height: 350px;
 	}
-	
+    .fill-container.serviciosWeb{
+	   background-image: url(./images/portada.jpg);
+        height: 300px;
+    }
 
 }
 
@@ -36,21 +39,25 @@
 	.textoServiciosW{
 		height: 250px;
 	}
+    .fill-container.serviciosWeb{
+	   background-image: url(./images/portada.jpg);
+        height: 300px;
+    }
 
  }
+
+@media (min-width: 1024px) {
+    .fill-container.serviciosWeb{
+	   background-image: url(./images/portada.jpg);
+        height: 380px;
+    }
+}
 
 .fill-container{
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;
 }
-
-
-
-.fill-container.serviciosWeb{
-	background-image: url(./images/portada.jpg);
-}
-
 
 .imgServiciosWeb{
 	background-image: url(./images/02-temp.jpg);

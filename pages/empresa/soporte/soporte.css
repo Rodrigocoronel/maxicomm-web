@@ -5,6 +5,10 @@
 	.imgTextura1{
 		height: 750px;
 	}
+    .fill-container.soporte{
+
+        height:300px;
+}
 }
 
 @media (min-width: 576px) { 
@@ -15,15 +19,25 @@
 	.imgTextura1{
 		height: 500px;
 	}
+    .fill-container.soporte{
+
+        height 300px;
+}
     
 }
 
 @media (min-width: 768px) { 
+.fill-container.soporte{
 
+    height: 500px;
+}
 }
 
 @media(min-width: 1024px){
-    
+    .fill-container.soporte{
+
+        height: 500px;
+}
 }
 .fill-container{
     background-repeat: no-repeat;  
@@ -62,11 +76,12 @@
 .fill-container.asesoria{
 	background-image: url(./images/7-01-asesoria.jpg);
 }
-.fill-container.soporte{
-	background-image: url(./images/soporte-img3.jpg);
-}
 .fill-container.polizas{
 	background-image: url(./images/9-01-polizas.jpg);
+}
+    .fill-container.soporte{
+	background-image: url(./images/soporte-img3.jpg);
+    
 }
 .imgSoporte{
 	background-image: url(./images/soporte-img5.jpg);
@@ -275,5 +290,5 @@ ul {
 }
 
 .textoPortada{
-	font-size: 45PX; text-align: center;  font-family: 'Roboto'; color: #535151e8;
+	font-size: 37PX; text-align: center;  font-family: 'Roboto'; color: #535151e8;
 }

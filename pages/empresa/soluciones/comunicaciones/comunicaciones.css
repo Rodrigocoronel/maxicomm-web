@@ -23,15 +23,12 @@
 	#p1{
 		height: 60%;
 	}
-
 	.tituloComun{
  		font-size: 30PX;
  	}
-
  	.tituloComun.cableadoEs{
  		font-size: 20PX;
  	}
-
  	.submenuComu{
  		height: 500px;
  	}
@@ -39,9 +36,27 @@
  	.imgEnlaces{
  		height: 2000px;
  	}
- }
-
-
+    .fill-container.fibra{
+        background-image: url(../comunicaciones/images/01-fibra.jpg);
+        height: 300px;
+    }
+    .fill-container.estructurado{
+        background-image: url(../comunicaciones/images/01-cableado.jpg);
+        height: 300px;
+    }
+    .fill-container.inalambrica{
+        background-image: url(./images/portada-redes-inalambricas.jpg);
+        height: 300px;
+    }
+    .fill-container.digital{
+        background-image: url(../comunicaciones/images/01-digital.jpg);
+        height: 300px;
+    }
+    .fill-container.enlaces{
+        background-image: url(./images/portada-punto-a-punto.jpg);
+        height: 300px;
+    }
+}
 
 @media (min-width: 576px) { 
 
@@ -51,7 +66,6 @@
 	.tiposFibra{
 		height: 600px;
 	}
-
 	.infoCableado{
 		height:300px;
 	}
@@ -61,26 +75,41 @@
 	.imgEstructurado{
 		height: 1300px;
 	}
-
 	#p1{
 		height: 50%;
 	}
-
 	.tituloComun{
  		font-size: 45PX;
  	}
-
  	.tituloComun.cableadoEs{
  		font-size: 25PX;
  	}
-
  	.submenuComu{
  		height: 280px;
  	}
-
  	.imgEnlaces{
  		height: 800px;
  	}
+    .fill-container.fibra{
+        background-image: url(../comunicaciones/images/01-fibra.jpg);
+        height: 300px;
+    }
+    .fill-container.estructurado{
+        background-image: url(../comunicaciones/images/01-cableado.jpg);
+        height: 300px;
+    }
+    .fill-container.inalambrica{
+        background-image: url(./images/portada-redes-inalambricas.jpg);
+        height 300px;
+    }
+    .fill-container.digital{
+        background-image: url(../comunicaciones/images/01-digital.jpg);
+        height: 300px;
+    }
+    .fill-container.enlaces{
+        background-image: url(./images/portada-punto-a-punto.jpg);
+        height: 300px;
+    }
  }
 
  @media (min-width: 768px) { 
@@ -88,15 +117,32 @@
 	.portadillaComunicaciones{
 		height: 750px;
 	}
-
 	.submenuComu{
  		height: 280px;
  	}
-
  	.tiposFibra{
 		height: 1000px;
 	}
-
+    .fill-container.fibra{
+        background-image: url(../comunicaciones/images/01-fibra.jpg);
+        height: 380px;
+    }
+     .fill-container.estructurado{
+        background-image: url(../comunicaciones/images/01-cableado.jpg);
+        height: 380px;
+     }
+     .fill-container.inalambrica{
+         background-image: url(./images/portada-redes-inalambricas.jpg);
+         height 380px;
+     }
+    .fill-container.digital{
+        background-image: url(../comunicaciones/images/01-digital.jpg);
+        height: 380px;
+    }
+    .fill-container.enlaces{
+        background-image: url(./images/portada-punto-a-punto.jpg);
+        height: 380px;
+    }
  }
 
  @media(min-width: 1024px){
@@ -114,7 +160,26 @@
 	.imgEstructurado{
 		height: 1200px;
 	}
-
+    .fill-container.fibra{
+        background-image: url(../comunicaciones/images/01-fibra.jpg);
+        height: 380px;
+    }
+    .fill-container.estructurado{
+        background-image: url(../comunicaciones/images/01-cableado.jpg);
+        height: 380px;
+    }
+    .fill-container.inalambrica{
+        background-image: url(./images/portada-redes-inalambricas.jpg);
+        height 380px;
+     }
+    .fill-container.digital{
+        background-image: url(../comunicaciones/images/01-digital.jpg);
+        height: 380px;
+    }
+    .fill-container.enlaces{
+        background-image: url(./images/portada-punto-a-punto.jpg);
+        height: 380px;
+    }
  }
  
 .card{
@@ -137,21 +202,6 @@
 
 .fill-container.comunicaciones{
 	background-image: url(./images/portada-comunicaciones.jpg);
-}
-.fill-container.fibra{
-	background-image: url(../comunicaciones/images/01-fibra.jpg);
-}
-.fill-container.estructurado{
-	background-image: url(../comunicaciones/images/01-cableado.jpg);
-}
-.fill-container.inalambrica{
-	background-image: url(./images/portada-redes-inalambricas.jpg);
-}
-.fill-container.digital{
-	background-image: url(../comunicaciones/images/01-digital.jpg);
-}
-.fill-container.enlaces{
-	background-image: url(./images/portada-punto-a-punto.jpg);
 }
 
 .imgComunicaciones{

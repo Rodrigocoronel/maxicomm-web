@@ -6,6 +6,13 @@
 	.imgTexturaProductos{
 		height: 850px;
 	}
+
+	.tituloProductos{
+		height: 132px;
+	}
+	.dosRenglones{
+		 height: 62px !important;
+	}
 }
 
 @media (min-width: 576px) { 
@@ -16,14 +23,34 @@
 	.imgTexturaProductos{
 		height: 450px;
 	}
+
+	.tituloProductos{
+		height: 132px;
+	}
+	.dosRenglones{
+		 height: 62px !important;
+	}
 }
 
 @media (min-width: 768px) { 
+	.dosRenglones{
+		 height: 62px !important;
+	}
+}
 
+@media(min-width: 992px){
+	.tituloProductos{
+		height: 66px;
+	}
 }
 
 @media(min-width: 1024px){
-
+	.dosRenglones{
+		 height: 42px !important;;
+	}
+	.tituloProductos{
+		height: 66px;
+	}
 }
 
 .imgresponsive{

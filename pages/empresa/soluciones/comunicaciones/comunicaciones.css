@@ -27,7 +27,8 @@
  		font-size: 30PX;
  	}
  	.tituloComun.cableadoEs{
- 		font-size: 20PX;
+ 		font-size: 22PX;
+        color: black;
  	}
  	.submenuComu{
  		height: 500px;
@@ -41,19 +42,26 @@
         height: 300px;
     }
     .fill-container.estructurado{
-        background-image: url(../comunicaciones/images/01-cableado.jpg);
+        background-image: url(../comunicaciones/images/cable-768.jpg);
         height: 300px;
+        background-position: center 0px !important;
+    }
+    .tituloComun.redes{
+        color: black;
     }
     .fill-container.inalambrica{
-        background-image: url(./images/portada-redes-inalambricas.jpg);
+        background-image: url(./images/redes-768.jpg);
         height: 300px;
     }
+    .tituloComun.telefonia{
+        color: black;
+    }
     .fill-container.digital{
-        background-image: url(../comunicaciones/images/01-digital.jpg);
+        background-image: url(../comunicaciones/images/telefonia-768.jpg);
         height: 300px;
     }
     .fill-container.enlaces{
-        background-image: url(./images/portada-punto-a-punto.jpg);
+        background-image: url(./images/enlaces768.jpg);
         height: 300px;
     }
 }
@@ -83,6 +91,7 @@
  	}
  	.tituloComun.cableadoEs{
  		font-size: 25PX;
+        color: black;
  	}
  	.submenuComu{
  		height: 280px;
@@ -95,19 +104,19 @@
         height: 300px;
     }
     .fill-container.estructurado{
-        background-image: url(../comunicaciones/images/01-cableado.jpg);
+        background-image: url(../comunicaciones/images/cable-768.jpg);
         height: 300px;
     }
     .fill-container.inalambrica{
-        background-image: url(./images/portada-redes-inalambricas.jpg);
-        height 300px;
+        background-image: url(./images/redes-768.jpg);
+        height : 380px;
     }
     .fill-container.digital{
-        background-image: url(../comunicaciones/images/01-digital.jpg);
-        height: 300px;
+        background-image: url(../comunicaciones/images/telefonia-768.jpg);
+        height: 380px;
     }
     .fill-container.enlaces{
-        background-image: url(./images/portada-punto-a-punto.jpg);
+        background-image: url(./images/enlaces768.jpg);
         height: 300px;
     }
  }
@@ -128,21 +137,10 @@
         height: 380px;
     }
      .fill-container.estructurado{
-        background-image: url(../comunicaciones/images/01-cableado.jpg);
+        
         height: 380px;
      }
-     .fill-container.inalambrica{
-         background-image: url(./images/portada-redes-inalambricas.jpg);
-         height 380px;
-     }
-    .fill-container.digital{
-        background-image: url(../comunicaciones/images/01-digital.jpg);
-        height: 380px;
-    }
-    .fill-container.enlaces{
-        background-image: url(./images/portada-punto-a-punto.jpg);
-        height: 380px;
-    }
+
  }
 
  @media(min-width: 1024px){
@@ -168,6 +166,9 @@
         background-image: url(../comunicaciones/images/01-cableado.jpg);
         height: 380px;
     }
+    .tituloComun.redes{
+        color:white;
+    }
     .fill-container.inalambrica{
         background-image: url(./images/portada-redes-inalambricas.jpg);
         height 380px;
@@ -179,6 +180,13 @@
     .fill-container.enlaces{
         background-image: url(./images/portada-punto-a-punto.jpg);
         height: 380px;
+    }
+    .tituloComun.cableadoEs{
+        font-size: 25PX;
+        color: white;
+    }
+    .tituloComun.telefonia{
+        color: white;
     }
  }
  

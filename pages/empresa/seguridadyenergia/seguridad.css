@@ -53,7 +53,7 @@
     }
     .fill-container.videovigilancia{
         background-image: url(./images/cctv-768.jpg);
-        height: 250px;
+        height: 200px;
     }
    .tituloCercas{
         padding-left: 0px;
@@ -98,7 +98,7 @@
     }
     .fill-container.barrera{
         background-image: url(./images/barrera-768.jpg);
-        height: 300px;
+        height: 200px;
     }
 
 }

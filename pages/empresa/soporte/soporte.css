@@ -25,7 +25,7 @@
 	}
     .fill-container.soporte{
 		background-image: url(./images/soporte-tecnico-768px.jpg);
-        height 300px;
+        height : 300px;
        
 	}
 	.tituloSoporte{

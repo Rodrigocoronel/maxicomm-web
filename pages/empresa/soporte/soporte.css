@@ -6,9 +6,13 @@
 		height: 750px;
 	}
     .fill-container.soporte{
-
+		background-image: url(./images/soporte-tecnico-768px.jpg);
         height:300px;
-}
+        
+	}
+	.tituloSoporte{
+		color: white ;
+	}
 }
 
 @media (min-width: 576px) { 
@@ -20,24 +24,32 @@
 		height: 500px;
 	}
     .fill-container.soporte{
-
+		background-image: url(./images/soporte-tecnico-768px.jpg);
         height 300px;
-}
+       
+	}
+	.tituloSoporte{
+		color: white ;
+	}
     
 }
 
 @media (min-width: 768px) { 
-.fill-container.soporte{
+	.fill-container.soporte{
 
-    height: 500px;
-}
+	    height: 500px;
+	}
 }
 
 @media(min-width: 1024px){
     .fill-container.soporte{
-
+		background-image: url(./images/soporte-img3.jpg);
         height: 500px;
-}
+       
+	}
+	.tituloSoporte{
+		color: black ;
+	}
 }
 .fill-container{
     background-repeat: no-repeat;  
@@ -52,9 +64,7 @@
     background-position: center 0px;
 }
 
-.fill-container.soporte{
-	background-image: url(./images/soporte-img1.jpg);
-}
+
 .fill-container.reparacionPC{
 	background-image: url(./images/1-01-reparacion-computadoras.jpg);
 }
@@ -79,10 +89,7 @@
 .fill-container.polizas{
 	background-image: url(./images/9-01-polizas.jpg);
 }
-    .fill-container.soporte{
-	background-image: url(./images/soporte-img3.jpg);
-    
-}
+
 .imgSoporte{
 	background-image: url(./images/soporte-img5.jpg);
 	background-repeat: no-repeat;

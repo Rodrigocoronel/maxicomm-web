@@ -15,8 +15,9 @@
 		height: 350px;
 	}
     .fill-container.serviciosWeb{
-	   background-image: url(./images/portada.jpg);
+	   	background-image: url(./images/portada.jpg);
         height: 300px;
+        background-position: -350px 0px !important;
     }
 
 }

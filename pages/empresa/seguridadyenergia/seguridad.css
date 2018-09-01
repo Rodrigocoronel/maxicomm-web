@@ -1,6 +1,7 @@
 @media (max-width: 575.98px) { 
     .tituloSeguridad{
-        font-size: 30px;
+        font-size: 28px;
+        color: black;
     }
    
     .subMenuCctv{
@@ -43,9 +44,6 @@
     .imgBiometrico{
         height: 450px;
     }
-    .imgTextura1{
-        height: 1200px;
-    }
     .subMenuBarrera{
         height: 600px;
     }
@@ -53,11 +51,62 @@
     .imgBarrera{
         height: 700px;
     }
+    .fill-container.videovigilancia{
+        background-image: url(./images/cctv-768.jpg);
+        height: 250px;
+    }
+   .tituloCercas{
+        padding-left: 0px;
+        font-size: 30PX;
+    }
+    .fill-container.cercas{
+        background-image: url(./images/cerca-768.jpg);
+        height: 300px;
+    }
+    .tituloPanel{
+        font-size: 30px;
+        color: #ffffff;
+    }
+
+    .fill-container.gps{
+        background-image: url(./images/gps-500px.jpg);
+        height: 300px;
+    }
+
+    .fill-container.instalaciones{
+        background-image: url(./images/insta-768.jpg);
+        height: 300px;
+    }
+    .tituloInsta{
+        padding-left: 0px;
+        font-size: 30PX;
+        color: black;
+    }
+    .tituloBiometrico{
+        padding-left: 0px;
+        font-size: 30px;
+        color: white;
+    }
+    .fill-container.biometrico{
+        background-image: url(./images/reloj-768.jpg);
+        height: 300px;
+    }
+    .tituloBarrera{
+        padding-left: 0px;
+        font-size: 30px;
+        color: white;
+    }
+    .fill-container.barrera{
+        background-image: url(./images/barrera-768.jpg);
+        height: 300px;
+    }
+
 }
 
 @media (min-width: 576px) {
     .tituloSeguridad{
         font-size: 49px;
+        color: black;
     }
    
     .subMenuCctv{
@@ -65,6 +114,10 @@
     }
     .tamanoVideovigilancia{
         height: 600px;
+    }
+    .fill-container.videovigilancia{
+        background-image: url(./images/cctv-768.jpg);
+        height: 380px;
     }
     .tamanoTextoCamara{
         height: 500px;
@@ -111,7 +164,49 @@
     .imgBarrera{
         height: 500px;
     }
-
+    .tituloCercas{
+        
+        font-size: 44PX;
+    }
+    .fill-container.cercas{
+        background-image: url(./images/cerca-768.jpg);
+        height: 380px;
+    }
+    .tituloPanel{
+        font-size: 44px;
+        color: #ffffff;
+    }
+    .fill-container.gps{
+        background-image: url(./images/gps-768px.jpg);
+        height: 400px;
+    }
+    .fill-container.instalaciones{
+        background-image: url(./images/insta-768.jpg);
+        height: 380px;
+    }
+    .tituloInsta{
+        padding-left: 0px;
+        font-size: 44PX;
+        color: black;
+    }
+    .tituloBiometrico{
+        padding-left: 0px;
+        font-size: 44px;
+        color: white;
+    }
+    .fill-container.biometrico{
+        background-image: url(./images/reloj-768.jpg);
+        height: 380px;
+    }
+    .tituloBarrera{
+        padding-left: 0px;
+        font-size: 44px;
+        color: white;
+    }
+    .fill-container.barrera{
+        background-image: url(./images/barrera-768.jpg);
+        height: 380px;
+    }
 }
 
 @media (min-width: 768px) { 
@@ -135,6 +230,9 @@
     .tamanoVideovigilancia{
         height: 480px;
     }
+    .fill-container.videovigilancia{
+        background-image: url(./images/01-videovigilancia.jpg);
+    }
     .imgPaneles{
         height: 600px;
     }
@@ -152,6 +250,28 @@
     }
     .imgBarrera{
         height: 420px;
+    }
+    .tituloSeguridad{
+        color: white;
+    }
+    .fill-container.cercas{
+    background-image: url(./images/01-cercos.jpg);
+    }
+    .fill-container.gps{
+        background-image: url(./images/gps-tracker.jpg);
+    }
+    .fill-container.instalaciones{
+        background-image: url(./images/01-instalaciones.jpg);
+        height: 380px;
+    }
+    .tituloInsta{
+        padding-left: 0px;
+        font-size: 44PX;
+        color: white;
+    }
+    .fill-container.biometrico{
+        background-image: url(./images/01-biometrico.jpg);
+        height: 380px;
     }
 }
 
@@ -180,32 +300,24 @@
 .fill-container.seguridad{
 	background-image: url(./images/seguridad-y-energia.jpg);
 }
-.fill-container.videovigilancia{
-	background-image: url(./images/01-videovigilancia.jpg);
-}
+
 .fill-container.cctv{
 	background-image: url(./images/01-temp.png);
 }
 .fill-container.cercas{
-	background-image: url(./images/01-cercos.jpg);
+
 }
 .fill-container.paneles{
 	background-image: url(./images/portada-paneles.solares.jpg);
 }
-.fill-container.gps{
-	background-image: url(./images/gps-tracker.jpg);
-}
+
 .fill-container.controles{
 	background-image: url(./images/01-temp.png);
 }
-.fill-container.instalaciones{
-	background-image: url(./images/01-instalaciones.jpg);
-}
-.fill-container.biometrico{
-	background-image: url(./images/01-biometrico.jpg);
-}
+
+
 .fill-container.barrera{
-	background-image: url(./images/barrera-vehicular.jpg);
+	
 }
 .imgSeguridad{
 	background-image: url(./images/02-temp.jpg);

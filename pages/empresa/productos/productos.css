@@ -38,7 +38,8 @@
         height: 750px;
     }
     .tituloRemanufacturado{
-        height: 100px;
+        height: 70px;
+        font-size: 24px;
     }
     
     .imgTexturaCartuchos{
@@ -90,10 +91,13 @@
         background-position: center 0px;
         height: 300px;
     }
-    .textoLicenciamientos{
-	font-size: 40PX; padding-left: 10px;  font-family: 'Roboto'; color: white;
-}
+        .textoLicenciamientos{
+    	font-size: 40PX; padding-left: 10px;  font-family: 'Roboto'; color: white;
+    }
 
+    .tituloMswindows{
+        color: black;
+    }
  }
 
 @media (min-width: 576px) { 
@@ -184,12 +188,16 @@
 	   background-image: url(msWindows/images/MS-WINDOWS-IMG1.3.jpg);
         background-repeat: no-repeat;  
         background-size: cover;
-        background-position: center 0px;
+        background-position: -154px 0px;
         height: 300px;
     } 
     .textoLicenciamientos{
-	font-size: 40PX; padding-left: 10px;  font-family: 'Roboto'; color: white;
-}
+    	font-size: 40PX; padding-left: 10px;  font-family: 'Roboto'; color: white;
+    }
+    .tituloMswindows{
+            color: white;
+        }
+     }
 
 }
 
@@ -307,10 +315,6 @@
 ul{
     text-align: justify;
 }
-
-    .tituloRemanufacturado{
-        height: 150px;
-    }
 .containerTexture{
 	background-image: url(./images/empresa-Index-fondo-textura.jpg);
     background-repeat: no-repeat;  

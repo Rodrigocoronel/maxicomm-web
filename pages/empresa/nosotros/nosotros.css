@@ -5,6 +5,9 @@
     .textoQuien{
         margin-top: 110px; 
     }
+    .fill-container{
+        background-image: url(./images/nosotros-768px.jpg);
+    }
 }
 
 @media (min-width: 576px) {
@@ -13,6 +16,9 @@
     }
     .textoQuien{
         margin-top: 110px; 
+    }
+    .fill-container{
+        background-image: url(./images/nosotros-768px.jpg);
     }
 }
 
@@ -23,10 +29,13 @@
     .textoQuien{
         margin-top: 220px; 
     }
+    .fill-container{
+        background-image: url(./images/quienes-somos-img.jpg);
+    }
 }
         
 .fill-container{
-	background-image: url(./images/quienes-somos-img.jpg);
+	
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;

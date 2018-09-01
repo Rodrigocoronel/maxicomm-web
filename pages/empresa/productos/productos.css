@@ -110,7 +110,7 @@
     }
 
 	.containerTexture{
-		height: 450px;
+		height: 550px;
 	}
     .imgProductos{
         height: 450px;
@@ -203,7 +203,7 @@
 
 @media (min-width: 768px) { 
     .containerTexture{
-        height: 600px;
+        height: 750px;
     }
     .tabsMsWindows{
         height: 800px;
@@ -549,8 +549,8 @@ padding-left: 2em;
 
 .bordeIconos{
 	border: 1px solid #81818252;
-	height: 70%;
-	width: 70%;
+	height: 150px;
+	width: 180px;
 }
 
 a.nav-link.tabs{

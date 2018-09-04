@@ -98,10 +98,22 @@
     .tituloMswindows{
         color: black;
     }
+
+    .barra.dosLineas{
+         height: 67px;
+    }
+    .barra{
+        height: 42px;
+    }
  }
 
 @media (min-width: 576px) { 
-
+    .barra{
+        height: 42px;
+    }
+    .barra.dosLineas{
+         height: 67px;
+    }
  	.fondiu{
 		height : calc(100% - 153px);
 	}
@@ -512,7 +524,7 @@ ul.tabs{
 }
 
 .barra{
-    width: 15px; height: 42px;
+    width: 15px;
 }
 
 .barra.negra{

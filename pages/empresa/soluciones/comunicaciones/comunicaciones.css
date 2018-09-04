@@ -43,7 +43,7 @@
     }
     .fill-container.estructurado{
         background-image: url(../comunicaciones/images/cable-768.jpg);
-        height: 300px;
+        height: 250px;
         background-position: center 0px !important;
     }
     .tituloComun.redes{
@@ -53,27 +53,39 @@
     .fill-container.inalambrica{
         background-image: url(./images/redes-768.jpg);
         height: 190px;
+        background-position: 0px 0px;
     }
     .tituloComun.telefonia{
         color: black;
+        font-size: 25px;
     }
     .fill-container.digital{
-        background-image: url(../comunicaciones/images/telefonia-768.jpg);
-        height: 300px;
+        background-image: url(../comunicaciones/images/telefonia-500.jpg);
+        height: 200px;
+        background-position: center 0px;
     }
     .fill-container.enlaces{
-        background-image: url(./images/enlaces768.jpg);
-        height: 300px;
+        background-image: url(./images/enlaces500.jpg);
+        height: 200px;
+        background-position: 0px 0px;
+    }
+
+    .rightLineSubmenu{
+        height: 209px;
     }
 }
 
 @media (min-width: 576px) { 
 
+    .rightLineSubmenu{
+        height: 280px;
+    }
+
 	.portadillaComunicaciones{
 		height: 300px;
 	}
 	.tiposFibra{
-		height: 600px;
+		height: 1000px;
 	}
 	.infoCableado{
 		height:300px;

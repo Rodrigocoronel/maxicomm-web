@@ -8,6 +8,11 @@
     .fill-container{
         background-image: url(./images/nosotros-768px.jpg);
     }
+    .carousel-item-empresa{
+        padding: 25% 0;
+        padding-left: 0px;
+    }
+
 }
 
 @media (min-width: 576px) {
@@ -19,6 +24,9 @@
     }
     .fill-container{
         background-image: url(./images/nosotros-768px.jpg);
+    }
+    .carousel-item-empresa{
+        padding: 10% 0; padding-left: 250px;
     }
 }
 
@@ -54,16 +62,13 @@
     background-position: center 0px;
 }
 
-
-.carrousel-inner{
-	background-image: url(./images/empresa-Index-nosotros-slide.png);
-	background-position: center center;
+.fondoNosotros{
+    background-image: url(../images/empresa-Index-nosotros-slide.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height:100%;
-    width: 100%;
-    background-size:cover;
-    -webkit-background-origin:border !important;
 }
+
 
 .carousel-control-next-icon{
 	background-image : url(./images/arrowa-empresa-icons_MesaDeTrabajo1copia.svg) !important;

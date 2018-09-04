@@ -19,7 +19,7 @@
  	}
 
  	.tituloDesarrollop{
- 		font-size: 30PX;
+ 		font-size: 25PX;
  	}
     .fill-container.desarrollop{
         background-image: url(./images/PORTADILLA-PLANTILLA-desarrollo-de-proyectos-img-1.jpg);
@@ -47,7 +47,7 @@
  		height: 250px;
  	}
  	.tituloDesarrollop{
- 		font-size: 45PX;
+ 		font-size: 30PX;
  	}
     .fill-container.desarrollop{
         background-image: url(./images/PORTADILLA-PLANTILLA-desarrollo-de-proyectos-img-1.jpg);
@@ -60,11 +60,20 @@
  		height: 500px;
 	}
 	.tituloDesarrollop{
- 		font-size: 45PX;
+ 		font-size: 35PX;
  	}
     .fill-container.desarrollop{
         background-image: url(./images/PORTADILLA-PLANTILLA-desarrollo-de-proyectos-img-1.jpg);
         height: 380px;
+     }
+}
+
+ @media(min-width: 1024px){
+	.tituloDesarrollop{
+ 		font-size: 35PX;
+ 	}
+ 	.fill-container.desarrollop{
+        height: 400px;
      }
 }
 

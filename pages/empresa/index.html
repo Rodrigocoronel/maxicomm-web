@@ -39,8 +39,9 @@
 	</div> -->
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../assets/videos/header-empresa.mp4" type="video/mp4" />
+            	not suported
             </video>
             <div class="animated headerMaxicomm " id="logoMaxi">
             	<img   src="./images/LOGO-WHITE-MAXICOMM-01.svg" >
@@ -54,6 +55,8 @@
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
+		  <a class="btn d-inline btn-ida-hogar " href="../hogar" title="Sección Hogar" style="position: absolute; right: 16px; color: black; top: 8px;">Hogar</a> 
+
 		  <div class="collapse navbar-collapse " id="navbarSupportedContent"  >
 		    <ul class="navbar-nav mr-auto" style="margin-left: auto;" >
 		      <li class="nav-item active menu mx-xl-3 mx-lg-1">
@@ -65,12 +68,6 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="./nosotros">Quienes Somos</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#carousel" id="menuMision">Misión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#carousel" id="menuVision" >Visión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#carousel" id="menuFilosofia">Filosofía</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="./nosotros/galeria">Galería</a>
 		          <div class="dropdown-divider"></div>
@@ -135,17 +132,13 @@
 		      <li class="nav-item active menu mx-xl-3 mx-lg-1">
 		        <a class="nav-link" href="./contacto">Contacto <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu mx-xl-3 mx-lg-1 d-inline  d-lg-none">
-		        <a class="nav-link " href="../hogar">Hogar <span class="sr-only">(current)</span></a>
-		      </li>
 		  	</ul>
-		  	<a class="btn d-none btn-ida-hogar  d-lg-inline" href="../hogar" title="Sección Hogar" style="position: absolute; right: 25px; color: black; ">Hogar</a> 
 		  </div>
 		</nav>
 	</div>
 	<!-- Imagen entrada -->
 	<div class="fill-container container" style="max-width: 100%; background-repeat: no-repeat; overflow: hidden; ">
-    	<h4 id="textoInicio" align="center" class="animated " style="font-size: 49PX; margin-top: 140px; font-family: 'Roboto', sans-serif; !important; color: white; opacity: 0;">SOLUCIONES A<br/> LA MEDIDA</h4>	
+    	<h4 id="textoInicio" align="center" class="animated textoInicio" style=" margin-top: 140px; font-family: 'Roboto', sans-serif; !important; color: white; opacity: 0;">SOLUCIONES A<br/> LA MEDIDA</h4>	
     	<div class="row justify-content-center">
 		    <div class="col-lg-6 col-sm-8 col-md-8 col-xl-4" style="text-align: justify; margin-top: 50px;">
 				<p id="textoInicio2" class="empresa animated" style=" font-family: 'Roboto'; color: white; opacity: 0;"> Somos una empresa creativa y en constante crecimiento, enfocada en la innovación de soluciones TI para empresas, gobierno, instituciones educativas y de salud.</p>
@@ -158,9 +151,12 @@
 	<!-- Soluciones -->
 	<div class="fill-containerTexture" style="position: relative; padding-top: 0px; " >
 		<div class="container">
-			<div class="row justify-content-center">
-				<img style="z-index: 1; position: absolute; height: 40px; width: 250px;" src="./images/black-base-01.png"> 
-				<h3 style="z-index: 2; color: white;">Soluciones</h3>
+			<div class="row justify-content-center text-center">
+				<div class="col-10 col-sm-6">
+					<p class="mt-0"  style="z-index: 2; color: white; font-size: 23px; margin-top: 4px; border-bottom-left-radius: 25px;border-bottom-right-radius: 25px; background-color: black; ">Soluciones</p>
+				</div>
+				<!-- <img style="z-index: 1; position: absolute; height: 40px; width: 250px;" src="./images/black-base-01.png"> 
+				<h3 style="z-index: 2; color: white;">Soluciones</h3> -->
 			</div>
 			<div class="row" style="padding-top: 0px;">
 			    <div class=" col-md-4 col-12  col-sm-6   mt-5 height-iconosoluciones" align="center" style=" ">
@@ -253,54 +249,54 @@
 		
 	<!-- Carrusel  -->
 		<!-- <img src="./images/empresa-Index-nosotros-slide.png" class="img-fluid"> -->
-		<div id="carousel" class="carousel slide fondoNosotros" data-ride="carousel" style="height:888px; padding: 5% 0;">
-		  <ol class="carousel-indicators">
-		    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel" data-slide-to="1"></li>
-		    <li data-target="#carousel" data-slide-to="2"></li>
-		  </ol>
-		  <div class="carousel-inner">
-		    <div id="mision" class="carousel-item active carousel-item-empresa">
-		    	<div class="container-fluid">
-		    		<div class="row">
-		    			<div class="col-12 col-md-7">
-		    				<h3 style="color : red; font-size: 32px;">MISIÓN</h3>
-		     				<p class="empresa" >Desarrollar soluciones reales que permitan mejorar el rendimiento de la informática, conectividad y seguridad dentro de las empresas.</p>
-		    			</div>
-		    		</div>
-		    	</div>
-		    </div>
-		    <div id="vision" class="carousel-item carousel-item-empresa">
-		    	<div class="container-fluid">
-		    		<div class="row">
-		    			<div class="col-12 col-md-7">
-		    				<h3 style="color : red; font-size: 32px;">VISIÓN</h3>
-		     				<p class="empresa" >Ser una empresa con innovación creativa, reconocida por su eficiencia y profesionalismo, que nos permita ser altamente recomendada.</p>
-		    			</div>
-		    		</div>
-		    	</div>
-		    </div>
-		    <div id="filosofia" class="carousel-item carousel-item-empresa" >
+	<div id="carousel" class="carousel slide fondoNosotros" data-ride="carousel" style="height:888px; padding: 5% 0;">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel" data-slide-to="1"></li>
+	    <li data-target="#carousel" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div id="mision" class="carousel-item active carousel-item-empresa">
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<div class="col-12 col-md-7">
+	    				<h3 style="color : red; font-size: 32px;">MISIÓN</h3>
+	     				<p class="empresa" >Desarrollar soluciones reales que permitan mejorar el rendimiento de la informática, conectividad y seguridad dentro de las empresas.</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div id="vision" class="carousel-item carousel-item-empresa">
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<div class="col-12 col-md-7">
+	    				<h3 style="color : red; font-size: 32px;">VISIÓN</h3>
+	     				<p class="empresa" >Ser una empresa con innovación creativa, reconocida por su eficiencia y profesionalismo, que nos permita ser altamente recomendada.</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div id="filosofia" class="carousel-item carousel-item-empresa" >
 
-		    	<div class="container-fluid">
-		    		<div class="row">
-		    			<div class="col-12 col-md-7">
-		    				<h3 style="color : red; font-size: 32px;">FILOSOFÍA</h3>
-		     				<p class="empresa" >Estar comprometida a lograr la excelencia bajo lineamientos de honestidad y profesionalismo.</p>
-		    			</div>
-		    		</div>
-		    	</div>
-		     
-		    </div>
-		  </div>
-		  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<div class="col-12 col-md-7">
+	    				<h3 style="color : red; font-size: 32px;">FILOSOFÍA</h3>
+	     				<p class="empresa" >Estar comprometida a lograr la excelencia bajo lineamientos de honestidad y profesionalismo.</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	     
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
 	</div>
 	<!--END Carrusel  -->
 	<!-- complemento mision-vision -->
@@ -369,7 +365,7 @@
                     <br/>
                     <div class="container text-center"  align="center">
                     	<div class="row justify-content-center">
-                    		<div class="col-12 col-sm-6">
+                    		<div class="col-12 col-sm-6 col-md-7 col-xl-6">
                     			<h6 style="text-align:  justify;"> 
 		                    	<i>"Maxicomm ha sido un aliado importante tanto en infraestructura como en servicios. Nuestros sistemas de clase mundial requieren de una red 		de fibra óptica, periféricos, equipos activos con excelencia y maxicomm significó el éxito de nuestra implementación en varios de los 			sectores más importantes de nuestros proyectos. Siempre mostrando alta calidad y responsabilidad, adaptabilidad y gran servicio postventa."
 		                   		 </i>
@@ -392,7 +388,7 @@
                     <br/><br/> 
                     <div class="container text-center" align="center">
                     	<div class="row justify-content-center">
-                    		<div class="col-6">
+                    		<div class="col-12 col-sm-6 col-md-7 col-xl-6">
 		                    	<h6 style="text-align: justify;">
 		                    	Hemos mantenido una relación comercial con Maxicomm desde 2016;  la cual se ha caracterizado por una excelente y pronta atención, asimismo por las  asesorías y talleres que imparten encaminados a una mejor utilización de los bienes y servicios que ofrecen.
 		                    	<br/><br/>
@@ -402,7 +398,7 @@
 						</div>
                     </div>
                     <br>
-                    <h6><br/><br/>Luis Antonio Robertson Andrade, <br/> <i>ADMINISTRADOR UNICO</i></h6>
+                    <h6><br/><br/>Luis Antonio Robertson Andrade <br/> <i>ADMINISTRADOR UNICO</i></h6>
                     
                 </div> 
 			  </div>
@@ -443,18 +439,15 @@
 	</footer>
 	
 </body>
-<script>
-    (function(d, w, c) {
-        w.ChatraID = 'YhKBXsKuggHJsRLy6';
-        var s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = 'https://call.chatra.io/chatra.js';
-        if (d.head) d.head.appendChild(s);
-    })(document, window, 'Chatra');
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?5yBUdA7w2xmBtj9KHQ8Zm2ZRBu662yUW";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
+<!--End of Zendesk Chat Script-->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124805646-1"></script>
 <script>

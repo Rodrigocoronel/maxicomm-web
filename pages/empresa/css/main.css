@@ -8,6 +8,10 @@
 		height: 600px;
 	}
 
+	.textoInicio{
+		font-size: 49PX;
+	}
+
  	.fondiu{
 		height : calc(100% - 153px);
 	}
@@ -32,7 +36,8 @@
 	}
 
 	.carousel-item-empresa{
-		padding: 10% 0; padding-left: 250px;
+		padding: 10% 0; 
+		padding-left: 100px;
 	}
 
 	.divTextoEmpresa{
@@ -51,6 +56,10 @@
 
  	.fill-container{
 		height: 600px;
+	}
+
+	.textoInicio{
+		font-size: 35PX;
 	}
 
  	.iconoSoluciones{
@@ -83,6 +92,12 @@
 		font-size: 30px; 
 	}
 	
+}
+
+@media (min-width: 768px){
+	#testimoniales{
+		height: 680px; 
+	}
 }
 
 @media (min-width: 1024px){

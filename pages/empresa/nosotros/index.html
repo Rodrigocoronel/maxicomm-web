@@ -25,7 +25,7 @@
 <body >
 	<div class="container-fluid" style="position: relative;  overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div id="logoMaxi" class="animated fadeIn headerMaxicomm">
@@ -40,6 +40,8 @@
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
+		  <a class="btn d-inline btn-ida-hogar " href="../../hogar" title="Sección Hogar" style="position: absolute; right: 16px; color: black; top: 8px;">Hogar</a> 
+
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
 		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
 		      <li class="nav-item active menu mx-xl-3 mx-lg-1">
@@ -51,12 +53,6 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="#">Quienes Somos</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#carousel?mision" id="menuMision">Misión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#carousel?vision" id="menuVision" >Visión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#carousel?filosofia" id="menuFilosofia">Filosofía</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="./galeria">Galería</a>
 		          <div class="dropdown-divider"></div>
@@ -121,11 +117,7 @@
 		      <li class="nav-item active menu mx-xl-3 mx-lg-1">
 		        <a class="nav-link" href="../contacto">Contacto <span class="sr-only">(current)</span></a>
 		      </li>
-		      <li class="nav-item active menu mx-xl-3 mx-lg-1 d-inline  d-lg-none">
-		        <a class="nav-link " href="../../hogar">Hogar <span class="sr-only">(current)</span></a>
-		      </li>
-		  	</ul>
-		  	<a class="btn  btn-ida-hogar d-none  d-lg-inline" href="../../hogar" title="Sección Hogar" style="position: absolute; right: 25px; color: black; ">Hogar</a> 
+		  	</ul> 
 		  </div>
 		</nav>
 	</div>
@@ -154,6 +146,58 @@
 			</div>
 		</div>
 	</div>
+	<!-- Carrusel  -->
+		<!-- <img src="./images/empresa-Index-nosotros-slide.png" class="img-fluid"> -->
+	<div id="carousel" class="carousel slide fondoNosotros" data-ride="carousel" style="height:888px; padding: 5% 0;">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel" data-slide-to="1"></li>
+	    <li data-target="#carousel" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div id="mision" class="carousel-item active carousel-item-empresa">
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<div class="col-12 col-md-7">
+	    				<h3 style="color : red; font-size: 32px;">MISIÓN</h3>
+	     				<p class="empresa" >Desarrollar soluciones reales que permitan mejorar el rendimiento de la informática, conectividad y seguridad dentro de las empresas.</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div id="vision" class="carousel-item carousel-item-empresa">
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<div class="col-12 col-md-7">
+	    				<h3 style="color : red; font-size: 32px;">VISIÓN</h3>
+	     				<p class="empresa" >Ser una empresa con innovación creativa, reconocida por su eficiencia y profesionalismo, que nos permita ser altamente recomendada.</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div id="filosofia" class="carousel-item carousel-item-empresa" >
+
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<div class="col-12 col-md-7">
+	    				<h3 style="color : red; font-size: 32px;">FILOSOFÍA</h3>
+	     				<p class="empresa" >Estar comprometida a lograr la excelencia bajo lineamientos de honestidad y profesionalismo.</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	     
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+	<!--END Carrusel  -->
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="">
         <div class="container" align="center" style="height: 100%;">

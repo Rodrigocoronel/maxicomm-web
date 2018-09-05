@@ -33,7 +33,7 @@
 <body >
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div id="logoMaxi"  class="animated fadeIn headerMaxicomm" >
@@ -187,50 +187,54 @@
 				</div>
 			</div>
 		</div>
-		<div style="height: 540px;">
+		<div class="imgCotizacion" style="height: 570px;">
 	        <div class="container" align="center" style="height: 100%;">
-	    		<div class="row align-items-center" style="height: 100%;" >
-	    			<div class="col-12">
-	    					<div class="row mb-2 mb-md-5" align="center">
-	    						<div class="col-12">
-	    							<p align="center" class="textoCotizacion animated2s" style="font-size: 35px; color: white;"> Solicita una cotización personalizada </p>
-	    						</div>
-	    					</div>
-	    				<div class="row justify-content-center">
-		        			<div class="col-12 col-md-6 ">
-		                		<div class="row justify-content-center">
-		                			<div class="col-10">
-		                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
-		                			</div>
-		                		</div>
-			                    <div class="row justify-content-center">
-			                    	<div class="col-10">
-		                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
-		                			</div>
-		                		</div>
-			                    <div class="row justify-content-center">
-			                    	<div class="col-10">
-		                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
-		                			</div>
-		                		</div>
-			                </div>
-			                <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
-		                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
-		               		</div>
-		        		</div>
-		                
-		                <div class="row" style="height: 80px;">
-		                	<div class="col">
-			           			<div align="right" class="mt-3 pr-4 pr-md-0">
-			           				<button class="btn btn-dark" id="button" type="submit" value="Enviar">Enviar</button>
-			           			</div>
-			           			<div align="center" id="logsCoti" style="color : white; background: #58666fe8; margin-top: 22px; width: 300px; height: 28px; display: none;"></div> 
-			           		</div>
+    		<div class="row align-items-center" style="height: 100%;" >
+    			<div class="col-12">
+    					<div class="row mb-2 mb-md-5" align="center">
+    						<div class="col-12">
+    							<p align="center" class="textoCotizacion animated2s" style="font-size: 35px; color: white;"> Solicita una cotización personalizada </p>
+    						</div>
+    					</div>
+    				<div class="row justify-content-center">
+	        			<div class="col-12 col-md-6 ">
+	                		<div class="row justify-content-center">
+	                			<div class="col-10">
+	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre *" id="inputName">
+	                			</div>
+	                		</div>
+	                		<div class="row justify-content-center">
+	                			<div class="col-10">
+	                				<input style="width: 100%; margin-right: 20px; margin-top: 20px;" type="text" name="empresa" placeholder="Empresa" id="inputEmpresa">
+	                			</div>
+	                		</div>
+		                    <div class="row justify-content-center">
+		                    	<div class="col-10">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail *" id="inputEmail">
+	                			</div>
+	                		</div>
+		                    <div class="row justify-content-center">
+		                    	<div class="col-10">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono *" id="inputTelefono">
+	                			</div>
+	                		</div>
 		                </div>
-	    			</div>
-	    		</div>        		
-	       	</div>
-	    </div>
+		                <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
+	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí *" rows="7" id="inputMensaje"></textarea>
+	               		</div>
+	        		</div>
+	                
+	                <div class="row" style="height: 80px;">
+	                	<div class="col">
+		           			<div align="right" class="mt-3 pr-4 pr-md-0">
+		           				<button class="btn btn-dark" id="button" type="submit" value="Enviar">Enviar</button>
+		           			</div>
+		           			<div align="center" id="logsCoti" style="color : white; background: #58666fe8; margin-top: 22px; width: 300px; height: 28px; display: none;"></div> 
+		           		</div>
+	                </div>
+    			</div>
+    		</div>        		
+       	</div>
 	</div>
 	<!-- Footer -->
 	<footer>
@@ -256,6 +260,15 @@
 	</footer>
 
 </body>
+	<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?1JUYMhwcknjVrdPQHn2JD8EKdRMRX1aH";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
         <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124805646-1"></script>
     <script>

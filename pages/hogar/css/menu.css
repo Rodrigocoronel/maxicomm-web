@@ -6,6 +6,10 @@
 		height: 75px ;
 	}
 
+	.imgCotizacion{
+		height: 650px;
+	}
+
  }
 
 @media (min-width: 576px) { 
@@ -16,6 +20,9 @@
  	#logoMaxi{
  		width: 400px;
  	}
+ 	.imgCotizacion{
+		height: 540px;
+	}
 
  }
 
@@ -116,18 +123,21 @@ p{
 }
 
 .btn-ida-hogar{
-	border: 2px solid #55595b;
+	/*border: 2px solid #55595b;
     border-radius: 17px;
     width: 95px;
-    box-shadow: 0px 3px 10px 5px #7d7070;
+    box-shadow: 0px 3px 10px 5px #7d7070;*/
+    background: url('../images/btn11.png'); width: 95px;height: 40px;
+    background-repeat: no-repeat;
 }
 
 .btn-ida-hogar:hover{
-	border: 2px solid #55595b;
+	/*border: 2px solid #55595b;
     border-radius: 17px;
     width: 95px;
     background-color: #55595b;
-    color: white !important;
+    color: white !important;*/
+    background: url('../images/btn21.png');
 }
 
 input{

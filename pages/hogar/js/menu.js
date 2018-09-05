@@ -5,15 +5,6 @@ $(document).ready(function() {
     );
 
 
-    if ($(window).width() > 568  ) {
-    let video = $("#video");
-
-    video.append(`<source src="./video/Comp 1_4.mp4" type="video/mp4" /> `)
-
-  }else{
-    video.append("<source type='video/mp4' src='./video/white-568px.mp4' />")
-  }
-
 });
 
 // determina si un elemento comienza a ser visible
@@ -42,6 +33,10 @@ $(window).on("scroll" ,function() {
   let scrollFadeIn = $('.animated.scrollFadeIn');
   if(scrollFadeIn.length > 0)
     isElementVisible(scrollFadeIn) ?  scrollFadeIn.addClass('fadeIn')  : ""
+
+    let textoCotizacion = $('.animated2s.textoCotizacion');
+  if(textoCotizacion.length > 0)
+    isElementVisible(textoCotizacion) ?  textoCotizacion.addClass('pulse')  : textoCotizacion.removeClass('pulse')
  
   
 

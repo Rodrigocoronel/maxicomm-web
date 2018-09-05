@@ -35,8 +35,8 @@
 	</div> -->
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
-            	<!--<source src="./video/Comp 1_4.mp4" type="video/mp4" /> -->
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
+            	<source src="./video/Comp 1_4.mp4" type="video/mp4" />
             </video>
             <div class="animated fadeIn headerMaxicomm" id="logoMaxi">
             	<img   src="./images/logohogar.svg" >
@@ -50,6 +50,8 @@
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
+		  <a class="btn d-inline btn-ida-hogar " href="../empresa" title="Sección Hogar" style="position: absolute; right: 16px; color: black; top: 8px;">Empresa</a> 
+
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
 		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
 		      <li class="nav-item active menu mx-3">
@@ -61,12 +63,6 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="./nosotros/index.html">Quienes Somos</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#carousel" id="menuMision">Misión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#carousel" id="menuVision" >Visión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#carousel" id="menuFilosofia">Filosofía</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="./nosotros/galeria/index.html">Galería</a>
                   <div class="dropdown-divider"></div>
@@ -107,11 +103,7 @@
 		      <li class="nav-item active menu mx-3">
 		        <a class="nav-link" href="./contacto/index.html">Contacto <span class="sr-only">(current)</span></a>
 		      </li>
-			  <li class="nav-item active menu mx-3 d-inline  d-lg-none">
-		        <a class="nav-link " href="../empresa">Empresa <span class="sr-only">(current)</span></a>
-		      </li>
 		  	</ul>
-		  	<a class="btn  btn-ida-hogar d-none  d-lg-inline" href="../empresa" title="Sección Hogar" style="position: absolute; right: 25px; color: black; ">Empresa</a>
 		  </div>
 		</nav>
 	</div>
@@ -119,7 +111,7 @@
 	<div class="fondiu fill-container container" style="max-width: 100%; 
 		background-repeat: no-repeat;
     	overflow: hidden;">
-    	<h4 align="center" class="animated fadeIn" style="font-size: 49PX; margin-top: 235px; font-family: 'Roboto', sans-serif; !important; color: black;">TECNOLOGÍA A TU ALCANCE</h4>	
+    	<h4 align="center" class="animated fadeIn textoTecnologia" style="font-size: 49PX;  font-family: 'Roboto', sans-serif; !important; color: black;">TECNOLOGÍA A TU ALCANCE</h4>	
     	<div class="row justify-content-center">
 		    <div class="col-md-8 col-lg-4" style="text-align: justify; margin-top: 0px;">
 				<p class="empresa animated fadeIn" style="font-size: 19px; font-family: 'Roboto'; color:black;">
@@ -377,4 +369,13 @@
 		</div>
 	</footer>
 </body>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?1JUYMhwcknjVrdPQHn2JD8EKdRMRX1aH";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
 </html>

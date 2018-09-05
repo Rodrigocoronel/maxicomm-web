@@ -126,7 +126,7 @@ $(window).on("scroll" ,function() {
 
   let textoCotizacion = $('.animated2s.textoCotizacion');
   if(textoCotizacion.length > 0)
-    isElementVisible(textoCotizacion) ?  textoCotizacion.addClass('pulse')  : ""
+    isElementVisible(textoCotizacion) ?  textoCotizacion.addClass('pulse')  : textoCotizacion.removeClass('pulse')
 
   let scrollFadeIn = $('.animated.scrollFadeIn');
   if(scrollFadeIn.length > 0)

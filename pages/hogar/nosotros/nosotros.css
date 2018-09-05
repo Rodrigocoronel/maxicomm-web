@@ -7,6 +7,10 @@
 		 margin-top: 180px;
 		 font-size: 30PX;
 	}
+	.carousel-item-empresa{
+        padding: 25% 0;
+        padding-left: 0px;
+    }
  }
 @media (min-width: 576px) { 
 	.fill-container{
@@ -17,6 +21,9 @@
 		 margin-top: 220px;
 		 font-size: 49PX;
 	}
+	.carousel-item-empresa{
+        padding: 10% 0; padding-left: 250px;
+    }
  }
  @media (min-width: 1024px) { 
 	.fill-container{
@@ -40,6 +47,13 @@
     
 }
 
+.fondoNosotros{
+    background-image: url(../images/empresa-Index-nosotros-slide.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .fill-containerTexture{
 	background-image: url(../../empresa/images/empresa-Index-fondo-textura.jpg);
     background-repeat: no-repeat;  
@@ -54,15 +68,7 @@
     background-position: center 0px;
 }
 
-.carrousel-inner{
-	background-image: url(./images/empresa-Index-nosotros-slide.png);
-	background-position: center center;
-    background-repeat: no-repeat;
-    height:100%;
-    width: 100%;
-    background-size:cover;
-    -webkit-background-origin:border !important;
-}
+
 
 .carousel-control-next-icon{
 	background-image : url(./images/arrowa-empresa-icons_MesaDeTrabajo1copia.svg) !important;

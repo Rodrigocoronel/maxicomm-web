@@ -1,11 +1,14 @@
 @media (max-width: 575.98px) { 
+
     .tituloSeguridad{
-        font-size: 28px;
+        font-size: 23px;
         color: black;
     }
-   
+    .margenTiutloCctv{
+        margin-top: 100px;
+    }
     .subMenuCctv{
-        height: 680px;
+        height: 770px;
     }
     .tamanoVideovigilancia{
         height: 820px;
@@ -18,7 +21,7 @@
         height: 800px;
     }
     .subMenuCercas{
-        height: 780px;
+        height: 800px;
     }   
     .subMenuPaneles{
         height: 550px;
@@ -27,25 +30,25 @@
         height: 1000px;
     }
     .subMenuGps{
-        height: 600px;
+        height: 660px;
     }
     .imgGps{
         height: 600px;
     }
     .subMenuInstalaciones{
-        height: 600px;
+        height: 680px;
     }
     .imgInstalaciones{
         height: 680px;
     }
     .subMenuBiometrico{
-        height: 930px;
+        height: 980px;
     }
     .imgBiometrico{
         height: 450px;
     }
     .subMenuBarrera{
-        height: 600px;
+        height: 660px;
     }
 
     .imgBarrera{
@@ -75,7 +78,7 @@
 
     .fill-container.instalaciones{
         background-image: url(./images/insta-768.jpg);
-        height: 300px;
+        height: 250px;
     }
     .tituloInsta{
         padding-left: 0px;
@@ -84,7 +87,7 @@
     }
     .tituloBiometrico{
         padding-left: 0px;
-        font-size: 30px;
+        font-size: 25px;
         color: white;
     }
     .fill-container.biometrico{
@@ -93,20 +96,35 @@
     }
     .tituloBarrera{
         padding-left: 0px;
-        font-size: 30px;
+        font-size: 25px;
         color: white;
+        margin-top: 70px;
     }
     .fill-container.barrera{
         background-image: url(./images/barrera-768.jpg);
-        height: 200px;
+        height: 180px;
+    }
+
+    .barra.dosLineas{
+         height: 67px;
+    }
+    .barra{
+        height: 42px;
     }
 
 }
 
 @media (min-width: 576px) {
+    .barra{
+        height: 42px;
+    }
     .tituloSeguridad{
         font-size: 49px;
         color: black;
+    }
+
+    .margenTiutloCctv{
+        margin-top: 150px;
     }
    
     .subMenuCctv{
@@ -191,7 +209,7 @@
     }
     .tituloBiometrico{
         padding-left: 0px;
-        font-size: 44px;
+        font-size: 40px;
         color: white;
     }
     .fill-container.biometrico{
@@ -202,6 +220,8 @@
         padding-left: 0px;
         font-size: 44px;
         color: white;
+        margin-top: 150px;
+
     }
     .fill-container.barrera{
         background-image: url(./images/barrera-768.jpg);
@@ -271,6 +291,10 @@
     }
     .fill-container.biometrico{
         background-image: url(./images/01-biometrico.jpg);
+        height: 380px;
+    }
+    .fill-container.barrera{
+        background-image: url(./images/barrera-vehicular.jpg);
         height: 380px;
     }
 }
@@ -512,7 +536,7 @@ a.sub:hover{
 }
 
 .barra{
-    width: 15px; height: 42px;
+    width: 15px;
 }
 
 .barra.negra{

@@ -24,7 +24,7 @@
 <body>
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../video/Comp 1_4.mp4" type="video/mp4" />
             </video>
             <div class="animated fadeIn headerMaxicomm" id="logoMaxi">
@@ -39,6 +39,8 @@
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
+		  <a class="btn d-inline btn-ida-hogar " href="../../../empresa" title="Sección Hogar" style="position: absolute; right: 16px; color: black; top: 8px;">Empresa</a> 
+
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
 		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
 		      <li class="nav-item active menu mx-3">
@@ -50,12 +52,6 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="../../nosotros">Quienes Somos</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../#carousel?mision" id="menuMision">Misión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../#carousel?vision" id="menuVision" >Visión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../../#carousel?filosofia" id="menuFilosofia">Filosofía</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="../../nosotros/galeria/index.html">Galería</a>
                   <div class="dropdown-divider"></div>
@@ -96,22 +92,21 @@
 		      <li class="nav-item active menu mx-3">
 		        <a class="nav-link " href="../../contacto/index.html">Contacto <span class="sr-only">(current)</span></a>
 		      </li>
-			  <li class="nav-item active menu mx-3 d-inline  d-lg-none">
-		        <a class="nav-link " href="../../../empresa">Empresa <span class="sr-only">(current)</span></a>
-		      </li>
 		  	</ul>
-		  	<a class="btn  btn-ida-hogar d-none  d-lg-inline" href="../../../empresa" title="Sección Hogar" style="position: absolute; right: 25px; color: black; ">Empresa</a>
 		  </div>
 		</nav>
 	</div>
 	<!-- Imagen entrada -->
-	<div class="fondiu fill-container portero " style="max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
+	<div class="fondiu fill-container portero " style="max-width: 100%;  background-repeat: no-repeat; overflow: hidden;">
 		<div class="container">
-			<h4 class="animated2s fadeInLeft" align="left" style="font-size: 44PX; margin-top: 150px; font-family: 'Roboto'; color:  #595d65;">
-	            PORTERO <br/> ELECTRÓNICO
-	        </h4>
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<h4 class="animated2s fadeInLeft tituloPortero" align="left" style=" margin-top: 150px; font-family: 'Roboto'; color:  #595d65;">
+			            PORTERO <br/> ELECTRÓNICO
+			        </h4>
+				</div>
+			</div>
 		</div>
-    	
 	</div>
 	<!-- Soluciones -->
 	<div class="container subMenuSeguridad" style="">
@@ -131,8 +126,11 @@
 				<div> <a class="sub" href="../cercaselectricas/index.html">Cercas Electrificadas</a> </div>
 			</div>
             <div class="col-1">
-                <div style="background-color: gray; width: 1px; height: 300px;"></div>
+                <div style="background-color: gray; width: 1px; height: 210px;"></div>
             </div>
+            <div class="col-12 d-sm-none text-center mt-5 mb-3">
+                <span style="font-size: 17px;"><b>Portero Electrónico</b></span>
+            </div>   
 			<div class="col-12 col-sm-6" style=" margin-top: 24px; font-family: 'Roboto'; font-size: 20PX">
 				<p style="text-align: justify;">Un portero electrónico es un sistema de seguridad y comunicación que sirve para controlar el acceso de personas a cualquier edificio, permitiendo o no la entrada a la propiedad tras controlar de quién se trata.</p>
             </div>
@@ -154,11 +152,11 @@
 		
 	</div>
     
-	<div class="imgTextura1" style="height: 350px; width: 100%; ">
-        <div class="container animated scrollFadeIn" style="color: black;  font-family: 'Roboto'; text-align: center; height: 100%;">
+	<div class="imgTextura1" style="height: 290px; width: 100%; ">
+        <div class="container animated scrollFadeIn" style="color: black;  font-family: 'Roboto'; text-align: center; height: 87%;">
             <div class="row align-items-center h-100" style="text-align: left;  font-size: 20PX;">
             	<div class="col-12" style="font-size: 27PX;" align="center">
-                    Características:
+                    Ventajas:
                 </div>
                 <div class="col-12 col-sm-5 offset-lg-1 offset-sm-1">
                     <ul>
@@ -176,13 +174,13 @@
         </div>
 	</div>
 	<!-- Cotizacion -->
-	<div class="imgCotizacion parallax" style="height: 540px;">
+	<div class="imgCotizacion parallax" style="">
         <div class="container" align="center" style="height: 100%;">
     		<div class="row align-items-center" style="height: 100%;" >
     			<div class="col-12">
     					<div class="row mb-2 mb-md-5" align="center">
     						<div class="col-12">
-    							<p align="center" class="textoCotizacion animated2s" style="font-size: 35px; color: #595d65;;"> Solicita una cotización personalizada </p>
+    							<p align="center" class="textoCotizacion animated2s" style="font-size: 35px; color: #23478e;"> Solicita una cotización personalizada </p>
     						</div>
     					</div>
     				<div class="row justify-content-center">

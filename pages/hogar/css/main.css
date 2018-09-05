@@ -29,6 +29,10 @@
 	#testimoniales{
 		height: 700px; 
 	}
+
+	.textoTecnologia{
+		margin-top: 200px;
+	}
  }
 
 @media (min-width: 576px) { 
@@ -77,6 +81,10 @@
 		height: 560px; 
 	}
 
+	.textoTecnologia{
+		margin-top: 260px;
+	}
+
  }
 
 
@@ -93,6 +101,9 @@
 	}
 	.parallax{
 		font-size: 50px; 
+	}
+	.textoTecnologia{
+		margin-top: 260px;
 	}
 
  }

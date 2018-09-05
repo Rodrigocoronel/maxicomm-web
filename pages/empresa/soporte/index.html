@@ -24,7 +24,7 @@
 <body>
     <div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div class="animated fadeIn headerMaxicomm" id="logoMaxi">
@@ -125,7 +125,7 @@
             <div class="container-fluid textoPortada h-100" style="width: 100%;">
                 <div class="row  h-100">
                     <div class="col-12 col-sm-4 align-self-center animated2s fadeInLeft" style="text-align: left;border-left: 10px solid red;">
-                        <p class="mb-0 tituloSoporte" style=""><b>CENTRO DE SOPORTE TÉCNICO</b><br/></p>
+                        <p class="mb-0 tituloSoporte" style="">CENTRO DE SOPORTE TÉCNICO<br/></p>
                     </div>
                 </div>
             </div>
@@ -134,15 +134,11 @@
     	<div class="container h-100">
 	        <div class="row justify-content-around" style="height: 100%;">
 	            <div class="col-lg-8 col-sm-12 align-self-center" style="text-align: justify; font-size: 19px;">
-                    Soporte Técnico especializado para empresas en la reparación y mantenimiento de equipos de cómputo, como computadoras
-                    de escritorio, servidores, portátiles, tabletas, teléfonos inteligentes, impresoras, plotters y cualquier dispositivo periférico
-                    que requiera ser reparado.
-		            <br/><br/>
-                    Contamos con herramientas y utilerías más avanzadas en antivirus, anti espías, rescate y reestructuración de información,
-                    con experiencia en todos los sistemas operativos para red y monousuario para el óptimo funcionamiento de sus sistemas de
-                    información y transaccionales que repercuten en un estratégico manejo de sus datos.
-                    <br/><br/>
-					Nuestros servicios son elaborados en el taller de soporte, vía remota o en sitio.
+					Contamos con un Centro de Soporte Técnico especializado en empresas para la reparación y mantenimiento de equipos de cómputo, como computadoras de escritorio, servidores, portátiles, tabletas, teléfonos inteligentes, impresoras, plotters y cualquier dispositivo periférico que requiera servicio. 
+					<br/><br/>
+					Empleamos herramientas y utilerías avanzadas en antivirus, anti espías, rescate y reestructuración de información, con experiencia en todos los sistemas operativos para red y monousuario para el óptimo funcionamiento de sus sistemas de información y transaccionales que repercuten en un estratégico manejo de sus datos. 
+					<br/><br/>
+					Nuestros servicios se realizan en el taller de soporte, vía remota o en sitio.
 	            </div>
 	        </div>
 	    </div>
@@ -197,22 +193,27 @@
 	        			<div class="col-12 col-md-6 ">
 	                		<div class="row justify-content-center">
 	                			<div class="col-10">
-	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre *" id="inputName">
+	                			</div>
+	                		</div>
+	                		<div class="row justify-content-center">
+	                			<div class="col-10">
+	                				<input style="width: 100%; margin-right: 20px; margin-top: 20px;" type="text" name="empresa" placeholder="Empresa" id="inputEmpresa">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail *" id="inputEmail">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono *" id="inputTelefono">
 	                			</div>
 	                		</div>
 		                </div>
 		                <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
-	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí *" rows="7" id="inputMensaje"></textarea>
 	               		</div>
 	        		</div>
 	                
@@ -252,6 +253,15 @@
 	</footer>
 
 </body>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?1JUYMhwcknjVrdPQHn2JD8EKdRMRX1aH";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
 	<script>
 		$(document).ready(function() {
 		    $(".nav-link").hover(

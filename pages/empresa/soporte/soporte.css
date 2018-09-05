@@ -12,6 +12,7 @@
 	}
 	.tituloSoporte{
 		color: white ;
+		font-size: 20px;
 	}
 }
 
@@ -29,7 +30,8 @@
        
 	}
 	.tituloSoporte{
-		color: white ;
+		color: white;
+		font-size: 30px;
 	}
     
 }
@@ -297,5 +299,5 @@ ul {
 }
 
 .textoPortada{
-	font-size: 37PX; text-align: center;  font-family: 'Roboto'; color: #535151e8;
+	 text-align: center;  font-family: 'Roboto'; color: #535151e8;
 }

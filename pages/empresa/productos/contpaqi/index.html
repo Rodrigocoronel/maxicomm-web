@@ -32,7 +32,7 @@
 <body >
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div id="logoMaxi" class="animated fadeIn headerMaxicomm">
@@ -138,7 +138,7 @@
                 <div class="barra negra"></div>
                 <div class="barra negra"></div>
                 <div class="barra roja"></div>
-                <div class="barra negra"></div>
+                <div class="barra negra dosLineas"></div>
                 <div class="barra negra"></div>
             </div>
             <div class="col-sm-4 col-8" style="font-size: 17px;">
@@ -151,6 +151,9 @@
             <div class="col-1">
                 <div style="background-color: gray; width: 1px; height: 250px;"></div>
             </div>
+            <div class="col-12 d-sm-none text-center mt-5 mb-3">
+                <span style="font-size: 17px;"><b>CONTPAQi</b></span>
+            </div>            
 			<div class="col-lg-6 col-12 col-sm-6" style=" margin-top: 24px; font-family: 'Roboto'; font-size: 20PX">
 				<p style="text-align: justify;">Somos distribuidores <b>MASTER</b> en la región, además brindamos consultoría y asesoría en todos los sistemas de la linea <b>CONTPAQI</b>, en la actualidad son los sistemas más utilizados dentro de las empresas.</p>
 			</div>
@@ -159,7 +162,7 @@
 	<div class="imgTexturaContpaq" style=" width: 100%; ">
         <div class="container-fluid" style="height: 100%;" >
             <div class="row justify-content-md-center" style="height: 100%;" >
-                <div class="col-lg-4 col-sm-6 col-12 align-self-center pl-3 pl-sm-0">
+                <div class="col-lg-4 col-sm-6 col-12 align-self-center pl-3 pl-sm-0 text-center">
                     <img class="animated2s parallaxContpaq" src="./images/CONTPAQi-img4.png" >
                 </div>
                 
@@ -211,22 +214,27 @@
 	        			<div class="col-12 col-md-6 ">
 	                		<div class="row justify-content-center">
 	                			<div class="col-10">
-	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre *" id="inputName">
+	                			</div>
+	                		</div>
+	                		<div class="row justify-content-center">
+	                			<div class="col-10">
+	                				<input style="width: 100%; margin-right: 20px; margin-top: 20px;" type="text" name="empresa" placeholder="Empresa" id="inputEmpresa">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail *" id="inputEmail">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono *" id="inputTelefono">
 	                			</div>
 	                		</div>
 		                </div>
 		                <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
-	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí *" rows="7" id="inputMensaje"></textarea>
 	               		</div>
 	        		</div>
 	                
@@ -266,6 +274,15 @@
 	</footer>
 
 </body>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?1JUYMhwcknjVrdPQHn2JD8EKdRMRX1aH";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
 	<script>
 		$(document).ready(function() {
 		    $(".nav-link").hover(

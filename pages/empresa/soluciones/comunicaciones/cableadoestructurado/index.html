@@ -33,7 +33,7 @@
 <body >
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div class="animated fadeIn headerMaxicomm" id="logoMaxi">
@@ -331,22 +331,27 @@
                         <div class="col-12 col-md-6 ">
                             <div class="row justify-content-center">
                                 <div class="col-10">
-                                    <input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+                                    <input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre *" id="inputName">
                                 </div>
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-10">
-                                    <input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+                                    <input style="width: 100%; margin-right: 20px; margin-top: 20px;" type="text" name="empresa" placeholder="Empresa" id="inputEmpresa">
                                 </div>
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-10">
-                                    <input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+                                    <input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail *" id="inputEmail">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono *" id="inputTelefono">
                                 </div>
                             </div>
                         </div>
                         <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
-                            <textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+                            <textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí *" rows="7" id="inputMensaje"></textarea>
                         </div>
                     </div>
                     

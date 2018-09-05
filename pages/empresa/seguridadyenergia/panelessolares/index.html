@@ -24,7 +24,7 @@
 <body>
      <div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div class="animated fadeIn headerMaxicomm" id="logoMaxi" >
@@ -125,7 +125,7 @@
 	<div class="fondiu fill-container paneles container" style="max-width: 100%; height: 380px; background-repeat: no-repeat; overflow: hidden;">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-4 col-sm-4 col-md-6 col-lg-4  pl-sm-5 pl-lg-0">
+				<div class="col-4 col-sm-4 col-md-6 col-lg-2  pl-sm-5 pl-lg-0">
 					<h4 class="animated2s fadeInLeft tituloPanel" align="left" style="font-size: 44PX;  margin-top: 160px; font-family: 'Roboto'; ">
 			            PANELES
 			            SOLARES
@@ -140,20 +140,24 @@
             <div class="col-2 col-sm-1 float-right" style=" 1px solid #c3c3c3;">
                 <div class="barra negra"></div>
                 <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
                 <div class="barra roja"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
-                <div class="barra negra"></div>
             </div>
             <div class="col-8 col-sm-4" style="font-size: 17px;">
                 <div> <a class="sub" href="../cctvcorporativo/index.html">CCTV Corporativo</a> </div>
+                <div> <a class="sub a2" href="../barreravehicular/index.html">Barrera Vehicular</a> </div>
+                <div> <a class="sub" href="../gpsvehicular/index.html">GPS vehicular</a> </div>
+                <div> <a class="sub" href="../biometrico/index.html">Reloj Checador Biométrico</a> </div>
+                <div> <a class="sub" href="../instalacioneselectricas/index.html">Instalaciones eléctricas</a> </div>
 				<div> <a class="sub" href="../cercaselectrificadas/index.html">Cercas Electrificadas</a> </div>
                 <div> <a class="sub" href="../panelessolares/index.html"><b>Páneles solares</b></a> </div>
-				<div> <a class="sub" href="../gpsvehicular/index.html">GPS vehicular</a> </div>
-                <div> <a class="sub" href="../instalacioneselectricas/index.html">Instalaciones eléctricas (seguridad)</a> </div>
-                <div> <a class="sub" href="../biometrico/index.html">Reloj Checador Biométrico</a> </div>
-                <div> <a class="sub a2" href="../barreravehicular/index.html">Barrera Vehicular</a> </div>
+				
+                
+                
+                
 			</div>
             <div class="col-1">
                 <div style="background-color: gray; width: 1px; height: 350px;"></div>
@@ -196,22 +200,27 @@
 	        			<div class="col-12 col-md-6 ">
 	                		<div class="row justify-content-center">
 	                			<div class="col-10">
-	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre *" id="inputName">
+	                			</div>
+	                		</div>
+	                		<div class="row justify-content-center">
+	                			<div class="col-10">
+	                				<input style="width: 100%; margin-right: 20px; margin-top: 20px;" type="text" name="empresa" placeholder="Empresa" id="inputEmpresa">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail *" id="inputEmail">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono *" id="inputTelefono">
 	                			</div>
 	                		</div>
 		                </div>
 		                <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
-	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí *" rows="7" id="inputMensaje"></textarea>
 	               		</div>
 	        		</div>
 	                
@@ -251,6 +260,15 @@
 	</footer>
 
 </body>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?1JUYMhwcknjVrdPQHn2JD8EKdRMRX1aH";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
 	<script>
 		$(document).ready(function() {
 		    $(".nav-link").hover(

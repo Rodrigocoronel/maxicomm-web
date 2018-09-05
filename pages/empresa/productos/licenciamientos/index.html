@@ -32,7 +32,7 @@
 <body >
 	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div class="animated fadeIn headerMaxicomm" id="logoMaxi">
@@ -133,7 +133,7 @@
 	<div class="fondiu fill-container-licenciamientos container" style="max-width: 100%; background-repeat: no-repeat; overflow: hidden;">
 		<div class="container-fluid h-100">
 			<div class="row textoLicenciamientos h-100 ">
-				<div class="col-5 align-self-center ml-lg-5 animated2s fadeInLeft" style="border-left: 10px solid red; height: 54px; line-height: 1">
+				<div class="col-5 align-self-center ml-lg-5 animated2s fadeInLeft" style="border-left: 10px solid red; line-height: 1">
 					Licenciamientos
 				</div>
 			</div>
@@ -149,7 +149,7 @@
                 <div class="barra negra"></div>
                 <div class="barra roja"></div>
             </div>
-            <div class="col-sm-4 col-8" style="font-size: 17px;">
+            <div class="col-sm-8 col-md-4 col-8" style="font-size: 17px;">
                 <div> <a class="asubmenu" href="../">Equipamiento</a> </div>
                 <div> <a class="asubmenu" href="../mswindows">Ms Windows</a> </div>
                 <div> <a class="asubmenu" href="../contpaqi/index.html">CONTPAQi</a> </div>
@@ -159,7 +159,7 @@
             <div class="col-1">
                 <div style="background-color: gray; width: 1px; height: 250px;"></div>
             </div>
-			<div class="col-lg-6 col-12 col-sm-6" style=" margin-top: 24px; font-family: 'Roboto'; font-size: 20PX">
+			<div class="col-lg-6 col-12 col-sm-12 col-md-6" style=" margin-top: 24px; font-family: 'Roboto'; font-size: 20PX">
 				<p style="text-align: justify;">Una licencia de software es un contrato entre el licenciante (autor/titular de los derechos de explotación/distribución) y el licenciatario (usuario consumidor, profesional o empresa) del programa informático, para utilizarlo cumpliendo una serie de términos y condiciones establecidas dentro de sus cláusulas, es decir, es un conjunto de permisos que un desarrollador le puede otorgar a un usuario en los que tiene la posibilidad de distribuir, usar o modificar el producto bajo una licencia determinada. Además se suelen definir los plazos de duración, el territorio donde se aplica la licencia (ya que la licencia se soporta en las leyes particulares de cada país o región), entre otros.</p>
 			</div>
 		</div>
@@ -170,26 +170,26 @@
 				<div class="col-12 col-sm-3 mt-sm-3 animated icono" align="center">
 					<img class="" src="./images/icono1.svg" height="120" width="180">	
 				</div>
-				<div class="col-12 col-sm-3 mt-sm-3 animated icono">
-					<img src="./images/icono7.svg">	
+				<div class="col-12 col-sm-3 mt-sm-3 animated icono text-center">
+					<img src="./images/icono7.svg" height="60" width="150">	
 				</div>
-				<div class="col-12 col-sm-3 mt-sm-3 animated icono">
-					<img src="./images/icono6.svg">	
+				<div class="col-12 col-sm-3 mt-sm-3 animated icono text-center">
+					<img src="./images/icono6.svg" width="180" height="70">	
 				</div>
-				<div class="col-12 col-sm-3 mt-sm-3 animated icono">
-					<img src="./images/icono5.svg">	
+				<div class="col-12 col-sm-3 mt-sm-3 animated icono text-center">
+					<img src="./images/icono5.svg" width="180" height="40">	
 				</div>
-				<div class="col-12 col-sm-3 mb-sm-3 animated icono">
-					<img src="./images/icono4.svg">	
+				<div class="col-12 col-sm-3 mb-sm-3 animated icono text-center">
+					<img src="./images/icono4.svg" width="180" height="48">	
 				</div>
-				<div class="col-12 col-sm-3 mb-sm-3 animated icono">
-					<img src="./images/icono3.svg">	
+				<div class="col-12 col-sm-3 mb-sm-3 animated icono text-center">
+					<img src="./images/icono3.svg" width="180" height="46">	
 				</div>
-				<div class="col-12 col-sm-3 mb-sm-3 animated icono">
-					<img src="./images/icono2.svg">	
+				<div class="col-12 col-sm-3 mb-sm-3 animated icono text-center">
+					<img src="./images/icono2.svg" width="180" height="41">	
 				</div>
-				<div class="col-12 col-sm-3 mb-sm-3 animated icono">
-					<img src="./images/icono8.svg">	
+				<div class="col-12 col-sm-3 mb-sm-3 animated icono text-center">
+					<img src="./images/icono8.svg" width="180" height="60">	
 				</div>
 			</div>
 		</div>
@@ -208,22 +208,27 @@
 	        			<div class="col-12 col-md-6 ">
 	                		<div class="row justify-content-center">
 	                			<div class="col-10">
-	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre *" id="inputName">
+	                			</div>
+	                		</div>
+	                		<div class="row justify-content-center">
+	                			<div class="col-10">
+	                				<input style="width: 100%; margin-right: 20px; margin-top: 20px;" type="text" name="empresa" placeholder="Empresa" id="inputEmpresa">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail *" id="inputEmail">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono *" id="inputTelefono">
 	                			</div>
 	                		</div>
 		                </div>
 		                <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
-	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí *" rows="7" id="inputMensaje"></textarea>
 	               		</div>
 	        		</div>
 	                
@@ -263,6 +268,15 @@
 	</footer>
 
 </body>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?1JUYMhwcknjVrdPQHn2JD8EKdRMRX1aH";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
 	<script>
 		$(document).ready(function() {
 		    $(".nav-link").hover(

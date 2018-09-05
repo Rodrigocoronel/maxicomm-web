@@ -81,6 +81,10 @@
         height: 280px;
     }
 
+    .linkSubmenu{
+        height: calc(100% - 250px);
+    }
+
 	.portadillaComunicaciones{
 		height: 300px;
 	}
@@ -137,7 +141,7 @@
  @media (min-width: 768px) { 
 
 	.portadillaComunicaciones{
-		height: 750px;
+		height: 950px;
 	}
 	.submenuComu{
  		height: 280px;
@@ -157,6 +161,9 @@
  }
 
  @media(min-width: 1024px){
+    .linkSubmenu{
+        height: calc(100% - 150px);
+    }
  	.infoCableado{
 		height:120px;
 	}

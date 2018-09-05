@@ -11,7 +11,7 @@ $(function() {
 	}
 
 
-	let data = {telefono : $('#inputTelefono').val() , email : $('#inputEmail').val() , mensaje : $('#inputMensaje').val(), nombre : $('#inputName').val()};
+	let data = {telefono : $('#inputTelefono').val() , email : $('#inputEmail').val() , mensaje : $('#inputMensaje').val(), nombre : $('#inputName').val(), empresa : $('#inputEmpresa').val()};
 	console.log(data)
 	if( ! error){
 		 $.post("http://api.seedbc.net/api/registroCotizacion", data , function(data){
@@ -35,5 +35,7 @@ function limpiarInputs(){
 	$('#inputName').val('');
 	$('#inputTelefono').val('');
 	$('#inputEmail').val('');
+	$('#inputEmpresa').val('');
+	
 }
 

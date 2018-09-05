@@ -30,7 +30,7 @@
 <body >
 	<div class="container-fluid" style="position: relative;"  >
 		<div id="asd" class="row contenedor-video">
-			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop width="100%">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../../../assets/videos/header-empresa.mp4" type="video/mp4" />
             </video>
             <div id="logoMaxi" class="animated fadeIn headerMaxicomm">
@@ -152,6 +152,9 @@
             <div class="col-1">
                 <div style="background-color: gray; width: 1px; height: 250px;"></div>
             </div>
+            <div class="col-12 d-sm-none text-center mt-5 mb-3">
+                <span style="font-size: 17px;"><b>Ms Windows</b></span>
+            </div>
 			<div class="col-lg-6 col-12 col-sm-6" style=" margin-top: 24px; font-family: 'Roboto'; font-size: 20PX">
 				<p style="text-align: justify;">Es una herramienta administrativa, desarrollada con el objetivo fundamental de automatizar los procesos, como también mejorar el manejo y administración de la informacion dentro de las empresas</p>
 			</div>
@@ -159,10 +162,10 @@
 	</div>
 
 	<div class="imgTexturaMsWindows parallax" style="width: 100%; ">
-        <div class="container" style="height: 100%;" >
+        <div class="container " style="height: 100%;" >
             <div class="row align-items-center animated2s parallaxMswindows" style="height: 100%; line-height: 1.9;">
             	<div class="col-lg-6 col-sm-6 col-12" style="color: white;">
-            		<ul class="style0 bullet"  >
+            		<ul class="style0 bullet pl-0 pl-sm-4"  >
             			<li style="background-image: url(./images/MSWINDOWS_Mesadetrabajo1.png); background-repeat: no-repeat;">
             				<b>PRÁCTICO</b> Eficiente y de fácil uso.
             			</li>
@@ -184,7 +187,7 @@
             		</ul>
             	</div>
             	<div class="col-lg-6 col-sm-6 col-12" style="color: white; line-height: 1.9;">
-            		<ul class="style0 bullet"  >
+            		<ul class="style0 bullet pl-0 pl-sm-4"  >
             			<li style="background-image: url(./images/MSWINDOWS_Mesadetrabajo1copia2.png); background-repeat: no-repeat;">
 							<b>EFICAZ</b> Integra un reporteador de datos a la medida.
 						</li>
@@ -321,8 +324,6 @@
 		</div>
 		
 	</div>
-	
-
 	<!-- Cotizacion -->
 	<div class="imgCotizacion" style="">
         <div class="container" align="center" style="height: 100%;">
@@ -337,22 +338,27 @@
 	        			<div class="col-12 col-md-6 ">
 	                		<div class="row justify-content-center">
 	                			<div class="col-10">
-	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+	                				<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre *" id="inputName">
+	                			</div>
+	                		</div>
+	                		<div class="row justify-content-center">
+	                			<div class="col-10">
+	                				<input style="width: 100%; margin-right: 20px; margin-top: 20px;" type="text" name="empresa" placeholder="Empresa" id="inputEmpresa">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail *" id="inputEmail">
 	                			</div>
 	                		</div>
 		                    <div class="row justify-content-center">
 		                    	<div class="col-10">
-	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+	                				<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono *" id="inputTelefono">
 	                			</div>
 	                		</div>
 		                </div>
 		                <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
-	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí *" rows="7" id="inputMensaje"></textarea>
 	               		</div>
 	        		</div>
 	                
@@ -391,6 +397,15 @@
 		</div>
 	</footer>
 </body>
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?1JUYMhwcknjVrdPQHn2JD8EKdRMRX1aH";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
         <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124805646-1"></script>
     <script>

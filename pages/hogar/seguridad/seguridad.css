@@ -1,6 +1,19 @@
 @media (max-width: 575.98px){
 	.subMenuSeguridad{
-		height: 700px;
+		height: 600px;
+	}
+
+	.subMenuSeguridad.cercas{
+		height: 600px;
+	}
+	.subMenuSeguridad.paneles{
+		height: 480px;
+	}
+	.subMenuSeguridad.chapa{
+		height: 650px;
+	}
+	.subMenuSeguridad.videoVigilancia{
+		height: 650px;
 	}
 	.imgVideovigilancia{
 		height: 900px;
@@ -27,16 +40,22 @@
 		background-image: url(./images/video-768.jpg);
 	}
 	.videovigilancia{
-		height: 300px;
+		height: 250px;
 	}
 	.tituloVideo{
 		font-size: 30PX;
 	}
 	.fill-container.portero{
-		background-image: url(./images/portero-electr.jpg);
+		background-image: url(./images/potero-500.jpg);
+		height: 300px;
+		font-size: 30PX;
+	}
+	.tituloPortero{
+		font-size: 23PX;
 	}
 	.tituloChapa{
-
+		font-size: 25PX;  margin-top: 100px;
+		color:  white;
 	}
 	.fill-container.paneles{
 		background-image: url(./images/panel-500.jpg);
@@ -46,7 +65,15 @@
 	}
 	.fill-container.cercas{
 		background-image: url(./images/cerca-768.jpg);
+		height: 300px;
 	}
+
+	.fill-container.chapa{
+		background-image: url(./images/chapa500.jpg);
+		height: 200px;
+
+	}
+
 	.tituloCercas{
 		padding-left: 0px;
 		font-size: 30PX;
@@ -54,8 +81,26 @@
 }
 
 @media (min-width: 576px) { 
-	.subMenuSeguridad{
+
+	.subMenuSeguridad.cercas{
+		height: 350px;
+	}
+	.tituloChapa{
+		font-size: 35PX;  margin-top: 150px;
+		color:  #595d65;
+	}
+	.fill-container.chapa{
+		background-image: url(./images/chapa-electronica-hogar.jpg);
 		height: 380px;
+	}
+	.subMenuSeguridad{
+		height: 280px;
+	}
+	.subMenuSeguridad.videoVigilancia{
+		height: 350px;
+	}
+	.subMenuSeguridad.chapa{
+		height: 350px;
 	}
 	.imgTextura1{
 		height: 440px;
@@ -89,8 +134,12 @@
 	}
 	.fill-container.portero{
 		background-image: url(./images/portero-electr.jpg);
+		height: 380px;
+		
 	}
-
+	.tituloPortero{
+		font-size: 38PX;
+	}
 	.tituloChapa{
 		padding-left: 22px;
 	}
@@ -103,6 +152,7 @@
 	
 	.fill-container.cercas{
 		background-image: url(./images/cerca-768.jpg);
+		height: 380px;
 	}
 	.tituloCercas{
 		
@@ -123,6 +173,18 @@
 	}
 	.fill-container.cercas{
 		background-image: url(./images/01-cercos.jpg);
+	}
+	.subMenuSeguridad.videoVigilancia{
+		height: 250px;
+	}
+	.subMenuSeguridad.chapa{
+		height: 250px;
+	}
+	.subMenuSeguridad.paneles{
+		height: 250px;
+	}
+	.subMenuSeguridad.cercas{
+		height: 260px;
 	}
 }
 
@@ -164,9 +226,7 @@
 	background-image: url(./images/01-instalaciones.jpg);
 }
 
-.fill-container.chapa{
-	background-image: url(./images/chapa-electronica-hogar.jpg);
-}
+
 .fill-container.barrera{
 	background-image: url(./images/01-temp.png);
 }

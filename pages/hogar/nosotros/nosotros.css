@@ -11,6 +11,10 @@
         padding: 25% 0;
         padding-left: 0px;
     }
+
+    .carouselNosotros{
+		height:888px;
+	}
  }
 @media (min-width: 576px) { 
 	.fill-container{
@@ -24,6 +28,9 @@
 	.carousel-item-empresa{
         padding: 10% 0; padding-left: 250px;
     }
+    .carouselNosotros{
+		height:888px;
+	}
  }
  @media (min-width: 1024px) { 
 	.fill-container{
@@ -33,6 +40,9 @@
 	.tituloQuienes{
 		 margin-top: 220px;
 		 font-size: 49PX;
+	}
+	.carouselNosotros{
+		height:1000px;
 	}
  }
 

@@ -12,10 +12,16 @@
         padding: 25% 0;
         padding-left: 0px;
     }
+    .carouselNosotros{
+        height:888px;
+    }
 
 }
 
 @media (min-width: 576px) {
+    .carouselNosotros{
+        height:888px;
+    }
     .quien{
         height: 300px;
     }
@@ -31,6 +37,9 @@
 }
 
 @media (min-width: 1024px) {
+    .carouselNosotros{
+        height:1000px;
+    }
     .quien{
         height: 557px; 
     }

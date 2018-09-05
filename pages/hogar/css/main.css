@@ -33,10 +33,17 @@
 	.textoTecnologia{
 		margin-top: 200px;
 	}
+	.carouselNosotros{
+		height:888px;
+	}
+	
  }
 
 @media (min-width: 576px) { 
 
+	.carouselNosotros{
+		height:888px;
+	}
 	.logo-menu{
  		height:76px;
  		width:314px;
@@ -89,6 +96,10 @@
 
 
  @media(min-width: 1024px){
+
+ 	.carouselNosotros{
+		height:1000px;
+	}
  	.carousel-item-empresa{
 		padding: 10% 0; 
 		padding-left: 250px;
@@ -97,13 +108,13 @@
 		 height: 400px;
 	}
 	.fondiu{
-		height : calc(100% - 100px);
+		height : 700px;
 	}
 	.parallax{
 		font-size: 50px; 
 	}
 	.textoTecnologia{
-		margin-top: 260px;
+		margin-top: 300px;
 	}
 
  }

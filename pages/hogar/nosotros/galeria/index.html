@@ -5,6 +5,7 @@
 <head>
 	<title>Maxicomm</title>
 	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="../../../../bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../../../../assets/animate.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -132,6 +133,30 @@
         .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
         .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
         .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+
+        @media(max-width: 575.98px){
+          .alturaGaleria{
+            height: 200px;
+          }
+        }
+
+        @media(min-width: 576){
+          .alturaGaleria{
+            height: 300px;
+          }
+        }
+
+        @media(min-width: 768px){
+          .alturaGaleria{
+            height: 400px;
+          }
+        }
+
+        @media(min-width: 1024px){
+          .alturaGaleria{
+            height: 600px;
+          }
+        }
     </style>
     
     
@@ -140,7 +165,7 @@
 			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
             	<source src="../../video/Comp 1_4.mp4" type="video/mp4" />
             </video>
-            <div class="animated fadeIn" style="position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 100%; top : 22px;">
+            <div class="animated fadeIn headerMaxicomm" id="logoMaxi" >
             	<img   src="../../images/logohogar.svg" >
             </div>
 		</div>
@@ -165,12 +190,6 @@
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="../../nosotros/index.html">Quienes Somos</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#carousel" id="menuMision">Misión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#carousel" id="menuVision" >Visión</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="../#carousel" id="menuFilosofia">Filosofía</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="#">Galería</a>
                   <div class="dropdown-divider"></div>
@@ -217,10 +236,11 @@
 	</div>
    
     <!-- Galeria - Cuadro principal-->
-	<div class="container" style="max-width: 100%; overflow: hidden; height: 600px;background-color:black;">
+	<div class="container alturaGaleria" style="max-width: 100%; overflow: hidden; background-color:gray;">
         <div class="row align-items-center" style="height:100%; width: 100%; margin:auto;">
-    
-            <div id="jssor_1" style="position:relative; width:980px; height:380px;">
+          
+            <div id="jssor_1" style="position:relative; height:400px;     left: 50%;
+    transform: translate(-50%,0%);">
             <!-- Loading Screen -->
                 <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
                     <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
@@ -229,28 +249,60 @@
                 <!-- Imagenes -->
                 <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
                     <div>
-                        <img data-u="image" src="img/031.jpg" />
-                        <img data-u="thumb" src="img/031-s190x90.jpg" />
+                        <img data-u="image" src="img/G1.jpg" />
+                        <img data-u="thumb" src="img/G1.jpg" />
                     </div>
                     <div>
-                        <img data-u="image" src="img/032.jpg" />
-                        <img data-u="thumb" src="img/032-s190x90.jpg" />
+                        <img data-u="image" src="img/G2.jpg" />
+                        <img data-u="thumb" src="img/G2.jpg" />
                     </div>
                     <div>
-                        <img data-u="image" src="img/033.jpg" />
-                        <img data-u="thumb" src="img/033-s190x90.jpg" />
+                        <img data-u="image" src="img/G3.jpg" />
+                        <img data-u="thumb" src="img/G3.jpg" />
                     </div>
                     <div>
-                        <img data-u="image" src="img/034.jpg" />
-                        <img data-u="thumb" src="img/034-s190x90.jpg" />
+                        <img data-u="image" src="img/G4.jpg" />
+                        <img data-u="thumb" src="img/G4.jpg" />
                     </div>
                     <div>
-                        <img data-u="image" src="img/035.jpg" />
-                        <img data-u="thumb" src="img/035-s190x90.jpg" />
+                        <img data-u="image" src="img/G5.jpg" />
+                        <img data-u="thumb" src="img/G5.jpg" />
                     </div>
                     <div>
-                        <img data-u="image" src="img/036.jpg" />
-                        <img data-u="thumb" src="img/036-s190x90.jpg" />
+                        <img data-u="image" src="img/G7.jpg" />
+                        <img data-u="thumb" src="img/G7.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="img/G8.jpg" />
+                        <img data-u="thumb" src="img/G8.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="img/G9.jpg" />
+                        <img data-u="thumb" src="img/G9.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="img/G10.jpg" />
+                        <img data-u="thumb" src="img/G10.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="img/G11.jpg" />
+                        <img data-u="thumb" src="img/G11.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="img/G12.jpg" />
+                        <img data-u="thumb" src="img/G12.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="img/G13.jpg" />
+                        <img data-u="thumb" src="img/G13.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="img/G14.jpg" />
+                        <img data-u="thumb" src="img/G14.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="img/G22.jpg" />
+                        <img data-u="thumb" src="img/G22.jpg" />
                     </div>
                 </div>
 
@@ -287,79 +339,97 @@
                 </div>
             
             </div>
+          
             <script type="text/javascript">jssor_1_slider_init();</script>
         </div>
 	</div>
 
 <!---------------------------------------------------------------------------------------------------------------------->
     
-	<!-- Cotizacion -->
-	<div class="imgCotizacion" style="height: 540px;">
+  <!-- Cotizacion -->
+  <div class="imgCotizacion parallax" style="">
         <div class="container" align="center" style="height: 100%;">
-    		<div class="row align-items-center" style="height: 100%;" >
-    			<div class="col-12">
-    					<div class="row mb-5" align="center">
-    						<div class="col-12">
-    							<p align="center" style="font-size: 35px; color: #595d65;"> Solicita una cotización personalizada </p>
-    						</div>
-    					</div>
-    				<div class="row">
-	        			<div class="col-md-6 col-xs-12 ">
-	                		<div class="row">
-	                			<input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
-	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
-	                		</div>
-		                    <div class="row">
-	                			<input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
-	                		</div>
-		                </div>
-		                <div class="col-md-6 col-xs-12  pl-0 mt-md-0 mt-sm-3 " >
-	                    	<textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
-	               		</div>
-	        		</div>
-	                
-	                <div class="row" style="height: 80px;">
-	                	<div class="col">
-		           			<div align="right" class="mt-3">
-		           				<button class="btn btn-dark" id="button" type="submit" value="Enviar">Enviar</button>
-		           			</div>
-		           			<div align="center" id="logsCoti" style="color : white; background: #58666fe8; margin-top: 22px; width: 300px; height: 28px; display: none;"></div> 
-		           		</div>
-	                </div>
-    			</div>
-    		</div>        		
-       	</div>	
+        <div class="row align-items-center" style="height: 100%;" >
+          <div class="col-12">
+              <div class="row mb-2 mb-md-5" align="center">
+                <div class="col-12">
+                  <p align="center" class="textoCotizacion animated2s" style="font-size: 35px; color: #23478e;"> <b>Solicita una cotización personalizada</b> </p>
+                </div>
+              </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 ">
+                      <div class="row justify-content-center">
+                        <div class="col-10">
+                          <input style="width: 100%; margin-right: 20px;" type="text" name="nombre" placeholder="Nombre" id="inputName">
+                        </div>
+                      </div>
+                        <div class="row justify-content-center">
+                          <div class="col-10">
+                          <input style="margin-top: 20px; width: 100%; margin-right: 20px;"  type="email" name="email" placeholder="E mail" id="inputEmail">
+                        </div>
+                      </div>
+                        <div class="row justify-content-center">
+                          <div class="col-10">
+                          <input style="margin-top: 20px; width: 100%; margin-right: 20px;" type="text" name="telefono" placeholder="Teléfono" id="inputTelefono">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-10 col-md-6 ml-md-0 mt-4 mt-md-0 pl-3 pl-md-0"  style="padding-left: 20px; padding-left: 0px;">
+                        <textarea class="form-control" name="mensaje"  placeholder="Escribe mensaje aquí" rows="5" id="inputMensaje"></textarea>
+                    </div>
+              </div>
+                  
+                  <div class="row" style="height: 80px;">
+                    <div class="col">
+                    <div align="right" class="mt-3 pr-4 pr-md-0">
+                      <button class="btn btn-dark" id="button" type="submit" value="Enviar">Enviar</button>
+                    </div>
+                    <div align="center" id="logsCoti" style="color : white; background: #58666fe8; margin-top: 22px; width: 300px; height: 28px; display: none;"></div> 
+                  </div>
+                  </div>
+          </div>
+        </div>            
+        </div>    
     </div>
-	<!-- Footer -->
-	<div style="background-color: #252526; height: 85px; width: 100%">
-		<div class="container" style="height: 100%;">
-			<div class="row align-items-center" style="height: 100%;" >
-				<div class="col-4" >
-					<a id="icnRedesS" href="http://facebook.com" target="_blank">
-						<img id="iconFacebook" src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
-					</a>
-					<a id="icnRedesS" href="http://twitter.com" target="_blank">
-						<img id="iconTwitter"src="../../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
-					</a>
-				</div>
-				<div  class="col-8 text-right" >
-					<a href="#" style="color: white;" > Copyright / </a>
-					<a href="#" style="color: white;" >Privacidad / </a> 
-					<a href="#" style="color: white;" >Politicas </a> 
-				</div>
-			</div>
-		</div>
-	</div>
+  <!-- Footer -->
+  <footer>
+    <div style="background-color: #252526; height: 85px; width: 100%">
+      <div class="container" style="height: 100%;">
+        <div class="row align-items-center" style="height: 100%;" >
+          <div class="col-12 col-md-4 text-md-left" align="center">
+            <a id="icnRedesS" href="http://facebook.com" target="_blank">
+              <img id="iconFacebook" src="../../../empresa/images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+            </a>
+            <a id="icnRedesS" href="http://twitter.com" target="_blank">
+              <img id="iconTwitter"src="../../../empresa/images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px"> 
+            </a>
+          </div>
+          <div  class="col-12 col-md-8 text-md-right" align="center" >
+            <a href="#" style="color: white;" > Copyright / </a>
+            <a href="#" style="color: white;" >Privacidad / </a> 
+            <a href="#" style="color: white;" >Politicas </a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
-	<script>
-		$(document).ready(function() {
-		    $(".nav-link").hover(
-		        function() { $(this).addClass("Hover"); },
-		        function() { $(this).removeClass("Hover"); }
-		    );
-		});
-	</script>
+  <!--Start of Zendesk Chat Script-->
+  <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?1JUYMhwcknjVrdPQHn2JD8EKdRMRX1aH";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+  </script>
+  <!--End of Zendesk Chat Script-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124805646-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124805646-1');
+    </script>
 </html>

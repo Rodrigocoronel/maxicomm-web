@@ -50,10 +50,17 @@
 	.parallax{
 		font-size: 50px; 
 	}
+
+	.carouselNosotros{
+		height:888px;
+	}
  }
 
  @media (max-width: 575.98px) {
 
+ 	.carouselNosotros{
+		height:888px;
+	}
  	.fill-container{
 		height: 600px;
 	}
@@ -103,6 +110,9 @@
 @media (min-width: 1024px){
 	.fill-container{
 		height : calc(100% - 153px);
+	}
+	.carouselNosotros{
+		height:1000px;
 	}
 }
 

@@ -15,7 +15,9 @@
     .carouselNosotros{
         height:888px;
     }
-
+    .espacioGaleria{
+        height: 3000px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -34,6 +36,9 @@
     .carousel-item-empresa{
         padding: 10% 0; padding-left: 250px;
     }
+    .espacioGaleria{
+        height: 900px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -49,7 +54,11 @@
     .fill-container{
         background-image: url(./images/quienes-somos-img.jpg);
     }
+    .espacioGaleria{
+        height: 900px;
+    }
 }
+
         
 .fill-container{
 	

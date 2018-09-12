@@ -176,9 +176,9 @@
 	width: 30px;
 }
 
-#imagen {
+.imagen {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
-#imagen:hover {opacity: 0.5;}
+.imagen:hover {opacity: 0.5;}

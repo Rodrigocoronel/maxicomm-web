@@ -11,10 +11,13 @@
         padding: 25% 0;
         padding-left: 0px;
     }
-
     .carouselNosotros{
 		height:888px;
 	}
+    .espacioGaleria{
+        height: 3100px;
+    }
+}
  }
 @media (min-width: 576px) { 
 	.fill-container{
@@ -31,6 +34,9 @@
     .carouselNosotros{
 		height:888px;
 	}
+    .espacioGaleria{
+        height: 900px;
+    }
  }
  @media (min-width: 1024px) { 
 	.fill-container{
@@ -44,6 +50,9 @@
 	.carouselNosotros{
 		height:1000px;
 	}
+    .espacioGaleria{
+        height: 900px;
+    }
  }
 
 
@@ -170,3 +179,13 @@
 	height: 30px;
 	width: 30px;
 }
+.altoImagen{
+    height: 220px;
+}
+
+.imagen {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.imagen:hover {opacity: 0.5;}

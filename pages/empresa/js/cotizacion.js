@@ -39,3 +39,19 @@ function limpiarInputs(){
 	
 }
 
+
+$(function() {
+	$("#sendCoti").click(function(){
+		
+		var $form = $('form');
+	   	console.log($form)
+	   // 	$form.submit(function(){
+	   //    $.post($(this).attr('action'), $(this).serialize(), function(response){
+	   //          console.log(response);
+	   //    },'json');
+	   //    return false;
+	   // });
+
+	});
+});
+

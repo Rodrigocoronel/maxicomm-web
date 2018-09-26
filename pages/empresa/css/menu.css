@@ -119,9 +119,15 @@ p{
 	border-color: white;
 }
 
-input{
+input.inputCotizacion{
 	padding-left: 12px;
+	width: 250px;
 }
+input.inputCotizacionEmail{
+	padding-left: 12px;
+	width: 100%;
+}
+
 
 a.portadilla:hover{
 	color:#000000;
@@ -144,3 +150,6 @@ a.portadilla:hover{
     background: url('../images/btn2.png');
 }
 
+label{
+	color: white;
+}

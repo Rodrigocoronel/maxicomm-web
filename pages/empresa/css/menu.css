@@ -8,8 +8,18 @@
 	}
  	
  	.imgCotizacion{
- 		height: 680px;
+ 		height: 770px;
  	}		
+ 	.imgCotizacionContacto{
+ 		height: 1430px;
+ 	}
+ 	.imgCotizacionUnico{
+ 		height: 800px;
+ 	}
+ 	input.inputCotizacion{
+		padding-left: 0px;
+		width: 100%;
+	}
 }
 
 @media (min-width: 576px) { 
@@ -21,9 +31,18 @@
  		width: 400px;
  	}
  	.imgCotizacion{
- 		height: 540px;
+ 		height: 570px;
  	}
- 	
+ 	.imgCotizacionContacto{
+ 		height: 1100px;
+ 	}
+ 	.imgCotizacionUnico{
+ 		height: 450px;
+ 	}
+ 	input.inputCotizacion{
+		padding-left: 0px;
+		width: 100%;
+	}
 
  }
 
@@ -31,6 +50,9 @@
 	.dropdown:hover .dropdown-menu {
 		display: block;
 	}
+	.imgCotizacionContacto{
+ 		height: 830px;
+ 	}
 }
 
 li.menu{
@@ -119,10 +141,7 @@ p{
 	border-color: white;
 }
 
-input.inputCotizacion{
-	padding-left: 12px;
-	width: 250px;
-}
+
 input.inputCotizacionEmail{
 	padding-left: 12px;
 	width: 100%;

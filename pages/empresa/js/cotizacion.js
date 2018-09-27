@@ -1,57 +1,44 @@
-$(function() {
-	$("#button").click(function(){
+$.fn.serializeObject = function()
+{
+   var o = {};
+   var a = this.serializeArray();
+   $.each(a, function() {
+       if (o[this.name]) {
+           if (!o[this.name].push) {
+               o[this.name] = [o[this.name]];
+           }
+           o[this.name].push(this.value || '');
+       } else {
+           o[this.name] = this.value || '';
+       }
+   });
+   return o;
+};
 
-	let error = false; 
-
-	if( !$('#inputEmail').val() || !$('#inputName').val() || !$('#inputTelefono').val() || !$('#inputMensaje').val() ){
-		$('#logsCoti').css({display : 'inline'});
-		$('#logsCoti').html('<strong >Por Favor ingrese todos los datos</strong>');
-		setTimeout("QuitarTexto()", 4*1000);
-		error = true;
-	}
-
-
-	let data = {telefono : $('#inputTelefono').val() , email : $('#inputEmail').val() , mensaje : $('#inputMensaje').val(), nombre : $('#inputName').val(), empresa : $('#inputEmpresa').val()};
-	console.log(data)
-	if( ! error){
-		 $.post("http://api.seedbc.net/api/registroCotizacion", data , function(data){
-		 	$('#logsCoti').css({display : 'inline'});
-	    	$('#logsCoti').html('<strong>Cotización enviada correctamente</strong>');
-	    	limpiarInputs();
-	     	setTimeout("QuitarTexto()", 4*1000);
-		});
-	}
-
-	});
-});
 
 function QuitarTexto(){
-	$('#logsCoti').html('');
-	$('#logsCoti').css({display : 'none'});
-}
-
-function limpiarInputs(){
-	$('#inputMensaje').val('');
-	$('#inputName').val('');
-	$('#inputTelefono').val('');
-	$('#inputEmail').val('');
-	$('#inputEmpresa').val('');
-	
+	$('.alert').css({display : 'none'});
 }
 
 
 $(function() {
-	$("#sendCoti").click(function(){
-		
-		var $form = $('form');
-	   	console.log($form)
-	   // 	$form.submit(function(){
-	   //    $.post($(this).attr('action'), $(this).serialize(), function(response){
-	   //          console.log(response);
-	   //    },'json');
-	   //    return false;
-	   // });
 
+	$("form").submit(function(evt){
+		evt.preventDefault();
+
+		var data = $(this).serialize();
+
+	    $.post( "http://crm.maxicomm.net/index.php?entryPoint=WebToPersonCapture", data, function( data ) {
+		  console.log( data ); // John
+		}, "json");
+
+		$('.alert').css({display : 'inline-block'});
+	    
+
+	    setTimeout("QuitarTexto()", 4*1000);
+	    
+	    document.getElementById("WebToLeadForm").reset();
 	});
 });
+
 

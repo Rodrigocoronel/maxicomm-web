@@ -1,6 +1,6 @@
 @media (max-width: 575.98px){
 	.datosDeContacto{
-		height: 600px;
+		height: 400px;
 	}
 	
 }
@@ -10,6 +10,13 @@
 		height: 400px;
 	}
 }
+
+@media (min-width: 1200px){
+	.datosDeContacto{
+		height: 250px;
+	}
+}
+
 
 
 .fill-container{

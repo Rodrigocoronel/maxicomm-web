@@ -1,16 +1,21 @@
 @media (max-width: 575.98px){
-	.datosContacto{
+	.datosDeContacto{
 		height: 400px;
 	}
 	
 }
 
 @media (min-width: 576px){
-	.datosContacto{
-		height: 250px;
+	.datosDeContacto{
+		height: 400px;
 	}
 }
 
+@media (min-width: 1200px){
+	.datosDeContacto{
+		height: 250px;
+	}
+}
 .fill-container{
 	background-image: url(./images/quienes-somos-img.jpg);
     background-repeat: no-repeat;  

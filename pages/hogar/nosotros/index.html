@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../../../assets/animate.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
  
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="../../../assets/js/jquery.js"></script>
     <script src="../../../bootstrap/js/bootstrap.min.js"></script>
     
     <link rel="stylesheet" type="text/css" href="./nosotros.css">
@@ -40,7 +40,7 @@
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
-		  <a class="btn d-inline btn-ida-hogar " href="../../empresa" title="Sección Hogar" style="position: absolute; right: 16px; color: black; top: 8px;">Empresa</a> 
+		  <a class="btn d-inline btn-ida-hogar " href="../../empresa" title="Sección Hogar" style="position: absolute; right: 16px; color: black; top: 8px;"><span><r class="d-lg-none d-inline">ir a</r> Empresa</span></a> 
 
 		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
 		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
@@ -98,7 +98,7 @@
 		</nav>
 	</div>
 	<!-- Imagen entrada -->
-	<div class="fondiu fill-container container" style="max-width: 100%;  background-repeat: no-repeat; overflow: hidden;">
+	<div class="fondiu fill-container container-fluid" style=" overflow: hidden;">
     	<h4 class="animated2s fadeIn tituloQuienes" align="center" style=" font-family: 'Roboto'; color: white;">
             ¿QUIÉNES SOMOS?
         </h4>
@@ -182,7 +182,7 @@
         		</div>
 	        	<div class="col-12 align-self-center" style="">
 	        		<!-- action="http://crm.maxicomm.net/index.php?entryPoint=WebToPersonCapture" method="POST" -->
-		        	<form id="WebToLeadForm" target="_blank" action="http://crm.maxicomm.net/index.php?entryPoint=WebToPersonCapture" method="POST" name="WebToLeadForm">
+		        	<form id="WebToLeadForm" name="WebToLeadForm">
 						<div class="row">
 							<div class="col-12 col-sm-6">
 								<div class="row">
@@ -241,11 +241,11 @@
 							</div>
 						</div>
 						<div class="row justify-content-center mt-3">
-	                            <div class="col-8" style="color: black;">
-	                                <input type="checkbox" aria-label="Politicas" required="">
-	                                &nbsp;He leído y acepto los términos y condiciones del &nbsp; <a href="../politicas"> Aviso de privacidad</a>, así como las &nbsp; <a href="../politicas">Políticas de Privacidad.</a>
-	                            </div>
-	                        </div>
+							<div class="col-8 textoPoliticas" style="color: black;">
+							    <input type="checkbox" aria-label="Politicas" name="politicas" id="politicas" required="" >
+							    	&nbsp;He leído y acepto los términos y condiciones del &nbsp; <a href="../politicas"> <b>Aviso de privacidad</b></a>, así como las &nbsp; <a href="../politicas"><b>Políticas de Privacidad.</b></a>
+							</div>
+						</div>
 						<div class="row mt-1">
 							<div class="col-12 text-right">
 								<input id="sendCoti" class="button " name="Submit" type="submit" value="Enviar" />

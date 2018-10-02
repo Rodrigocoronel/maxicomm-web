@@ -23,10 +23,19 @@ function QuitarTexto(){
 
 $(function() {
 
-	$("form").submit(function(){
+	$("form").submit(function(evt){
 		
+    evt.preventDefault();
 		console.log('Se envio el form');
-	    document.getElementById("WebToLeadForm").reset();
+    let data = $(this).serialize();
+
+    $.post( "http://crm.maxicomm.net/index.php?entryPoint=WebToPersonCapture",data, function( response ) {
+      console.log(response)
+      $('.alert').css({display : 'inline-block'});
+      setTimeout("QuitarTexto()", 4*1000);
+      document.getElementById("WebToLeadForm").reset();
+    }), "jsonp";
+	   
 	});
 });
 

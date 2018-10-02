@@ -8,13 +8,13 @@
 	}
  	
  	.imgCotizacion{
- 		height: 830px;
+ 		height: 930px;
  	}		
  	.imgCotizacionContacto{
- 		height: 1430px;
+ 		height: 1700px;
  	}
  	.imgCotizacionUnico{
- 		height: 800px;
+ 		height: 1000px;
  	}
  	input.inputCotizacion{
 		padding-left: 0px;
@@ -157,7 +157,10 @@ a.portadilla:hover{
     border-radius: 17px;
     width: 95px;*/
     background: url('../images/btn1.png'); width: 90px;height: 40px;
+}
 
+span r{
+	font-size: 12px;
 }
 
 .btn-ida-hogar:hover{
@@ -171,4 +174,16 @@ a.portadilla:hover{
 
 label{
 	color: white;
+}
+
+a{
+	color: #ffffff;
+}
+
+a:hover{
+	color: #adc8e4;
+}
+
+.textoPoliticas{
+	font-size: 12px;
 }

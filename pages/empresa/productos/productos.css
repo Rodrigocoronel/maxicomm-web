@@ -85,7 +85,7 @@
         height: 200px;
     }
     .fill-container-MsWindows{
-	   background-image: url(msWindows/images/MS-WINDOWS-IMG1.3.jpg);
+	   background-image: url(msWindows/images/MS-WINDOWS-IMG13.jpg);
         background-repeat: no-repeat;  
         background-size: cover;
         background-position: center 0px;
@@ -201,7 +201,7 @@
         height: 300px;
     }
     .fill-container-MsWindows{
-	   background-image: url(msWindows/images/MS-WINDOWS-IMG1.3.jpg);
+	   background-image: url(msWindows/images/MS-WINDOWS-IMG13.jpg);
         background-repeat: no-repeat;  
         background-size: cover;
         background-position: -154px 0px;
@@ -257,7 +257,7 @@
         height: 500px;
     }
     .fill-container-MsWindows{
-	   background-image: url(msWindows/images/MS-WINDOWS-IMG1.3.jpg);
+	   background-image: url(msWindows/images/MS-WINDOWS-IMG13.jpg);
         background-repeat: no-repeat;  
         background-size: cover;
         background-position: center 0px;
@@ -320,7 +320,7 @@
     }
 
     .fill-container-MsWindows{
-	   background-image: url(msWindows/images/MS-WINDOWS-IMG1.3.jpg);
+	   background-image: url(msWindows/images/MS-WINDOWS-IMG13.jpg);
         background-repeat: no-repeat;  
         background-size: cover;
         background-position: center 0px;
@@ -479,13 +479,13 @@ ul{
 }
 
 .imgTexturaMsWindows{
-	background-image: url(msWindows/images/MS-WINDOWS-IMG2.jpg);
+	background-image: url(./msWindows/images/MS-WINDOWS-IMG2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .imgTexturaMswindowDesc{
-	background-image: url(msWindows/images/textura1.jpg);
+	background-image: url(./msWindows/images/textura1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

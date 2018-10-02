@@ -10,11 +10,11 @@ $(document).ready(function() {
 });
 
 function aparecerTexto(){
-  $("#textoInicio").addClass('fadeIn');
+  $("#textoInicio").addClass('fadeInDown');
 }
 
 function aparecerTexto2(){
-  $("#textoInicio2").addClass('fadeIn');
+  $("#textoInicio2").addClass('fadeInDown');
 }
 
 // $(function() {

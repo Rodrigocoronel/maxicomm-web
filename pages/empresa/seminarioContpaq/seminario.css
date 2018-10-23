@@ -1,0 +1,26 @@
+ @media (max-width: 575.98px) {
+	.formulario{
+		
+	}
+}
+
+@media (min-width: 576px) { 
+	.formulario{
+		height: calc(100% - 180px)
+	}
+}
+
+@media (min-width: 1200px){
+	.formulario{
+		height: 578px;
+	}
+	
+}
+
+label.seminario{
+	color : black;
+}
+
+html,body{
+	height: 100%;
+}

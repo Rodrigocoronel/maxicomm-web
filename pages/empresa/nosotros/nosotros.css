@@ -58,6 +58,10 @@
         height: 900px;
     }
 }
+
+.empresa{
+    font-size: 18px;
+}
     
 .fill-container{
     background-repeat: no-repeat;  

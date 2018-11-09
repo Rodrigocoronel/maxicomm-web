@@ -50,9 +50,18 @@ function actualizarInfo(){
    document.getElementById('fecha_evento').innerHTML='<p>'+eventoSeleccionado.fecha_evento+'</p>';
 }
 
+function borrarDatos(){
+  document.getElementById('titulo').innerHTML='<p></p>';
+  document.getElementById('lugar').innerHTML='<p></p>';
+  document.getElementById('horario').innerHTML='<p></p>';
+  document.getElementById('expositor').innerHTML='<p></p>';
+  document.getElementById('fecha_evento').innerHTML='<p></p>';
+}
+
 $(function(){
 
   var $dropdown = $("#selectEvento");
+
   $.get(api_production+'/api/evento/listaPorFecha',function(response){
       let index = 0;
     $.each(response, function() {
@@ -60,14 +69,16 @@ $(function(){
       index++;
     });
     eventosArray = response;
-    eventoSeleccionado = response[0]
-    actualizarInfo();
   });
 
   $( "#selectEvento" ).change(function() {
-    eventoSeleccionado = eventosArray[this.value]
-    actualizarInfo(eventoSeleccionado);
-
+    if(this.value !== ''){
+      eventoSeleccionado = eventosArray[this.value]
+      actualizarInfo(eventoSeleccionado);
+    }else{
+      borrarDatos();
+    }
+    
   });
   
 });

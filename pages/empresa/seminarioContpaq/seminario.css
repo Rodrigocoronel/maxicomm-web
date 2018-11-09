@@ -1,12 +1,12 @@
  @media (max-width: 575.98px) {
-	.formulario{
-		
+	.heightInfo{
+		height: 500px;
 	}
 }
 
 @media (min-width: 576px) { 
-	.formulario{
-		height: calc(100% - 180px)
+	.heightInfo{
+		height: 182px;
 	}
 }
 

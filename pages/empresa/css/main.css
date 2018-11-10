@@ -5,7 +5,7 @@
 	}
 	
 	.fill-container{
-		height: 600px;
+		height: 800px;
 	}
 
 	.textoInicio{
@@ -62,7 +62,7 @@
 		height:888px;
 	}
  	.fill-container{
-		height: 600px;
+		height: 700px;
 	}
 
 	.textoInicio{
@@ -109,7 +109,7 @@
 
 @media (min-width: 1024px){
 	.fill-container{
-		height : calc(100% - 153px);
+		height : 1100px;
 	}
 	.carouselNosotros{
 		height:1000px;

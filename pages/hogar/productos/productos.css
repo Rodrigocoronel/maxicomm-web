@@ -18,13 +18,16 @@
 		height: 650px;
 	}
 	.beneficios{
-		height: 550px;
+		height: 920px;
 	}
 	.identidad{
 		height: 800px;
 	}
 	.imgDescuento{
 		width: 300px;
+	}
+	.video-Widht{
+		width: 100%;
 	}
 }
 
@@ -47,16 +50,23 @@
 		height: 500px;
 	}
 	.beneficios{
-		height: 350px;
+		height: 650px;
 	}
 	.identidad{
 		height: 320px;
+	}
+	.video-Widht{
+		width: 100%;
 	}
 }
 
 @media (min-width: 768px) { 
 	.dosRenglones{
 		 height: 62px !important;
+	}
+
+	.video-Widht{
+		width: 70%;
 	}
 }
 

@@ -54,6 +54,7 @@
 	.carouselNosotros{
 		height:888px;
 	}
+
  }
 
  @media (max-width: 575.98px) {
@@ -98,12 +99,19 @@
 	.parallax{
 		font-size: 30px; 
 	}
+
+	.videoHeight{
+		height : 240px;
+	}
 	
 }
 
 @media (min-width: 768px){
 	#testimoniales{
 		height: 680px; 
+	}
+	.videoHeight{
+		height : 250px;
 	}
 }
 
@@ -113,6 +121,9 @@
 	}
 	.carouselNosotros{
 		height:1000px;
+	}
+	.videoHeight{
+		height : 500px;
 	}
 }
 

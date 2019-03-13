@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="es">
+ 
+<head>
+	<title>Maxicomm</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../../../../bootstrap/css/bootstrap.min.css"/> 
+    <link rel=stylesheet type="text/css" href="../../css/menu.css"/>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+	<script src="../../../../assets/js/jquery.js"></script>
+    <script src="../../../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/cotizacion.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../seguridad.css">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/animate.css"> 
+    <link rel='shortcut icon' type='image/x-icon' href='../../../../favicom.ico' /> 
+</head>
+ 
+<body>
+	<div class="container-fluid" style="position: relative; overflow: hidden;"  >
+		<div id="asd" class="row contenedor-video">
+			<video id="video" style="position: relative;  object-fit: cover;" class="video-fluid" autoplay loop muted playsinline width="100%">
+            	<source src="../../video/Comp 1_4.mp4" type="video/mp4" />
+            </video>
+            <div class="animated fadeIn headerMaxicomm" id="logoMaxi">
+            	<img   src="../../images/logohogar.svg" >
+            </div>
+		</div>
+	</div>
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light align-self-center"  >
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <span style="position: absolute; right: 113px; color: black; top: 18px; font-size: 13px;">Ir a</span>
+		  <a class="btn d-inline btn-ida-hogar " href="../../../empresa" title="Sección Hogar" style="position: absolute; right: 16px; color: black; top: 8px;"><span>Empresa</span></a> 
+
+		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"  >
+		    <ul class="navbar-nav mr-auto" align="left" style="margin-left: auto;">
+		      <li class="nav-item active menu mx-3">
+		        <a id="inicio" class="nav-link" href="../../index.html" >Inicio <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item dropdown menu mx-3">
+		        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Nosotros
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="../../nosotros">Quienes Somos</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../nosotros/galeria/index.html">Galería</a>
+                  <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../index.html#testimoniales">Testimoniales</a>
+		        </div>
+		      </li>
+		      <li class="nav-item dropdown menu mx-3">
+		        <a class="nav-link dropdown-toggle posicionActual" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Seguridad y Energía
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="../ccvt/index.html">Video Vigilancia</a>
+		          <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="../biometricos/index.html" id="menuVision" >Portero Electrónico</a>
+		          <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="../porteroinalambrico/index.html" id="menuVision" >Portero Inalámbrico</a>
+		          <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="../chapa/index.html" id="menuVision" >Chapa Electrónica</a>
+		          <div class="dropdown-divider"></div>  
+		          <a class="dropdown-item" href="../alarmavecinal/index.html" id="menuVision" >Kit de alarma vecinal</a>
+		          <div class="dropdown-divider"></div>  
+                  <a class="dropdown-item" href="../panelesSolares/index.html" id="menuVision" >Páneles Solares</a>
+                  <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../cercaselectricas/index.html" id="menuMision">Cercas Electrificadas</a>
+		        </div>
+		      </li>
+		      <li class="nav-item dropdown menu mx-3">
+		        <a class="nav-link dropdown-toggle" href="./productos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Productos
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="../../productos/index.html">Equipamiento</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../productos/consumibles/index.html" >Consumibles - Cartuchos y Tóners</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="../../productos/membresiaEstudiantil/index.html" >Membresía Estudiantil</a>
+		        </div>
+		      </li>
+              <li class="nav-item active menu mx-3">
+		        <a class="nav-link" href="../../soporte/index.html">Soporte <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active menu mx-3">
+		        <a class="nav-link " href="../../contacto/index.html">Contacto <span class="sr-only">(current)</span></a>
+		      </li>
+		  	</ul>
+		  </div>
+		</nav>
+	</div>
+	<!-- Imagen entrada -->
+	<div class="fondiu fill-container alarma-vecinal " style="max-width: 100%;  background-repeat: no-repeat; overflow: hidden;">
+		<div class="container'fluid">
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<h4 class="animated2s fadeInLeft titulo-alarma-vecinal" align="left" style="  font-family: 'Roboto'; color:  #595d65;">
+			            ALARMA <br/> VECINAL
+			        </h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Soluciones -->
+	<div class="container pt-4 pb-5" style="">
+        <div class="row align-items-center" style=" padding-top: 15px;">
+            <div class="col-sm-1 col-2  float-right" style=" 1px solid #c3c3c3;">
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+                <div class="barra roja"></div>
+                <div class="barra negra"></div>
+                <div class="barra negra"></div>
+            </div>
+            <div class="col-sm-4 col-8" style="font-size: 17px;">
+                <div> <a class="sub" href="../ccvt/index.html">Video Vigilancia</a> </div>
+				<div> <a class="sub" href="../biometricos/index.html">Portero electrónico</a> </div>
+				<div> <a class="sub" href="../porteroinalambrico/index.html">Portero inalámbrico</a></div>                
+                <div> <a class="sub" href="../chapa/index.html">Chapa Electrónica</a> </div>
+                <div> <a class="sub" href="../alarmavecinal/index.html"><b>Kit de alarma vecinal</b></a></div> 
+                <div> <a class="sub" href="../panelesSolares/index.html">Páneles solares</a> </div>
+                <div> <a class="sub" href="../cercasElectricas/index.html">Cercas Electrificadas</a> </div>
+			</div>
+            <div class="col-1">
+                <div style="background-color: gray; width: 1px; height: 210px;"></div>
+            </div>
+            <div class="col-12 d-sm-none text-center mt-5 mb-3">
+                <span style="font-size: 17px;"><b>Portero Electrónico</b></span>
+            </div>   
+			<div class="col-12 col-sm-6" style=" margin-top: 24px; font-family: 'Roboto'; font-size: 20PX">
+				<p style="text-align: justify;">Sistema de alarma vecinal activado mediante un botón de pánico instalado en cada habitación, al activarse dispara una alarma de alto sonido, poniendo en aviso a todos los vecinos que estan conectados al sistema.</p>
+            </div>
+		</div>
+	</div>
+
+	<!-- Beneficios -->
+	 <div class="kitalarmafondo parallax" style=" width: 100%; ">
+		<div class="container" style="height: 100%;">
+			<div class="row justify-content-center pt-5 pb-5 animated scrollFadeIn" style="height: 100%;">
+				<div class="col-12 text-center" style="color: white;  font-family: 'Roboto'; ">
+					<span>BENEFICIOS</span>
+				</div>
+				<div class="col-sm-5 col-10 pt-5">
+					<p style="text-align: justify; color: white; font-family: 'Roboto'; ">
+						Este kit de alarma vecinal permite agregar hasta 40 botones inalámbricos modelo 5802WXT o 58344, con la finalidad de poder cubrir un área bástante grande, tambien se pueden agregar 
+						repetidores 5800RP para asegurar la comunicación entre los botones de pánico y el sistema de alarma.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+    
+    <div class="imgTextura1 parallax" style=" width: 100%; ">
+		<div class="container" style="height: 100%;">
+			<div class="row align-items-center pt-5 pb-5" style="height: 100%;">
+				<div class="col-12 col-sm-6 align-self-center">
+					<img class="animated2s scrollLeft imgresponsive" src="../images/kit-producto.jpg" >
+				</div>
+               
+				<div class="col-12 col-sm-6 col-lg-5 pt-4 pt-sm-0 align-self-center animated scrollFadeIn" style="color: black;">
+					<b><p style="font-size: 18px;">CARACTERISTÍCAS</p></b>
+
+					<ul class="producto" style="font-size: 16px;">
+						<li>Panel de alarma con teclado alfanumerico VISTA48/6162RF</li>
+						<li>Batería de respaldo PL4.512</li>
+						<li>Transformador de 16Vca 1361</li>
+						<li>Llavero inalámbrico de 4 botones 58344</li>
+						<li>Gabinete para receptor inalámbrico ENC196YG</li>
+						<li>Botón de pánico 5802WXT</li>
+						<li>Sirena con estrobo 5f06RED</li>
+					</ul>
+
+
+					<div class="text-center" style="background-color: #e1251b;width: 250px;height: 34px; font-weight: 500; line-height: 1.7;"> 
+						<span style="color: white; font-size: 18px;" class="align-middle">MX $7,790.00  IVA Incluida</span>
+					</div><br/>
+					<p>Se requiere para cada casa</p>
+					<p>Botón de pánico $500.00 pesos c/u (IVA incluido)</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+   
+	<!-- Cotizacion -->
+	<div class="imgCotizacion" style="">
+        <div class="container" align="center" style="height: 100%;">
+        	<div class="row align-items-center" style="height: 85%">
+        		<div class="col-12 align-self-center">
+        			<p align="center" class="textoCotizacion animated2s" style="font-size: 35px; color: #23478e;"> <b>Solicita una cotización personalizada</b> </p>
+					
+        		</div>
+	        	<div class="col-12 align-self-center" style="">
+	        		<!-- action="http://crm.maxicomm.net/index.php?entryPoint=WebToPersonCapture" method="POST" -->
+		        	<form id="WebToLeadForm" name="WebToLeadForm">
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<div class="row">
+									<div class="col-sm-4 col-12 text-left text-sm-right">
+										<label>Nombre: <span class="required">*</span></label>
+									</div>
+									<div class="col-sm-8 col-12">
+										<input class="inputCotizacion" name="first_name" id="first_name" type="text" required="" />
+									</div>
+								</div>
+								<div class="row mt-4">
+									<div class="col-sm-4 col-12 text-left text-sm-right">
+										<label>Apellidos: <span class="required">*</span></label>
+									</div>
+									<div class="col-sm-8 col-12">
+										<input class="inputCotizacion" name="last_name" id="last_name" type="text" required="" />
+									</div>
+								</div>
+								<div class="row mt-4">
+									<div class="col-sm-4 col-12 text-left text-sm-right">
+										<label>Teléfono: <span class="required">*</span></label>
+									</div>
+									<div class="col-sm-8 col-12">
+										<input class="inputCotizacion" name="phone_work" id="phone_work" type="text" required="" />
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-8 col-12">
+										<input name="status" id="status" type="hidden" value="New" />
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="row mt-4 mt-sm-0">
+									<div class="col-sm-4 col-12 text-left text-sm-right">
+										<label>E-mail: <span class="required">*</span></label>
+									</div>
+									<div class="col-sm-8 col-12 text-left">
+										<input class="inputCotizacionEmail" name="email1" id="email1" type="email" required="" />
+									</div>
+								</div>
+								<div class="row mt-4">
+									<div class="col-sm-4 col-12 text-left text-sm-right">
+										<label>Comentarios: </label>
+									</div>
+									<div class="col-sm-8 col-12 text-left text-sm-right">
+										<span class="sugarslot"> 
+											<textarea class="form-control" id="description" style="margin: 0px; width: 100%;" name="description" rows="3" cols="60"></textarea> 
+										</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<input name="lead_source" id="lead_source" type="hidden" value="Web Site" />
+							</div>
+						</div>
+						<div class="row justify-content-center mt-3">
+                            <div class="col-8 textoPoliticas" style="color: black;">
+                                <input type="checkbox" aria-label="Politicas" required="">
+                                &nbsp;He leído y acepto los términos y condiciones del &nbsp; <a href="../../politicas"> Aviso de privacidad</a>, así como las &nbsp; <a href="../../politicas">Políticas de Privacidad.</a>
+                            </div>
+                        </div>
+						<div class="row mt-1">
+							<div class="col-12 text-right">
+								<input id="sendCoti" class="button " name="Submit" type="submit" value="Enviar" />
+							</div>
+							<input name="campaign_id" id="campaign_id" type="hidden" value="a6d65863-127d-80de-cccf-5b8ebd019979" /> 
+							<input name="assigned_user_id" id="assigned_user_id" type="hidden" value="4bc30eee-d4d3-7b17-0629-5b75b9597c8f" />
+							<input name="moduleDir" id="moduleDir" type="hidden" value="Leads" />
+							<input class="inputCotizacion"  name="phone_mobile" id="phone_mobile" type="hidden" />
+						</div>
+					</form>
+				</div>
+				
+			</div>
+			<div class="row" style="height: 10%;">
+				<div class="col-12 mt-3" style="">
+					<div class="alert alert-success" style="display: none;">
+				    	<strong>Hemos recibido tu información!</strong> Nos pondremos en contacto a la brevedad posible.
+				  	</div>
+				</div>
+			</div>	
+		</div>	
+    </div>
+	<!-- footer -->
+	<footer>
+		<div style="background-color: #252526; height: 85px; width: 100%">
+			<div class="container" style="height: 100%;">
+				<div class="row align-items-center" style="height: 100%;" >
+					<div class="col-12 col-md-4 text-md-left" align="center">
+						<a id="icnRedesS" href="https://www.facebook.com/MaxicommEns" target="_blank">
+							<img id="iconFacebook" src="../../../empresa/images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg" width="60px" height="40px">
+						</a>
+						<a id="icnRedesS" href="http://twitter.com" target="_blank">
+							<img id="iconTwitter"src="../../../empresa/images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg" width="40px" height="45px">	
+						</a>
+					</div>
+					<div  class="col-12 col-md-8 text-md-right" align="center" >
+						<a href="#" style="color: white;" > Copyright / </a>
+						<a href="../../politicas" style="color: white;" >Políticas Y Privacidad </a>  
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+	<!--Start of Zendesk Chat Script-->
+	<script type="text/javascript">
+		window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+		d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+		_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+		$.src="https://v2.zopim.com/?1JUYMhwcknjVrdPQHn2JD8EKdRMRX1aH";z.t=+new Date;$.
+		type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+	</script>
+	<!--End of Zendesk Chat Script-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124805646-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-124805646-1');
+    </script>
+</html>

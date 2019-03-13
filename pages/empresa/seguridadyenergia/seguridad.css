@@ -112,9 +112,47 @@
         height: 42px;
     }
 
+    .fill-container.chapa{
+        background-image: url(./images/chapa-ele-764.jpg);
+        height: 200px;
+    }
+
+    .fill-container.control{
+        background-image: url(./images/kitcontrol-764.jpg);
+        height: 200px;
+    }
+
+    .titulo-kit-control{
+        font-size: 20px;
+        margin-top: 50%;
+    }
+
+    .tituloChapa{
+        font-size: 16px;
+        margin-top: 77%;
+    }
+
 }
 
 @media (min-width: 576px) {
+
+    .tituloChapa{
+        font-size: 25PX;
+        margin-top: 54%;
+    }
+    .titulo-kit-control{
+        font-size: 44PX;   margin-top: 133px; margin-left: 40px;
+    }
+    .fill-container.chapa{
+        background-image: url(./images/chapa-ele-764.jpg);
+        height: 380px;
+    }
+
+    .fill-container.control{
+        background-image: url(./images/kitcontrol-764.jpg);
+        height: 380px;
+    }
+    
     .barra{
         height: 42px;
     }
@@ -171,9 +209,6 @@
     }
     .imgBiometrico{
         height: 380px;
-    }
-    .imgTextura1{
-        height: 740px;
     }
 
     .subMenuBarrera{
@@ -239,11 +274,23 @@
         height: 350px;
     }
 
+    .tituloChapa{
+        font-size: 25PX;
+        margin-top: 180px;
+    }
+    
+
     
 }
         
-@media(min-width: 1024px){
-   
+@media(min-width: 1200px){
+
+    .fill-container.control{
+        background-image: url(./images/kitcontrol.jpg);
+    }
+    .fill-container.chapa{
+        background-image: url(./images/chapa_ele.jpg);
+    }
     .tamanoTextoCamara{
         height: 380px;
     }
@@ -259,9 +306,7 @@
     .imgInstalaciones{
         height: 450px;
     }
-    .imgTextura1{
-        height: 550px;
-    }
+
     .subMenuBiometrico{
         height: 400px;
     }
@@ -306,6 +351,8 @@
     height: auto;
     padding: .25rem;
 }        
+
+
             
 
 .fill-container{
@@ -367,6 +414,16 @@
 	background-image: url(./images/paneles-solares-img2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.img-chapa-ele{
+    background-image: url(./images/chapa_ele_par.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-kit-rondas{
+    background-image: url(./images/chapa_ele_par.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .imgGps{
 	background-image: url(./images/gps-tracker2.jpg);
@@ -553,6 +610,18 @@ ul {
     list-style-image: url("./images/blue-palomita.png"); 
 }
 
+ul.producto{
+    list-style: none;
+    padding-left: 0;
+}
+ul.producto
+li:before {
+  content: ">";
+  padding-right: 5px;
+  color: red;
+  font-size: 21px;
+}
+
 .cuadros{
     color: #212529;
     width: 4px;
@@ -568,4 +637,8 @@ ul {
 	background-image: url(./images/empresa-Index-fondo-textura.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.box-red-number{
+    background-color: #e1251b; padding: 0px 4px; color: white;
 }

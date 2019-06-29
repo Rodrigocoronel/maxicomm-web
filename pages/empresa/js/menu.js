@@ -4,9 +4,33 @@ $(document).ready(function() {
         function() { $(this).removeClass("Hover"); } 
     );
     $("#logoMaxi").addClass('fadeIn');
-
-
-
+    // let url='https://maxicomm.com.mx/';
+    // url='http://localhost/maxicomm-web/';
+    var menu=$("#navbarSupportedContent > ul >li");
+        /*el selector de arriba nos arroja un arreglo de elementos  ya que no se cuenta con identificadores unicos 
+        la funcion eq nos permite posicionarnos en el arreglo  y tomar el elemento del mismo indice  para hacer modificaciones 
+        tenemos que convertirlo a objeto que pueda leer el jquery  es por eso que volvemos a poner 
+        $($(menu.eq(2))) */
+    var contenedor_opciones=$($(menu.eq(2))).find('div ');
+    $('<div>',{
+            'class': 'dropdown-divider',
+           
+    }).appendTo(contenedor_opciones.eq(0));
+    $('<a>',{
+            'href':'/pages/empresa/soluciones/firewall',
+            'class': 'dropdown-item',
+            'text':'Firewall'
+    }).appendTo(contenedor_opciones.eq(0));
+    $('<div>',{
+            'class': 'dropdown-divider',
+           
+    }).appendTo(contenedor_opciones.eq(0));
+    $('<a>',{
+            'href':'/pages/empresa/soluciones/diskstation',
+            'class': 'dropdown-item',
+            'text':'DiskStation'
+    }).appendTo(contenedor_opciones.eq(0));
+        
 
    
 

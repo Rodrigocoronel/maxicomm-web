@@ -1,0 +1,649 @@
+@media (max-width: 575.98px) { 
+    #portada_img_firewall{
+        height: 130px !important;
+    }
+
+    .tituloSeguridad{
+        font-size: 23px;
+        color: black;
+    }
+    .margenTiutloCctv{
+        margin-top: 100px;
+    }
+    .subMenuCctv{
+        height: 770px;
+    }
+    .tamanoVideovigilancia{
+        min-height: 330px;
+    }
+    .tamanoTextoCamara{
+        height: 650px;
+    }
+
+    .imgCercas{
+        height: 800px;
+    }
+    .subMenuCercas{
+        height: 800px;
+    }   
+    .subMenuPaneles{
+        height: 550px;
+    }
+    .imgPaneles{
+        height: 1000px;
+    }
+    .subMenuGps{
+        height: 660px;
+    }
+    .imgGps{
+        height: 600px;
+    }
+    .subMenuInstalaciones{
+        height: 680px;
+    }
+    .imgInstalaciones{
+        height: 680px;
+    }
+    .subMenuBiometrico{
+        height: 980px;
+    }
+    .imgBiometrico{
+        height: 450px;
+    }
+    .subMenuBarrera{
+        height: 660px;
+    }
+
+    .imgBarrera{
+        height: 700px;
+    }
+    .fill-container.videovigilancia{
+       background-image: url(../images/diskstation/portada.jpg);
+         height: 132px!important;
+    }
+   .tituloCercas{
+        padding-left: 0px;
+        font-size: 30PX;
+    }
+    .fill-container.cercas{
+        background-image: url(./images/cerca-768.jpg);
+        height: 300px;
+    }
+    .tituloPanel{
+        font-size: 30px;
+        color: #ffffff;
+    }
+
+    .fill-container.gps{
+        background-image: url(./images/gps-500px.jpg);
+        height: 300px;
+    }
+
+    .fill-container.instalaciones{
+        background-image: url(./images/insta-768.jpg);
+        height: 250px;
+    }
+    .tituloInsta{
+        padding-left: 0px;
+        font-size: 30PX;
+        color: black;
+    }
+    .tituloBiometrico{
+        padding-left: 0px;
+        font-size: 25px;
+        color: white;
+    }
+    .fill-container.biometrico{
+        background-image: url(./images/reloj-768.jpg);
+        height: 300px;
+    }
+    .tituloBarrera{
+        padding-left: 0px;
+        font-size: 25px;
+        color: white;
+        margin-top: 70px;
+    }
+    .fill-container.barrera{
+        background-image: url(./images/barrera-768.jpg);
+        height: 180px;
+    }
+
+    .barra.dosLineas{
+         height: 67px;
+    }
+    .barra{
+        height: 42px;
+    }
+
+    .fill-container.chapa{
+        background-image: url(./images/chapa-ele-764.jpg);
+        height: 200px;
+    }
+
+    .fill-container.control{
+        background-image: url(./images/kitcontrol-764.jpg);
+        height: 200px;
+    }
+
+    .titulo-kit-control{
+        font-size: 20px;
+        margin-top: 50%;
+    }
+
+    .tituloChapa{
+        font-size: 16px;
+        margin-top: 77%;
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    .tituloChapa{
+        font-size: 25PX;
+        margin-top: 54%;
+    }
+    .titulo-kit-control{
+        font-size: 44PX;   margin-top: 133px; margin-left: 40px;
+    }
+    .fill-container.chapa{
+        background-image: url(./images/chapa-ele-764.jpg);
+        height: 380px;
+    }
+
+    .fill-container.control{
+        background-image: url(./images/kitcontrol-764.jpg);
+        height: 380px;
+    }
+    
+    .barra{
+        height: 42px;
+    }
+    .tituloSeguridad{
+        font-size: 49px;
+        color: black;
+    }
+
+    .margenTiutloCctv{
+        margin-top: 150px;
+    }
+   
+    .subMenuCctv{
+        height: 350px;
+    }
+    .tamanoVideovigilancia{
+       min-height: 330px;
+    }
+    .fill-container.videovigilancia{
+        background-image: url(../images/diskstation/portada.jpg);
+         height: 282px!important;
+    }
+    .tamanoTextoCamara{
+        height: 500px;
+    }
+    .imgCercas{
+        height: 450px;
+    }
+    .subMenuCercas{
+        height: 380px;
+    }  
+    .subMenuPaneles{
+        height: 380px;
+    }
+    .imgPaneles{
+        height: 700px;
+    }
+    .subMenuGps{
+        height: 380px;
+    }
+
+    .imgGps{
+        height: 420px;
+    }
+    .subMenuInstalaciones{
+        height: 380px;
+    }
+    .imgInstalaciones{
+        height: 550px;
+    }
+
+    .subMenuBiometrico{
+        height: 520px;
+    }
+    .imgBiometrico{
+        height: 380px;
+    }
+
+    .subMenuBarrera{
+        height: 380px;
+    }
+    .imgBarrera{
+        height: 500px;
+    }
+    .tituloCercas{
+        
+        font-size: 44PX;
+    }
+    .fill-container.cercas{
+        background-image: url(./images/cerca-768.jpg);
+        height: 380px;
+    }
+    .tituloPanel{
+        font-size: 44px;
+        color: #ffffff;
+    }
+    .fill-container.gps{
+        background-image: url(./images/gps-768px.jpg);
+        height: 400px;
+    }
+    .fill-container.instalaciones{
+        background-image: url(./images/insta-768.jpg);
+        height: 380px;
+    }
+    .tituloInsta{
+        padding-left: 0px;
+        font-size: 44PX;
+        color: black;
+    }
+    .tituloBiometrico{
+        padding-left: 0px;
+        font-size: 40px;
+        color: white;
+    }
+    .fill-container.biometrico{
+        background-image: url(./images/reloj-768.jpg);
+        height: 380px;
+    }
+    .tituloBarrera{
+        padding-left: 0px;
+        font-size: 44px;
+        color: white;
+        margin-top: 150px;
+
+    }
+    .fill-container.barrera{
+        background-image: url(./images/barrera-768.jpg);
+        height: 380px;
+    }
+}
+
+@media (min-width: 768px) { 
+   
+    .tituloSeguridad{
+        font-size: 49px;
+    }
+   
+    .subMenuCctv{
+        height: 350px;
+    }
+
+    .tituloChapa{
+        font-size: 25PX;
+        margin-top: 180px;
+    }
+    
+
+    
+}
+        
+@media(min-width: 1200px){
+
+    .fill-container.control{
+        background-image: url(./images/kitcontrol.jpg);
+    }
+    .fill-container.chapa{
+        background-image: url(./images/chapa_ele.jpg);
+    }
+    .tamanoTextoCamara{
+        height: 380px;
+    }
+    .tamanoVideovigilancia{
+        min-height: 330px;
+    }
+    .fill-container.videovigilancia{
+         background-image: url(../images/diskstation/portada.jpg);
+             
+                 height: 282px!important;
+    }
+    .imgPaneles{
+        height: 600px;
+    }
+    .imgInstalaciones{
+        height: 450px;
+    }
+
+    .subMenuBiometrico{
+        height: 400px;
+    }
+    .imgBiometrico{
+        height: 430px;
+    }
+    .imgBarrera{
+        height: 420px;
+    }
+    .tituloSeguridad{
+        color: white;
+    }
+    .fill-container.cercas{
+    background-image: url(./images/01-cercos.jpg);
+    }
+    .fill-container.gps{
+        background-image: url(./images/gps-tracker.jpg);
+    }
+    .fill-container.instalaciones{
+        background-image: url(./images/01-instalaciones.jpg);
+        height: 380px;
+    }
+    .tituloInsta{
+        padding-left: 0px;
+        font-size: 44PX;
+        color: white;
+    }
+    .fill-container.biometrico{
+        background-image: url(./images/01-biometrico.jpg);
+        height: 380px;
+    }
+    .fill-container.barrera{
+        background-image: url(./images/barrera-vehicular.jpg);
+        height: 380px;
+    }
+}
+
+        
+        
+.imgresponsive{
+    max-width: 100%;
+    height: auto;
+    padding: .25rem;
+}        
+
+
+            
+
+.fill-container{
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.fill-containerTexture{
+	background-image: url(./images/empresa-Index-fondo-textura.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.fill-container.seguridad{
+	background-image: url(./images/seguridad-y-energia.jpg);
+}
+
+.fill-container.cctv{
+	background-image: url(./images/01-temp.png);
+}
+.fill-container.cercas{
+
+}
+.fill-container.paneles{
+	background-image: url(./images/portada-paneles.solares.jpg);
+}
+
+.fill-container.controles{
+	background-image: url(./images/01-temp.png);
+}
+
+
+.fill-container.barrera{
+	
+}
+.imgSeguridad{
+	background-image: url(./images/02-temp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgVideovigilancia{
+	background-image: url(../images/diskstation/disktation-img-fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgCctv{
+	background-image: url(./images/02-temp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgCercas{
+	background-image: url(./images/02-cercos.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgPaneles{
+	background-image: url(./images/paneles-solares-img2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.img-chapa-ele{
+    background-image: url(./images/chapa_ele_par.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-kit-rondas{
+    background-image: url(./images/chapa_ele_par.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgGps{
+	background-image: url(./images/gps-tracker2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgControles{
+	background-image: url(./images/02-temp.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgInstalaciones{
+	background-image: url(./images/instalaciones-electricas-fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgBiometrico{
+	background-image: url(./images/02-biometrico.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgBarrera{
+	background-image: url(./images/barrera-vehicular2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imgTextura1{
+	background-image: url(./images/textura1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imgTextura2{
+	background-image: url(./images/textura2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.carrousel-inner{
+	background-image: url(./images/empresa-Index-nosotros-slide.png);
+	background-position: center center;
+    background-repeat: no-repeat;
+    height:100%;
+    width: 100%;
+    background-size:cover;
+    -webkit-background-origin:border !important;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.carousel-control-next-icon{
+	background-image : url(./images/arrowa-empresa-icons_MesaDeTrabajo1copia.svg) !important;
+	height: 50px;
+	width: 50px;
+}
+
+.carousel-control-prev-icon{
+	background-image : url(./images/arrowa-empresa-icons_MesaDeTrabajo1.svg) !important;
+	height: 50px;
+	width: 50px;
+}
+
+.innovacionAtuAlcance{
+	background-image: url(./images/empresa-Index-f2.jpg);
+	height: 630px;
+	width: 100%;
+	background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+
+.imgTestimoniales{
+	background-image : url(./images/empresa-Index-3.jpg) !important;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.soluciones{
+    margin: auto;
+    position: relative;
+    top: 20%;
+    text-align: justify;
+    width: 600px;
+}
+
+.imgCotizacion{
+	background-image: url(./images/empresa-Index-formulario.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center 0px;
+}
+.formularioCotizacion{
+    margin: auto;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    color: #fff;
+    width: 600px;
+}
+
+.formularioCotizacion .izquierda{
+    align-content: left;
+}
+
+.formularioCotizacion .derecha{
+    align-content: right;
+    top: 40%;
+}
+
+#footer{
+    padding: 4rem 0 2rem 0 ;
+	background: #000;
+	text-align: center;
+}
+
+#footer .copyright {
+	color: #bbb;
+	font-size: 0.9rem;
+	margin: 0 0 2rem 0;
+	padding: 0;
+    text-align: right;
+}
+
+.imgTwitter{
+	background-image: url(../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+
+.imgFacebook{
+	background-image: url(../images/LOGOS-REDES-SOCIALES-ITEMS_Mesadetrabajo1copia.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+
+.imgYoutube{
+	background-image: url(../images/LOGOS-REDES-SOCIALES-ITEMS-03.svg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+}
+
+a.sub{
+    border-bottom: 1px solid #ccc;
+    display: block;
+    text-decoration: none;
+    color: #212529;
+    padding: 8px 0px 8px 0px !important;
+}
+
+a.a2{
+    border-bottom: 0px solid #ccc !important;
+}
+
+a.sub:hover{
+    text-decoration: none;
+    color: black;
+	background-color: lightgray; 
+}
+
+.barra{
+    width: 15px;
+}
+
+.barra.negra{
+    background-color:black;
+}
+
+.barra.roja{
+    background-color:red;
+}
+.barra.esp{
+    background-color:transparent;
+}
+ul {
+    list-style-image: url("./images/blue-palomita.png"); 
+}
+
+ul.producto{
+    list-style: none;
+    padding-left: 0;
+}
+ul.producto
+li:before {
+  content: ">";
+  padding-right: 5px;
+  color: red;
+  font-size: 21px;
+}
+
+.cuadros{
+    color: #212529;
+    width: 4px;
+    border: 1px solid #81818252;
+    height: 160px;
+    width: 160px;
+}
+.portadilla{
+	text-decoration: none !important;
+}
+
+.imgPortadilla{
+	background-image: url(./images/empresa-Index-fondo-textura.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box-red-number{
+    background-color: #e1251b; padding: 0px 4px; color: white;
+}

@@ -59,7 +59,7 @@
     }
     .fill-container.videovigilancia{
        background-image: url(../images/diskstation/portada.jpg);
-         height: 132px!important;
+             height: 70px !important;
     }
    .tituloCercas{
         padding-left: 0px;
@@ -176,7 +176,7 @@
     }
     .fill-container.videovigilancia{
         background-image: url(../images/diskstation/portada.jpg);
-         height: 282px!important;
+         height: 161px!important;
     }
     .tamanoTextoCamara{
         height: 500px;
@@ -521,7 +521,7 @@
 }
 
 .imgCotizacion{
-	background-image: url(./images/empresa-Index-formulario.jpg);
+	background-image: url(../images/empresa-Index-formulario.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center 0px;

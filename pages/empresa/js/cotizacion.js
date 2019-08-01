@@ -8,7 +8,11 @@ $(function() {
 	$("form").submit(function(evt){
 		
     evt.preventDefault();
-		console.log('Se envio el form');
+	// console.log('Se envio el form');
+    var URLactual = window.location.href;
+    // console.log('url---->',URLactual);
+    var descripcion=$("[name='description']").val();
+    $("[name='description']").val(descripcion+ " Enviado desde la Sección: "+URLactual);
     let data = $(this).serialize();
 
     $.post( "https://crm.maxicomm.net/index.php?entryPoint=WebToPersonCapture",data, function( response ) {
